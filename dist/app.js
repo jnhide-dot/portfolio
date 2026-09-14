@@ -6,10 +6,30 @@ const gameImage=g=>images.find(i=>g.title.includes(i.match));
 const imageForDoc=d=>images.find(i=>i.doc===d.id);
 const imageTag=(i,cls='',eager=false)=>i?'<img class="'+cls+'" src="'+E(i.url)+'" alt="'+E(i.title)+' 공식 프로모션 이미지" '+(eager?'fetchpriority="high"':'loading="lazy"')+'>':'';
 const mobile=matchMedia('(max-width:800px)');
-function closeMenu(){nav.classList.remove('open');document.querySelector('#menu').setAttribute('aria-expanded','false');document.querySelector('#menu').setAttribute('aria-label','메뉴 열기');nav.inert=mobile.matches;}
+const menuGroups=[
+  {id:'analysis',title:'전투 분석',items:docs.filter(d=>d.group==='전투 분석')},
+  {id:'design',title:'시스템·캐릭터',items:docs.filter(d=>d.group==='비교·제안')},
+  {id:'projects',title:'프로젝트',items:docs.filter(d=>d.type)},
+  {id:'playlist',title:'플레이리스트',items:playlist}
+];
+nav.innerHTML=menuGroups.map(g=>'<div class="nav-group"><button class="nav-trigger" data-section="'+g.id+'" aria-expanded="false" aria-controls="submenu-'+g.id+'">'+g.title+'<span aria-hidden="true">⌄</span></button><div class="nav-dropdown" id="submenu-'+g.id+'" hidden><div class="dropdown-heading"><strong>'+g.title+'</strong><a href="#/'+g.id+'">전체 보기 →</a></div><div class="dropdown-links">'+g.items.map(d=>'<a href="'+(g.id==='playlist'?'#/games/'+d.id:link(d))+'">'+E(d.title)+(g.id==='projects'?'<small>'+E(d.type)+'</small>':'')+'</a>').join('')+'</div></div></div>').join('');
+let hoverOpened=false;
+function closeSubmenus(){nav.querySelectorAll('.nav-trigger').forEach(b=>b.setAttribute('aria-expanded','false'));nav.querySelectorAll('.nav-dropdown').forEach(p=>p.hidden=true);hoverOpened=false;}
+function openSubmenu(button){closeSubmenus();button.setAttribute('aria-expanded','true');document.getElementById(button.getAttribute('aria-controls')).hidden=false;}
+nav.querySelectorAll('.nav-group').forEach(group=>{
+  const button=group.querySelector('button');
+  group.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'&&!mobile.matches&&button.getAttribute('aria-expanded')!=='true'){openSubmenu(button);hoverOpened=true;}});
+  button.onclick=()=>{if(hoverOpened&&button.getAttribute('aria-expanded')==='true'){hoverOpened=false;return;}button.getAttribute('aria-expanded')==='true'?closeSubmenus():openSubmenu(button);};
+  button.addEventListener('keydown',e=>{if(e.key==='ArrowDown'){e.preventDefault();openSubmenu(button);group.querySelector('.nav-dropdown a').focus();}});
+});
+document.querySelector('.site-header').addEventListener('pointerleave',e=>{if(e.pointerType==='mouse'&&!mobile.matches)closeSubmenus();});
+document.addEventListener('click',e=>{if(!e.target.closest('.site-header'))closeMenu();});
+document.querySelector('.site-header').addEventListener('focusout',e=>{if(!e.currentTarget.contains(e.relatedTarget))closeSubmenus();});
+nav.addEventListener('click',e=>{if(e.target.closest('a'))closeMenu();});
+function closeMenu(){closeSubmenus();nav.classList.remove('open');document.querySelector('#menu').setAttribute('aria-expanded','false');document.querySelector('#menu').setAttribute('aria-label','메뉴 열기');nav.inert=mobile.matches;}
 mobile.addEventListener('change',closeMenu);
 document.querySelector('#menu').onclick=()=>{const open=!nav.classList.contains('open');nav.classList.toggle('open',open);nav.inert=!open&&mobile.matches;document.querySelector('#menu').setAttribute('aria-expanded',open);document.querySelector('#menu').setAttribute('aria-label',open?'메뉴 닫기':'메뉴 열기');};
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeMenu();document.querySelector('#menu').focus();}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){const trigger=nav.querySelector('.nav-trigger[aria-expanded="true"]');if(trigger){closeSubmenus();trigger.focus();}else if(mobile.matches&&nav.classList.contains('open')){closeMenu();document.querySelector('#menu').focus();}}});
 const row=d=>'<a class="doc-row" href="'+link(d)+'"><span class="row-num">'+d.number+'</span><div><div class="row-title">'+d.title+'</div><div class="row-desc">'+d.description+'</div></div><div class="row-meta"><span class="badge">'+d.status+'</span><span class="arrow">↗</span></div></a>';
 const projects=()=>'<div class="project-grid">'+docs.filter(d=>d.type).map(d=>'<a class="project-card" href="'+link(d)+'"><small>'+d.type+'</small><span class="project-index">'+d.number+'</span><h3>'+d.title+'</h3><p>'+d.description+'</p><span class="view">프로젝트 보기 →</span></a>').join('')+'</div>';
 function gameCard(g){const i=gameImage(g);return '<a class="game-card '+(i?'with-image':'')+'" href="#/games/'+g.id+'"><div class="game-cover">'+(i?imageTag(i):'<span class="game-monogram">'+E(g.title.slice(0,2))+'</span>')+'<span class="game-cover-title">'+E(g.title)+'</span></div><div class="game-card-info"><span>'+E(g.status||'기록 확인 중')+'</span><span>'+E(g.proficiency||g.genres[0]||'')+'</span></div></a>';}
@@ -37,7 +57,7 @@ main.className='game-detail-main';const i=gameImage(g);const related=docs.find(d
 main.innerHTML='<a class="back-link" href="#/playlist">← 플레이리스트</a><header class="game-detail-head '+(i?'has-art':'')+'">'+imageTag(i)+'<div><p class="eyebrow">PLAYLIST</p><h1>'+E(g.title)+'</h1><p>'+E(g.genres.join(' · '))+'</p></div></header><div class="game-content"><section><div class="section-title"><h2>플레이 기록</h2><a class="edit-record" href="https://github.com/jnhide-dot/portfolio/edit/main/content/playlist/'+g.id+'.json" target="_blank" rel="noopener">기록 편집 ↗</a></div><p class="record-caption">노션 기록 기준 · '+E(g.snapshot)+' / 이전 기록은 실제 현재 상태와 다를 수 있습니다.</p><dl class="game-facts">'+[['기록 상태',g.status],['진행도',g.progress],['숙련도',g.proficiency],['플랫폼',g.platforms.join(' · ')],['플레이 시간',g.hours===null?'':g.hours+'시간']].map(([k,v])=>'<div><dt>'+k+'</dt><dd>'+E(v||'미기록')+'</dd></div>').join('')+'</dl><h2>주력 플레이</h2><p>'+E(g.mainPlay||'아직 작성한 기록이 없습니다.')+'</p><h2>주요 콘텐츠</h2><p>'+E(g.mainContent||'아직 작성한 기록이 없습니다.')+'</p><h2>플레이 인사이트</h2><p>'+E(g.insight||'아직 작성한 기록이 없습니다.')+'</p></section><aside class="related-analysis"><p class="eyebrow">RELATED</p><h2>연결된 분석</h2>'+(related?'<a href="'+link(related)+'">'+related.title+' ↗</a>':'<p>아직 연결된 분석이 없습니다.</p>')+'</aside></div>';
 }
 function render(){
-closeMenu();const parts=(location.hash||'#/').slice(2).split('/');const kind=parts[0],id=parts[1];const doc=docs.find(d=>d.id===id),game=playlist.find(g=>g.id===id);nav.querySelectorAll('a').forEach(a=>{const section=kind==='docs'?(doc?.type?'projects':doc?.group==='전투 분석'?'analysis':'design'):kind==='games'?'playlist':kind;const active=a.hash==='#/'+section;active?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current');});
+closeMenu();const parts=(location.hash||'#/').slice(2).split('/');const kind=parts[0],id=parts[1];const doc=docs.find(d=>d.id===id),game=playlist.find(g=>g.id===id);const section=kind==='docs'?(doc?.type?'projects':doc?.group==='전투 분석'?'analysis':'design'):kind==='games'?'playlist':kind;nav.querySelectorAll('.nav-trigger').forEach(b=>b.classList.toggle('current',b.dataset.section===section));nav.querySelectorAll('a').forEach(a=>{a.hash===(location.hash||'#/')?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current');});
 if(!kind){document.title='Jnhide — 전투 시스템·캐릭터 기획';home();}
 else if(['analysis','design','projects'].includes(kind))collection(kind);
 else if(kind==='docs'&&doc)documentPage(doc);
