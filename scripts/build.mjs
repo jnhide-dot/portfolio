@@ -27,7 +27,8 @@ const attachments=JSON.parse(fs.readFileSync('content/attachments.json','utf8'))
 for(const a of attachments){if(!catalog.some(d=>d.id===a.document)||!a.title||!['문서','이미지','영상','빌드'].includes(a.type))throw Error('Invalid attachment');if(!/^https:\/\//.test(a.url)&&!/^files\/[\w./-]+$/.test(a.url))throw Error('Invalid URL');if(a.url.startsWith('files/')&&!fs.existsSync(path.join('dist',a.url)))throw Error('Missing attachment: '+a.url);}
 const playlist=fs.readdirSync('content/playlist').filter(f=>f.endsWith('.json')).map(f=>JSON.parse(fs.readFileSync('content/playlist/'+f,'utf8')));
 const images=fs.existsSync('content/images.json')?JSON.parse(fs.readFileSync('content/images.json','utf8')):[];
+const playlistImages=fs.existsSync('content/playlist-images.json')?JSON.parse(fs.readFileSync('content/playlist-images.json','utf8')):[];
 const gameRank=g=>{const index=images.findIndex(i=>g.title.includes(i.match));return index<0?images.length:index;};
 playlist.sort((a,b)=>gameRank(a)-gameRank(b)||a.title.localeCompare(b.title,'ko'));
-fs.writeFileSync('dist/data.js','window.PORTFOLIO='+JSON.stringify({docs,attachments,playlist,images}).replaceAll('<','\\u003c')+';');
+fs.writeFileSync('dist/data.js','window.PORTFOLIO='+JSON.stringify({docs,attachments,playlist,images,playlistImages}).replaceAll('<','\\u003c')+';');
 console.log(`Built ${docs.length} documents, ${attachments.length} attachments.`);
