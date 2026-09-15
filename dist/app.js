@@ -1,4 +1,4 @@
-const {docs,attachments,playlist,images,playlistImages=[]}=window.PORTFOLIO;
+const {docs,attachments,playlist,images,playlistImages=[],foundationImages=[]}=window.PORTFOLIO;
 const main=document.querySelector('main'),nav=document.querySelector('#nav');
 const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const link=d=>'#/docs/'+d.id;
@@ -9,12 +9,12 @@ const imageTag=(i,cls='',eager=false)=>i?'<img class="'+cls+'" src="'+E(i.url)+'
 const mobile=matchMedia('(max-width:800px)');
 const spirit={id:'spirit',title:'프로젝트 스피릿'};
 const menuGroups=[
-  {id:'about',title:'소개',items:[]},
+  {id:'about',title:'About Me',items:[]},
   {id:'portfolio',title:'포트폴리오',items:[spirit]},
   {id:'projects',title:'프로젝트',items:docs.filter(d=>d.type)},
   {id:'playlist',title:'플레이리스트',items:playlist}
 ];
-nav.innerHTML=menuGroups.map(g=>g.id==='about'?'<div class="nav-group"><a class="nav-trigger" data-section="about" href="#/about">소개</a></div>':'<div class="nav-group"><button class="nav-trigger" data-section="'+g.id+'" aria-expanded="false" aria-controls="submenu-'+g.id+'">'+g.title+'<span aria-hidden="true">⌄</span></button><div class="nav-dropdown" id="submenu-'+g.id+'" hidden><div class="dropdown-heading"><strong>'+g.title+'</strong><a href="#/'+g.id+'">전체 보기 →</a></div><div class="dropdown-links">'+g.items.map(d=>'<a href="'+(g.id==='playlist'?'#/games/'+d.id:g.id==='portfolio'?'#/portfolio/spirit':link(d))+'">'+E(d.title)+(g.id==='projects'?'<small>'+E(d.type)+'</small>':'')+'</a>').join('')+'</div></div></div>').join('');
+nav.innerHTML=menuGroups.map(g=>g.id==='about'?'<div class="nav-group"><a class="nav-trigger" data-section="about" href="#/about">About Me</a></div>':'<div class="nav-group"><button class="nav-trigger" data-section="'+g.id+'" aria-expanded="false" aria-controls="submenu-'+g.id+'">'+g.title+'<svg class="nav-chevron" viewBox="0 0 20 20" width="16" height="16" fill="none" aria-hidden="true"><path d="m5 7.5 5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="nav-dropdown" id="submenu-'+g.id+'" hidden><div class="dropdown-heading"><strong>'+g.title+'</strong><a href="#/'+g.id+'">전체 보기 →</a></div><div class="dropdown-links">'+g.items.map(d=>'<a href="'+(g.id==='about'?'#/about/'+d.id:g.id==='playlist'?'#/games/'+d.id:g.id==='portfolio'?'#/portfolio/spirit':link(d))+'">'+E(d.title)+(g.id==='projects'?'<small>'+E(d.type)+'</small>':'')+'</a>').join('')+'</div></div></div>').join('');
 let hoverOpened=false;
 function closeSubmenus(){nav.querySelectorAll('button.nav-trigger').forEach(b=>b.setAttribute('aria-expanded','false'));nav.querySelectorAll('.nav-dropdown').forEach(p=>p.hidden=true);hoverOpened=false;}
 function openSubmenu(button){closeSubmenus();button.setAttribute('aria-expanded','true');document.getElementById(button.getAttribute('aria-controls')).hidden=false;}
@@ -37,12 +37,23 @@ const projects=()=>'<div class="project-grid">'+docs.filter(d=>d.type).map(d=>'<
 function gameCard(g){const i=gameImage(g);return '<a class="game-card '+(i?'with-image':'')+'" href="#/games/'+g.id+'"><div class="game-cover">'+(i?imageTag(i):'<span class="game-monogram">'+E(g.title.slice(0,2))+'</span>')+(isSubculture(g)?'<span class="game-tag">서브컬처</span>':'')+'<span class="game-cover-title">'+E(g.title)+'</span></div><div class="game-card-info"><span>'+E(g.status||'기록 확인 중')+'</span><span>'+E(g.proficiency||g.genres[0]||'')+'</span></div></a>';}
 function home(){
 main.className='home-main';
-main.innerHTML='<section class="showcase-hero"><div class="hero-panels">'+images.map((i,n)=>'<a class="hero-panel" href="'+E(i.homepage)+'" target="_blank" rel="noopener noreferrer" style="--image-position:'+E(i.position||'50%')+'">'+imageTag(i,'',n===0)+'<span class="hero-game-name">'+E(i.title)+'<b>↗</b></span></a>').join('')+'</div><div class="hero-heading"><p>JNHIDE / GAME DESIGN</p><h1>전투 시스템.<br>캐릭터. 플레이.</h1></div><div class="hero-bottom"><span>분석에서 기획으로</span><a href="#/portfolio/spirit">프로젝트 스피릿 보기 <b>→</b></a><a href="#/playlist">플레이리스트 <b>→</b></a></div></section><section class="home-section"><div class="section-title"><div><p class="eyebrow">PORTFOLIO</p><h2>포트폴리오</h2></div><a href="#/portfolio">전체 보기 ↗</a></div>'+spiritCard()+'</section><section class="home-section"><div class="section-title"><div><p class="eyebrow">PROJECTS</p><h2>프로젝트 기록</h2></div><a href="#/projects">전체 보기 ↗</a></div>'+projects()+'</section><section class="playlist-banner"><div><p class="eyebrow">PLAYLIST</p><h2>플레이리스트</h2><p>'+playlist.length+'개의 게임, 플레이 기록과 전투 경험.</p><a class="solid-link" href="#/playlist">플레이리스트 보기 →</a></div><div class="playlist-name-wall">'+playlist.slice(0,12).map(g=>'<a href="#/games/'+g.id+'">'+E(g.title)+'</a>').join('')+'</div></section>';
+main.innerHTML='<section class="showcase-hero"><div class="hero-panels">'+images.map((i,n)=>'<a class="hero-panel" href="'+E(i.homepage)+'" target="_blank" rel="noopener noreferrer" style="--image-position:'+E(i.position||'50%')+'">'+imageTag(i,'',n===0)+'<span class="hero-game-name">'+E(i.title)+'<b>↗</b></span></a>').join('')+'</div><div class="hero-heading"><p>JNHIDE / GAME DESIGN</p><h1>전투 시스템.<br>캐릭터. 플레이.</h1></div><div class="hero-bottom"><span>분석에서 기획으로</span><a href="#/projects">프로젝트 보기 <b>→</b></a><a href="#/playlist">플레이리스트 <b>→</b></a></div></section><section class="home-section"><div class="section-title"><div><p class="eyebrow">PORTFOLIO</p><h2>포트폴리오</h2></div><a href="#/portfolio">전체 보기 ↗</a></div>'+spiritCard()+'</section><section class="home-section"><div class="section-title"><div><p class="eyebrow">PROJECTS</p><h2>프로젝트 기록</h2></div><a href="#/projects">전체 보기 ↗</a></div>'+projects()+'</section><section class="playlist-banner"><div><p class="eyebrow">PLAYLIST</p><h2>플레이리스트</h2><p>'+playlist.length+'개의 게임, 플레이 기록과 전투 경험.</p><a class="solid-link" href="#/playlist">플레이리스트 보기 →</a></div><div class="playlist-name-wall">'+playlist.slice(0,12).map(g=>'<a href="#/games/'+g.id+'">'+E(g.title)+'</a>').join('')+'</div></section>';
 }
 function spiritCard(){return '<div class="project-grid"><a class="project-card" href="#/portfolio/spirit"><small>포트폴리오</small><h3>프로젝트 스피릿</h3><p>전투 분석 · 시스템 · 캐릭터</p><span class="view">포트폴리오 보기 →</span></a></div>';}
+function combatCards(){const d=docs.find(d=>d.id==='action-foundations');return '<div class="feature-grid combat-grid"><a class="feature-card" href="'+link(d)+'"><div class="feature-image foundation-triptych">'+foundationImages.map(i=>'<div>'+imageTag(i)+'<span>'+E(i.title)+'</span></div>').join('')+'</div><div class="feature-meta"><span>'+d.number+' / 전투 분석</span><span>↗</span></div><h3>'+E(d.title)+'</h3><p>'+E(d.description)+'</p></a>'+images.map(i=>{const d=docs.find(d=>d.id===i.doc);return '<a class="feature-card" href="'+link(d)+'"><div class="feature-image">'+imageTag(i)+'</div><div class="feature-meta"><span>'+d.number+' / 전투 분석</span><span>↗</span></div><h3>'+E(i.title)+'</h3><p>'+d.description+'</p></a>';}).join('')+'</div>';}
 function portfolioPage(detail){
 main.className='collection-main';document.title=(detail?'프로젝트 스피릿':'포트폴리오')+' — Jnhide';
-main.innerHTML=(detail?'<a class="back-link" href="#/portfolio">← 포트폴리오</a>':'')+'<header class="collection-head"><p class="eyebrow">PORTFOLIO</p><h1>'+(detail?'프로젝트 스피릿':'포트폴리오')+'</h1></header>'+(detail?['전투 분석','비교·제안'].map(group=>'<section><div class="section-title"><h2>'+(group==='전투 분석'?'전투 분석':'시스템·캐릭터')+'</h2></div>'+docs.filter(d=>d.group===group).map(row).join('')+'</section>').join(''):spiritCard());
+main.innerHTML=(detail?'<a class="back-link" href="#/portfolio">← 포트폴리오</a>':'')+'<header class="collection-head"><p class="eyebrow">PORTFOLIO</p><h1>'+(detail?'프로젝트 스피릿':'포트폴리오')+'</h1></header>'+(detail?['전투 분석','비교·제안'].map(group=>'<section><div class="section-title"><h2>'+(group==='전투 분석'?'전투 분석':'시스템·캐릭터')+'</h2></div>'+(group==='전투 분석'?combatCards():docs.filter(d=>d.group===group).map(row).join(''))+'</section>').join(''):spiritCard());
+}
+function aboutSection(id){
+const skills=id==='qualifications-tools';main.className='collection-main';document.title=(skills?'자격증·사용 가능한 툴':'프로필·연혁')+' — Jnhide';
+const groups=[['문서·협업',['Notion','Jira','Word','Excel','PowerPoint']],['디자인·영상',['Figma','Photoshop','Premiere']],['개발',['Unity','Python','Lua Script','GitHub','Fork']],['AI',['Antigravity','Claude','GPT','Gemini']]];
+main.innerHTML='<header class="collection-head"><p class="eyebrow">ABOUT</p><h1>'+(skills?'자격증·사용 가능한 툴':'프로필·연혁')+'</h1><p class="intro">어 식 · 전투 시스템 · 캐릭터 전투 기획</p></header>'+(skills?'<section class="about-section"><h2>자격증</h2><dl class="game-facts"><div><dt>자격</dt><dd>MOS Master</dd></div><div><dt>어학</dt><dd>JLPT N3</dd></div></dl></section><section class="about-section"><h2>사용 가능한 툴</h2><div class="about-tool-grid">'+groups.map(([title,items])=>'<section><h3>'+title+'</h3><ul>'+items.map(t=>'<li>'+t+'</li>').join('')+'</ul></section>').join('')+'</div></section>':'<section class="about-section"><h2>프로필</h2><dl class="game-facts"><div><dt>이름</dt><dd>어 식</dd></div><div><dt>분야</dt><dd>전투 시스템 · 캐릭터 전투 기획</dd></div><div><dt>전공</dt><dd>컴퓨터공학</dd></div></dl></section><section class="about-section"><h2>연혁</h2><dl class="game-facts"><div><dt>전공</dt><dd>컴퓨터공학</dd></div><div><dt>1년</dt><dd>자연어 처리 학부연구생</dd></div><div><dt>약 2개월</dt><dd>캐릭터 전투 시스템 기획 · 기획 연수생 5인 팀</dd></div><div><dt>2026.07.21–09.09</dt><dd>PM·팀장 프로젝트 · 종료·인계 완료</dd></div></dl></section>');
+}
+function aboutPage(){
+aboutSection('profile-history');const profile=main.innerHTML;
+aboutSection('qualifications-tools');const skills=main.innerHTML.replace(/<header class="collection-head">[\s\S]*?<\/header>/,'');
+main.innerHTML=profile.replace('<h1>프로필·연혁</h1>','<h1>About Me</h1>')+skills;document.title='About Me — Jnhide';
 }
 function collection(kind){
 const types={analysis:['COMBAT ANALYSIS','전투 분석','공통 전투 구조와 게임별 고유 시스템.',docs.filter(d=>d.group==='전투 분석')],design:['SYSTEM & CHARACTER','시스템·캐릭터','비교 분석에서 전투 시스템과 초기 캐릭터 제안으로.',docs.filter(d=>d.group==='비교·제안')],projects:['PROJECTS','프로젝트','개인 프로젝트, 첫 팀 프로젝트, 기업 협약 프로젝트.',[]]};
@@ -65,14 +76,15 @@ main.innerHTML='<a class="back-link" href="#/playlist">← 플레이리스트</a
 }
 function render(){
 closeMenu();const parts=(location.hash||'#/').slice(2).split('/');const kind=parts[0],id=parts[1];const doc=docs.find(d=>d.id===id),game=playlist.find(g=>g.id===id);const section=kind==='docs'?(doc?.type?'projects':'portfolio'):kind==='games'?'playlist':['analysis','design'].includes(kind)?'portfolio':kind||'about';nav.querySelectorAll('.nav-trigger').forEach(b=>b.classList.toggle('current',b.dataset.section===section));nav.querySelectorAll('a').forEach(a=>{a.hash===(location.hash||'#/')?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current');});
-if(!kind||kind==='about'){document.title='Jnhide — 전투 시스템·캐릭터 기획';home();}
+if(!kind){document.title='Jnhide — 전투 시스템·캐릭터 기획';home();}
+else if(kind==='about')aboutPage(id);
 else if(kind==='portfolio'&&(!id||id==='spirit'))portfolioPage(id==='spirit');
 else if(['analysis','design'].includes(kind))portfolioPage(true);
 else if(kind==='projects')collection(kind);
 else if(kind==='docs'&&doc)documentPage(doc);
 else if(kind==='playlist')playlistPage();
 else if(kind==='games'&&game)gamePage(game);
-else if(kind==='credits'){main.className='collection-main';main.innerHTML='<p class="eyebrow">IMAGE CREDITS</p><h1>이미지 출처</h1><p class="intro">게임 이미지는 각 권리자에게 저작권이 있으며, 게임 분석과 플레이 기록을 소개하기 위해 사용했습니다.</p>'+[...images,...playlistImages].map(i=>'<div class="credit-row"><h2>'+E(i.title)+'</h2><p>'+E(i.copyright)+'</p><a href="'+E(i.source)+'" target="_blank" rel="noopener">공식 이미지 출처 ↗</a></div>').join('');document.title='이미지 출처 — Jnhide';}
+else if(kind==='credits'){main.className='collection-main';main.innerHTML='<p class="eyebrow">IMAGE CREDITS</p><h1>이미지 출처</h1><p class="intro">게임 이미지는 각 권리자에게 저작권이 있으며, 게임 분석과 플레이 기록을 소개하기 위해 사용했습니다.</p>'+[...images,...playlistImages,...foundationImages].map(i=>'<div class="credit-row"><h2>'+E(i.title)+'</h2><p>'+E(i.copyright)+'</p>'+(i.source?'<a href="'+E(i.source)+'" target="_blank" rel="noopener">공식 이미지 출처 ↗</a>':'<p>'+E(i.sourceNote||'')+'</p>')+'</div>').join('');document.title='이미지 출처 — Jnhide';}
 else{main.className='collection-main';main.innerHTML='<h1>페이지를 찾을 수 없습니다.</h1><a href="#/">메인으로 →</a>';}
 window.scrollTo(0,0);
 }

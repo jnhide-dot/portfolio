@@ -30,10 +30,14 @@ const images=fs.existsSync('content/images.json')?JSON.parse(fs.readFileSync('co
 const playlistImages=fs.existsSync('content/playlist-images.json')?JSON.parse(fs.readFileSync('content/playlist-images.json','utf8')):[];
 const gameRank=g=>{const index=images.findIndex(i=>g.title.includes(i.match));return index<0?images.length:index;};
 playlist.sort((a,b)=>gameRank(a)-gameRank(b)||a.title.localeCompare(b.title,'ko'));
-const dataScript='window.PORTFOLIO='+JSON.stringify({docs,attachments,playlist,images,playlistImages}).replaceAll('<','\\u003c')+';';
+const foundationImages=JSON.parse(fs.readFileSync('content/foundation-images.json','utf8'));
+const dataScript='window.PORTFOLIO='+JSON.stringify({docs,attachments,playlist,images,playlistImages,foundationImages}).replaceAll('<','\\u003c')+';';
 fs.writeFileSync('dist/data.js',dataScript);
 const {createHash}=await import('node:crypto');
-const dataVersion=createHash('sha256').update(dataScript).digest('hex').slice(0,12);
-const indexHtml=fs.readFileSync('dist/index.html','utf8');
-fs.writeFileSync('dist/index.html',indexHtml.replace(/src="data\.js(?:\?v=[^"]*)?"/,'src="data.js?v='+dataVersion+'"'));
+let indexHtml=fs.readFileSync('dist/index.html','utf8');
+for(const asset of ['data.js','app.js','style.css','showcase.css']){
+ const version=createHash('sha256').update(fs.readFileSync('dist/'+asset)).digest('hex').slice(0,12);
+ indexHtml=indexHtml.replaceAll(new RegExp(asset.replaceAll('.', '\\.')+'(?:\\?v=[^"\\s]*)?(?=")','g'),asset+'?v='+version);
+}
+fs.writeFileSync('dist/index.html',indexHtml);
 console.log(`Built ${docs.length} documents, ${attachments.length} attachments.`);
