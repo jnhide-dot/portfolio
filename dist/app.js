@@ -63,7 +63,13 @@ function documentPage(d){
 main.className='reader-main';
 main.innerHTML='<a class="back-link" href="#/'+(d.type?'projects':'portfolio/spirit')+'">← '+(d.type?'프로젝트':'프로젝트 스피릿')+'</a><header class="document-head"><p class="eyebrow">'+(d.type?'PROJECT':'DOCUMENT')+' '+d.number+'</p><h1>'+d.title+'</h1><p class="intro">'+d.description+'</p><div class="doc-info"><span class="badge">'+d.status+'</span><span>Jnhide</span></div></header><div class="doc-layout"><article class="article">'+d.body+'</article><aside class="toc" aria-label="이 문서의 목차"><strong>목차</strong></aside></div><section class="attachments"><h2>첨부 자료</h2><div id="assets"></div></section><nav class="doc-pager" aria-label="이전 다음 문서">'+(docs.indexOf(d)>0?'<a href="'+link(docs[docs.indexOf(d)-1])+'">← 이전 문서</a>':'<a href="#/portfolio/spirit">← 프로젝트 스피릿</a>')+(docs.indexOf(d)<docs.length-1?'<a href="'+link(docs[docs.indexOf(d)+1])+'">다음 문서 →</a>':'<a href="#/projects">프로젝트 →</a>')+'</nav>';
 main.querySelectorAll('.article h2').forEach((h,i)=>{h.id='section-'+i;const a=document.createElement('a');a.href='#'+h.id;a.textContent=h.textContent;a.onclick=e=>{e.preventDefault();h.scrollIntoView({behavior:'smooth'});};main.querySelector('.toc').append(a);});
-const files=attachments.filter(a=>a.document===d.id);document.querySelector('#assets').innerHTML=files.length?files.map(a=>'<a class="attachment" href="'+E(a.url)+'" target="_blank" rel="noopener"><small>'+E(a.type)+'</small>'+E(a.title)+' ↗'+(a.type==='이미지'?'<img src="'+E(a.url)+'" alt="'+E(a.title)+'" loading="lazy">':'')+'</a>').join(''):'<p class="empty-assets">아직 등록된 첨부 자료가 없습니다.</p>';document.title=d.title+' — Jnhide';
+const files=attachments.filter(a=>a.document===d.id&&!a.hidden);document.querySelector('#assets').innerHTML=files.length?files.map(a=>'<a class="attachment" href="'+E(a.source||(a.body?'#/artifacts/'+a.id:a.url))+'"'+(a.body&&!a.source?'':' target="_blank" rel="noopener"')+'><small>'+E(a.type)+'</small>'+E(a.title)+' ↗'+(a.type==='이미지'?'<img src="'+E(a.url)+'" alt="'+E(a.title)+'" loading="lazy">':'')+'</a>').join(''):'<p class="empty-assets">아직 등록된 첨부 자료가 없습니다.</p>';document.title=d.title+' — Jnhide';
+}
+function artifactPage(a){
+const parent=docs.find(d=>d.id===a.document);
+main.className='reader-main';document.title=a.title+' — Jnhide';
+main.innerHTML='<a class="back-link" href="'+link(parent)+'">← '+E(parent.title)+'</a><header class="document-head"><p class="eyebrow">'+E(parent.title)+'</p><h1>'+E(a.title)+'</h1></header><div class="doc-layout"><article class="article">'+a.body+'</article><aside class="toc" aria-label="이 문서의 목차"><strong>목차</strong></aside></div>';
+main.querySelectorAll('.article h2').forEach((h,i)=>{h.id='section-'+i;const anchor=document.createElement('a');anchor.href='#'+h.id;anchor.textContent=h.textContent;anchor.onclick=e=>{e.preventDefault();h.scrollIntoView({behavior:'smooth'});};main.querySelector('.toc').append(anchor);});
 }
 function playlistPage(){
 main.className='collection-main playlist-main';document.title='플레이리스트 — Jnhide';
@@ -82,6 +88,7 @@ else if(kind==='portfolio'&&(!id||id==='spirit'))portfolioPage(id==='spirit');
 else if(['analysis','design'].includes(kind))portfolioPage(true);
 else if(kind==='projects')collection(kind);
 else if(kind==='docs'&&doc)documentPage(doc);
+else if(kind==='artifacts'&&attachments.some(a=>a.id===id&&a.body))artifactPage(attachments.find(a=>a.id===id));
 else if(kind==='playlist')playlistPage();
 else if(kind==='games'&&game)gamePage(game);
 else if(kind==='credits'){main.className='collection-main';main.innerHTML='<p class="eyebrow">IMAGE CREDITS</p><h1>이미지 출처</h1><p class="intro">게임 이미지는 각 권리자에게 저작권이 있으며, 게임 분석과 플레이 기록을 소개하기 위해 사용했습니다.</p>'+[...images,...playlistImages,...foundationImages].map(i=>'<div class="credit-row"><h2>'+E(i.title)+'</h2><p>'+E(i.copyright)+'</p>'+(i.source?'<a href="'+E(i.source)+'" target="_blank" rel="noopener">공식 이미지 출처 ↗</a>':'<p>'+E(i.sourceNote||'')+'</p>')+'</div>').join('');document.title='이미지 출처 — Jnhide';}

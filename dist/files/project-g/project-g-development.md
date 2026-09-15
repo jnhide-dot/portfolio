@@ -1,0 +1,4716 @@
+## 집계 기준
+- 저장소: [ProjectG](https://github.com/ghyourme/ProjectG)
+- 확인 브랜치: `feature/stage_10`
+- 기준 커밋: `983a7aeb66008eddd1c24e581354f44a532480f3`
+- 작성자: Jnhide (Git author 기준)
+- 일반 커밋: 48개
+- 병합 커밋: 19개 (수정 내역에서 별도 분리)
+- 아래 설명은 커밋 메시지 원문이며, 파일 목록은 각 커밋의 실제 변경 내역이다.
+- 커밋 기록은 작업 근거이며 전체 코드의 단독 작성 여부나 현재 버그 해결 상태를 뜻하지 않는다.
+
+## 커밋·수정 내역
+
+### 2026-07-09 · [식] 보스 차징(돌진 준비) 시간 1.2초 → 1.8초
+[커밋 257dfd6 확인](https://github.com/ghyourme/ProjectG/commit/257dfd6f6d63b6566aea8ad3460587c44db04e62)
+
+- `M` · `Assets/03.Prefabs/boss_grandmaster.prefab`
+
+### 2026-07-09 · [식] 피격 VFX 몸중앙 이동 + 상인 콜라이더 빌보드 일치
+[커밋 c9938cb 확인](https://github.com/ghyourme/ProjectG/commit/c9938cbf7419e20f397537a2ac4c0fcce2b59a79)
+
+- `M` · `Assets/02.Scripts/03.Stage/HitEffect.cs`
+- `M` · `Assets/03.Prefabs/Merchant.prefab`
+
+### 2026-07-09 · [식] 콜라이더 빌보드 이전 후 루트 콜라이더 참조 깨짐 수정
+[커밋 ff0bab5 확인](https://github.com/ghyourme/ProjectG/commit/ff0bab5db59a031d7df04a9624db1b99af65c07c)
+
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossStateMachine.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/MonsterDeathState.cs`
+
+### 2026-07-09 · [식] 몬스터/보스 콜라이더가 스프라이트와 함께 눕도록(빌보드 일치) 수정
+[커밋 6e8f1a1 확인](https://github.com/ghyourme/ProjectG/commit/6e8f1a1c35ec4486c8f972e7a15d9387e10d7c06)
+
+- `M` · `Assets/03.Prefabs/boss_grandmaster.prefab`
+- `M` · `Assets/03.Prefabs/normal_archer.prefab`
+- `M` · `Assets/03.Prefabs/normal_knight.prefab`
+- `M` · `Assets/03.Prefabs/normal_wizard.prefab`
+
+### 2026-07-09 · [식] 발밑 그림자가 맵 오브젝트(돌/울타리/상자) 위에 얹히던 문제 수정
+[커밋 a2789b3 확인](https://github.com/ghyourme/ProjectG/commit/a2789b305b380776051010c380f31df206f603cf)
+
+- `M` · `Assets/02.Scripts/03.Stage/BlobShadow.cs`
+
+### 2026-07-08 · [식] 상자방 미믹 퇴출 시 맵 밖 낙하(검은 화면) 수정 (검증 미확정)
+[커밋 0514684 확인](https://github.com/ghyourme/ProjectG/commit/05146846921c4dbe51ce66df2310cfd2bd800f59)
+
+- `M` · `Assets/02.Scripts/03.Stage/ChestRoom.cs`
+
+### 2026-07-07 · [식] 황금마차 타격음 20초 루프 클립 오배정 수정 + 랜덤 원샷
+[커밋 5d4521d 확인](https://github.com/ghyourme/ProjectG/commit/5d4521d86d7a05c9f00d8a5874f97696660e08a8)
+
+- `M` · `Assets/02.Scripts/03.Stage/GoldenWagon.cs`
+- `M` · `Assets/03.Prefabs/GoldenWagon.prefab`
+
+### 2026-07-07 · [식] 일시정지 중 타격음 등 SFX 계속 나오던 문제 수정
+[커밋 259816a 확인](https://github.com/ghyourme/ProjectG/commit/259816aac0f35a955cca6295a90a225d9112c608)
+
+- `M` · `Assets/02.Scripts/01.UI/PauseManager.cs`
+- `M` · `Assets/02.Scripts/AudioManager.cs`
+
+### 2026-07-07 · [식] 보스 돌진 경고가 보스방 카펫에 가려지는 문제 수정
+[커밋 43002cd 확인](https://github.com/ghyourme/ProjectG/commit/43002cd5ade5e9fb82ae214614328e8543bf5196)
+
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossStateMachine.cs`
+
+### 2026-07-07 · [식] 게임→홈 복귀 시 타이틀 화면 재표시 방지
+[커밋 72657fb 확인](https://github.com/ghyourme/ProjectG/commit/72657fb5a24f14be690e9def151ed6a885b27786)
+
+- `M` · `Assets/02.Scripts/01.UI/TitleManager.cs`
+
+### 2026-07-07 · [식] 튜토리얼: 타이틀 닫힌 뒤 시작 + 완료 전 항상 처음부터
+[커밋 152d482 확인](https://github.com/ghyourme/ProjectG/commit/152d482861f51f0e98b9efc74da482c3b3d85ea5)
+
+- `M` · `Assets/02.Scripts/01.UI/ClearUIManager.cs`
+- `M` · `Assets/02.Scripts/01.UI/TitleManager.cs`
+- `M` · `Assets/02.Scripts/02.Scene/TutorialManager.cs`
+- `M` · `Assets/02.Scripts/03.Stage/StageTutorialManager.cs`
+
+### 2026-07-07 · [식] 메인씬 캐릭터 중복 제거 + 스왑 버튼 복구
+[커밋 cf87121 확인](https://github.com/ghyourme/ProjectG/commit/cf87121ad8c449502a90dc12c286dbc349152769)
+
+- `M` · `Assets/01.Scenes/Main.unity`
+
+### 2026-07-06 · [식] 몬스터 시체 타겟 버그 수정 + 공격 중 타겟 사망 시 중단
+[커밋 a1d285f 확인](https://github.com/ghyourme/ProjectG/commit/a1d285f37d6dcd1432cb607b824f9561cd84cec3)
+
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossBashState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossChargingState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossSlashState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossStateMachine.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/MonsterStateMachine.cs`
+
+### 2026-07-06 · [식] 스테이지 배율 계산부 복구 - 병합 유실로 인한 컴파일 에러 수정
+[커밋 cf4cb67 확인](https://github.com/ghyourme/ProjectG/commit/cf4cb6773b1d3d918158cb85bdb53efdc6063f76)
+
+- `M` · `Assets/02.Scripts/03.Stage/MapGen/StageBuilder.cs`
+
+### 2026-07-06 · [식] 스테이지 밸런스 재조정 - 몹 즉사/전멸 해소
+[커밋 288f863 확인](https://github.com/ghyourme/ProjectG/commit/288f8637358d1b096abf30208d2775be69400e5f)
+
+- `M` · `Assets/03.Prefabs/StageBuilder.prefab`
+- `M` · `Assets/10.Data/Monsters/Normal_Archer.asset`
+- `M` · `Assets/10.Data/Monsters/Normal_Monster.asset`
+
+### 2026-07-06 · [식] 스테이지 몹 스폰 마리수 추가 상향
+[커밋 625e6e8 확인](https://github.com/ghyourme/ProjectG/commit/625e6e8a03de94a568b46fcb6ff773a332597aea)
+
+- `M` · `Assets/03.Prefabs/StageBuilder.prefab`
+
+### 2026-07-06 · [식] 스테이지 밸런스 + 영웅 스킬 범위화
+[커밋 39032a4 확인](https://github.com/ghyourme/ProjectG/commit/39032a4cd3430a8129a4c9baf5045f1614d314d5)
+
+- `M` · `Assets/02.Scripts/03.Stage/MapGen/StageBuilder.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/MonsterAttackState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/MonsterStateMachine.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/CombatState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/HeroData.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/PlayerStateMachine.cs`
+- `M` · `Assets/03.Prefabs/StageBuilder.prefab`
+- `M` · `Assets/10.Data/Heroes/Archer.asset`
+- `M` · `Assets/10.Data/Heroes/Warrior.asset`
+- `M` · `Assets/10.Data/Monsters/Normal_Archer.asset`
+- `M` · `Assets/10.Data/Monsters/Normal_Monster.asset`
+
+### 2026-07-03 · [식] 보스 돌진 데미지 상향 1800 → 4000
+[커밋 abaef47 확인](https://github.com/ghyourme/ProjectG/commit/abaef47e4994e20f5f5465064e96e4c547038d3a)
+
+- `M` · `Assets/03.Prefabs/boss_grandmaster.prefab`
+
+### 2026-07-03 · [식] 보스 공격 데미지 미적용 버그 수정
+[커밋 4fb578b 확인](https://github.com/ghyourme/ProjectG/commit/4fb578bfdd93ade3826d7abc7ebf60601df9fd63)
+
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossStateMachine.cs`
+
+### 2026-07-03 · [식] 추적 시 NavMesh 경로탐색 도입 (벽·상자 우회)
+[커밋 692c266 확인](https://github.com/ghyourme/ProjectG/commit/692c266079d7ca23cbc3c611cf3c5bffc0959007)
+
+- `M` · `Assets/02.Scripts/03.Stage/MapGen/StageBuilder.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/MonsterChasingState.cs`
+- `A` · `Assets/02.Scripts/03.Stage/NavPathFollower.cs`
+- `A` · `Assets/02.Scripts/03.Stage/NavPathFollower.cs.meta`
+- `M` · `Assets/02.Scripts/03.Stage/Player/CombatState.cs`
+- `M` · `Assets/03.Prefabs/Chest.prefab`
+
+### 2026-07-03 · [식] 유실분 복구 — 스프라이트 오프셋 콜라이더 보정 + Warrior moveOffset -2.3 + 힐러 이동 스프라이트 교체
+[커밋 fbaad6b 확인](https://github.com/ghyourme/ProjectG/commit/fbaad6b7b2a1743aba4d00f6f31f89db0cbc1e65)
+
+- `M` · `Assets/02.Scripts/03.Stage/Player/SpriteSheetAnimator.cs`
+- `M` · `Assets/03.Prefabs/Warrior.prefab`
+- `M` · `Assets/04.Images/Healer/Healer_move.png`
+
+### 2026-07-03 · [식] 보스 밸런스 강화 + 배시 속박→슬로우 + 영웅 콜라이더 원복
+[커밋 891bf79 확인](https://github.com/ghyourme/ProjectG/commit/891bf79e1950af7351dbd232b5c2ffffe69841d2)
+
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossChargingState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossStateMachine.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/PlayerStateMachine.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/StatusEffect.cs`
+- `M` · `Assets/03.Prefabs/Archer.prefab`
+- `M` · `Assets/03.Prefabs/Healer.prefab`
+- `M` · `Assets/03.Prefabs/Warrior.prefab`
+- `M` · `Assets/03.Prefabs/boss_grandmaster.prefab`
+- `M` · `Assets/10.Data/Heroes/Archer.asset`
+
+### 2026-07-03 · [식] 데미지 숫자 위치 수정 — 화면 기준 위(camera.up)로 머리 위 표시
+[커밋 4ee4d45 확인](https://github.com/ghyourme/ProjectG/commit/4ee4d45b6e63feda713f3e91aaa980070ecf5e72)
+
+- `M` · `Assets/02.Scripts/03.Stage/DamageNumberManager.cs`
+
+### 2026-07-03 · [식] 피격 데미지 숫자 표시 구현
+[커밋 c6bff22 확인](https://github.com/ghyourme/ProjectG/commit/c6bff22cd8bb546a9b9151a63e93f1161a7f9d8e)
+
+- `A` · `Assets/02.Scripts/03.Stage/DamageNumber.cs`
+- `A` · `Assets/02.Scripts/03.Stage/DamageNumber.cs.meta`
+- `A` · `Assets/02.Scripts/03.Stage/DamageNumberManager.cs`
+- `A` · `Assets/02.Scripts/03.Stage/DamageNumberManager.cs.meta`
+- `M` · `Assets/02.Scripts/03.Stage/Player/Health.cs`
+
+### 2026-07-02 · [식] 황금마차 프리팹 복원 (힐러 두 명 버그 수정)
+[커밋 cc92572 확인](https://github.com/ghyourme/ProjectG/commit/cc92572bab3cabc01b2f3841850ba2dd4f8d3301)
+
+- `M` · `Assets/03.Prefabs/GoldenWagon.prefab`
+
+### 2026-07-02 · [식] Warrior 이동 스프라이트 높이 미세조정 (moveOffset -2 → -2.2)
+[커밋 0ff6bb8 확인](https://github.com/ghyourme/ProjectG/commit/0ff6bb8def78a3bd93d8d18852dcb20718c127d6)
+
+- `M` · `Assets/03.Prefabs/Warrior.prefab`
+
+### 2026-07-02 · [식] 영웅 콜라이더 Sprite→루트 이동 + Warrior 이동 스프라이트 높이 보정
+[커밋 33fe0ff 확인](https://github.com/ghyourme/ProjectG/commit/33fe0ffa3a5e658ca2ccc53e39b69e25795c7bf1)
+
+- `M` · `Assets/03.Prefabs/Archer.prefab`
+- `M` · `Assets/03.Prefabs/Healer.prefab`
+- `M` · `Assets/03.Prefabs/Warrior.prefab`
+
+### 2026-07-02 · [식] 벽 관통·몬스터 상자 무한추적 수정 + 테스트 잔재 제거
+[커밋 b62c1c9 확인](https://github.com/ghyourme/ProjectG/commit/b62c1c90583862baaa0bcc7e98b64b32c08f0be9)
+
+- `M` · `Assets/01.Scenes/Stage.unity`
+- `M` · `Assets/02.Scripts/03.Stage/Player/PartyManager.cs`
+- `M` · `Assets/03.Prefabs/Archer.prefab`
+- `M` · `Assets/03.Prefabs/Healer.prefab`
+- `M` · `Assets/03.Prefabs/Warrior.prefab`
+
+### 2026-07-01 · [식]종합버그 1차수정
+[커밋 523ddc2 확인](https://github.com/ghyourme/ProjectG/commit/523ddc2e362d170209d1e9fb8da0cd144fd4e07d)
+
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossIdleState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossStateMachine.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/MonsterStateMachine.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/CombatState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/GatherState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/PartyManager.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/PlayerStateMachine.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/SpriteSheetAnimator.cs`
+- `M` · `Assets/02.Scripts/CombatUtil.cs`
+- `M` · `Assets/03.Prefabs/Archer.prefab`
+- `M` · `Assets/03.Prefabs/Chest.prefab`
+- `M` · `Assets/03.Prefabs/GoldenWagon.prefab`
+- `M` · `Assets/03.Prefabs/Healer.prefab`
+- `M` · `Assets/03.Prefabs/Warrior.prefab`
+
+### 2026-07-01 · [식] 이동 적 포탈 상자생성 로직/ 황금마차 로직 등 수정
+[커밋 224bb60 확인](https://github.com/ghyourme/ProjectG/commit/224bb6089b75ade125b0ee6fa7bc4f605d8c6c2f)
+
+- `M` · `Assets/01.Scenes/Stage.unity`
+- `M` · `Assets/02.Scripts/03.Stage/ChestObject.cs`
+- `M` · `Assets/02.Scripts/03.Stage/GoldenWagon.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/FollowState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/PartyManager.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/PlayerStateMachine.cs`
+- `M` · `Assets/03.Prefabs/Archer.prefab`
+- `M` · `Assets/03.Prefabs/Chest.prefab`
+- `M` · `Assets/03.Prefabs/GoldenWagon.prefab`
+- `M` · `Assets/03.Prefabs/Healer.prefab`
+- `M` · `Assets/03.Prefabs/Merchant.prefab`
+- `M` · `Assets/03.Prefabs/Rooms/Room_Boss.prefab`
+- `M` · `Assets/03.Prefabs/Rooms/Room_ChestRoom.prefab`
+- `M` · `Assets/03.Prefabs/Rooms/Room_Generic_Boss.prefab`
+- `M` · `Assets/03.Prefabs/Rooms/Room_Generic_Normal.prefab`
+- `M` · `Assets/03.Prefabs/Rooms/Room_Generic_Special.prefab`
+- `M` · `Assets/03.Prefabs/Rooms/Room_Generic_Start.prefab`
+- `M` · `Assets/03.Prefabs/Rooms/Room_GoldenMerchant.prefab`
+- `M` · `Assets/03.Prefabs/Rooms/Room_Normal1.prefab`
+- `M` · `Assets/03.Prefabs/Rooms/Room_Normal2.prefab`
+- `M` · `Assets/03.Prefabs/Rooms/Room_Normal3.prefab`
+- `M` · `Assets/03.Prefabs/Rooms/Room_Start.prefab`
+- `M` · `Assets/03.Prefabs/Scene/Player.prefab`
+- `M` · `Assets/03.Prefabs/Warrior.prefab`
+- `M` · `Assets/03.Prefabs/boss_grandmaster.prefab`
+- `M` · `Assets/03.Prefabs/normal_archer.prefab`
+- `M` · `Assets/03.Prefabs/normal_knight.prefab`
+- `M` · `Assets/03.Prefabs/normal_wizard.prefab`
+- `M` · `Assets/10.Data/Heroes/Warrior.asset`
+- `M` · `ProjectSettings/DynamicsManager.asset`
+
+### 2026-07-01 · [식] 1차 워리어 공격 버그 수정
+[커밋 f61d064 확인](https://github.com/ghyourme/ProjectG/commit/f61d064287ff9e70e3605851c4013e23c3883072)
+
+- `M` · `Assets/02.Scripts/03.Stage/Player/PlayerStateMachine.cs`
+- `A` · `Assets/03.Prefabs/PlayerNoFriction.physicsMaterial`
+- `A` · `Assets/03.Prefabs/PlayerNoFriction.physicsMaterial.meta`
+
+### 2026-07-01 · [식] 상자 콜라이더 수정
+[커밋 cfb21df 확인](https://github.com/ghyourme/ProjectG/commit/cfb21df862243c7ba34a68ea741f6888c6073f8d)
+
+- `M` · `Assets/03.Prefabs/Chest.prefab`
+
+### 2026-07-01 · [식]그림자 툴 수정
+[커밋 30fd182 확인](https://github.com/ghyourme/ProjectG/commit/30fd182bf2ff0fe992c22fe576fe06a44052e79c)
+
+- `M` · `Assets/02.Scripts/03.Stage/BlobShadow.cs`
+- `M` · `Assets/03.Prefabs/Archer.prefab`
+- `M` · `Assets/03.Prefabs/Healer.prefab`
+- `M` · `Assets/03.Prefabs/Warrior.prefab`
+
+### 2026-07-01 · [식] 마법사 궁수 경비병 콜라이더 수정
+[커밋 5881009 확인](https://github.com/ghyourme/ProjectG/commit/5881009c55f5d2a4e327e8df4e81b33c4e7e8b9d)
+
+- `M` · `Assets/03.Prefabs/normal_archer.prefab`
+- `M` · `Assets/03.Prefabs/normal_knight.prefab`
+- `M` · `Assets/03.Prefabs/normal_wizard.prefab`
+
+### 2026-07-01 · [식]그림자 수정 툴 / 파티 맵이동 불가 버그 수정 / 캐릭터 콜라이더 수정
+[커밋 ed6e29e 확인](https://github.com/ghyourme/ProjectG/commit/ed6e29e5da19406497a478fe90f13c5dc434bd5f)
+
+- `M` · `Assets/01.Scenes/Stage.unity`
+- `M` · `Assets/02.Scripts/03.Stage/BlobShadow.cs`
+- `M` · `Assets/02.Scripts/03.Stage/FinalDoor.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Portal.cs`
+- `M` · `Assets/03.Prefabs/Archer.prefab`
+- `M` · `Assets/03.Prefabs/Healer.prefab`
+- `M` · `Assets/03.Prefabs/Warrior.prefab`
+
+### 2026-07-01 · [식] 보스 상인 프리팹 콜라이더 수정
+[커밋 3550c87 확인](https://github.com/ghyourme/ProjectG/commit/3550c8786e502f65b8b1ec115068f149cddd607f)
+
+- `M` · `Assets/01.Scenes/Stage.unity`
+- `M` · `Assets/03.Prefabs/Merchant.prefab`
+- `M` · `Assets/03.Prefabs/boss_grandmaster.prefab`
+- `M` · `Assets/03.Prefabs/normal_wizard.prefab`
+
+### 2026-06-30 · [식]캐릭터 콜라이더 수정 및 워리어 idle수정
+[커밋 ab1667c 확인](https://github.com/ghyourme/ProjectG/commit/ab1667c2f722e000f1572421ba817f15b586020e)
+
+- `M` · `Assets/01.Scenes/Stage.unity`
+- `M` · `Assets/02.Scripts/03.Stage/Player/PlayerAnimator.cs`
+- `M` · `Assets/03.Prefabs/Archer.prefab`
+- `M` · `Assets/03.Prefabs/Healer.prefab`
+- `M` · `Assets/03.Prefabs/Warrior.prefab`
+- `M` · `Assets/04.Images/Alice/Alice_idle.png`
+- `M` · `Assets/04.Images/Alice/Alice_idle.png.meta`
+- `M` · `Assets/04.Images/Alice/Alice_move.png.meta`
+- `A` · `"Assets/04.Images/Alice/\354\240\234\353\252\251 \354\227\206\354\235\214 - 2026\353\205\204 6\354\233\224 30\354\235\274 19.50.34.png"`
+- `A` · `"Assets/04.Images/Alice/\354\240\234\353\252\251 \354\227\206\354\235\214 - 2026\353\205\204 6\354\233\224 30\354\235\274 19.50.34.png.meta"`
+
+### 2026-06-30 · [식]콜라이더 및 리지드 바디 교체
+[커밋 91f4e6b 확인](https://github.com/ghyourme/ProjectG/commit/91f4e6befe4d54cd08d918ee09c87e5e7a05d73c)
+
+- `M` · `Assets/01.Scenes/Stage.unity`
+- `M` · `Assets/02.Scripts/01.UI/ClearUIManager.cs`
+- `M` · `Assets/02.Scripts/01.UI/PartyPortraitUI.cs`
+- `M` · `Assets/02.Scripts/01.UI/PauseManager.cs`
+- `M` · `Assets/02.Scripts/01.UI/ReviveTimerManager.cs`
+- `A` · `Assets/02.Scripts/03.Stage/BlobShadow.cs`
+- `A` · `Assets/02.Scripts/03.Stage/BlobShadow.cs.meta`
+- `M` · `Assets/02.Scripts/03.Stage/ChestRoom.cs`
+- `M` · `Assets/02.Scripts/03.Stage/FinalDoor.cs`
+- `M` · `Assets/02.Scripts/03.Stage/GoldenMerchantRoom.cs`
+- `M` · `Assets/02.Scripts/03.Stage/GoldenWagonRoom.cs`
+- `M` · `Assets/02.Scripts/03.Stage/MapGen/StageBuilder.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossChargeRushingState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossDeathState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossStateMachine.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/MonsterDeathState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/MonsterStateMachine.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/DeathState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/HealthBar.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/PartyManager.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/PartySeparation.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/PlayerStateMachine.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/Projectile.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/SpriteSheetAnimator.cs`
+- `M` · `Assets/02.Scripts/03.Stage/PlayerMovement.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Portal.cs`
+- `M` · `Assets/02.Scripts/03.Stage/StageManager.cs`
+- `M` · `Assets/02.Scripts/03.Stage/UnitSeparation.cs`
+- `M` · `Assets/03.Prefabs/Archer.prefab`
+- `M` · `Assets/03.Prefabs/Chest.prefab`
+- `M` · `Assets/03.Prefabs/Healer.prefab`
+- `M` · `Assets/03.Prefabs/Rooms/Room_Boss.prefab`
+- `M` · `Assets/03.Prefabs/Rooms/Room_Normal1.prefab`
+- `M` · `Assets/03.Prefabs/Rooms/Room_Normal2.prefab`
+- `M` · `Assets/03.Prefabs/Rooms/Room_Normal3.prefab`
+- `M` · `Assets/03.Prefabs/Rooms/Room_Start.prefab`
+- `M` · `Assets/03.Prefabs/Warrior.prefab`
+- `M` · `Assets/03.Prefabs/boss_grandmaster.prefab`
+- `M` · `Assets/03.Prefabs/normal_archer.prefab`
+- `M` · `Assets/03.Prefabs/normal_knight.prefab`
+- `M` · `Assets/03.Prefabs/normal_wizard.prefab`
+- `M` · `Assets/04.Images/Alice/Alice_idle.png.meta`
+- `M` · `Assets/04.Images/Archer/Archer_combat.png.meta`
+- `M` · `Assets/04.Images/Healer/Healer_combat.png.meta`
+- `M` · `Assets/04.Images/normal_archer/normal_archer_idle.png.meta`
+- `M` · `Assets/04.Images/normal_knight/normal_knight_idle.png.meta`
+- `M` · `Assets/04.Images/normal_wizard/normal_wizard_idle.png.meta`
+- `M` · `Assets/TextMesh Pro/Resources/Fonts & Materials/Galmuri9 SDF.asset`
+
+### 2026-06-29 · [식]스테이지 생성에 따른 몬스터 생성 오류 및 플레이어 타겟팅 오류 수정
+[커밋 85b8d6a 확인](https://github.com/ghyourme/ProjectG/commit/85b8d6aff37e5699c6f0b5f5907d83c8621cb0b2)
+
+- `M` · `Assets/01.Scenes/Stage.unity`
+- `M` · `Assets/02.Scripts/03.Stage/Room.cs`
+- `M` · `Assets/03.Prefabs/Archer.prefab`
+- `M` · `Assets/03.Prefabs/Healer.prefab`
+- `M` · `Assets/03.Prefabs/Warrior.prefab`
+- `M` · `Assets/03.Prefabs/boss_grandmaster.prefab`
+- `M` · `Assets/03.Prefabs/normal_archer.prefab`
+- `M` · `Assets/03.Prefabs/normal_knight.prefab`
+- `M` · `Assets/03.Prefabs/normal_wizard.prefab`
+- `M` · `Assets/TextMesh Pro/Resources/Fonts & Materials/Galmuri9 SDF.asset`
+- `M` · `ProjectSettings/TagManager.asset`
+
+### 2026-06-29 · [식] 상인 애니메이션 테스트 데이터 삭제
+[커밋 ba8d005 확인](https://github.com/ghyourme/ProjectG/commit/ba8d005df4531ed00b9b60a0a1f82f87c2e1cb36)
+
+- `D` · `Assets/02.Scripts/03.Stage/MerchantDeathTest.cs`
+- `D` · `Assets/02.Scripts/03.Stage/MerchantDeathTest.cs.meta`
+
+### 2026-06-29 · [식]상인 사망모션 추가
+[커밋 50023ef 확인](https://github.com/ghyourme/ProjectG/commit/50023ef96bf8fbfa6ca9ad011dc6a96aa3a94e02)
+
+- `M` · `Assets/02.Scripts/03.Stage/MerchantAI.cs`
+- `A` · `Assets/02.Scripts/03.Stage/MerchantDeathTest.cs`
+- `A` · `Assets/02.Scripts/03.Stage/MerchantDeathTest.cs.meta`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/MonsterStateMachine.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/Projectile.cs`
+- `M` · `Assets/02.Scripts/CombatUtil.cs`
+- `M` · `Assets/03.Prefabs/Merchant.prefab`
+- `M` · `Assets/TextMesh Pro/Resources/Fonts & Materials/Galmuri9 SDF.asset`
+
+### 2026-06-29 · [식]타겟팅 판정개선
+[커밋 f9c74e9 확인](https://github.com/ghyourme/ProjectG/commit/f9c74e9c4cfb7a034650c01704ad191eb171bec6)
+
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossStateMachine.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/MonsterAttackState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/MonsterChasingState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/MonsterStateMachine.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/CombatState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/PlayerStateMachine.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/Projectile.cs`
+- `A` · `Assets/02.Scripts/CombatUtil.cs`
+- `A` · `Assets/02.Scripts/CombatUtil.cs.meta`
+- `M` · `Assets/TextMesh Pro/Resources/Fonts & Materials/Galmuri9 SDF.asset`
+- `M` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Materials/M_VFX_Respawn_01_Mask.mat`
+- `M` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Materials/M_VFX_Respawn_02_Mask.mat`
+- `M` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Materials/M_VFX_Shield_01_Color.mat`
+- `M` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Materials/M_VFX_Shield_01_Mask.mat`
+- `M` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Materials/M_VFX_Sword_Slash_03_Mask.mat`
+
+### 2026-06-25 · [식]보스 FSM 수정
+[커밋 6105911 확인](https://github.com/ghyourme/ProjectG/commit/61059116f3638d49b734e66040d4dda0c9d18c81)
+
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossBashState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossChargeRushingState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossChargingState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossIdleState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossSlashState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossStateMachine.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/SpriteSheetAnimator.cs`
+- `M` · `Assets/03.Prefabs/boss_grandmaster.prefab`
+- `A` · `Assets/04.Images/boss_grandmaster/blit_203ef3b1_motion_master.png`
+- `A` · `Assets/04.Images/boss_grandmaster/blit_203ef3b1_motion_master.png.meta`
+- `M` · `Assets/04.Images/boss_grandmaster/boss_grandmaster_combat.png.meta`
+- `M` · `Assets/04.Images/boss_grandmaster/boss_grandmaster_idle.png.meta`
+- `M` · `Assets/04.Images/boss_grandmaster/boss_grandmaster_skill1.2.png.meta`
+- `M` · `Assets/04.Images/boss_grandmaster/boss_grandmaster_skill2.png.meta`
+- `M` · `Assets/TextMesh Pro/Resources/Fonts & Materials/Galmuri9 SDF.asset`
+
+### 2026-06-25 · [식] 로비 챕터 스테이지 수정
+[커밋 d3741d9 확인](https://github.com/ghyourme/ProjectG/commit/d3741d9acf795fb57b2948121b62b8c88d9aff79)
+
+- `M` · `Assets/01.Scenes/Main.unity`
+
+### 2026-06-25 · [식]보스 fsm 수정
+[커밋 4f34e76 확인](https://github.com/ghyourme/ProjectG/commit/4f34e76c3f57a994b1b0356e1c43b3fc81ad27b6)
+
+- `A` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossAnimator.cs`
+- `A` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossAnimator.cs.meta`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossBashState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossChargeRushingState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossChargingState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossDeathState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossIdleState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossSlashState.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossStateMachine.cs`
+- `M` · `Assets/02.Scripts/03.Stage/Player/SpriteSheetAnimator.cs`
+
+### 2026-06-25 · [식] 로비 -> 챕터 -> 스테이지 -> 전투
+[커밋 7087d43 확인](https://github.com/ghyourme/ProjectG/commit/7087d4331e6bdd56b298159e7f50f8a8b98c846a)
+
+- `M` · `Assets/01.Scenes/Main.unity`
+- `A` · `Assets/02.Scripts/02.Scene/ChapterSelectController.cs`
+- `A` · `Assets/02.Scripts/02.Scene/ChapterSelectController.cs.meta`
+- `A` · `Assets/02.Scripts/02.Scene/GameData.cs`
+- `A` · `Assets/02.Scripts/02.Scene/GameData.cs.meta`
+- `A` · `Assets/02.Scripts/02.Scene/MainUIManager.cs`
+- `A` · `Assets/02.Scripts/02.Scene/MainUIManager.cs.meta`
+- `A` · `Assets/02.Scripts/02.Scene/PlayMenuController.cs`
+- `A` · `Assets/02.Scripts/02.Scene/PlayMenuController.cs.meta`
+- `A` · `Assets/02.Scripts/02.Scene/StageSelectController.cs`
+- `A` · `Assets/02.Scripts/02.Scene/StageSelectController.cs.meta`
+- `M` · `Assets/TextMesh Pro/Resources/Fonts & Materials/Galmuri9 SDF.asset`
+
+### 2026-06-24 · [식] 보스fsm 추가
+[커밋 cd4cc84 확인](https://github.com/ghyourme/ProjectG/commit/cd4cc848f88b881dd9d437e9365ad565b33c177f)
+
+- `A` · `Assets/02.Scripts/03.Stage/Monster/Boss.meta`
+- `A` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossBashState.cs`
+- `A` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossBashState.cs.meta`
+- `A` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossChargeRushingState.cs`
+- `A` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossChargeRushingState.cs.meta`
+- `A` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossChargingState.cs`
+- `A` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossChargingState.cs.meta`
+- `A` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossDeathState.cs`
+- `A` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossDeathState.cs.meta`
+- `A` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossIdleState.cs`
+- `A` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossIdleState.cs.meta`
+- `A` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossSlashState.cs`
+- `A` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossSlashState.cs.meta`
+- `A` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossStateMachine.cs`
+- `A` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossStateMachine.cs.meta`
+- `A` · `Assets/02.Scripts/03.Stage/Monster/Boss/IBossState.cs`
+- `A` · `Assets/02.Scripts/03.Stage/Monster/Boss/IBossState.cs.meta`
+- `M` · `Assets/03.Prefabs/boss_grandmaster.prefab`
+
+### 2026-06-18 · [식]VFX업데이트
+[커밋 d0ea9ae 확인](https://github.com/ghyourme/ProjectG/commit/d0ea9aea933e9edc3f57dea67e79cd9ec8a397c1)
+
+- `A` · `Assets/Vefects.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Extra Hits.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Extra Hits/SFX_Vefects_Hit_10.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Extra Hits/SFX_Vefects_Hit_10.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Extra Hits/SFX_Vefects_Hit_11.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Extra Hits/SFX_Vefects_Hit_11.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Extra Hits/SFX_Vefects_Hit_12.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Extra Hits/SFX_Vefects_Hit_12.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Extra Hits/SFX_Vefects_Hit_13.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Extra Hits/SFX_Vefects_Hit_13.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Extra Hits/SFX_Vefects_Hit_14.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Extra Hits/SFX_Vefects_Hit_14.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Extra Hits/SFX_Vefects_Hit_15.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Extra Hits/SFX_Vefects_Hit_15.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop 2.0.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop 2.0/SFX_Vefects_Directional_Dust_Loop_03.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop 2.0/SFX_Vefects_Directional_Dust_Loop_03.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop 2.0/SFX_Vefects_Directional_Dust_Loop_04.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop 2.0/SFX_Vefects_Directional_Dust_Loop_04.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop 2.0/SFX_Vefects_Hit_Loop_04.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop 2.0/SFX_Vefects_Hit_Loop_04.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop 2.0/SFX_Vefects_Hit_Loop_05.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop 2.0/SFX_Vefects_Hit_Loop_05.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop 2.0/SFX_Vefects_Hit_Loop_06.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop 2.0/SFX_Vefects_Hit_Loop_06.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop 2.0/SFX_Vefects_Lightning_Projectile_Loop_02.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop 2.0/SFX_Vefects_Lightning_Projectile_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop/SFX_Vefects_Directional_Dust_Loop_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop/SFX_Vefects_Directional_Dust_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop/SFX_Vefects_Directional_Dust_Loop_02.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop/SFX_Vefects_Directional_Dust_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop/SFX_Vefects_Electric_Discharge_Loop_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop/SFX_Vefects_Electric_Discharge_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop/SFX_Vefects_Electric_Discharge_Loop_02.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop/SFX_Vefects_Electric_Discharge_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop/SFX_Vefects_Electric_Loop_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop/SFX_Vefects_Electric_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop/SFX_Vefects_Hit_Loop_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop/SFX_Vefects_Hit_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop/SFX_Vefects_Hit_Loop_02.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop/SFX_Vefects_Hit_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop/SFX_Vefects_Hit_Loop_03.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop/SFX_Vefects_Hit_Loop_03.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop/SFX_Vefects_Lightning_Projectile_Loop_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/Loop/SFX_Vefects_Lightning_Projectile_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Block_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Block_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Directional_Dust_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Directional_Dust_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Directional_Dust_02.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Directional_Dust_02.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Directional_Dust_03.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Directional_Dust_03.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Directional_Dust_03_fast.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Directional_Dust_03_fast.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Directional_Dust_04.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Directional_Dust_04.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Directional_Dust_05.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Directional_Dust_05.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Directional_Dust_06.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Directional_Dust_06.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Electric_Discharge_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Electric_Discharge_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Electric_Discharge_02.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Electric_Discharge_02.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Electric_Impact_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Electric_Impact_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Electric_Impact_02.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Electric_Impact_02.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Explosion_01_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Explosion_01_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Explosion_01_02.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Explosion_01_02.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Explosion_02_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Explosion_02_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Explosion_02_02.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Explosion_02_02.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Hit_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Hit_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Hit_02.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Hit_02.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Hit_03.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Hit_03.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Hit_04.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Hit_04.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Hit_05.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Hit_05.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Hit_06.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Hit_06.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Hit_07.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Hit_07.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Hit_08.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Hit_08.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Hit_09.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Hit_09.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Jump_Dust_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Jump_Dust_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Radial_Burst_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Radial_Burst_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Radial_Charge_Skill_Ready_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Radial_Charge_Skill_Ready_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Radial_Spiky_Hit_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Fer/One_Shot/SFX_Vefects_Radial_Spiky_Hit_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Block_One_Shot_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Block_One_Shot_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Directional_Dust_01_One_Shot_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Directional_Dust_01_One_Shot_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Directional_Dust_02_One_Shot_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Directional_Dust_02_One_Shot_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Directional_Dust_03_Fast_One_Shot_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Directional_Dust_03_Fast_One_Shot_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Directional_Dust_03_One_Shot_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Directional_Dust_03_One_Shot_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Directional_Dust_04_One_Shot_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Directional_Dust_04_One_Shot_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Directional_Dust_05_One_Shot_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Directional_Dust_05_One_Shot_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Directional_Dust_06_One_Shot_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Directional_Dust_06_One_Shot_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Directional_Dust_Loop_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Directional_Dust_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Directional_Dust_Loop_02.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Directional_Dust_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Electric_Discharge_01_One_Shot_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Electric_Discharge_01_One_Shot_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Electric_Discharge_02_Loop.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Electric_Discharge_02_Loop.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Electric_Discharge_02_One_Shot_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Electric_Discharge_02_One_Shot_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Electric_Discharge_Loop_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Electric_Discharge_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Electric_Impact_01_One_Shot_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Electric_Impact_01_One_Shot_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Electric_Impact_02_One_Shot_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Electric_Impact_02_One_Shot_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Explosion_01_One_Shot_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Explosion_01_One_Shot_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Explosion_01_One_Shot_02.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Explosion_01_One_Shot_02.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Explosion_02_One_Shot_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Explosion_02_One_Shot_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Explosion_02_One_Shot_02.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Explosion_02_One_Shot_02.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_01_One_Shot.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_01_One_Shot.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_02_One_Shot.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_02_One_Shot.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_03_One_Shot.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_03_One_Shot.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_04_One_Shot.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_04_One_Shot.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_05_Loop_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_05_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_05_Loop_02.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_05_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_05_One_Shot.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_05_One_Shot.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_06_Loop_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_06_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_06_Loop_02.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_06_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_06_One_Shot.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_06_One_Shot.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_07_Loop_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_07_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_07_Loop_02.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_07_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_07_One_Shot.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_07_One_Shot.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_08_One_Shot.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_08_One_Shot.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_10_One_Shot.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_10_One_Shot.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_11_One_Shot.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_11_One_Shot.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_Full_Loop_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Hit_Full_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Jump_Dust_01_One_Shot_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Jump_Dust_01_One_Shot_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Lighting_Projectile_01_Loop_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Lighting_Projectile_01_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Lighting_Projectile_02_Loop.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Lighting_Projectile_02_Loop.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Radial_Burst_One_Shot_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Radial_Burst_One_Shot_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Radial_Burst_One_Shot_02.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Radial_Burst_One_Shot_02.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Radial_Charge_Skill_Ready_One_Shot_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Radial_Charge_Skill_Ready_One_Shot_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Radial_Spilky_Hit_One_Shot_01.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Radial_Spilky_Hit_One_Shot_01.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Radial_Spilky_Hit_One_Shot_02.wav`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Audio/WAV/Sergi/SFX_Vefects_Radial_Spilky_Hit_One_Shot_02.wav.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Animation.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Animation/VFX_Anim.anim`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Animation/VFX_Anim.anim.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Animation/VFX_Anim_Close.anim`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Animation/VFX_Anim_Close.anim.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Animation/VFX_Anim_Close_Slow.anim`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Animation/VFX_Anim_Close_Slow.anim.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Animation/_ Cam 03.controller`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Animation/_ Cam 03.controller.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Animation/_ Cam 1.controller`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Animation/_ Cam 1.controller.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Animation/_ Cam.controller`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Animation/_ Cam.controller.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Materials.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Materials/M_VFX_Character_Showoff_01.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Materials/M_VFX_Character_Showoff_01.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Meshes.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Meshes/SM_Vefects_Vexa_Unity_01.fbx`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Meshes/SM_Vefects_Vexa_Unity_01.fbx.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Meshes/SM_Vefects_Vexa_Unity_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Meshes/SM_Vefects_Vexa_Unity_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Prefabs.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Prefabs/_ VFX Close.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Prefabs/_ VFX Close.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Prefabs/_ VFX Vid.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Prefabs/_ VFX Vid.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Prefabs/_ VFX.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Prefabs/_ VFX.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Shaders.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Shaders/SH_Vefects_BIRP_VFX_Character_Showoff.shader`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Shaders/SH_Vefects_BIRP_VFX_Character_Showoff.shader.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Textures.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Textures/T_VFX_Perlin_2_Octaves_Equalized.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Resources/Textures/T_VFX_Perlin_2_Octaves_Equalized.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Materials.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Materials/M_Grid.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Materials/M_Grid.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Materials/M_Sky.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Materials/M_Sky.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Meshes.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Meshes/SM_VFX_Background_Plate_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Meshes/SM_VFX_Background_Plate_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Meshes/SM_VFX_Background_Plate_Flat_01.fbx`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Meshes/SM_VFX_Background_Plate_Flat_01.fbx.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Settings.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Settings/PostProProfileCombat.asset`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Settings/PostProProfileCombat.asset.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Shaders.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Shaders/SH_Vefects_Grid_01_BIRP.shader`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Shaders/SH_Vefects_Grid_01_BIRP.shader.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Textures.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Textures/T_VFX_Grid_01_Masks.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Textures/T_VFX_Grid_01_Masks.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Textures/T_VFX_Grid_01_Normal.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Textures/T_VFX_Grid_01_Normal.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Textures/T_VFX_Grid_01_Texture.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Textures/T_VFX_Grid_01_Texture.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Textures/T_VFX_Metrics_Grid_Base_Color.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Scene/Textures/T_VFX_Metrics_Grid_Base_Color.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Vefects Combat Flipbook VFX Vid Close.unity`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Vefects Combat Flipbook VFX Vid Close.unity.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Vefects Combat Flipbook VFX Vid.unity`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Vefects Combat Flipbook VFX Vid.unity.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Vefects Combat Flipbook VFX.unity`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Demo/Vefects Combat Flipbook VFX.unity.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Shared.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Shared/Shaders.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Shared/Shaders/SH_Vefects_BIRP_Unlit_Combat_Flipbook_Advanced_01.shader`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Shared/Shaders/SH_Vefects_BIRP_Unlit_Combat_Flipbook_Advanced_01.shader.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Shared/Textures.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Shared/Textures/T_VFX_Cone_01.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Shared/Textures/T_VFX_Cone_01.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Shared/Textures/T_VFX_Noise_Gaussian_01.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Shared/Textures/T_VFX_Noise_Gaussian_01.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Shared/Textures/T_VFX_Noise_Gaussian_01_Normal.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Shared/Textures/T_VFX_Noise_Gaussian_01_Normal.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Shared/Textures/T_VFX_Noise_Perlin_01.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Shared/Textures/T_VFX_Noise_Perlin_01.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Shared/Textures/T_VFX_Noise_Perlin_01_Normal.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Shared/Textures/T_VFX_Noise_Perlin_01_Normal.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Shared/Textures/T_VFX_Pixel_Erosion_01.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/Shared/Textures/T_VFX_Pixel_Erosion_01.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_01.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_01.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_01_Directional.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_01_Directional.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_01_Directional_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_01_Directional_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_01_Directional_GS_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_01_Directional_GS_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_01_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_01_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_02_Directional.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_02_Directional.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_02_Directional_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_02_Directional_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_02_Directional_GS_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_02_Directional_GS_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_02_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_02_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_03.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_03.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_03_Fast.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_03_Fast.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_03_Fast_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_03_Fast_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_03_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_03_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_04.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_04.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_04_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_04_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_05.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_05.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_05_Directional.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_05_Directional.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_05_Directional_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_05_Directional_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_05_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_05_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_06.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_06.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_06_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Dust_06_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Jump_Dust_01.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Jump_Dust_01.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Jump_Dust_01_Directional.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Jump_Dust_01_Directional.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Jump_Dust_01_Directional_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Jump_Dust_01_Directional_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Jump_Dust_01_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Materials/M_VFX_Jump_Dust_01_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Directional_01_Billboard_Bunch_Loop_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Directional_01_Billboard_Bunch_Loop_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Directional_01_GS_Billboard_Bunch_Loop_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Directional_01_GS_Billboard_Bunch_Loop_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Directional_01_GS_Billboard_Bunch_Loop_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Directional_01_GS_Billboard_Bunch_Loop_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Directional_01_GS_Billboard_Bunch_Loop_03.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Directional_01_GS_Billboard_Bunch_Loop_03.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Directional_Vertical_Billboard_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Directional_Vertical_Billboard_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Directional_Vertical_Billboard_Loop_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Directional_Vertical_Billboard_Loop_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Pivot_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Pivot_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Pivot_Loop_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Pivot_Loop_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_02_Directional_01_Billboard_Bunch_Loop_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_02_Directional_01_Billboard_Bunch_Loop_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_02_Directional_01_GS_Billboard_Bunch_Loop_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_02_Directional_01_GS_Billboard_Bunch_Loop_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_02_Directional_01_GS_Billboard_Bunch_Loop_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_02_Directional_01_GS_Billboard_Bunch_Loop_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_02_Directional_01_GS_Billboard_Bunch_Loop_03.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_02_Directional_01_GS_Billboard_Bunch_Loop_03.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_02_Directional_Vertical_Billboard_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_02_Directional_Vertical_Billboard_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_02_Directional_Vertical_Billboard_Loop_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_02_Directional_Vertical_Billboard_Loop_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_02_Pivot_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_02_Pivot_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_02_Pivot_Loop_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_02_Pivot_Loop_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_03_Fast_Pivot_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_03_Fast_Pivot_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_03_Fast_Pivot_Loop_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_03_Fast_Pivot_Loop_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_03_Pivot_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_03_Pivot_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_03_Pivot_Loop_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_03_Pivot_Loop_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_04_Pivot_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_04_Pivot_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_04_Pivot_Loop_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_04_Pivot_Loop_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_05_Directional_Vertical_Billboard_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_05_Directional_Vertical_Billboard_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_05_Directional_Vertical_Billboard_Loop_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_05_Directional_Vertical_Billboard_Loop_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_05_Pivot_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_05_Pivot_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_05_Pivot_Loop_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_05_Pivot_Loop_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_06_Pivot_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_06_Pivot_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_06_Pivot_Loop_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Dust_06_Pivot_Loop_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Jump_Dust_01_Directional_Vertical_Billboard_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Jump_Dust_01_Directional_Vertical_Billboard_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Jump_Dust_01_Directional_Vertical_Billboard_Loop_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Jump_Dust_01_Directional_Vertical_Billboard_Loop_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Jump_Dust_01_Pivot_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Jump_Dust_01_Pivot_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Jump_Dust_01_Pivot_Loop_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Loop/VFX_Jump_Dust_01_Pivot_Loop_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_01_Directional_01_Billboard_Bunch_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_01_Directional_01_Billboard_Bunch_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_01_Directional_01_GS_Billboard_Bunch_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_01_Directional_01_GS_Billboard_Bunch_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_01_Directional_01_GS_Billboard_Bunch_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_01_Directional_01_GS_Billboard_Bunch_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_01_Directional_01_GS_Billboard_Bunch_03.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_01_Directional_01_GS_Billboard_Bunch_03.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_01_Directional_Vertical_Billboard.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_01_Directional_Vertical_Billboard.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_01_Directional_Vertical_Billboard_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_01_Directional_Vertical_Billboard_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_01_Pivot.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_01_Pivot.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_01_Pivot_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_01_Pivot_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_02_Directional_01_Billboard_Bunch_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_02_Directional_01_Billboard_Bunch_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_02_Directional_01_GS_Billboard_Bunch_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_02_Directional_01_GS_Billboard_Bunch_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_02_Directional_01_GS_Billboard_Bunch_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_02_Directional_01_GS_Billboard_Bunch_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_02_Directional_01_GS_Billboard_Bunch_03.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_02_Directional_01_GS_Billboard_Bunch_03.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_02_Directional_Vertical_Billboard.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_02_Directional_Vertical_Billboard.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_02_Directional_Vertical_Billboard_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_02_Directional_Vertical_Billboard_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_02_Pivot.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_02_Pivot.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_02_Pivot_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_02_Pivot_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_03_Fast_Pivot.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_03_Fast_Pivot.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_03_Fast_Pivot_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_03_Fast_Pivot_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_03_Pivot.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_03_Pivot.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_03_Pivot_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_03_Pivot_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_04_Pivot.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_04_Pivot.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_04_Pivot_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_04_Pivot_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_05_Directional_Vertical_Billboard.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_05_Directional_Vertical_Billboard.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_05_Directional_Vertical_Billboard_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_05_Directional_Vertical_Billboard_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_05_Pivot.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_05_Pivot.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_05_Pivot_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_05_Pivot_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_06_Pivot.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_06_Pivot.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_06_Pivot_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Dust_06_Pivot_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Jump_Dust_01_Directional_Vertical_Billboard.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Jump_Dust_01_Directional_Vertical_Billboard.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Jump_Dust_01_Directional_Vertical_Billboard_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Jump_Dust_01_Directional_Vertical_Billboard_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Jump_Dust_01_Pivot.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Jump_Dust_01_Pivot.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Jump_Dust_01_Pivot_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Particles/Once/VFX_Jump_Dust_01_Pivot_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_01_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_01_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_01_H_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_01_H_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_01_H_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_01_H_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_01_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_02_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_02_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_02_H_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_02_H_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_02_H_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_02_H_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_02_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_02_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_03_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_03_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_03_Fast_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_03_Fast_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_03_Fast_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_03_Fast_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_03_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_03_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_04_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_04_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_04_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_04_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_05_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_05_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_05_H_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_05_H_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_05_H_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_05_H_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_05_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_05_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_06_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_06_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_06_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Directional_Dust_06_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Jump_Dust_01_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Jump_Dust_01_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Jump_Dust_01_H_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Jump_Dust_01_H_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Jump_Dust_01_H_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Jump_Dust_01_H_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Jump_Dust_01_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Dust/Textures/T_VFX_FB_Jump_Dust_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Discharge_01.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Discharge_01.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Discharge_01_CV_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Discharge_01_CV_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Discharge_01_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Discharge_01_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Discharge_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Discharge_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Discharge_02_CV_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Discharge_02_CV_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Discharge_02_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Discharge_02_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Impact_01.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Impact_01.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Impact_01_CV_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Impact_01_CV_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Impact_01_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Impact_01_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Impact_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Impact_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Impact_02_CV_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Impact_02_CV_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Impact_02_Directional_H.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Impact_02_Directional_H.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Impact_02_Directional_H_CV_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Impact_02_Directional_H_CV_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Impact_02_Directional_H_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Impact_02_Directional_H_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Impact_02_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Impact_02_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01_CV_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01_CV_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01_Directional_H.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01_Directional_H.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01_Directional_H_CV_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01_Directional_H_CV_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01_Directional_H_CV_02_Flip.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01_Directional_H_CV_02_Flip.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01_Directional_H_Ero.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01_Directional_H_Ero.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01_Directional_H_Ero_CV_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01_Directional_H_Ero_CV_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01_Directional_H_Flip.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01_Directional_H_Flip.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01_Directional_H_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01_Directional_H_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01_Directional_H_GS_Flip.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01_Directional_H_GS_Flip.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Electric_Loop_01_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_01.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_01.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_01_CV_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_01_CV_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_01_Directional_H.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_01_Directional_H.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_01_Directional_H_CV_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_01_Directional_H_CV_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_01_Directional_H_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_01_Directional_H_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_01_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_01_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_02_CV_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_02_CV_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_02_Directional_H.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_02_Directional_H.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_02_Directional_H_CV_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_02_Directional_H_CV_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_02_Directional_H_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_02_Directional_H_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_02_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Materials/M_VFX_Lightning_Projectile_02_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Discharge_01_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Discharge_01_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Discharge_01_Loop_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Discharge_01_Loop_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Discharge_01_Random_Rotate_Bunch_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Discharge_01_Random_Rotate_Bunch_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Discharge_01_Random_Rotate_Bunch_Loop_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Discharge_01_Random_Rotate_Bunch_Loop_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Discharge_02_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Discharge_02_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Discharge_02_Loop_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Discharge_02_Loop_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Discharge_02_Random_Rotate_Bunch_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Discharge_02_Random_Rotate_Bunch_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Discharge_02_Random_Rotate_Bunch_Loop_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Discharge_02_Random_Rotate_Bunch_Loop_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Flow_01_Billboard_Bunch_Loop_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Flow_01_Billboard_Bunch_Loop_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Flow_01_Billboard_Bunch_Loop_01_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Flow_01_Billboard_Bunch_Loop_01_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Flow_01_Directional_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Flow_01_Directional_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Flow_01_Directional_Loop_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Flow_01_Directional_Loop_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Flow_01_Directional_Loop_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Flow_01_Directional_Loop_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Flow_01_Directional_Loop_Flip_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Flow_01_Directional_Loop_Flip_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Impact_01_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Impact_01_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Impact_01_Loop_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Impact_01_Loop_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Impact_01_Random_Rotate_Bunch_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Impact_01_Random_Rotate_Bunch_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Impact_01_Random_Rotate_Bunch_Loop_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Impact_01_Random_Rotate_Bunch_Loop_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Impact_02_Billboard_Bunch_Loop_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Impact_02_Billboard_Bunch_Loop_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Impact_02_Billboard_Bunch_Loop_01_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Impact_02_Billboard_Bunch_Loop_01_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Impact_02_Directional_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Impact_02_Directional_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Impact_02_Directional_Loop_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Impact_02_Directional_Loop_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Impact_02_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Impact_02_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Impact_02_Loop_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Electric_Impact_02_Loop_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Lightning_Projectile_01_Billboard_Bunch_Loop_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Lightning_Projectile_01_Billboard_Bunch_Loop_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Lightning_Projectile_01_Billboard_Bunch_Loop_01_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Lightning_Projectile_01_Billboard_Bunch_Loop_01_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Lightning_Projectile_01_Directional_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Lightning_Projectile_01_Directional_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Lightning_Projectile_01_Directional_Loop_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Lightning_Projectile_01_Directional_Loop_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Lightning_Projectile_02_Billboard_Bunch_Loop_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Lightning_Projectile_02_Billboard_Bunch_Loop_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Lightning_Projectile_02_Billboard_Bunch_Loop_01_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Lightning_Projectile_02_Billboard_Bunch_Loop_01_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Lightning_Projectile_02_Directional_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Lightning_Projectile_02_Directional_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Lightning_Projectile_02_Directional_Loop_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Loop/VFX_Lightning_Projectile_02_Directional_Loop_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Discharge_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Discharge_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Discharge_01_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Discharge_01_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Discharge_01_Random_Rotate_Bunch.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Discharge_01_Random_Rotate_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Discharge_01_Random_Rotate_Bunch_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Discharge_01_Random_Rotate_Bunch_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Discharge_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Discharge_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Discharge_02_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Discharge_02_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Discharge_02_Random_Rotate_Bunch.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Discharge_02_Random_Rotate_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Discharge_02_Random_Rotate_Bunch_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Discharge_02_Random_Rotate_Bunch_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Flow_01_Billboard_Bunch_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Flow_01_Billboard_Bunch_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Flow_01_Billboard_Bunch_01_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Flow_01_Billboard_Bunch_01_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Flow_01_Directional.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Flow_01_Directional.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Flow_01_Directional_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Flow_01_Directional_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Flow_01_Directional_Flip.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Flow_01_Directional_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Flow_01_Directional_Flip_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Flow_01_Directional_Flip_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Impact_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Impact_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Impact_01_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Impact_01_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Impact_01_Random_Rotate_Bunch.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Impact_01_Random_Rotate_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Impact_01_Random_Rotate_Bunch_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Impact_01_Random_Rotate_Bunch_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Impact_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Impact_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Impact_02_Billboard_Bunch_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Impact_02_Billboard_Bunch_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Impact_02_Billboard_Bunch_01_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Impact_02_Billboard_Bunch_01_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Impact_02_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Impact_02_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Impact_02_Directional.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Impact_02_Directional.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Impact_02_Directional_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Electric_Impact_02_Directional_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Lightning_Projectile_01_Billboard_Bunch_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Lightning_Projectile_01_Billboard_Bunch_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Lightning_Projectile_01_Billboard_Bunch_01_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Lightning_Projectile_01_Billboard_Bunch_01_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Lightning_Projectile_01_Directional.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Lightning_Projectile_01_Directional.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Lightning_Projectile_01_Directional_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Lightning_Projectile_01_Directional_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Lightning_Projectile_02_Billboard_Bunch_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Lightning_Projectile_02_Billboard_Bunch_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Lightning_Projectile_02_Billboard_Bunch_01_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Lightning_Projectile_02_Billboard_Bunch_01_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Lightning_Projectile_02_Directional.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Lightning_Projectile_02_Directional.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Lightning_Projectile_02_Directional_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Particles/Once/VFX_Lightning_Projectile_02_Directional_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Discharge_01_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Discharge_01_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Discharge_01_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Discharge_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Discharge_02_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Discharge_02_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Discharge_02_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Discharge_02_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Impact_01_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Impact_01_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Impact_01_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Impact_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Impact_02_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Impact_02_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Impact_02_H_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Impact_02_H_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Impact_02_H_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Impact_02_H_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Impact_02_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Impact_02_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Loop_01_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Loop_01_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Loop_01_H_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Loop_01_H_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Loop_01_H_Flip_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Loop_01_H_Flip_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Loop_01_H_Flip_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Loop_01_H_Flip_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Loop_01_H_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Loop_01_H_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Loop_01_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Electric_Loop_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Lightning_Projectile_01_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Lightning_Projectile_01_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Lightning_Projectile_01_H_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Lightning_Projectile_01_H_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Lightning_Projectile_01_H_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Lightning_Projectile_01_H_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Lightning_Projectile_01_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Lightning_Projectile_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Lightning_Projectile_02_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Lightning_Projectile_02_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Lightning_Projectile_02_H_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Lightning_Projectile_02_H_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Lightning_Projectile_02_H_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Lightning_Projectile_02_H_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Lightning_Projectile_02_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Electric/Textures/T_VFX_FB_Lightning_Projectile_02_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_01.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_01.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_01_CV_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_01_CV_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_01_CV_03.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_01_CV_03.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_01_CV_04.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_01_CV_04.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_01_Custom_Test.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_01_Custom_Test.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_01_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_01_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_02_CV_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_02_CV_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_02_CV_03.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_02_CV_03.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_02_CV_04.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_02_CV_04.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_02_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_02_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_01.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_01.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_01_CV_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_01_CV_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_01_CV_03.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_01_CV_03.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_01_CV_04.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_01_CV_04.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_01_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_01_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_01_GS_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_01_GS_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_02_CV_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_02_CV_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_02_CV_03.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_02_CV_03.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_02_CV_04.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_02_CV_04.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_02_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Materials/M_VFX_Explosion_Directional_H_02_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_CV_02_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_CV_02_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_CV_03_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_CV_03_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_CV_04_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_CV_04_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Directional_01_Billboard_Bunch_Loop_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Directional_01_Billboard_Bunch_Loop_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Directional_01_Billboard_Bunch_Loop_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Directional_01_Billboard_Bunch_Loop_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Directional_01_Billboard_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Directional_01_Billboard_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Directional_01_GS_Billboard_Bunch_Loop_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Directional_01_GS_Billboard_Bunch_Loop_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Directional_01_GS_Billboard_Bunch_Loop_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Directional_01_GS_Billboard_Bunch_Loop_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Horizontal_Billboard_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Horizontal_Billboard_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Pivot_CV_02_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Pivot_CV_02_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Pivot_CV_03_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Pivot_CV_03_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Pivot_CV_04_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Pivot_CV_04_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Pivot_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Pivot_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Vertical_Billboard_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_01_Vertical_Billboard_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_CV_02_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_CV_02_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_CV_03_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_CV_03_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_CV_04_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_CV_04_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Directional_01_Billboard_Bunch_Loop_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Directional_01_Billboard_Bunch_Loop_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Directional_01_Billboard_Bunch_Loop_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Directional_01_Billboard_Bunch_Loop_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Directional_01_Billboard_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Directional_01_Billboard_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Directional_01_GS_Billboard_Bunch_Loop_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Directional_01_GS_Billboard_Bunch_Loop_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Directional_01_GS_Billboard_Bunch_Loop_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Directional_01_GS_Billboard_Bunch_Loop_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Horizontal_Billboard_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Horizontal_Billboard_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Pivot_CV_02_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Pivot_CV_02_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Pivot_CV_03_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Pivot_CV_03_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Pivot_CV_04_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Pivot_CV_04_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Pivot_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Pivot_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Vertical_Billboard_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Loop/VFX_Explosion_02_Vertical_Billboard_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_CV_03.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_CV_03.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_CV_04.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_CV_04.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Directional_01_Billboard.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Directional_01_Billboard.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Directional_01_Billboard_Bunch_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Directional_01_Billboard_Bunch_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Directional_01_Billboard_Bunch_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Directional_01_Billboard_Bunch_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Directional_01_GS_Billboard_Bunch_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Directional_01_GS_Billboard_Bunch_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Directional_01_GS_Billboard_Bunch_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Directional_01_GS_Billboard_Bunch_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Horizontal_Billboard.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Horizontal_Billboard.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Pivot.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Pivot.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Pivot_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Pivot_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Pivot_CV_03.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Pivot_CV_03.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Pivot_CV_04.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Pivot_CV_04.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Vertical_Billboard.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_01_Vertical_Billboard.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_CV_03.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_CV_03.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_CV_04.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_CV_04.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Directional_01_Billboard.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Directional_01_Billboard.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Directional_01_Billboard_Bunch_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Directional_01_Billboard_Bunch_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Directional_01_Billboard_Bunch_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Directional_01_Billboard_Bunch_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Directional_01_GS_Billboard_Bunch_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Directional_01_GS_Billboard_Bunch_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Directional_01_GS_Billboard_Bunch_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Directional_01_GS_Billboard_Bunch_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Horizontal_Billboard.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Horizontal_Billboard.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Pivot.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Pivot.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Pivot_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Pivot_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Pivot_CV_03.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Pivot_CV_03.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Pivot_CV_04.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Pivot_CV_04.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Vertical_Billboard.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Particles/Once/VFX_Explosion_02_Vertical_Billboard.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Textures.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Textures/T_VFX_FB_Explosion_01_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Textures/T_VFX_FB_Explosion_01_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Textures/T_VFX_FB_Explosion_01_H_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Textures/T_VFX_FB_Explosion_01_H_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Textures/T_VFX_FB_Explosion_01_H_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Textures/T_VFX_FB_Explosion_01_H_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Textures/T_VFX_FB_Explosion_01_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Textures/T_VFX_FB_Explosion_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Textures/T_VFX_FB_Explosion_02_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Textures/T_VFX_FB_Explosion_02_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Textures/T_VFX_FB_Explosion_02_H_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Textures/T_VFX_FB_Explosion_02_H_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Textures/T_VFX_FB_Explosion_02_H_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Textures/T_VFX_FB_Explosion_02_H_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Textures/T_VFX_FB_Explosion_02_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Explosion/Textures/T_VFX_FB_Explosion_02_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_01.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_01.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_01_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_01_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_02.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_02.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_02_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_02_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_03.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_03.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_03_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_03_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_04.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_04.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_04_Directional_H.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_04_Directional_H.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_04_Directional_H_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_04_Directional_H_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_04_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_04_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_05.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_05.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_05_Directional_H.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_05_Directional_H.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_05_Directional_H_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_05_Directional_H_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_05_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_05_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_06.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_06.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_06_Directional_H.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_06_Directional_H.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_06_Directional_H_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_06_Directional_H_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_06_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_06_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_07.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_07.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_07_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_07_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_08.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_08.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_08_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_08_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_09.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_09.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_09_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_09_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_10.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_10.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_10_Directional_H.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_10_Directional_H.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_10_Directional_H_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_10_Directional_H_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_10_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Hit_10_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Radial_Block_01.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Radial_Block_01.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Radial_Block_01_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Radial_Block_01_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Radial_Burst_01.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Radial_Burst_01.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Radial_Burst_01_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Radial_Burst_01_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Radial_Charge_Skill_01.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Radial_Charge_Skill_01.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Radial_Charge_Skill_01_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Radial_Charge_Skill_01_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Radial_Spiky_Hit_01.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Radial_Spiky_Hit_01.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Radial_Spiky_Hit_01_GS.mat`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Materials/M_VFX_Radial_Spiky_Hit_01_GS.mat.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_01_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_01_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_02_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_02_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_03_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_03_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_04_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_04_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_05_Directional_Bunch_Loop_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_05_Directional_Bunch_Loop_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_05_Directional_Bunch_Loop_01_GS.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_05_Directional_Bunch_Loop_01_GS.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_05_Directional_Bunch_Loop_01_GS_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_05_Directional_Bunch_Loop_01_GS_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_05_Directional_Bunch_Loop_01_GS_CV_03.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_05_Directional_Bunch_Loop_01_GS_CV_03.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_05_Directional_Bunch_Loop_01_GS_CV_04.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_05_Directional_Bunch_Loop_01_GS_CV_04.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_05_Directional_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_05_Directional_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_05_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_05_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_06_Directional_Bunch_Loop_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_06_Directional_Bunch_Loop_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_06_Directional_Bunch_Loop_01_GS.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_06_Directional_Bunch_Loop_01_GS.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_06_Directional_Bunch_Loop_01_GS_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_06_Directional_Bunch_Loop_01_GS_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_06_Directional_Bunch_Loop_01_GS_CV_03.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_06_Directional_Bunch_Loop_01_GS_CV_03.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_06_Directional_Bunch_Loop_01_GS_CV_04.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_06_Directional_Bunch_Loop_01_GS_CV_04.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_06_Directional_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_06_Directional_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_06_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_06_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_07_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_07_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_07_Random_Rotate_Bunch_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_07_Random_Rotate_Bunch_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_07_Random_Rotate_Bunch_Loop_GS.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_07_Random_Rotate_Bunch_Loop_GS.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_07_Random_Rotate_Bunch_Loop_GS_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_07_Random_Rotate_Bunch_Loop_GS_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_07_Random_Rotate_Bunch_Loop_GS_CV_03.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_07_Random_Rotate_Bunch_Loop_GS_CV_03.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_07_Random_Rotate_Bunch_Loop_GS_CV_04.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_07_Random_Rotate_Bunch_Loop_GS_CV_04.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_08_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_08_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_08_Random_Rotate_Bunch_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_08_Random_Rotate_Bunch_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_08_Random_Rotate_Bunch_Loop_GS.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_08_Random_Rotate_Bunch_Loop_GS.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_08_Random_Rotate_Bunch_Loop_GS_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_08_Random_Rotate_Bunch_Loop_GS_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_08_Random_Rotate_Bunch_Loop_GS_CV_03.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_08_Random_Rotate_Bunch_Loop_GS_CV_03.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_08_Random_Rotate_Bunch_Loop_GS_CV_04.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_08_Random_Rotate_Bunch_Loop_GS_CV_04.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_09_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_09_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_10_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Hit_10_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Block_01_GS_Random_Rotate_01_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Block_01_GS_Random_Rotate_01_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Block_01_GS_Random_Rotate_02_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Block_01_GS_Random_Rotate_02_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Block_01_GS_Random_Rotate_Bunch_01_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Block_01_GS_Random_Rotate_Bunch_01_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Block_01_GS_Random_Rotate_Bunch_02_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Block_01_GS_Random_Rotate_Bunch_02_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Block_01_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Block_01_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Block_01_Random_Rotate_Bunch_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Block_01_Random_Rotate_Bunch_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Block_01_Random_Rotate_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Block_01_Random_Rotate_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Burst_01_GS_Random_Rotate_01_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Burst_01_GS_Random_Rotate_01_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Burst_01_GS_Random_Rotate_02_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Burst_01_GS_Random_Rotate_02_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Burst_01_GS_Random_Rotate_Bunch_01_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Burst_01_GS_Random_Rotate_Bunch_01_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Burst_01_GS_Random_Rotate_Bunch_02_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Burst_01_GS_Random_Rotate_Bunch_02_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Burst_01_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Burst_01_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Burst_01_Random_Rotate_Bunch_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Burst_01_Random_Rotate_Bunch_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Burst_01_Random_Rotate_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Burst_01_Random_Rotate_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Charge_Skill_01_GS_Random_Rotate_01_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Charge_Skill_01_GS_Random_Rotate_01_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Charge_Skill_01_GS_Random_Rotate_02_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Charge_Skill_01_GS_Random_Rotate_02_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Charge_Skill_01_GS_Random_Rotate_Bunch_01_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Charge_Skill_01_GS_Random_Rotate_Bunch_01_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Charge_Skill_01_GS_Random_Rotate_Bunch_02_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Charge_Skill_01_GS_Random_Rotate_Bunch_02_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Charge_Skill_01_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Charge_Skill_01_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Charge_Skill_01_Random_Rotate_Bunch_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Charge_Skill_01_Random_Rotate_Bunch_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Charge_Skill_01_Random_Rotate_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Charge_Skill_01_Random_Rotate_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Spiky_Hit_01_GS_Random_Rotate_01_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Spiky_Hit_01_GS_Random_Rotate_01_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Spiky_Hit_01_GS_Random_Rotate_02_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Spiky_Hit_01_GS_Random_Rotate_02_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Spiky_Hit_01_GS_Random_Rotate_Bunch_01_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Spiky_Hit_01_GS_Random_Rotate_Bunch_01_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Spiky_Hit_01_GS_Random_Rotate_Bunch_02_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Spiky_Hit_01_GS_Random_Rotate_Bunch_02_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Spiky_Hit_01_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Spiky_Hit_01_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Spiky_Hit_01_Random_Rotate_Bunch_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Spiky_Hit_01_Random_Rotate_Bunch_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Spiky_Hit_01_Random_Rotate_Loop.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Loop/VFX_Radial_Spiky_Hit_01_Random_Rotate_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_03.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_03.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_04.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_04.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_05.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_05.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_05_Directional.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_05_Directional.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_05_Directional_Bunch_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_05_Directional_Bunch_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_05_Directional_Bunch_01_GS.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_05_Directional_Bunch_01_GS.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_05_Directional_Bunch_01_GS_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_05_Directional_Bunch_01_GS_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_05_Directional_Bunch_01_GS_CV_03.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_05_Directional_Bunch_01_GS_CV_03.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_05_Directional_Bunch_01_GS_CV_04.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_05_Directional_Bunch_01_GS_CV_04.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_06.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_06.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_06_Directional.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_06_Directional.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_06_Directional_Bunch_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_06_Directional_Bunch_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_06_Directional_Bunch_01_GS.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_06_Directional_Bunch_01_GS.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_06_Directional_Bunch_01_GS_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_06_Directional_Bunch_01_GS_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_06_Directional_Bunch_01_GS_CV_03.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_06_Directional_Bunch_01_GS_CV_03.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_06_Directional_Bunch_01_GS_CV_04.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_06_Directional_Bunch_01_GS_CV_04.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_07.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_07.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_07_Random_Rotate_Bunch.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_07_Random_Rotate_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_07_Random_Rotate_Bunch_GS.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_07_Random_Rotate_Bunch_GS.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_07_Random_Rotate_Bunch_GS_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_07_Random_Rotate_Bunch_GS_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_07_Random_Rotate_Bunch_GS_CV_03.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_07_Random_Rotate_Bunch_GS_CV_03.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_07_Random_Rotate_Bunch_GS_CV_04.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_07_Random_Rotate_Bunch_GS_CV_04.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_08.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_08.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_08_Random_Rotate_Bunch.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_08_Random_Rotate_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_08_Random_Rotate_Bunch_GS.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_08_Random_Rotate_Bunch_GS.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_08_Random_Rotate_Bunch_GS_CV_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_08_Random_Rotate_Bunch_GS_CV_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_08_Random_Rotate_Bunch_GS_CV_03.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_08_Random_Rotate_Bunch_GS_CV_03.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_08_Random_Rotate_Bunch_GS_CV_04.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_08_Random_Rotate_Bunch_GS_CV_04.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_09.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_09.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_10.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Hit_10.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Block_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Block_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Block_01_GS_Random_Rotate_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Block_01_GS_Random_Rotate_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Block_01_GS_Random_Rotate_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Block_01_GS_Random_Rotate_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Block_01_GS_Random_Rotate_Bunch_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Block_01_GS_Random_Rotate_Bunch_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Block_01_GS_Random_Rotate_Bunch_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Block_01_GS_Random_Rotate_Bunch_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Block_01_Random_Rotate.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Block_01_Random_Rotate.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Block_01_Random_Rotate_Bunch.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Block_01_Random_Rotate_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Burst_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Burst_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Burst_01_GS_Random_Rotate_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Burst_01_GS_Random_Rotate_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Burst_01_GS_Random_Rotate_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Burst_01_GS_Random_Rotate_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Burst_01_GS_Random_Rotate_Bunch_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Burst_01_GS_Random_Rotate_Bunch_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Burst_01_GS_Random_Rotate_Bunch_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Burst_01_GS_Random_Rotate_Bunch_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Burst_01_Random_Rotate.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Burst_01_Random_Rotate.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Burst_01_Random_Rotate_Bunch.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Burst_01_Random_Rotate_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Charge_Skill_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Charge_Skill_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Charge_Skill_01_GS_Random_Rotate_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Charge_Skill_01_GS_Random_Rotate_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Charge_Skill_01_GS_Random_Rotate_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Charge_Skill_01_GS_Random_Rotate_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Charge_Skill_01_GS_Random_Rotate_Bunch_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Charge_Skill_01_GS_Random_Rotate_Bunch_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Charge_Skill_01_GS_Random_Rotate_Bunch_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Charge_Skill_01_GS_Random_Rotate_Bunch_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Charge_Skill_01_Random_Rotate.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Charge_Skill_01_Random_Rotate.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Charge_Skill_01_Random_Rotate_Bunch.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Charge_Skill_01_Random_Rotate_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Spiky_Hit_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Spiky_Hit_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Spiky_Hit_01_GS_Random_Rotate_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Spiky_Hit_01_GS_Random_Rotate_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Spiky_Hit_01_GS_Random_Rotate_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Spiky_Hit_01_GS_Random_Rotate_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Spiky_Hit_01_GS_Random_Rotate_Bunch_01.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Spiky_Hit_01_GS_Random_Rotate_Bunch_01.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Spiky_Hit_01_GS_Random_Rotate_Bunch_02.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Spiky_Hit_01_GS_Random_Rotate_Bunch_02.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Spiky_Hit_01_Random_Rotate.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Spiky_Hit_01_Random_Rotate.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Spiky_Hit_01_Random_Rotate_Bunch.prefab`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Particles/Once/VFX_Radial_Spiky_Hit_01_Random_Rotate_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Block_01_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Block_01_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Block_01_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Block_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_01_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_01_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_01_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_02_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_02_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_02_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_02_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_03_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_03_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_03_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_03_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_04_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_04_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_04_H_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_04_H_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_04_H_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_04_H_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_04_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_04_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_05_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_05_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_05_H_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_05_H_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_05_H_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_05_H_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_05_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_05_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_06_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_06_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_06_H_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_06_H_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_06_H_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_06_H_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_06_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_06_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_07_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_07_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_07_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_07_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_08_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_08_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_08_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_08_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_09_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_09_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_09_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_09_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_10_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_10_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_10_H_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_10_H_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_10_H_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_10_H_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_10_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Hit_10_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Radial_Burst_01_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Radial_Burst_01_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Radial_Burst_01_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Radial_Burst_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Radial_Burst_02_Alpha.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Radial_Burst_02_Alpha.tga.meta`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Radial_Burst_02_Mask.tga`
+- `A` · `Assets/Vefects/Combat Flipbook VFX/VFX/Hit/Textures/T_VFX_FB_Radial_Burst_02_Mask.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Charge_01.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Charge_01.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Charge_02.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Charge_02.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Dust_Puff_01.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Dust_Puff_01.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Dust_Puff_02.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Dust_Puff_02.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Dust_Puff_03.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Dust_Puff_03.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Explosion_Classic.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Explosion_Classic.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Explosion_Fire.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Explosion_Fire.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Explosion_Magic_01.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Explosion_Magic_01.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Explosion_Magic_02.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Explosion_Magic_02.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Explosion_Magic_03.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Explosion_Magic_03.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Explosion_Poison.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Explosion_Poison.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Fire_Big_Loop.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Fire_Big_Loop.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Fire_Burst_01.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Fire_Burst_01.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Fire_Charge_01.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Fire_Charge_01.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Fire_Medium_Loop.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Fire_Medium_Loop.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Fire_Small_L.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Fire_Small_L.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_GunShot_01.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_GunShot_01.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_GunShot_02.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_GunShot_02.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_GunShot_03.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_GunShot_03.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Impact_01.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Impact_01.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Impact_Blood_01.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Impact_Blood_01.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Impact_Magic_01.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Impact_Magic_01.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Lightning_01.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Lightning_01.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Lightning_02.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Lightning_02.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Liquid_Explosion_01.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Liquid_Explosion_01.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Liquid_Explosion_02.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Liquid_Explosion_02.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Liquid_Hit_01.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Liquid_Hit_01.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Liquid_Hit_02.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Liquid_Hit_02.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Liquid_Hit_03.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Liquid_Hit_03.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Liquid_Hit_04.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Liquid_Hit_04.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Liquid_Projectile_Loop_01.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Liquid_Projectile_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Liquid_Projectile_Loop_02.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Liquid_Projectile_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Liquid_Projectile_Loop_03.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Liquid_Projectile_Loop_03.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Liquid_Puff_01.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Liquid_Puff_01.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Orb_Poison_Loop.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Orb_Poison_Loop.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Orb_Psychic_Loop.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Orb_Psychic_Loop.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Orb_Water_Loop.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Orb_Water_Loop.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Poison_Puff_01.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Poison_Puff_01.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Poison_Puff_02.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Poison_Puff_02.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Poison_Puff_03.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Poison_Puff_03.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Shrapnel_01.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Shrapnel_01.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Shrapnel_02.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Shrapnel_02.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Shrapnel_03.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Shrapnel_03.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Slash_Classic.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Slash_Classic.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Slash_Fire.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Slash_Fire.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Slash_Poison.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Slash_Poison.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Smoke_Classic_Loop.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Smoke_Classic_Loop.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Smoke_Poison_Loop.wav`
+- `A` · `Assets/Vefects/Flipbook VFX/Audio/WAV/Vefects_SFX_Smoke_Poison_Loop.wav.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Demo.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Demo/Resources.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Demo/Resources/Materials.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Demo/Resources/Materials/M_Grid_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Demo/Resources/Materials/M_Grid_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Demo/Resources/Meshes.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Demo/Resources/Meshes/SM_VFX_Background_Plate_01.fbx`
+- `A` · `Assets/Vefects/Flipbook VFX/Demo/Resources/Meshes/SM_VFX_Background_Plate_01.fbx.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Demo/Resources/Meshes/SM_VFX_Background_Plate_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Demo/Resources/Meshes/SM_VFX_Background_Plate_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Demo/Resources/PP.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Demo/Resources/PP/Post-process Volume Profile 01.asset`
+- `A` · `Assets/Vefects/Flipbook VFX/Demo/Resources/PP/Post-process Volume Profile 01.asset.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Demo/Resources/Textures.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Demo/Resources/Textures/Metrics_Grid_Base_Color.TGA`
+- `A` · `Assets/Vefects/Flipbook VFX/Demo/Resources/Textures/Metrics_Grid_Base_Color.TGA.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Demo/Resources/Textures/Metrics_Grid_Normal.TGA`
+- `A` · `Assets/Vefects/Flipbook VFX/Demo/Resources/Textures/Metrics_Grid_Normal.TGA.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Demo/Scenes.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Demo/Scenes/Vefects_Flipbook_VFX_Overview.unity`
+- `A` · `Assets/Vefects/Flipbook VFX/Demo/Scenes/Vefects_Flipbook_VFX_Overview.unity.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Documentation.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Documentation/Vefects Flipbook VFX Unity Info Doc NEW.pdf`
+- `A` · `Assets/Vefects/Flipbook VFX/Documentation/Vefects Flipbook VFX Unity Info Doc NEW.pdf.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_AOE.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_AOE.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_AOE_details.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_AOE_details.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_AOE_end.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_AOE_end.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_AOE_end_details.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_AOE_end_details.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Cloud.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Cloud.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Cloud_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Cloud_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Contact_Waves.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Contact_Waves.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Drops.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Drops.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Glow_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Glow_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Inner_Cloud.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Inner_Cloud.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_BG_Blood_Glow_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_BG_Blood_Glow_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_BG_Blood_Glow_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_BG_Blood_Glow_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_BG_Drops_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_BG_Drops_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_BG_Drops_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_BG_Drops_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_BG_Drops_Glow_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_BG_Drops_Glow_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_BG_Drops_Glow_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_BG_Drops_Glow_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_Float_Drops_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_Float_Drops_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_Float_Drops_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_Float_Drops_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_Inside_Circle_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_Inside_Circle_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_Inside_Circle_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_Inside_Circle_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_Outside_Parts_Back_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_Outside_Parts_Back_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_Outside_Parts_Front_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Orb_Outside_Parts_Front_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Projectile_Core_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Projectile_Core_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Projectile_Core_Force_Field_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Projectile_Core_Force_Field_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Projectile_Main_Body_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Projectile_Main_Body_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Projectile_dark_Trail_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Projectile_dark_Trail_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Projectile_disolved_Parts_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Projectile_disolved_Parts_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Projectile_disolved_Parts_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Projectile_disolved_Parts_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Projectile_splashing_Parts_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Projectile_splashing_Parts_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Projectile_splaterSpeed_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Projectile_splaterSpeed_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Projectile_strokes_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Projectile_strokes_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Projectile_trail_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Projectile_trail_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_RadialMarks.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_RadialMarks.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Splash_Plate.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Splash_Plate.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Splash_Sphere.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Splash_Sphere.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Waves.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_Waves.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_explosionBG.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_explosionBG.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_impactDarkBG.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_impactDarkBG.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_impactGlow.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_impactGlow.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_impactMarks.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_impactMarks.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_impactWaves.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_impactWaves.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_initialization.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_initialization.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_splashMarks.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_splashMarks.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_splashes.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_splashes.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_splatsParts.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/Materials/M_VFX_Blood_splatsParts.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Cloud_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Cloud_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Cloud_Base_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Cloud_Base_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Cloud_Base_Blur_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Cloud_Base_Blur_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Cloud_Blur_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Cloud_Blur_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Cloud_Sphere_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Cloud_Sphere_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Drops_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Drops_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Explosion_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Explosion_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Impact_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Impact_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Orb_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Orb_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Projectile_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Projectile_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Projectile_02.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Projectile_02.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Splat_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Splat_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Splat_02.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Blood/VFX_Blood_Splat_02.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Charge.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Charge/Materials.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Charge/Materials/M_VFX_Charge_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Charge/Materials/M_VFX_Charge_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Charge/Materials/M_VFX_Charge_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Charge/Materials/M_VFX_Charge_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Charge/VFX_Charge_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Charge/VFX_Charge_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Charge/VFX_Charge_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Charge/VFX_Charge_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Charge/VFX_Charge_02.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Charge/VFX_Charge_02.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Charge/VFX_Charge_02_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Charge/VFX_Charge_02_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_Dust_Directional_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_Dust_Directional_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_Dust_Directional_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_Dust_Directional_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_Dust_Directional_03.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_Dust_Directional_03.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_Dust_Directional_04.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_Dust_Directional_04.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_Dust_Directional_05.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_Dust_Directional_05.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_Dust_Directional_06.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_Dust_Directional_06.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_Magic_Dust_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_Magic_Dust_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_Magic_Dust_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_Magic_Dust_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_Magic_Dust_03.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_Magic_Dust_03.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_Magic_Dust_04.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_Magic_Dust_04.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_directionalSmoke.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/Materials/M_VFX_directionalSmoke.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_02.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_02.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_02_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_02_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_Mid_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_Mid_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_Mid_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_Mid_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_Mid_02.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_Mid_02.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_Mid_02_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_Mid_02_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_Small_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_Small_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_Small_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_Small_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_Small_02.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_Small_02.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_Small_02_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Directional_Small_02_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Omni_Directional_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Omni_Directional_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Omni_Directional_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Dust/VFX_Dust_Omni_Directional_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_ExplosionFire_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_ExplosionFire_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_ExplosionFire_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_ExplosionFire_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_ExplosionPoison_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_ExplosionPoison_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_ExplosionPoison_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_ExplosionPoison_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_01_Pixelated_16_Bit.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_01_Pixelated_16_Bit.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_01_Pixelated_8_Bit.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_01_Pixelated_8_Bit.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Dark_BG_Fire_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Dark_BG_Fire_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Glow_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Glow_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Ground_Glow_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Ground_Glow_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Ground_Leash_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Ground_Leash_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Ground_Leash_Inner_Bright_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Ground_Leash_Inner_Bright_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Ground_Leash_Inner_Dark_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Ground_Leash_Inner_Dark_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Ground_Leash_Outer_Dark_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Ground_Leash_Outer_Dark_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Magic_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Magic_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Main_Fire_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Main_Fire_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Smoke_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Smoke_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Smoke_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Smoke_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Sparks_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/Materials/M_VFX_Explosion_Sparks_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_ExplosionFire_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_ExplosionFire_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_ExplosionFire_02.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_ExplosionFire_02.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_ExplosionPoison_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_ExplosionPoison_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_ExplosionPoison_02.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_ExplosionPoison_02.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_Explosion_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_Explosion_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_Explosion_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_Explosion_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_Explosion_01_Pixelated_16_Bit.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_Explosion_01_Pixelated_16_Bit.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_Explosion_01_Pixelated_8_Bit.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_Explosion_01_Pixelated_8_Bit.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_Explosion_02.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_Explosion_02.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_Explosion_02_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_Explosion_02_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_Explosion_03.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_Explosion_03.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_Explosion_03_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_Explosion_03_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_Explosion_Magic_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_Explosion_Magic_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_Explosion_Magic_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Explosion/VFX_Explosion_Magic_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/Materials.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/Materials/M_VFX_Fire_Burst_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/Materials/M_VFX_Fire_Burst_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/Materials/M_VFX_Fire_Burst_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/Materials/M_VFX_Fire_Burst_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/Materials/M_VFX_Fire_Dust_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/Materials/M_VFX_Fire_Dust_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/Materials/M_VFX_Flame_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/Materials/M_VFX_Flame_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/Materials/M_VFX_Flame_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/Materials/M_VFX_Flame_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/Materials/M_VFX_Flame_03.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/Materials/M_VFX_Flame_03.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/Materials/M_VFX_Flame_04.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/Materials/M_VFX_Flame_04.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Fire_Burst_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Fire_Burst_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Fire_Burst_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Fire_Burst_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Fire_Burst_Charge_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Fire_Burst_Charge_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Fire_Burst_Charge_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Fire_Burst_Charge_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Fire_Burst_Smoke_Big_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Fire_Burst_Smoke_Big_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Fire_Burst_Smoke_Big_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Fire_Burst_Smoke_Big_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Fire_Burst_Smoke_Small_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Fire_Burst_Smoke_Small_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Fire_Burst_Smoke_Small_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Fire_Burst_Smoke_Small_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Fire_Loop_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Fire_Loop_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Flame_Burst_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Flame_Burst_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Flame_Burst_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Flame_Burst_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Flame_Burst_02.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Flame_Burst_02.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Flame_Burst_02_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Flame_Burst_02_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Flame_Burst_03.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Flame_Burst_03.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Flame_Burst_03_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Flame_Burst_03_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Flame_Burst_04.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Flame_Burst_04.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Flame_Burst_04_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Fire/VFX_Flame_Burst_04_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Impact.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Impact/Materials.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Impact/Materials/M_VFX_ImpactMagic_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Impact/Materials/M_VFX_ImpactMagic_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Impact/Materials/M_VFX_Impact_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Impact/Materials/M_VFX_Impact_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Impact/Materials/M_VFX_Impact_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Impact/Materials/M_VFX_Impact_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Impact/VFX_ImpactMagic_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Impact/VFX_ImpactMagic_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Impact/VFX_ImpactMagic_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Impact/VFX_ImpactMagic_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Impact/VFX_Impact_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Impact/VFX_Impact_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Impact/VFX_Impact_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Impact/VFX_Impact_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Impact/VFX_Impact_Blood_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Impact/VFX_Impact_Blood_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Impact/VFX_Impact_Blood_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Impact/VFX_Impact_Blood_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/Materials.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/Materials/M_VFX_Lightning_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/Materials/M_VFX_Lightning_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/Materials/M_VFX_Lightning_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/Materials/M_VFX_Lightning_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/Materials/M_VFX_Lightning_03.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/Materials/M_VFX_Lightning_03.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/Materials/M_VFX_Lightning_04.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/Materials/M_VFX_Lightning_04.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/Materials/M_VFX_Lightning_05.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/Materials/M_VFX_Lightning_05.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/Materials/M_VFX_Lightning_06.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/Materials/M_VFX_Lightning_06.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/Materials/M_VFX_Lightning_07.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/Materials/M_VFX_Lightning_07.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/Materials/M_VFX_Lightning_08.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/Materials/M_VFX_Lightning_08.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/Materials/M_VFX_Lightning_09.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/Materials/M_VFX_Lightning_09.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/Materials/M_VFX_Lightning_10.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/Materials/M_VFX_Lightning_10.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_02.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_02.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_02_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_02_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_03.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_03.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_03_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_03_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_04.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_04.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_04_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_04_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_05.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_05.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_05_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_05_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_06.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_06.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_06_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_06_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_07.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_07.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_07_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_07_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_08.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_08.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_08_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_08_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_09.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_09.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_09_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_09_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_10.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_10.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_10_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Lightning/VFX_Lightning_10_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/Materials.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/Materials/M_VFX_Muzzle_Flash_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/Materials/M_VFX_Muzzle_Flash_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/Materials/M_VFX_Muzzle_Flash_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/Materials/M_VFX_Muzzle_Flash_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/Materials/M_VFX_Muzzle_Flash_03.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/Materials/M_VFX_Muzzle_Flash_03.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/Materials/M_VFX_Muzzle_Smoke_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/Materials/M_VFX_Muzzle_Smoke_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/VFX_Muzzle_Combined_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/VFX_Muzzle_Combined_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/VFX_Muzzle_Combined_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/VFX_Muzzle_Combined_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/VFX_Muzzle_Flash_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/VFX_Muzzle_Flash_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/VFX_Muzzle_Flash_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/VFX_Muzzle_Flash_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/VFX_Muzzle_Flash_02.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/VFX_Muzzle_Flash_02.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/VFX_Muzzle_Flash_02_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/VFX_Muzzle_Flash_02_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/VFX_Muzzle_Flash_03.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/VFX_Muzzle_Flash_03.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/VFX_Muzzle_Flash_03_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/VFX_Muzzle_Flash_03_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/VFX_Muzzle_Smoke_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/VFX_Muzzle_Smoke_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/VFX_Muzzle_Smoke_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Muzzle Flash/VFX_Muzzle_Smoke_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Burst_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Burst_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Dust_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Dust_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Dust_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Dust_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Dust_03.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Dust_03.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Dust_04.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Dust_04.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Projectile_Core_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Projectile_Core_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Projectile_Core_Force_Field_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Projectile_Core_Force_Field_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Projectile_Main_Body_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Projectile_Main_Body_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Projectile_dark_Trail_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Projectile_dark_Trail_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Projectile_disolved_Parts_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Projectile_disolved_Parts_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Projectile_disolved_Parts_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Projectile_disolved_Parts_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Projectile_splashing_Parts_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Projectile_splashing_Parts_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Projectile_splaterSpeed_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Projectile_splaterSpeed_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Projectile_strokes_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Projectile_strokes_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Projectile_trail_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/Materials/M_VFX_Poison_Projectile_trail_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/VFX_Poison_Burst_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/VFX_Poison_Burst_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/VFX_Poison_Loop_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/VFX_Poison_Loop_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/VFX_Poison_Projectile_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/VFX_Poison_Projectile_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/VFX_Poison_Puff_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/VFX_Poison_Puff_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/VFX_Poison_Puff_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/VFX_Poison_Puff_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/VFX_Poison_Puff_02.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/VFX_Poison_Puff_02.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/VFX_Poison_Puff_02_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/VFX_Poison_Puff_02_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/VFX_Poison_Puff_03.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/VFX_Poison_Puff_03.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/VFX_Poison_Puff_03_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/VFX_Poison_Puff_03_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/VFX_Toxic_Orb_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Poison/VFX_Toxic_Orb_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/Materials.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/Materials/M_VFX_Shrapnel_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/Materials/M_VFX_Shrapnel_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/Materials/M_VFX_Shrapnel_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/Materials/M_VFX_Shrapnel_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/Materials/M_VFX_Shrapnel_03.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/Materials/M_VFX_Shrapnel_03.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/Materials/M_VFX_Shrapnel_04.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/Materials/M_VFX_Shrapnel_04.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/Materials/M_VFX_Shrapnel_05.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/Materials/M_VFX_Shrapnel_05.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/Materials/M_VFX_Shrapnel_06.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/Materials/M_VFX_Shrapnel_06.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_02.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_02.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_02_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_02_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_03.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_03.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_03_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_03_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_04.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_04.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_04_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_04_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_05.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_05.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_05_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_05_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_06.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_06.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_06_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Shrapnel/VFX_Shrapnel_06_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Slash.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Slash/Materials.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Slash/Materials/M_VFX_SlashPoison_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Slash/Materials/M_VFX_SlashPoison_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Slash/Materials/M_VFX_Slash_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Slash/Materials/M_VFX_Slash_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Slash/Materials/M_VFX_Slash_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Slash/Materials/M_VFX_Slash_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Slash/VFX_Slash_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Slash/VFX_Slash_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Slash/VFX_Slash_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Slash/VFX_Slash_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Slash/VFX_Slash_02.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Slash/VFX_Slash_02.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Slash/VFX_Slash_02_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Slash/VFX_Slash_02_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Slash/VFX_Slash_Poison_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Slash/VFX_Slash_Poison_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Slash/VFX_Slash_Poison_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Slash/VFX_Slash_Poison_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Smoke.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Smoke/Materials.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Smoke/Materials/M_VFX_Smoke_Burst_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Smoke/Materials/M_VFX_Smoke_Burst_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Smoke/Materials/M_VFX_Smoke_Loop_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Smoke/Materials/M_VFX_Smoke_Loop_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Smoke/VFX_Smoke_Loop_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Smoke/VFX_Smoke_Loop_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Sparkles.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Sparkles/Materials.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Sparkles/Materials/M_VFX_Sparkles_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Sparkles/Materials/M_VFX_Sparkles_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Sparkles/VFX_Sparkles_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Sparkles/VFX_Sparkles_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Sparkles/VFX_Sparkles_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Sparkles/VFX_Sparkles_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/Materials.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/Materials/M_VFX_Water_Drops_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/Materials/M_VFX_Water_Drops_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/Materials/M_VFX_Water_Ground_Splash_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/Materials/M_VFX_Water_Ground_Splash_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/Materials/M_VFX_Water_Orb_BG_Blood_Glow_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/Materials/M_VFX_Water_Orb_BG_Blood_Glow_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/Materials/M_VFX_Water_Orb_BG_Drops_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/Materials/M_VFX_Water_Orb_BG_Drops_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/Materials/M_VFX_Water_Orb_BG_Drops_Glow_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/Materials/M_VFX_Water_Orb_BG_Drops_Glow_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/Materials/M_VFX_Water_Orb_Float_Drops_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/Materials/M_VFX_Water_Orb_Float_Drops_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/Materials/M_VFX_Water_Orb_Inside_Circle_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/Materials/M_VFX_Water_Orb_Inside_Circle_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/Materials/M_VFX_Water_Splash_01.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/Materials/M_VFX_Water_Splash_01.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/Materials/M_VFX_Water_Splash_02.mat`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/Materials/M_VFX_Water_Splash_02.mat.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Drops_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Drops_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Drops_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Drops_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Ground_Splash_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Ground_Splash_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Ground_Splash_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Ground_Splash_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Main_Splash_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Main_Splash_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Main_Splash_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Main_Splash_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Orb_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Orb_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Splash_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Splash_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Splash_01_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Splash_01_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Splash_02.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Splash_02.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Splash_02_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Splash_02_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Splash_03.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Splash_03.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Splash_03_OS.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/Water/VFX_Water_Splash_03_OS.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/_ All.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/_ All/VFX.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Elements/_ All/VFX.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Plane01.fbx`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Plane01.fbx.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Plane01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Plane01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Ring01.fbx`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Ring01.fbx.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Ring01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Ring01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Ring02.fbx`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Ring02.fbx.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Ring02.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Ring02.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Ring03.fbx`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Ring03.fbx.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Ring03.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Ring03.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Ring04.fbx`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Ring04.fbx.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Ring04.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Ring04.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Slash01.fbx`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Slash01.fbx.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Slash01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Slash01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Slash02.fbx`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Slash02.fbx.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Slash02.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Slash02.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Sphere01.fbx`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Sphere01.fbx.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Sphere01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Sphere01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Sphere02.fbx`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Sphere02.fbx.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Sphere02.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Sphere02.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Spike01.fbx`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Spike01.fbx.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Spike01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_Spike01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_funelShape_01.fbx`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_funelShape_01.fbx.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_funelShape_01.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_funelShape_01.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_widerCurve.fbx`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_widerCurve.fbx.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_widerCurve.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_VFX_widerCurve.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_curve.fbx`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_curve.fbx.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_curve.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_curve.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_cylinder_noTOP.fbx`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_cylinder_noTOP.fbx.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_cylinder_noTOP.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_cylinder_noTOP.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_horuglasShape.fbx`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_horuglasShape.fbx.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_horuglasShape.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_horuglasShape.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_plate.fbx`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_plate.fbx.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_plate.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_plate.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_ring.fbx`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_ring.fbx.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_ring.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_ring.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_ringWide.fbx`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_ringWide.fbx.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_ringWide.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_ringWide.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_splashShape.fbx`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_splashShape.fbx.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_splashShape.prefab`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Meshes/SM_splashShape.prefab.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Shaders.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Shaders/SH_Vefects_Unlit_Flipbook_URP.shader`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Shaders/SH_Vefects_Unlit_Flipbook_URP.shader.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_2x2_BnW_Clouds_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_2x2_BnW_Clouds_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_3x3_RC_magicDust_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_3x3_RC_magicDust_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_3x4_RBC_loopingSmoke_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_3x4_RBC_loopingSmoke_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_3x4_RBC_magicDust_02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_3x4_RBC_magicDust_02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_3x4_RBC_magicDust_03.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_3x4_RBC_magicDust_03.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_3x4_dustDir_04.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_3x4_dustDir_04.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x2_RBC_dust_02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x2_RBC_dust_02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x3_RBC_dust_03.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x3_RBC_dust_03.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x4_RBC_dustDir_011.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x4_RBC_dustDir_011.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x4_RBC_dustDir_12.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x4_RBC_dustDir_12.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x4_RC_dustDir_03.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x4_RC_dustDir_03.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x5_RBC_dust_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x5_RBC_dust_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x5_RBC_smokeBurst_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x5_RBC_smokeBurst_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x5_RBC_smokeBurst_dirTest_03.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x5_RBC_smokeBurst_dirTest_03.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x5_RC_dustDir_021.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x5_RC_dustDir_021.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x5_RGBC_dustDir_041.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x5_RGBC_dustDir_041.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x5_RGBC_smokeBurst_02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x5_RGBC_smokeBurst_02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x5_RGBC_smokeBurst_dirTest_02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/FB_4x5_RGBC_smokeBurst_dirTest_02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/T_VFX_Puff_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Dust/T_VFX_Puff_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Explosion.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Explosion/FB_3x4_RGBC_magicExplosion_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Explosion/FB_3x4_RGBC_magicExplosion_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Explosion/FB_4x4_RGBC_dusstExplosion_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Explosion/FB_4x4_RGBC_dusstExplosion_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Explosion/FB_4x5_RGBC_explosionTest03.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Explosion/FB_4x5_RGBC_explosionTest03.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Explosion/FB_4x5_RGBC_explosion_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Explosion/FB_4x5_RGBC_explosion_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Explosion/FB_4x5_RGBC_explosion_02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Explosion/FB_4x5_RGBC_explosion_02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Explosion/T_VFX_Scorch_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Explosion/T_VFX_Scorch_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_3x3_RGBC_fireSwirl_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_3x3_RGBC_fireSwirl_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_3x4_GBC_fireFlames_04_1.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_3x4_GBC_fireFlames_04_1.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_3x4_RBC_fireSwirl_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_3x4_RBC_fireSwirl_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_3x4_RBC_fireSwirl_02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_3x4_RBC_fireSwirl_02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_3x4_RBC_fireWall_01_gradation.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_3x4_RBC_fireWall_01_gradation.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_3x4_RC_fireCharge_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_3x4_RC_fireCharge_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_3x4_RC_fireWall_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_3x4_RC_fireWall_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_3x4_RGBC_fireBurst_01_1.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_3x4_RGBC_fireBurst_01_1.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_3x4_RGBC_fireCharge_03_1.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_3x4_RGBC_fireCharge_03_1.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_3x4_RGBC_fireFlames_04.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_3x4_RGBC_fireFlames_04.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x3_RGBC_fireBurst01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x3_RGBC_fireBurst01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x3_RGBC_fireFlames_02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x3_RGBC_fireFlames_02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x3_RGBC_fireFlames_02_1.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x3_RGBC_fireFlames_02_1.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x4_GBC_fireFlames_01_1.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x4_GBC_fireFlames_01_1.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x4_GBC_fireFlames_03_1.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x4_GBC_fireFlames_03_1.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x4_GBC_fireFlames_05_1.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x4_GBC_fireFlames_05_1.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x4_RGBC_fireBurst_03.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x4_RGBC_fireBurst_03.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x4_RGBC_fireFlames_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x4_RGBC_fireFlames_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x4_RGBC_fireFlames_03.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x4_RGBC_fireFlames_03.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x4_RGBC_fireFlames_05.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x4_RGBC_fireFlames_05.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x5_RBC_fireBurst02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x5_RBC_fireBurst02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x5_RBC_fireBurst_03_1.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x5_RBC_fireBurst_03_1.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x5_RBC_fireSwirl_03.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x5_RBC_fireSwirl_03.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x5_RC_fireBurst_04_horiz.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x5_RC_fireBurst_04_horiz.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x5_RGBC_fireBurst_03.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x5_RGBC_fireBurst_03.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x5_RGBC_fireBurst_04_horiz.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x5_RGBC_fireBurst_04_horiz.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x5_RGBC_fireSwirl_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x5_RGBC_fireSwirl_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x5_RGBC_fireSwirl_02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Fire/FB_4x5_RGBC_fireSwirl_02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Gradients.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Gradients/T_UDgradient_16.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Gradients/T_UDgradient_16.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Gradients/T_VFX_gradient_02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Gradients/T_VFX_gradient_02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RBC_spikyHit_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RBC_spikyHit_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RC_shrapnel_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RC_shrapnel_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RC_shrapnel_02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RC_shrapnel_02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RC_shrapnel_03.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RC_shrapnel_03.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RC_shrapnel_04.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RC_shrapnel_04.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RC_shrapnel_05.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RC_shrapnel_05.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RC_shrapnel_06.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RC_shrapnel_06.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RC_shrapnel_07.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RC_shrapnel_07.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RC_shrapnel_08.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RC_shrapnel_08.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RGBC_slash_02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RGBC_slash_02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RGBC_slash_03.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_2x3_RGBC_slash_03.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_3x3_RBC_inwardsEnergy_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_3x3_RBC_inwardsEnergy_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_3x3_RBC_muzzleFlash_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_3x3_RBC_muzzleFlash_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_3x3_RGBC_slash_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_3x3_RGBC_slash_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_3x3_RGC_muzzleFlash_02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_3x3_RGC_muzzleFlash_02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_3x3_RGC_muzzleFlash_03.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_3x3_RGC_muzzleFlash_03.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_3x4_RGBC_elementalSlash_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_3x4_RGBC_elementalSlash_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_4x2_RGBC_impact01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_4x2_RGBC_impact01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_4x4_RGBC_elementalSlash_02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_4x4_RGBC_elementalSlash_02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_4x4_RGBC_elementalSlash_03.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/FB_4x4_RGBC_elementalSlash_03.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/T_VFX_Color_Sepparation_Test_01_A.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/T_VFX_Color_Sepparation_Test_01_A.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/T_VFX_Directional_Impact_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/T_VFX_Directional_Impact_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/T_VFX_Radial_Impact_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/T_VFX_Radial_Impact_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/T_VFX_Radial_Impact_02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/T_VFX_Radial_Impact_02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/T_VFX_Radial_Impact_03.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/T_VFX_Radial_Impact_03.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/T_VFX_Radial_Impact_04.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/T_VFX_Radial_Impact_04.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/T_VFX_Radial_Impact_05.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/T_VFX_Radial_Impact_05.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/T_VFX_Radial_Impact_06.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/T_VFX_Radial_Impact_06.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/T_VFX_Radial_Impact_07.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Impact/T_VFX_Radial_Impact_07.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Lighting.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Lighting/FB_2x3_RBC_lightingImpact_03.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Lighting/FB_2x3_RBC_lightingImpact_03.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Lighting/FB_3x3_RBC_lightingImpact_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Lighting/FB_3x3_RBC_lightingImpact_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Lighting/FB_3x3_RBC_lighting_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Lighting/FB_3x3_RBC_lighting_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Lighting/FB_3x3_RBC_lighting_01_oneshot.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Lighting/FB_3x3_RBC_lighting_01_oneshot.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Lighting/FB_3x3_RBC_lighting_04.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Lighting/FB_3x3_RBC_lighting_04.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Lighting/FB_3x4_RBC_lightingImpact_02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Lighting/FB_3x4_RBC_lightingImpact_02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Lighting/FB_3x4_RBC_lighting_02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Lighting/FB_3x4_RBC_lighting_02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Lighting/FB_3x4_RBC_lighting_03.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Lighting/FB_3x4_RBC_lighting_03.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Lighting/FB_3x4_RBC_lighting_05.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Lighting/FB_3x4_RBC_lighting_05.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Lighting/FB_3x4_RBC_lighting_05_loop.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Lighting/FB_3x4_RBC_lighting_05_loop.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Noises.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Noises/T_VFX_Noise_03.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Noises/T_VFX_Noise_03.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Simple.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Simple/SharpCircle_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Simple/SharpCircle_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Simple/blurCircle_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Simple/blurCircle_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Sparks.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Sparks/FB_2x2_RGC_dirSparks_02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Sparks/FB_2x2_RGC_dirSparks_02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Sparks/FB_2x3_RGC_dirSparks_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Sparks/FB_2x3_RGC_dirSparks_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Sparks/FB_2x3_RGC_dirSparks_03.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Sparks/FB_2x3_RGC_dirSparks_03.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Sparks/T_VFX_Sparks_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Sparks/T_VFX_Sparks_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Sparks/T_VFX_Sparks_02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Sparks/T_VFX_Sparks_02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_BnW_tilingFire_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_BnW_tilingFire_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_BnW_tilingFire_09.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_BnW_tilingFire_09.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_RC_tilingFire_02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_RC_tilingFire_02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_RGBC_tilingFire_06.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_RGBC_tilingFire_06.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_RGBC_tilingFire_07.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_RGBC_tilingFire_07.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_RGBC_tilingFire_08.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_RGBC_tilingFire_08.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_RGBC_tilingFire_09.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_RGBC_tilingFire_09.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_RGC_tilingFire_02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_RGC_tilingFire_02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_RGC_tilingFire_03.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_RGC_tilingFire_03.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_RGC_tilingFire_04.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_RGC_tilingFire_04.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_RGC_tilingFire_05.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Tiling/T_RGC_tilingFire_05.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/2x2_RGBC_drops.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/2x2_RGBC_drops.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_2x3_RGC_splashImpact_01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_2x3_RGC_splashImpact_01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x3_RC_splash09.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x3_RC_splash09.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x3_RGBC_splash06.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x3_RGBC_splash06.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x3_RGBC_splash12.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x3_RGBC_splash12.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x3_RGC_splashImpact_02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x3_RGC_splashImpact_02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x4_DIS_splash07.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x4_DIS_splash07.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x4_DIS_splash11.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x4_DIS_splash11.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x4_RGBC_splash03.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x4_RGBC_splash03.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x4_RGBC_splash07.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x4_RGBC_splash07.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x4_RGBC_splash08.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x4_RGBC_splash08.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x4_RGBC_splash09.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x4_RGBC_splash09.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x4_RGC_splash10.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_3x4_RGC_splash10.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_4x4_RBC_splash05.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_4x4_RBC_splash05.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_4x4_RGBC_splash02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_4x4_RGBC_splash02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_4x4_RGBC_splash04.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_4x4_RGBC_splash04.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_4x5_DIS_splash02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_4x5_DIS_splash02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_4x5_RBC_splash01.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_4x5_RBC_splash01.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_4x5_RC_splash02.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_4x5_RC_splash02.tga.meta`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_4x5_RC_splash02_blured.tga`
+- `A` · `Assets/Vefects/Flipbook VFX/Shared/Textures/Water/FB_4x5_RC_splash02_blured.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Bubble_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Bubble_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Bubbles_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Bubbles_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Chest_Open_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Chest_Open_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Critical_Attack_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Critical_Attack_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Dust_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Dust_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Explosion_Big_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Explosion_Big_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Explosion_Small_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Explosion_Small_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Factory_Smoke_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Factory_Smoke_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Factory_Smoke_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Factory_Smoke_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Fire_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Fire_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Fire_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Fire_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Fireball_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Fireball_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Gun_Smoke_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Gun_Smoke_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Heal_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Heal_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Heal_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Heal_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Heal_Loop_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Heal_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Impact_Sparks_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Impact_Sparks_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Impact_Sparks_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Impact_Sparks_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Item_Pick_Up_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Item_Pick_Up_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Item_Spawn_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Item_Spawn_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Lava_Bubble_Large_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Lava_Bubble_Large_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Lava_Bubble_Large_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Lava_Bubble_Large_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Lava_Bubble_Small_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Lava_Bubble_Small_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Lava_Bubble_Small_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Lava_Bubble_Small_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Leaf_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Leaf_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Level_Up_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Level_Up_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Level_Up_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Level_Up_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Lightning_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Lightning_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Lightning_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Lightning_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Magic_Impact_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Magic_Impact_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Poison_Debuff_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Poison_Debuff_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Poison_Debuff_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Poison_Debuff_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Burst_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Burst_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Burst_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Burst_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Burst_Impact_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Burst_Impact_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Burst_Impact_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Burst_Impact_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Burst_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Burst_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Burst_Loop_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Burst_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Fire_Impact_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Fire_Impact_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Fire_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Fire_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Ice_Impact_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Ice_Impact_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Ice_Impact_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Ice_Impact_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Ice_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Ice_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Lightning_Impact_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Lightning_Impact_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Lightning_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Lightning_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Lightning_Loop_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Lightning_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Magic_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Magic_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Water_Impact_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Water_Impact_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Water_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Water_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Wind_Impact_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Wind_Impact_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Wind_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Projectile_Wind_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Respawn_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Respawn_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Shield_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Shield_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Sword_Slash_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Sword_Slash_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Teleport_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Teleport_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Vanish_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Vanish_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Vanish_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Vanish_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Vapor_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Fer/SFX_Vefects_Vapor_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Bubble_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Bubble_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Bubbles_Loop_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Bubbles_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Chest_Open_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Chest_Open_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Critical_Attack_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Critical_Attack_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Dust_Loop_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Dust_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Explosion_Big_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Explosion_Big_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Explosion_Small_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Explosion_Small_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Factory_Smoke_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Factory_Smoke_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Factory_Smoke_Loop_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Factory_Smoke_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Fire_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Fire_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Fire_Loop_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Fire_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Fireball_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Fireball_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Gun_Smoke_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Gun_Smoke_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Heal_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Heal_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Heal_Loop_03.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Heal_Loop_03.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Impact_Sparks_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Impact_Sparks_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Impact_Sparks_Loop_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Impact_Sparks_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Item_Pick_Up_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Item_Pick_Up_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Item_Spawn_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Item_Spawn_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Lava_Bubble_Large_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Lava_Bubble_Large_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Lava_Bubble_Large_Loop_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Lava_Bubble_Large_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Lava_Bubble_Small_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Lava_Bubble_Small_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Lava_Bubble_Small_Loop_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Lava_Bubble_Small_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Leaf_Loop_01.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Leaf_Loop_01.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Level_Up_03.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Level_Up_03.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Lightning_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Lightning_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Lightning_Loop_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Lightning_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Magic_Impact_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Magic_Impact_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Poison_Debuff_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Poison_Debuff_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Poison_Debuff_Loop_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Poison_Debuff_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Burst_03.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Burst_03.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Burst_Impact_03.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Burst_Impact_03.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Burst_Loop_03.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Burst_Loop_03.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Fire_Impact_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Fire_Impact_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Fire_Loop_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Fire_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Ice_Impact_03.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Ice_Impact_03.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Ice_Loop_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Ice_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Lightning_Impact_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Lightning_Impact_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Lightning_Loop_03.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Lightning_Loop_03.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Water_Impact_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Water_Impact_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Water_Loop_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Water_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Wind_Impact_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Wind_Impact_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Wind_Loop_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Projectile_Wind_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Respawn_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Respawn_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Shield_Loop_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Shield_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Sword_Slash_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Sword_Slash_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Teleport_Loop_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Teleport_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Vanish_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Vanish_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Vanish_Loop_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Vanish_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Vapor_Loop_02.wav`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Audio/WAV/Sergi/SFX_Vefects_Vapor_Loop_02.wav.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Materials/M_VFX_Character_Showoff_01.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Materials/M_VFX_Character_Showoff_01.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Animations.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Animations/VFX_Dolly_Animation.anim`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Animations/VFX_Dolly_Animation.anim.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Animations/dolly.controller`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Animations/dolly.controller.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Materials/M_Grid.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Materials/M_Grid.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Materials/M_Sky.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Materials/M_Sky.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Materials/M_Vefects_Grid_01.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Materials/M_Vefects_Grid_01.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Meshes.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Meshes/SM_VFX_Background_Plate_01.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Meshes/SM_VFX_Background_Plate_01.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Meshes/SM_VFX_Background_Plate_Flat_01.fbx`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Meshes/SM_VFX_Background_Plate_Flat_01.fbx.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Prefabs.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Prefabs/__________ VFX Thumbnail.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Prefabs/__________ VFX Thumbnail.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Prefabs/__________ VFX.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Prefabs/__________ VFX.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Settings.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Settings/PostProProfile_Pixel.asset`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Settings/PostProProfile_Pixel.asset.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Shaders.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Shaders/SH_Vefects_Grid_01_BIRP.shader`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Shaders/SH_Vefects_Grid_01_BIRP.shader.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Textures/T_VFX_Grid_01_Masks.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Textures/T_VFX_Grid_01_Masks.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Textures/T_VFX_Grid_01_Normal.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Textures/T_VFX_Grid_01_Normal.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Textures/T_VFX_Grid_01_Texture.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Textures/T_VFX_Grid_01_Texture.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Textures/T_VFX_Metrics_Grid_Base_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Textures/T_VFX_Metrics_Grid_Base_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Textures/T_VFX_Metrics_Grid_Normal.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Scene/Textures/T_VFX_Metrics_Grid_Normal.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Shaders.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Shaders/SH_Vefects_BIRP_VFX_Character_Showoff.shader`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Shaders/SH_Vefects_BIRP_VFX_Character_Showoff.shader.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Textures/T_VFX_Perlin_2_Octaves_Equalized.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Resources/Textures/T_VFX_Perlin_2_Octaves_Equalized.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Scenes.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Scenes/Vefects Pixel Craft VFX Thumbnail.unity`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Scenes/Vefects Pixel Craft VFX Thumbnail.unity.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Scenes/Vefects Pixel Craft VFX Vid.unity`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Scenes/Vefects Pixel Craft VFX Vid.unity.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Scenes/Vefects Pixel Craft VFX.unity`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Demo/Scenes/Vefects Pixel Craft VFX.unity.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Documentation.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Documentation/Vefects Pixel Craft VFX Unity Info Doc.pdf`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Documentation/Vefects Pixel Craft VFX Unity Info Doc.pdf.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Shared.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Shared/Shaders.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Shared/Shaders/SH_Vefects_BIRP_Unlit_Flipbook_Pixel_01.shader`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Shared/Shaders/SH_Vefects_BIRP_Unlit_Flipbook_Pixel_01.shader.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Shared/Shaders/SH_Vefects_BIRP_Unlit_Flipbook_Pixel_Advanced_01.shader`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Shared/Shaders/SH_Vefects_BIRP_Unlit_Flipbook_Pixel_Advanced_01.shader.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Shared/Shaders/SH_Vefects_BIRP_Unlit_Flipbook_Pixel_Color_01.shader`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Shared/Shaders/SH_Vefects_BIRP_Unlit_Flipbook_Pixel_Color_01.shader.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Shared/Shaders/SH_Vefects_BIRP_Unlit_Flipbook_Pixel_Color_Advanced_01.shader`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Shared/Shaders/SH_Vefects_BIRP_Unlit_Flipbook_Pixel_Color_Advanced_01.shader.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Shared/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Shared/Textures/T_VFX_Noise_03.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Shared/Textures/T_VFX_Noise_03.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Shared/Textures/T_VFX_Pixel_Erosion_01.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/Shared/Textures/T_VFX_Pixel_Erosion_01.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble Burst Small.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble Burst Small/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble Burst Small/Materials/M_VFX_Bubble_Burst_Small_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble Burst Small/Materials/M_VFX_Bubble_Burst_Small_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble Burst Small/Materials/M_VFX_Bubble_Burst_Small_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble Burst Small/Materials/M_VFX_Bubble_Burst_Small_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble Burst Small/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble Burst Small/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble Burst Small/Particles/Loop/VFX_Bubble_Burst_Small_01_Color_Bunch_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble Burst Small/Particles/Loop/VFX_Bubble_Burst_Small_01_Color_Bunch_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble Burst Small/Particles/Loop/VFX_Bubble_Burst_Small_01_Mask_Bunch_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble Burst Small/Particles/Loop/VFX_Bubble_Burst_Small_01_Mask_Bunch_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble Burst Small/Particles/VFX_Bubble_Burst_Small_01_Color_Bunch_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble Burst Small/Particles/VFX_Bubble_Burst_Small_01_Color_Bunch_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble Burst Small/Particles/VFX_Bubble_Burst_Small_01_Mask_Bunch_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble Burst Small/Particles/VFX_Bubble_Burst_Small_01_Mask_Bunch_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble Burst Small/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble Burst Small/Textures/T_VFX_Bubble_Burst_Small_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble Burst Small/Textures/T_VFX_Bubble_Burst_Small_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble Burst Small/Textures/T_VFX_Bubble_Burst_Small_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble Burst Small/Textures/T_VFX_Bubble_Burst_Small_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Materials/M_VFX_Bubble_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Materials/M_VFX_Bubble_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Materials/M_VFX_Bubble_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Materials/M_VFX_Bubble_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Materials/M_VFX_Bubble_02_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Materials/M_VFX_Bubble_02_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/Loop/VFX_Bubble_01_Color_Bunch_Loop_Movement.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/Loop/VFX_Bubble_01_Color_Bunch_Loop_Movement.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/Loop/VFX_Bubble_01_Color_Bunch_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/Loop/VFX_Bubble_01_Color_Bunch_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/Loop/VFX_Bubble_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/Loop/VFX_Bubble_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/Loop/VFX_Bubble_01_Mask_Bunch_Loop_Movement.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/Loop/VFX_Bubble_01_Mask_Bunch_Loop_Movement.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/Loop/VFX_Bubble_01_Mask_Bunch_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/Loop/VFX_Bubble_01_Mask_Bunch_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/Loop/VFX_Bubble_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/Loop/VFX_Bubble_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/Loop/VFX_Bubble_02_Mask_Bunch_Loop_Movement.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/Loop/VFX_Bubble_02_Mask_Bunch_Loop_Movement.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/Loop/VFX_Bubble_02_Mask_Bunch_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/Loop/VFX_Bubble_02_Mask_Bunch_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/Loop/VFX_Bubble_02_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/Loop/VFX_Bubble_02_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/VFX_Bubble_01_Color_Bunch_Movement.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/VFX_Bubble_01_Color_Bunch_Movement.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/VFX_Bubble_01_Color_Bunch_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/VFX_Bubble_01_Color_Bunch_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/VFX_Bubble_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/VFX_Bubble_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/VFX_Bubble_01_Mask_Bunch_Movement.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/VFX_Bubble_01_Mask_Bunch_Movement.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/VFX_Bubble_01_Mask_Bunch_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/VFX_Bubble_01_Mask_Bunch_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/VFX_Bubble_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/VFX_Bubble_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/VFX_Bubble_02_Mask_Bunch_Movement.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/VFX_Bubble_02_Mask_Bunch_Movement.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/VFX_Bubble_02_Mask_Bunch_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/VFX_Bubble_02_Mask_Bunch_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/VFX_Bubble_02_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Particles/VFX_Bubble_02_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Textures/T_VFX_Bubble_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Textures/T_VFX_Bubble_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Textures/T_VFX_Bubble_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Bubble/Textures/T_VFX_Bubble_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Materials/M_VFX_Bubble_Burst_Big_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Materials/M_VFX_Bubble_Burst_Big_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Materials/M_VFX_Bubble_Burst_Big_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Materials/M_VFX_Bubble_Burst_Big_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Particles/Loop/VFX_Bubble_Burst_Big_01_Color_Bunch_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Particles/Loop/VFX_Bubble_Burst_Big_01_Color_Bunch_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Particles/Loop/VFX_Bubble_Burst_Big_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Particles/Loop/VFX_Bubble_Burst_Big_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Particles/Loop/VFX_Bubble_Burst_Big_01_Mask_Bunch_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Particles/Loop/VFX_Bubble_Burst_Big_01_Mask_Bunch_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Particles/Loop/VFX_Bubble_Burst_Big_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Particles/Loop/VFX_Bubble_Burst_Big_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Particles/VFX_Bubble_Burst_Big_01_Color.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Particles/VFX_Bubble_Burst_Big_01_Color.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Particles/VFX_Bubble_Burst_Big_01_Color_Bunch_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Particles/VFX_Bubble_Burst_Big_01_Color_Bunch_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Particles/VFX_Bubble_Burst_Big_01_Mask.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Particles/VFX_Bubble_Burst_Big_01_Mask.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Particles/VFX_Bubble_Burst_Big_01_Mask_Bunch_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Particles/VFX_Bubble_Burst_Big_01_Mask_Bunch_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Textures/T_VFX_Bubble_Burst_Big_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Textures/T_VFX_Bubble_Burst_Big_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Textures/T_VFX_Bubble_Burst_Big_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Buble Burst Big/Textures/T_VFX_Bubble_Burst_Big_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Chest Open.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Chest Open/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Chest Open/Materials/M_VFX_Chest_Open_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Chest Open/Materials/M_VFX_Chest_Open_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Chest Open/Materials/M_VFX_Chest_Open_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Chest Open/Materials/M_VFX_Chest_Open_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Chest Open/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Chest Open/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Chest Open/Particles/Loop/VFX_Chest_Open_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Chest Open/Particles/Loop/VFX_Chest_Open_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Chest Open/Particles/Loop/VFX_Chest_Open_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Chest Open/Particles/Loop/VFX_Chest_Open_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Chest Open/Particles/VFX_Chest_Open_01_Color.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Chest Open/Particles/VFX_Chest_Open_01_Color.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Chest Open/Particles/VFX_Chest_Open_01_Mask.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Chest Open/Particles/VFX_Chest_Open_01_Mask.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Chest Open/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Chest Open/Textures/T_VFX_Chest_Open_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Chest Open/Textures/T_VFX_Chest_Open_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Chest Open/Textures/T_VFX_Chest_Open_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Chest Open/Textures/T_VFX_Chest_Open_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Materials/M_VFX_Critical_Attack_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Materials/M_VFX_Critical_Attack_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Materials/M_VFX_Critical_Attack_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Materials/M_VFX_Critical_Attack_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Materials/M_VFX_Critical_Attack_02_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Materials/M_VFX_Critical_Attack_02_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_01_Mask_Loop_Static_180.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_01_Mask_Loop_Static_180.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_01_Mask_Loop_Static_270.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_01_Mask_Loop_Static_270.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_01_Mask_Loop_Static_90.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_01_Mask_Loop_Static_90.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_01_Mask_Loop_Static_Flip.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_01_Mask_Loop_Static_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_01_Mask_Loop_Static_Flip_180.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_01_Mask_Loop_Static_Flip_180.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_01_Mask_Loop_Static_Flip_270.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_01_Mask_Loop_Static_Flip_270.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_01_Mask_Loop_Static_Flip_90.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_01_Mask_Loop_Static_Flip_90.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_02_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_02_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_03_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_03_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_04_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/Loop/VFX_Critical_Attack_04_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_01_Color.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_01_Color.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_01_Mask.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_01_Mask.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_01_Mask_180.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_01_Mask_180.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_01_Mask_270.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_01_Mask_270.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_01_Mask_90.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_01_Mask_90.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_01_Mask_Flip.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_01_Mask_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_01_Mask_Flip_180.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_01_Mask_Flip_180.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_01_Mask_Flip_270.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_01_Mask_Flip_270.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_01_Mask_Flip_90.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_01_Mask_Flip_90.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_02_Mask.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_02_Mask.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_03_Mask.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_03_Mask.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_04_Mask.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Particles/VFX_Critical_Attack_04_Mask.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Textures/T_VFX_Critical_Attack_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Textures/T_VFX_Critical_Attack_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Textures/T_VFX_Critical_Attack_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Critical Attack/Textures/T_VFX_Critical_Attack_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Materials/M_VFX_Dust_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Materials/M_VFX_Dust_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Materials/M_VFX_Dust_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Materials/M_VFX_Dust_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Materials/M_VFX_Dust_02_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Materials/M_VFX_Dust_02_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Materials/M_VFX_Dust_03_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Materials/M_VFX_Dust_03_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Materials/M_VFX_Dust_04_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Materials/M_VFX_Dust_04_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Materials/M_VFX_Dust_05_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Materials/M_VFX_Dust_05_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Mask_Loop_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Mask_Loop_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Mask_Loop_Static_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/Loop/VFX_Dust_01_Mask_Loop_Static_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/Loop/VFX_Dust_02_Mask_Loop_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/Loop/VFX_Dust_02_Mask_Loop_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/Loop/VFX_Dust_03_Mask_Loop_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/Loop/VFX_Dust_03_Mask_Loop_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/Loop/VFX_Dust_04_Mask_Loop_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/Loop/VFX_Dust_04_Mask_Loop_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/Loop/VFX_Dust_05_Mask_Loop_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/Loop/VFX_Dust_05_Mask_Loop_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/Loop/VFX_Dust_06_Mask_Loop_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/Loop/VFX_Dust_06_Mask_Loop_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/VFX_Dust_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/VFX_Dust_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/VFX_Dust_01_Mask_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/VFX_Dust_01_Mask_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/VFX_Dust_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/VFX_Dust_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/VFX_Dust_01_Mask_Static_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/VFX_Dust_01_Mask_Static_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/VFX_Dust_02_Mask_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/VFX_Dust_02_Mask_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/VFX_Dust_03_Mask_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/VFX_Dust_03_Mask_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/VFX_Dust_04_Mask_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/VFX_Dust_04_Mask_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/VFX_Dust_05_Mask_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/VFX_Dust_05_Mask_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/VFX_Dust_06_Mask_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Particles/VFX_Dust_06_Mask_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Textures/T_VFX_Dust_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Textures/T_VFX_Dust_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Textures/T_VFX_Dust_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Dust/Textures/T_VFX_Dust_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Materials/M_VFX_Explosion_Big_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Materials/M_VFX_Explosion_Big_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Materials/M_VFX_Explosion_Big_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Materials/M_VFX_Explosion_Big_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Materials/M_VFX_Explosion_Big_02_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Materials/M_VFX_Explosion_Big_02_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/Loop/VFX_Explosion_Big_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/Loop/VFX_Explosion_Big_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/Loop/VFX_Explosion_Big_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/Loop/VFX_Explosion_Big_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/Loop/VFX_Explosion_Big_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/Loop/VFX_Explosion_Big_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/Loop/VFX_Explosion_Big_01_Vertical_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/Loop/VFX_Explosion_Big_01_Vertical_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/Loop/VFX_Explosion_Big_02_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/Loop/VFX_Explosion_Big_02_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/Loop/VFX_Explosion_Big_02_Vertical_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/Loop/VFX_Explosion_Big_02_Vertical_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/VFX_Explosion_Big_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/VFX_Explosion_Big_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/VFX_Explosion_Big_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/VFX_Explosion_Big_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/VFX_Explosion_Big_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/VFX_Explosion_Big_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/VFX_Explosion_Big_01_Vertical_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/VFX_Explosion_Big_01_Vertical_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/VFX_Explosion_Big_02_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/VFX_Explosion_Big_02_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/VFX_Explosion_Big_02_Vertical_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Particles/VFX_Explosion_Big_02_Vertical_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Textures/T_VFX_Explosion_Big_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Textures/T_VFX_Explosion_Big_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Textures/T_VFX_Explosion_Big_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Big/Textures/T_VFX_Explosion_Big_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Materials/M_VFX_Explosion_Small_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Materials/M_VFX_Explosion_Small_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Materials/M_VFX_Explosion_Small_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Materials/M_VFX_Explosion_Small_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Materials/M_VFX_Explosion_Small_02_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Materials/M_VFX_Explosion_Small_02_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Materials/M_VFX_Explosion_Small_03_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Materials/M_VFX_Explosion_Small_03_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/Loop/VFX_Explosion_Small_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/Loop/VFX_Explosion_Small_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/Loop/VFX_Explosion_Small_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/Loop/VFX_Explosion_Small_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/Loop/VFX_Explosion_Small_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/Loop/VFX_Explosion_Small_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/Loop/VFX_Explosion_Small_01_Vertical_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/Loop/VFX_Explosion_Small_01_Vertical_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/Loop/VFX_Explosion_Small_02_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/Loop/VFX_Explosion_Small_02_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/Loop/VFX_Explosion_Small_02_Vertical_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/Loop/VFX_Explosion_Small_02_Vertical_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/Loop/VFX_Explosion_Small_03_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/Loop/VFX_Explosion_Small_03_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/Loop/VFX_Explosion_Small_03_Vertical_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/Loop/VFX_Explosion_Small_03_Vertical_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/VFX_Explosion_Small_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/VFX_Explosion_Small_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/VFX_Explosion_Small_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/VFX_Explosion_Small_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/VFX_Explosion_Small_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/VFX_Explosion_Small_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/VFX_Explosion_Small_01_Vertical_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/VFX_Explosion_Small_01_Vertical_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/VFX_Explosion_Small_02_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/VFX_Explosion_Small_02_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/VFX_Explosion_Small_02_Vertical_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/VFX_Explosion_Small_02_Vertical_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/VFX_Explosion_Small_03_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/VFX_Explosion_Small_03_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/VFX_Explosion_Small_03_Vertical_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Particles/VFX_Explosion_Small_03_Vertical_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Textures/T_VFX_Explosion_Small_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Textures/T_VFX_Explosion_Small_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Textures/T_VFX_Explosion_Small_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Explosion Small/Textures/T_VFX_Explosion_Small_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Materials/M_VFX_Factory_Smoke_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Materials/M_VFX_Factory_Smoke_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Materials/M_VFX_Factory_Smoke_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Materials/M_VFX_Factory_Smoke_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Materials/M_VFX_Factory_Smoke_02_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Materials/M_VFX_Factory_Smoke_02_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Materials/M_VFX_Factory_Smoke_03_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Materials/M_VFX_Factory_Smoke_03_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/Loop/VFX_Factory_Smoke_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/Loop/VFX_Factory_Smoke_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/Loop/VFX_Factory_Smoke_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/Loop/VFX_Factory_Smoke_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/Loop/VFX_Factory_Smoke_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/Loop/VFX_Factory_Smoke_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/Loop/VFX_Factory_Smoke_01_Vertical_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/Loop/VFX_Factory_Smoke_01_Vertical_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/Loop/VFX_Factory_Smoke_02_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/Loop/VFX_Factory_Smoke_02_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/Loop/VFX_Factory_Smoke_02_Vertical_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/Loop/VFX_Factory_Smoke_02_Vertical_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/Loop/VFX_Factory_Smoke_03_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/Loop/VFX_Factory_Smoke_03_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/Loop/VFX_Factory_Smoke_03_Vertical_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/Loop/VFX_Factory_Smoke_03_Vertical_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/Loop/VFX_Factory_Smoke_04_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/Loop/VFX_Factory_Smoke_04_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/Loop/VFX_Factory_Smoke_04_Vertical_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/Loop/VFX_Factory_Smoke_04_Vertical_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/VFX_Factory_Smoke_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/VFX_Factory_Smoke_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/VFX_Factory_Smoke_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/VFX_Factory_Smoke_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/VFX_Factory_Smoke_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/VFX_Factory_Smoke_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/VFX_Factory_Smoke_01_Vertical_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/VFX_Factory_Smoke_01_Vertical_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/VFX_Factory_Smoke_02_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/VFX_Factory_Smoke_02_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/VFX_Factory_Smoke_02_Vertical_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/VFX_Factory_Smoke_02_Vertical_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/VFX_Factory_Smoke_03_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/VFX_Factory_Smoke_03_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/VFX_Factory_Smoke_03_Vertical_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/VFX_Factory_Smoke_03_Vertical_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/VFX_Factory_Smoke_04_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/VFX_Factory_Smoke_04_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/VFX_Factory_Smoke_04_Vertical_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Particles/VFX_Factory_Smoke_04_Vertical_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Textures/T_VFX_Factory_Smoke_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Textures/T_VFX_Factory_Smoke_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Textures/T_VFX_Factory_Smoke_01_Color_NPOT.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Textures/T_VFX_Factory_Smoke_01_Color_NPOT.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Textures/T_VFX_Factory_Smoke_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Textures/T_VFX_Factory_Smoke_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Textures/T_VFX_Factory_Smoke_01_Mask_NPOT.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Factory Smoke/Textures/T_VFX_Factory_Smoke_01_Mask_NPOT.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Materials/M_VFX_Fire_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Materials/M_VFX_Fire_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Materials/M_VFX_Fire_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Materials/M_VFX_Fire_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Particles/Loop/VFX_Fire_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Particles/Loop/VFX_Fire_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Particles/Loop/VFX_Fire_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Particles/Loop/VFX_Fire_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Particles/Loop/VFX_Fire_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Particles/Loop/VFX_Fire_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Particles/Loop/VFX_Fire_01_Vertical_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Particles/Loop/VFX_Fire_01_Vertical_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Particles/VFX_Fire_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Particles/VFX_Fire_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Particles/VFX_Fire_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Particles/VFX_Fire_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Particles/VFX_Fire_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Particles/VFX_Fire_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Particles/VFX_Fire_01_Vertical_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Particles/VFX_Fire_01_Vertical_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Textures/T_VFX_Fire_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Textures/T_VFX_Fire_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Textures/T_VFX_Fire_01_Color_256.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Textures/T_VFX_Fire_01_Color_256.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Textures/T_VFX_Fire_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Textures/T_VFX_Fire_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Textures/T_VFX_Fire_01_Mask_256.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fire/Textures/T_VFX_Fire_01_Mask_256.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Materials/M_VFX_Fireball_Impact_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Materials/M_VFX_Fireball_Impact_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Materials/M_VFX_Fireball_Impact_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Materials/M_VFX_Fireball_Impact_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Materials/M_VFX_Fireball_Projectile_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Materials/M_VFX_Fireball_Projectile_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Materials/M_VFX_Fireball_Projectile_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Materials/M_VFX_Fireball_Projectile_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/Loop/VFX_Fireball_Impact_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/Loop/VFX_Fireball_Impact_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/Loop/VFX_Fireball_Impact_01_Horizontal_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/Loop/VFX_Fireball_Impact_01_Horizontal_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/Loop/VFX_Fireball_Impact_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/Loop/VFX_Fireball_Impact_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/Loop/VFX_Fireball_Projectile_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/Loop/VFX_Fireball_Projectile_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/Loop/VFX_Fireball_Projectile_01_Horizontal_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/Loop/VFX_Fireball_Projectile_01_Horizontal_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/Loop/VFX_Fireball_Projectile_01_Horizontal_Random_Flip_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/Loop/VFX_Fireball_Projectile_01_Horizontal_Random_Flip_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/Loop/VFX_Fireball_Projectile_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/Loop/VFX_Fireball_Projectile_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/Loop/VFX_Fireball_Projectile_01_Vertical_Flip_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/Loop/VFX_Fireball_Projectile_01_Vertical_Flip_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/Loop/VFX_Fireball_Projectile_01_Vertical_Random_Flip_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/Loop/VFX_Fireball_Projectile_01_Vertical_Random_Flip_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/VFX_Fireball_Impact_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/VFX_Fireball_Impact_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/VFX_Fireball_Impact_01_Horizontal_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/VFX_Fireball_Impact_01_Horizontal_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/VFX_Fireball_Impact_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/VFX_Fireball_Impact_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/VFX_Fireball_Projectile_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/VFX_Fireball_Projectile_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/VFX_Fireball_Projectile_01_Horizontal_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/VFX_Fireball_Projectile_01_Horizontal_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/VFX_Fireball_Projectile_01_Horizontal_Random_Flip_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/VFX_Fireball_Projectile_01_Horizontal_Random_Flip_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/VFX_Fireball_Projectile_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/VFX_Fireball_Projectile_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/VFX_Fireball_Projectile_01_Vertical_Flip_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/VFX_Fireball_Projectile_01_Vertical_Flip_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/VFX_Fireball_Projectile_01_Vertical_Random_Flip_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Particles/VFX_Fireball_Projectile_01_Vertical_Random_Flip_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Textures/T_VFX_Fireball_Impact_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Textures/T_VFX_Fireball_Impact_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Textures/T_VFX_Fireball_Impact_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Textures/T_VFX_Fireball_Impact_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Textures/T_VFX_Fireball_Projectile_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Textures/T_VFX_Fireball_Projectile_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Textures/T_VFX_Fireball_Projectile_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Fireball/Textures/T_VFX_Fireball_Projectile_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Materials/M_VFX_Gun_Smoke_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Materials/M_VFX_Gun_Smoke_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Materials/M_VFX_Gun_Smoke_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Materials/M_VFX_Gun_Smoke_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Materials/M_VFX_Gun_Smoke_02_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Materials/M_VFX_Gun_Smoke_02_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_01_Color_Loop_Static_Flip.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_01_Color_Loop_Static_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_01_Horizontal_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_01_Horizontal_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_01_Horizontal_Billboard_Color_Loop_Static_Flip.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_01_Horizontal_Billboard_Color_Loop_Static_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_01_Horizontal_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_01_Horizontal_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_01_Horizontal_Billboard_Mask_Loop_Static_Flip.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_01_Horizontal_Billboard_Mask_Loop_Static_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_01_Mask_Loop_Static_Flip.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_01_Mask_Loop_Static_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_02_Horizontal_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_02_Horizontal_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_02_Horizontal_Billboard_Mask_Loop_Static_Flip.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_02_Horizontal_Billboard_Mask_Loop_Static_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_02_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_02_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_02_Mask_Loop_Static_Flip.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/Loop/VFX_Gun_Smoke_02_Mask_Loop_Static_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_01_Color_Static_Flip.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_01_Color_Static_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_01_Horizontal_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_01_Horizontal_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_01_Horizontal_Billboard_Color_Static_Flip.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_01_Horizontal_Billboard_Color_Static_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_01_Horizontal_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_01_Horizontal_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_01_Horizontal_Billboard_Mask_Static_Flip.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_01_Horizontal_Billboard_Mask_Static_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_01_Mask_Static_Flip.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_01_Mask_Static_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_02_Horizontal_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_02_Horizontal_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_02_Horizontal_Billboard_Mask_Static_Flip.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_02_Horizontal_Billboard_Mask_Static_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_02_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_02_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_02_Mask_Static_Flip.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Particles/VFX_Gun_Smoke_02_Mask_Static_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Textures/T_VFX_Gun_Smoke_01_Color_NPOT.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Textures/T_VFX_Gun_Smoke_01_Color_NPOT.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Textures/T_VFX_Gun_Smoke_01_Mask_NPOT.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Gun Smoke/Textures/T_VFX_Gun_Smoke_01_Mask_NPOT.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Heal.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Heal/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Heal/Materials/M_VFX_Heal_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Heal/Materials/M_VFX_Heal_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Heal/Materials/M_VFX_Heal_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Heal/Materials/M_VFX_Heal_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Heal/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Heal/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Heal/Particles/Loop/VFX_Heal_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Heal/Particles/Loop/VFX_Heal_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Heal/Particles/Loop/VFX_Heal_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Heal/Particles/Loop/VFX_Heal_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Heal/Particles/VFX_Heal_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Heal/Particles/VFX_Heal_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Heal/Particles/VFX_Heal_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Heal/Particles/VFX_Heal_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Heal/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Heal/Textures/T_VFX_Heal_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Heal/Textures/T_VFX_Heal_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Heal/Textures/T_VFX_Heal_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Heal/Textures/T_VFX_Heal_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Materials/M_VFX_Impact_Sparks_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Materials/M_VFX_Impact_Sparks_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Materials/M_VFX_Impact_Sparks_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Materials/M_VFX_Impact_Sparks_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Materials/M_VFX_Impact_Sparks_02_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Materials/M_VFX_Impact_Sparks_02_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Particles/Loop/VFX_Impact_Sparks_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Particles/Loop/VFX_Impact_Sparks_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Particles/Loop/VFX_Impact_Sparks_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Particles/Loop/VFX_Impact_Sparks_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Particles/Loop/VFX_Impact_Sparks_02_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Particles/Loop/VFX_Impact_Sparks_02_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Particles/VFX_Impact_Sparks_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Particles/VFX_Impact_Sparks_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Particles/VFX_Impact_Sparks_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Particles/VFX_Impact_Sparks_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Particles/VFX_Impact_Sparks_02_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Particles/VFX_Impact_Sparks_02_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Textures/T_VFX_Impact_Sparks_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Textures/T_VFX_Impact_Sparks_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Textures/T_VFX_Impact_Sparks_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Impact Sparks/Textures/T_VFX_Impact_Sparks_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Materials/M_VFX_Item_Pick_Up_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Materials/M_VFX_Item_Pick_Up_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Materials/M_VFX_Item_Pick_Up_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Materials/M_VFX_Item_Pick_Up_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Materials/M_VFX_Item_Pick_Up_02_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Materials/M_VFX_Item_Pick_Up_02_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Materials/M_VFX_Item_Pick_Up_03_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Materials/M_VFX_Item_Pick_Up_03_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Materials/M_VFX_Item_Pick_Up_04_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Materials/M_VFX_Item_Pick_Up_04_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Materials/M_VFX_Item_Pick_Up_05_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Materials/M_VFX_Item_Pick_Up_05_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/Loop/VFX_Item_Pickup_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/Loop/VFX_Item_Pickup_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/Loop/VFX_Item_Pickup_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/Loop/VFX_Item_Pickup_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/Loop/VFX_Item_Pickup_02_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/Loop/VFX_Item_Pickup_02_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/Loop/VFX_Item_Pickup_03_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/Loop/VFX_Item_Pickup_03_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/Loop/VFX_Item_Pickup_04_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/Loop/VFX_Item_Pickup_04_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/Loop/VFX_Item_Pickup_05_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/Loop/VFX_Item_Pickup_05_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/VFX_Item_Pickup_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/VFX_Item_Pickup_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/VFX_Item_Pickup_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/VFX_Item_Pickup_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/VFX_Item_Pickup_02_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/VFX_Item_Pickup_02_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/VFX_Item_Pickup_03_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/VFX_Item_Pickup_03_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/VFX_Item_Pickup_04_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/VFX_Item_Pickup_04_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/VFX_Item_Pickup_05_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Particles/VFX_Item_Pickup_05_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Textures/T_VFX_Item_Pick_Up_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Textures/T_VFX_Item_Pick_Up_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Textures/T_VFX_Item_Pick_Up_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Pick Up/Textures/T_VFX_Item_Pick_Up_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Materials/M_VFX_Item_Spawn_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Materials/M_VFX_Item_Spawn_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Materials/M_VFX_Item_Spawn_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Materials/M_VFX_Item_Spawn_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Materials/M_VFX_Item_Spawn_02_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Materials/M_VFX_Item_Spawn_02_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Materials/M_VFX_Item_Spawn_02_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Materials/M_VFX_Item_Spawn_02_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Materials/M_VFX_Item_Spawn_03_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Materials/M_VFX_Item_Spawn_03_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Materials/M_VFX_Item_Spawn_03_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Materials/M_VFX_Item_Spawn_03_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Materials/M_VFX_Item_Spawn_04_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Materials/M_VFX_Item_Spawn_04_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Materials/M_VFX_Item_Spawn_05_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Materials/M_VFX_Item_Spawn_05_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/Loop/VFX_Item_Spawn_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/Loop/VFX_Item_Spawn_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/Loop/VFX_Item_Spawn_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/Loop/VFX_Item_Spawn_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/Loop/VFX_Item_Spawn_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/Loop/VFX_Item_Spawn_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/Loop/VFX_Item_Spawn_01_Vertical_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/Loop/VFX_Item_Spawn_01_Vertical_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/Loop/VFX_Item_Spawn_02_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/Loop/VFX_Item_Spawn_02_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/Loop/VFX_Item_Spawn_02_Vertical_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/Loop/VFX_Item_Spawn_02_Vertical_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/Loop/VFX_Item_Spawn_03_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/Loop/VFX_Item_Spawn_03_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/Loop/VFX_Item_Spawn_03_Vertical_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/Loop/VFX_Item_Spawn_03_Vertical_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/Loop/VFX_Item_Spawn_04_Vertical_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/Loop/VFX_Item_Spawn_04_Vertical_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/Loop/VFX_Item_Spawn_05_Vertical_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/Loop/VFX_Item_Spawn_05_Vertical_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/VFX_Item_Spawn_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/VFX_Item_Spawn_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/VFX_Item_Spawn_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/VFX_Item_Spawn_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/VFX_Item_Spawn_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/VFX_Item_Spawn_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/VFX_Item_Spawn_01_Vertical_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/VFX_Item_Spawn_01_Vertical_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/VFX_Item_Spawn_02_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/VFX_Item_Spawn_02_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/VFX_Item_Spawn_02_Vertical_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/VFX_Item_Spawn_02_Vertical_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/VFX_Item_Spawn_03_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/VFX_Item_Spawn_03_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/VFX_Item_Spawn_03_Vertical_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/VFX_Item_Spawn_03_Vertical_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/VFX_Item_Spawn_04_Vertical_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/VFX_Item_Spawn_04_Vertical_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/VFX_Item_Spawn_05_Vertical_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Particles/VFX_Item_Spawn_05_Vertical_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Textures/T_VFX_Item_Spawn_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Textures/T_VFX_Item_Spawn_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Textures/T_VFX_Item_Spawn_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Item Spawn/Textures/T_VFX_Item_Spawn_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Materials/M_VFX_Leaf_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Materials/M_VFX_Leaf_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Materials/M_VFX_Leaf_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Materials/M_VFX_Leaf_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Materials/M_VFX_Leaf_02_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Materials/M_VFX_Leaf_02_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Materials/M_VFX_Leaf_Single_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Materials/M_VFX_Leaf_Single_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/Loop/VFX_Leaf_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/Loop/VFX_Leaf_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/Loop/VFX_Leaf_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/Loop/VFX_Leaf_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/Loop/VFX_Leaf_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/Loop/VFX_Leaf_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/Loop/VFX_Leaf_01_Vertical_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/Loop/VFX_Leaf_01_Vertical_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/Loop/VFX_Leaf_01_Vertical_Billboard_Pivot_Top_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/Loop/VFX_Leaf_01_Vertical_Billboard_Pivot_Top_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/Loop/VFX_Leaf_01_Vertical_Billboard_Pivot_Top_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/Loop/VFX_Leaf_01_Vertical_Billboard_Pivot_Top_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/Loop/VFX_Leaf_02_Vertical_Billboard_Pivot_Top_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/Loop/VFX_Leaf_02_Vertical_Billboard_Pivot_Top_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/Loop/VFX_Leaf_Single_01_Vertical_Billboard_Pivot_Top_Mask_Loop_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/Loop/VFX_Leaf_Single_01_Vertical_Billboard_Pivot_Top_Mask_Loop_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/VFX_Leaf_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/VFX_Leaf_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/VFX_Leaf_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/VFX_Leaf_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/VFX_Leaf_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/VFX_Leaf_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/VFX_Leaf_01_Vertical_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/VFX_Leaf_01_Vertical_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/VFX_Leaf_01_Vertical_Billboard_Pivot_Top_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/VFX_Leaf_01_Vertical_Billboard_Pivot_Top_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/VFX_Leaf_01_Vertical_Billboard_Pivot_Top_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/VFX_Leaf_01_Vertical_Billboard_Pivot_Top_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/VFX_Leaf_02_Vertical_Billboard_Pivot_Top_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/VFX_Leaf_02_Vertical_Billboard_Pivot_Top_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/VFX_Leaf_Single_01_Vertical_Billboard_Pivot_Top_Mask_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Particles/VFX_Leaf_Single_01_Vertical_Billboard_Pivot_Top_Mask_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Textures/T_VFX_Leaf_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Textures/T_VFX_Leaf_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Textures/T_VFX_Leaf_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Textures/T_VFX_Leaf_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Textures/T_VFX_Leaf_Single_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Textures/T_VFX_Leaf_Single_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Textures/T_VFX_Leaf_Single_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Leaf/Textures/T_VFX_Leaf_Single_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Materials/M_VFX_Level_Up_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Materials/M_VFX_Level_Up_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Materials/M_VFX_Level_Up_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Materials/M_VFX_Level_Up_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Materials/M_VFX_Level_Up_02_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Materials/M_VFX_Level_Up_02_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/Loop/VFX_Level_Up_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/Loop/VFX_Level_Up_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/Loop/VFX_Level_Up_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/Loop/VFX_Level_Up_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/Loop/VFX_Level_Up_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/Loop/VFX_Level_Up_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/Loop/VFX_Level_Up_01_Vertical_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/Loop/VFX_Level_Up_01_Vertical_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/Loop/VFX_Level_Up_02_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/Loop/VFX_Level_Up_02_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/Loop/VFX_Level_Up_02_Vertical_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/Loop/VFX_Level_Up_02_Vertical_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/VFX_Level_Up_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/VFX_Level_Up_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/VFX_Level_Up_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/VFX_Level_Up_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/VFX_Level_Up_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/VFX_Level_Up_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/VFX_Level_Up_01_Vertical_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/VFX_Level_Up_01_Vertical_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/VFX_Level_Up_02_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/VFX_Level_Up_02_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/VFX_Level_Up_02_Vertical_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Particles/VFX_Level_Up_02_Vertical_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Textures/T_VFX_Level_Up_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Textures/T_VFX_Level_Up_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Textures/T_VFX_Level_Up_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Level Up/Textures/T_VFX_Level_Up_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Materials/M_VFX_Lightning_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Materials/M_VFX_Lightning_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Materials/M_VFX_Lightning_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Materials/M_VFX_Lightning_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Materials/M_VFX_Lightning_02_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Materials/M_VFX_Lightning_02_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles/Loop/VFX_Lightning_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles/Loop/VFX_Lightning_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles/Loop/VFX_Lightning_01_Mask_Loop_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles/Loop/VFX_Lightning_01_Mask_Loop_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles/Loop/VFX_Lightning_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles/Loop/VFX_Lightning_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles/Loop/VFX_Lightning_02_Mask_Loop_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles/Loop/VFX_Lightning_02_Mask_Loop_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles/Loop/VFX_Lightning_02_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles/Loop/VFX_Lightning_02_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles/VFX_Lightning_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles/VFX_Lightning_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles/VFX_Lightning_01_Mask_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles/VFX_Lightning_01_Mask_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles/VFX_Lightning_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles/VFX_Lightning_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles/VFX_Lightning_02_Mask_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles/VFX_Lightning_02_Mask_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles/VFX_Lightning_02_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Particles/VFX_Lightning_02_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Textures/T_VFX_Lightning_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Textures/T_VFX_Lightning_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Textures/T_VFX_Lightning_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Lightning/Textures/T_VFX_Lightning_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Materials/M_VFX_Magic_Impact_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Materials/M_VFX_Magic_Impact_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Materials/M_VFX_Magic_Impact_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Materials/M_VFX_Magic_Impact_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Materials/M_VFX_Magic_Impact_02_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Materials/M_VFX_Magic_Impact_02_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Particles/Loop/VFX_Magic_Impact_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Particles/Loop/VFX_Magic_Impact_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Particles/Loop/VFX_Magic_Impact_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Particles/Loop/VFX_Magic_Impact_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Particles/Loop/VFX_Magic_Impact_02_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Particles/Loop/VFX_Magic_Impact_02_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Particles/VFX_Magic_Impact_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Particles/VFX_Magic_Impact_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Particles/VFX_Magic_Impact_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Particles/VFX_Magic_Impact_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Particles/VFX_Magic_Impact_02_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Particles/VFX_Magic_Impact_02_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Textures/T_VFX_Magic_Impact_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Textures/T_VFX_Magic_Impact_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Textures/T_VFX_Magic_Impact_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Magic Impact/Textures/T_VFX_Magic_Impact_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Materials/M_VFX_Poison_Debuff_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Materials/M_VFX_Poison_Debuff_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Materials/M_VFX_Poison_Debuff_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Materials/M_VFX_Poison_Debuff_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Materials/M_VFX_Poison_Debuff_02_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Materials/M_VFX_Poison_Debuff_02_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/Loop/VFX_Poison_Debuff_01_Color_Loop_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/Loop/VFX_Poison_Debuff_01_Color_Loop_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/Loop/VFX_Poison_Debuff_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/Loop/VFX_Poison_Debuff_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/Loop/VFX_Poison_Debuff_01_Mask_Loop_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/Loop/VFX_Poison_Debuff_01_Mask_Loop_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/Loop/VFX_Poison_Debuff_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/Loop/VFX_Poison_Debuff_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/Loop/VFX_Poison_Debuff_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/Loop/VFX_Poison_Debuff_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/Loop/VFX_Poison_Debuff_01_Vertical_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/Loop/VFX_Poison_Debuff_01_Vertical_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/Loop/VFX_Poison_Debuff_02_Mask_Loop_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/Loop/VFX_Poison_Debuff_02_Mask_Loop_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/Loop/VFX_Poison_Debuff_02_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/Loop/VFX_Poison_Debuff_02_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/Loop/VFX_Poison_Debuff_02_Vertical_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/Loop/VFX_Poison_Debuff_02_Vertical_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/VFX_Poison_Debuff_01_Color_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/VFX_Poison_Debuff_01_Color_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/VFX_Poison_Debuff_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/VFX_Poison_Debuff_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/VFX_Poison_Debuff_01_Mask_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/VFX_Poison_Debuff_01_Mask_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/VFX_Poison_Debuff_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/VFX_Poison_Debuff_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/VFX_Poison_Debuff_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/VFX_Poison_Debuff_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/VFX_Poison_Debuff_01_Vertical_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/VFX_Poison_Debuff_01_Vertical_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/VFX_Poison_Debuff_02_Mask_Bunch.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/VFX_Poison_Debuff_02_Mask_Bunch.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/VFX_Poison_Debuff_02_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/VFX_Poison_Debuff_02_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/VFX_Poison_Debuff_02_Vertical_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Particles/VFX_Poison_Debuff_02_Vertical_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Textures/T_VFX_Poison_Debuff_01_Color_NPOT.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Textures/T_VFX_Poison_Debuff_01_Color_NPOT.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Textures/T_VFX_Poison_Debuff_01_Mask_NPOT.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Poison Debuff/Textures/T_VFX_Poison_Debuff_01_Mask_NPOT.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Materials/M_VFX_Projectile_Burst_Impact_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Materials/M_VFX_Projectile_Burst_Impact_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Materials/M_VFX_Projectile_Burst_Impact_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Materials/M_VFX_Projectile_Burst_Impact_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Particles/Loop/VFX_Projectile_Burst_Impact_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Particles/Loop/VFX_Projectile_Burst_Impact_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Particles/Loop/VFX_Projectile_Burst_Impact_01_Horizontal_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Particles/Loop/VFX_Projectile_Burst_Impact_01_Horizontal_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Particles/Loop/VFX_Projectile_Burst_Impact_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Particles/Loop/VFX_Projectile_Burst_Impact_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Particles/VFX_Projectile_Burst_Impact_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Particles/VFX_Projectile_Burst_Impact_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Particles/VFX_Projectile_Burst_Impact_01_Horizontal_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Particles/VFX_Projectile_Burst_Impact_01_Horizontal_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Particles/VFX_Projectile_Burst_Impact_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Particles/VFX_Projectile_Burst_Impact_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Textures/T_VFX_Projectile_Burst_Impact_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Textures/T_VFX_Projectile_Burst_Impact_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Textures/T_VFX_Projectile_Burst_Impact_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst Impact/Textures/T_VFX_Projectile_Burst_Impact_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Materials/M_VFX_Projectile_Burst_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Materials/M_VFX_Projectile_Burst_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Materials/M_VFX_Projectile_Burst_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Materials/M_VFX_Projectile_Burst_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Particles/Loop/VFX_Projectile_Burst_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Particles/Loop/VFX_Projectile_Burst_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Particles/Loop/VFX_Projectile_Burst_01_Horizontal_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Particles/Loop/VFX_Projectile_Burst_01_Horizontal_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Particles/Loop/VFX_Projectile_Burst_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Particles/Loop/VFX_Projectile_Burst_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Particles/VFX_Projectile_Burst_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Particles/VFX_Projectile_Burst_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Particles/VFX_Projectile_Burst_01_Horizontal_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Particles/VFX_Projectile_Burst_01_Horizontal_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Particles/VFX_Projectile_Burst_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Particles/VFX_Projectile_Burst_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Textures/T_VFX_Projectile_Burst_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Textures/T_VFX_Projectile_Burst_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Textures/T_VFX_Projectile_Burst_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Burst/Textures/T_VFX_Projectile_Burst_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Materials/M_VFX_Projectile_Fire_Impact_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Materials/M_VFX_Projectile_Fire_Impact_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Materials/M_VFX_Projectile_Fire_Impact_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Materials/M_VFX_Projectile_Fire_Impact_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Particles/Loop/VFX_Projectile_Fire_Impact_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Particles/Loop/VFX_Projectile_Fire_Impact_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Particles/Loop/VFX_Projectile_Fire_Impact_01_Horizontal_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Particles/Loop/VFX_Projectile_Fire_Impact_01_Horizontal_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Particles/Loop/VFX_Projectile_Fire_Impact_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Particles/Loop/VFX_Projectile_Fire_Impact_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Particles/VFX_Projectile_Fire_Impact_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Particles/VFX_Projectile_Fire_Impact_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Particles/VFX_Projectile_Fire_Impact_01_Horizontal_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Particles/VFX_Projectile_Fire_Impact_01_Horizontal_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Particles/VFX_Projectile_Fire_Impact_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Particles/VFX_Projectile_Fire_Impact_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Textures/T_VFX_Projectile_Fire_Impact_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Textures/T_VFX_Projectile_Fire_Impact_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Textures/T_VFX_Projectile_Fire_Impact_01_Color_NPOT.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Textures/T_VFX_Projectile_Fire_Impact_01_Color_NPOT.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Textures/T_VFX_Projectile_Fire_Impact_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Textures/T_VFX_Projectile_Fire_Impact_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Textures/T_VFX_Projectile_Fire_Impact_01_Mask_NPOT.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire Impact/Textures/T_VFX_Projectile_Fire_Impact_01_Mask_NPOT.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Materials/M_VFX_Projectile_Fire_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Materials/M_VFX_Projectile_Fire_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Materials/M_VFX_Projectile_Fire_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Materials/M_VFX_Projectile_Fire_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Materials/Vertical.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Materials/Vertical/M_VFX_Projectile_Fire_01_Color_Vertical.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Materials/Vertical/M_VFX_Projectile_Fire_01_Color_Vertical.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Materials/Vertical/M_VFX_Projectile_Fire_01_Mask_Vertical.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Materials/Vertical/M_VFX_Projectile_Fire_01_Mask_Vertical.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Particles/Loop/VFX_Projectile_Fire_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Particles/Loop/VFX_Projectile_Fire_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Particles/Loop/VFX_Projectile_Fire_01_Horizontal_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Particles/Loop/VFX_Projectile_Fire_01_Horizontal_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Particles/Loop/VFX_Projectile_Fire_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Particles/Loop/VFX_Projectile_Fire_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Particles/VFX_Projectile_Fire_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Particles/VFX_Projectile_Fire_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Particles/VFX_Projectile_Fire_01_Horizontal_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Particles/VFX_Projectile_Fire_01_Horizontal_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Particles/VFX_Projectile_Fire_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Particles/VFX_Projectile_Fire_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Textures/T_VFX_Projectile_Fire_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Textures/T_VFX_Projectile_Fire_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Textures/T_VFX_Projectile_Fire_01_Color_Horizontal.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Textures/T_VFX_Projectile_Fire_01_Color_Horizontal.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Textures/T_VFX_Projectile_Fire_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Textures/T_VFX_Projectile_Fire_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Textures/T_VFX_Projectile_Fire_01_Mask_Horizontal.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Fire/Textures/T_VFX_Projectile_Fire_01_Mask_Horizontal.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Materials/M_VFX_Projectile_Ice_Impact_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Materials/M_VFX_Projectile_Ice_Impact_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Materials/M_VFX_Projectile_Ice_Impact_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Materials/M_VFX_Projectile_Ice_Impact_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Particles/Loop/VFX_Projectile_Ice_Impact_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Particles/Loop/VFX_Projectile_Ice_Impact_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Particles/Loop/VFX_Projectile_Ice_Impact_01_Horizontal_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Particles/Loop/VFX_Projectile_Ice_Impact_01_Horizontal_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Particles/Loop/VFX_Projectile_Ice_Impact_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Particles/Loop/VFX_Projectile_Ice_Impact_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Particles/VFX_Projectile_Ice_Impact_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Particles/VFX_Projectile_Ice_Impact_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Particles/VFX_Projectile_Ice_Impact_01_Horizontal_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Particles/VFX_Projectile_Ice_Impact_01_Horizontal_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Particles/VFX_Projectile_Ice_Impact_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Particles/VFX_Projectile_Ice_Impact_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Textures/T_VFX_Projectile_Ice_Impact_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Textures/T_VFX_Projectile_Ice_Impact_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Textures/T_VFX_Projectile_Ice_Impact_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice Impact/Textures/T_VFX_Projectile_Ice_Impact_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Materials/M_VFX_Projectile_Ice_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Materials/M_VFX_Projectile_Ice_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Materials/M_VFX_Projectile_Ice_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Materials/M_VFX_Projectile_Ice_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Particles/Loop/VFX_Projectile_Ice_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Particles/Loop/VFX_Projectile_Ice_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Particles/Loop/VFX_Projectile_Ice_01_Horizontal_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Particles/Loop/VFX_Projectile_Ice_01_Horizontal_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Particles/Loop/VFX_Projectile_Ice_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Particles/Loop/VFX_Projectile_Ice_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Particles/VFX_Projectile_Ice_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Particles/VFX_Projectile_Ice_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Particles/VFX_Projectile_Ice_01_Horizontal_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Particles/VFX_Projectile_Ice_01_Horizontal_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Particles/VFX_Projectile_Ice_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Particles/VFX_Projectile_Ice_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Textures/T_VFX_Projectile_Ice_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Textures/T_VFX_Projectile_Ice_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Textures/T_VFX_Projectile_Ice_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Ice/Textures/T_VFX_Projectile_Ice_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Materials/M_VFX_Projectile_Lightning_Impact_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Materials/M_VFX_Projectile_Lightning_Impact_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Materials/M_VFX_Projectile_Lightning_Impact_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Materials/M_VFX_Projectile_Lightning_Impact_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Particles/Loop/VFX_Projectile_Lightning_Impact_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Particles/Loop/VFX_Projectile_Lightning_Impact_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Particles/Loop/VFX_Projectile_Lightning_Impact_01_Horizontal_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Particles/Loop/VFX_Projectile_Lightning_Impact_01_Horizontal_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Particles/Loop/VFX_Projectile_Lightning_Impact_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Particles/Loop/VFX_Projectile_Lightning_Impact_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Particles/VFX_Projectile_Lightning_Impact_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Particles/VFX_Projectile_Lightning_Impact_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Particles/VFX_Projectile_Lightning_Impact_01_Horizontal_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Particles/VFX_Projectile_Lightning_Impact_01_Horizontal_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Particles/VFX_Projectile_Lightning_Impact_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Particles/VFX_Projectile_Lightning_Impact_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Textures/T_VFX_Projectile_Lightning_Impact_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Textures/T_VFX_Projectile_Lightning_Impact_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Textures/T_VFX_Projectile_Lightning_Impact_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning Impact/Textures/T_VFX_Projectile_Lightning_Impact_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Materials/M_VFX_Projectile_Lightning_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Materials/M_VFX_Projectile_Lightning_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Materials/M_VFX_Projectile_Lightning_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Materials/M_VFX_Projectile_Lightning_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Particles/Loop/VFX_Projectile_Lightning_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Particles/Loop/VFX_Projectile_Lightning_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Particles/Loop/VFX_Projectile_Lightning_01_Horizontal_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Particles/Loop/VFX_Projectile_Lightning_01_Horizontal_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Particles/Loop/VFX_Projectile_Lightning_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Particles/Loop/VFX_Projectile_Lightning_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Particles/VFX_Projectile_Lightning_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Particles/VFX_Projectile_Lightning_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Particles/VFX_Projectile_Lightning_01_Horizontal_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Particles/VFX_Projectile_Lightning_01_Horizontal_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Particles/VFX_Projectile_Lightning_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Particles/VFX_Projectile_Lightning_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Textures/T_VFX_Projectile_Lightning_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Textures/T_VFX_Projectile_Lightning_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Textures/T_VFX_Projectile_Lightning_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Lightning/Textures/T_VFX_Projectile_Lightning_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Materials/M_VFX_Projectile_Water_Impact_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Materials/M_VFX_Projectile_Water_Impact_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Materials/M_VFX_Projectile_Water_Impact_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Materials/M_VFX_Projectile_Water_Impact_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Particles/Loop/VFX_Projectile_Water_Impact_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Particles/Loop/VFX_Projectile_Water_Impact_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Particles/Loop/VFX_Projectile_Water_Impact_01_Horizontal_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Particles/Loop/VFX_Projectile_Water_Impact_01_Horizontal_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Particles/Loop/VFX_Projectile_Water_Impact_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Particles/Loop/VFX_Projectile_Water_Impact_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Particles/VFX_Projectile_Water_Impact_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Particles/VFX_Projectile_Water_Impact_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Particles/VFX_Projectile_Water_Impact_01_Horizontal_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Particles/VFX_Projectile_Water_Impact_01_Horizontal_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Particles/VFX_Projectile_Water_Impact_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Particles/VFX_Projectile_Water_Impact_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Textures/T_VFX_Projectile_Water_Impact_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Textures/T_VFX_Projectile_Water_Impact_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Textures/T_VFX_Projectile_Water_Impact_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water Impact/Textures/T_VFX_Projectile_Water_Impact_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Materials/M_VFX_Projectile_Water_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Materials/M_VFX_Projectile_Water_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Materials/M_VFX_Projectile_Water_01_Color_Dissolve_Vertical.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Materials/M_VFX_Projectile_Water_01_Color_Dissolve_Vertical.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Materials/M_VFX_Projectile_Water_01_Color_Vertical.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Materials/M_VFX_Projectile_Water_01_Color_Vertical.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Materials/M_VFX_Projectile_Water_01_Dissolve_Vertical.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Materials/M_VFX_Projectile_Water_01_Dissolve_Vertical.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Materials/M_VFX_Projectile_Water_01_Flat_Vertical.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Materials/M_VFX_Projectile_Water_01_Flat_Vertical.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Materials/M_VFX_Projectile_Water_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Materials/M_VFX_Projectile_Water_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Materials/M_VFX_Projectile_Water_01_Vertical.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Materials/M_VFX_Projectile_Water_01_Vertical.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/VFX_Projectile_Water_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/VFX_Projectile_Water_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/VFX_Projectile_Water_01_Horizontal_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/VFX_Projectile_Water_01_Horizontal_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/VFX_Projectile_Water_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/VFX_Projectile_Water_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/Vertical.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/Vertical/VFX_Projectile_Water_01.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/Vertical/VFX_Projectile_Water_01.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/Vertical/VFX_Projectile_Water_01_Color.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/Vertical/VFX_Projectile_Water_01_Color.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/Vertical/VFX_Projectile_Water_01_Color_Dissolve.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/Vertical/VFX_Projectile_Water_01_Color_Dissolve.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/Vertical/VFX_Projectile_Water_01_Color_Random_Start.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/Vertical/VFX_Projectile_Water_01_Color_Random_Start.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/Vertical/VFX_Projectile_Water_01_Color_Random_Start_Speed.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/Vertical/VFX_Projectile_Water_01_Color_Random_Start_Speed.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/Vertical/VFX_Projectile_Water_01_Dissolve.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/Vertical/VFX_Projectile_Water_01_Dissolve.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/Vertical/VFX_Projectile_Water_01_Fake_Outline.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/Vertical/VFX_Projectile_Water_01_Fake_Outline.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/Vertical/VFX_Projectile_Water_01_Random_Start.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/Loop/Vertical/VFX_Projectile_Water_01_Random_Start.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/VFX_Projectile_Water_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/VFX_Projectile_Water_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/VFX_Projectile_Water_01_Horizontal_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/VFX_Projectile_Water_01_Horizontal_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/VFX_Projectile_Water_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Particles/VFX_Projectile_Water_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Textures/T_VFX_Projectile_Water_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Textures/T_VFX_Projectile_Water_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Textures/T_VFX_Projectile_Water_01_Color_H.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Textures/T_VFX_Projectile_Water_01_Color_H.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Textures/T_VFX_Projectile_Water_01_Color_NPOT.png`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Textures/T_VFX_Projectile_Water_01_Color_NPOT.png.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Textures/T_VFX_Projectile_Water_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Textures/T_VFX_Projectile_Water_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Textures/T_VFX_Projectile_Water_01_Mask_H.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Textures/T_VFX_Projectile_Water_01_Mask_H.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Textures/T_VFX_Projectile_Water_01_Mask_NPOT.png`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Water/Textures/T_VFX_Projectile_Water_01_Mask_NPOT.png.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Materials/M_VFX_Projectile_Wind_Impact_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Materials/M_VFX_Projectile_Wind_Impact_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Materials/M_VFX_Projectile_Wind_Impact_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Materials/M_VFX_Projectile_Wind_Impact_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Particles/Loop/VFX_Projectile_Wind_Impact_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Particles/Loop/VFX_Projectile_Wind_Impact_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Particles/Loop/VFX_Projectile_Wind_Impact_01_Horizontal_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Particles/Loop/VFX_Projectile_Wind_Impact_01_Horizontal_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Particles/Loop/VFX_Projectile_Wind_Impact_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Particles/Loop/VFX_Projectile_Wind_Impact_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Particles/VFX_Projectile_Wind_Impact_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Particles/VFX_Projectile_Wind_Impact_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Particles/VFX_Projectile_Wind_Impact_01_Horizontal_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Particles/VFX_Projectile_Wind_Impact_01_Horizontal_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Particles/VFX_Projectile_Wind_Impact_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Particles/VFX_Projectile_Wind_Impact_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Textures/T_VFX_Projectile_Wind_Impact_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Textures/T_VFX_Projectile_Wind_Impact_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Textures/T_VFX_Projectile_Wind_Impact_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind Impact/Textures/T_VFX_Projectile_Wind_Impact_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Materials/M_VFX_Projectile_Wind_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Materials/M_VFX_Projectile_Wind_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Materials/M_VFX_Projectile_Wind_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Materials/M_VFX_Projectile_Wind_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Particles/Loop/VFX_Projectile_Wind_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Particles/Loop/VFX_Projectile_Wind_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Particles/Loop/VFX_Projectile_Wind_01_Horizontal_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Particles/Loop/VFX_Projectile_Wind_01_Horizontal_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Particles/Loop/VFX_Projectile_Wind_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Particles/Loop/VFX_Projectile_Wind_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Particles/VFX_Projectile_Wind_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Particles/VFX_Projectile_Wind_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Particles/VFX_Projectile_Wind_01_Horizontal_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Particles/VFX_Projectile_Wind_01_Horizontal_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Particles/VFX_Projectile_Wind_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Particles/VFX_Projectile_Wind_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Textures/T_VFX_Projectile_Wind_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Textures/T_VFX_Projectile_Wind_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Textures/T_VFX_Projectile_Wind_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Projectile Wind/Textures/T_VFX_Projectile_Wind_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Materials/M_VFX_Respawn_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Materials/M_VFX_Respawn_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Materials/M_VFX_Respawn_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Materials/M_VFX_Respawn_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Materials/M_VFX_Respawn_02_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Materials/M_VFX_Respawn_02_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Particles/Loop/VFX_Respawn_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Particles/Loop/VFX_Respawn_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Particles/Loop/VFX_Respawn_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Particles/Loop/VFX_Respawn_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Particles/Loop/VFX_Respawn_02_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Particles/Loop/VFX_Respawn_02_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Particles/VFX_Respawn_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Particles/VFX_Respawn_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Particles/VFX_Respawn_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Particles/VFX_Respawn_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Particles/VFX_Respawn_02_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Particles/VFX_Respawn_02_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Textures/T_VFX_Respawn_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Textures/T_VFX_Respawn_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Textures/T_VFX_Respawn_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Respawn/Textures/T_VFX_Respawn_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Materials/M_VFX_Shield_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Materials/M_VFX_Shield_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Materials/M_VFX_Shield_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Materials/M_VFX_Shield_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Particles/Loop/VFX_Shield_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Particles/Loop/VFX_Shield_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Particles/Loop/VFX_Shield_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Particles/Loop/VFX_Shield_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Particles/VFX_Shield_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Particles/VFX_Shield_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Particles/VFX_Shield_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Particles/VFX_Shield_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Textures/T_VFX_Shield_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Textures/T_VFX_Shield_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Textures/T_VFX_Shield_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Shield/Textures/T_VFX_Shield_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Materials/M_VFX_Sword_Slash_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Materials/M_VFX_Sword_Slash_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Materials/M_VFX_Sword_Slash_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Materials/M_VFX_Sword_Slash_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Materials/M_VFX_Sword_Slash_02_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Materials/M_VFX_Sword_Slash_02_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Materials/M_VFX_Sword_Slash_03_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Materials/M_VFX_Sword_Slash_03_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Mask_Loop_Static_180.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Mask_Loop_Static_180.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Mask_Loop_Static_270.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Mask_Loop_Static_270.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Mask_Loop_Static_90.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Mask_Loop_Static_90.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Mask_Loop_Static_Flip.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Mask_Loop_Static_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Mask_Loop_Static_Flip_180.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Mask_Loop_Static_Flip_180.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Mask_Loop_Static_Flip_270.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Mask_Loop_Static_Flip_270.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Mask_Loop_Static_Flip_90.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Mask_Loop_Static_Flip_90.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Vertical_Billboard_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Vertical_Billboard_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Vertical_Billboard_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_01_Vertical_Billboard_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_02_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_02_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_03_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_03_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_04_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_04_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_05_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/Loop/VFX_Sword_Slash_05_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Mask_Static_180.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Mask_Static_180.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Mask_Static_270.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Mask_Static_270.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Mask_Static_90.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Mask_Static_90.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Mask_Static_Flip.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Mask_Static_Flip.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Mask_Static_Flip_180.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Mask_Static_Flip_180.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Mask_Static_Flip_270.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Mask_Static_Flip_270.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Mask_Static_Flip_90.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Mask_Static_Flip_90.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Vertical_Billboard_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Vertical_Billboard_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Vertical_Billboard_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_01_Vertical_Billboard_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_02_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_02_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_03_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_03_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_04_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_04_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_05_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Particles/VFX_Sword_Slash_05_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Textures/T_VFX_Sword_Slash_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Textures/T_VFX_Sword_Slash_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Textures/T_VFX_Sword_Slash_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Textures/T_VFX_Sword_Slash_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Materials/M_VFX_Teleport_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Materials/M_VFX_Teleport_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Materials/M_VFX_Teleport_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Materials/M_VFX_Teleport_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Materials/M_VFX_Teleport_02_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Materials/M_VFX_Teleport_02_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/Loop/VFX_Teleport_01_Color_Camera_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/Loop/VFX_Teleport_01_Color_Camera_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/Loop/VFX_Teleport_01_Color_Flip_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/Loop/VFX_Teleport_01_Color_Flip_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/Loop/VFX_Teleport_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/Loop/VFX_Teleport_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/Loop/VFX_Teleport_01_Mask_Camera_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/Loop/VFX_Teleport_01_Mask_Camera_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/Loop/VFX_Teleport_01_Mask_Flip_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/Loop/VFX_Teleport_01_Mask_Flip_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/Loop/VFX_Teleport_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/Loop/VFX_Teleport_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/VFX_Teleport_01_Color_Camera_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/VFX_Teleport_01_Color_Camera_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/VFX_Teleport_01_Color_Flip_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/VFX_Teleport_01_Color_Flip_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/VFX_Teleport_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/VFX_Teleport_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/VFX_Teleport_01_Mask_Camera_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/VFX_Teleport_01_Mask_Camera_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/VFX_Teleport_01_Mask_Flip_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/VFX_Teleport_01_Mask_Flip_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/VFX_Teleport_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Particles/VFX_Teleport_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Textures/T_VFX_Teleport_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Textures/T_VFX_Teleport_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Textures/T_VFX_Teleport_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Teleport/Textures/T_VFX_Teleport_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Materials/M_VFX_Vanish_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Materials/M_VFX_Vanish_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Materials/M_VFX_Vanish_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Materials/M_VFX_Vanish_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Particles/Loop/VFX_Vanish_01_Color_Bunch_Loop.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Particles/Loop/VFX_Vanish_01_Color_Bunch_Loop.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Particles/Loop/VFX_Vanish_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Particles/Loop/VFX_Vanish_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Particles/Loop/VFX_Vanish_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Particles/Loop/VFX_Vanish_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Particles/VFX_Vanish_01_Color_Bunch_1s.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Particles/VFX_Vanish_01_Color_Bunch_1s.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Particles/VFX_Vanish_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Particles/VFX_Vanish_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Particles/VFX_Vanish_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Particles/VFX_Vanish_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Textures/T_VFX_Vanishing_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Textures/T_VFX_Vanishing_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Textures/T_VFX_Vanishing_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vanish/Textures/T_VFX_Vanishing_01_Mask.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Materials.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Materials/M_VFX_Vapor_01_Color.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Materials/M_VFX_Vapor_01_Color.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Materials/M_VFX_Vapor_01_Mask.mat`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Materials/M_VFX_Vapor_01_Mask.mat.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Particles.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Particles/Loop.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Particles/Loop/VFX_Vapor_01_Color_Flip_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Particles/Loop/VFX_Vapor_01_Color_Flip_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Particles/Loop/VFX_Vapor_01_Color_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Particles/Loop/VFX_Vapor_01_Color_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Particles/Loop/VFX_Vapor_01_Mask_Flip_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Particles/Loop/VFX_Vapor_01_Mask_Flip_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Particles/Loop/VFX_Vapor_01_Mask_Loop_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Particles/Loop/VFX_Vapor_01_Mask_Loop_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Particles/VFX_Vapor_01_Color_Flip_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Particles/VFX_Vapor_01_Color_Flip_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Particles/VFX_Vapor_01_Color_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Particles/VFX_Vapor_01_Color_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Particles/VFX_Vapor_01_Mask_Flip_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Particles/VFX_Vapor_01_Mask_Flip_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Particles/VFX_Vapor_01_Mask_Static.prefab`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Particles/VFX_Vapor_01_Mask_Static.prefab.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Textures.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Textures/T_VFX_Vapor_01_Color.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Textures/T_VFX_Vapor_01_Color.tga.meta`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Textures/T_VFX_Vapor_01_Mask.tga`
+- `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Textures/T_VFX_Vapor_01_Mask.tga.meta`
+
+## 병합 기록
+- 2026-07-09 · [31196eb](https://github.com/ghyourme/ProjectG/commit/31196ebc179dc5773a244cfb7207b5e89315ac80) · Merge branch 'feature/stage_10' of https://github.com/ghyourme/ProjectG into feature/stage_10
+- 2026-07-08 · [0a482fd](https://github.com/ghyourme/ProjectG/commit/0a482fdef342be0c5ee2e5772ea41be48b4fcf5c) · Merge branch 'feature/stage_10' of https://github.com/ghyourme/ProjectG into feature/stage_10
+- 2026-07-07 · [e493d16](https://github.com/ghyourme/ProjectG/commit/e493d16bea719c2ad113633892653fccda50c4fd) · Merge branch 'feature/stage_10' of https://github.com/ghyourme/ProjectG into feature/stage_10
+- 2026-07-06 · [df77e93](https://github.com/ghyourme/ProjectG/commit/df77e939bfe1479c8bfd7be846cb9ac86cc7a234) · Merge branch 'feature/stage_9' of https://github.com/ghyourme/ProjectG into feature/stage_9
+- 2026-07-06 · [f5cca97](https://github.com/ghyourme/ProjectG/commit/f5cca97acce2ee1be48b144d92f09f33f254f83a) · Merge branch 'feature/stage_9' of https://github.com/ghyourme/ProjectG into feature/stage_9
+- 2026-07-06 · [1e9aab8](https://github.com/ghyourme/ProjectG/commit/1e9aab8186ad00c802d8cde4a93f3a0e0bce40a5) · Merge branch 'feature/stage_9' of https://github.com/ghyourme/ProjectG into feature/stage_9
+- 2026-07-03 · [bb02853](https://github.com/ghyourme/ProjectG/commit/bb02853f626e0f0ce864cc10648a2f9219794457) · Merge branch 'feature/stage_9' of https://github.com/ghyourme/ProjectG into feature/stage_9
+- 2026-07-03 · [d7ca6a5](https://github.com/ghyourme/ProjectG/commit/d7ca6a5ffb9287ed888367ea679516b65d540ba1) · Merge branch 'feature/stage_8' of https://github.com/ghyourme/ProjectG into feature/stage_8
+- 2026-07-03 · [e05c893](https://github.com/ghyourme/ProjectG/commit/e05c8935fad57aeedaab26faa733934da895e94f) · Merge branch 'feature/stage_8' of https://github.com/ghyourme/ProjectG into feature/stage_8
+- 2026-07-03 · [5c3a965](https://github.com/ghyourme/ProjectG/commit/5c3a9656bce7cbbed76326d2492b4f9111480543) · Merge branch 'feature/stage_8' of https://github.com/ghyourme/ProjectG into feature/stage_8
+- 2026-07-02 · [48225b1](https://github.com/ghyourme/ProjectG/commit/48225b12802cd81786c3af558c31e589e7374db9) · Merge branch 'feature/stage_8' of https://github.com/ghyourme/ProjectG into feature/stage_8
+- 2026-07-02 · [a531a06](https://github.com/ghyourme/ProjectG/commit/a531a068de74f8c455979c80ffe9dfdd5b633191) · Merge branch 'feature/stage_8' of https://github.com/ghyourme/ProjectG into feature/stage_8
+- 2026-07-02 · [41d7643](https://github.com/ghyourme/ProjectG/commit/41d764352a4bbab939ec27536ec9516f818b36d0) · Merge branch 'feature/stage_8' of https://github.com/ghyourme/ProjectG into feature/stage_8
+- 2026-07-01 · [aa0436b](https://github.com/ghyourme/ProjectG/commit/aa0436b1d08f9f7d7c80a5f84d30b27c12c23b00) · Merge branch 'feature/stage_8' of https://github.com/ghyourme/ProjectG into feature/stage_8
+- 2026-07-01 · [fb36aca](https://github.com/ghyourme/ProjectG/commit/fb36acadd229ba8ef4e3e4eb9ccfa3003551ab36) · Merge branch 'feature/stage_7' of https://github.com/ghyourme/ProjectG into feature/stage_7
+- 2026-07-01 · [6fdadfc](https://github.com/ghyourme/ProjectG/commit/6fdadfc076fdcafd904ca443577f1da090e765e2) · Merge branch 'feature/stage_7' of https://github.com/ghyourme/ProjectG into feature/stage_7
+- 2026-06-30 · [b5bdcfd](https://github.com/ghyourme/ProjectG/commit/b5bdcfde74162081229f6d18c19e05a2009ecbf4) · Merge branch 'feature/stage_7' of https://github.com/ghyourme/ProjectG into feature/stage_7
+- 2026-06-29 · [990bc49](https://github.com/ghyourme/ProjectG/commit/990bc4970a186c4ce4cde8925a7df23361a9fb71) · Merge branch 'feature/stage_6' of https://github.com/ghyourme/ProjectG into feature/stage_6
+- 2026-06-25 · [7117244](https://github.com/ghyourme/ProjectG/commit/7117244d5b27398c2405aff4ffb1776286dae68e) · Merge branch 'feature/stage_6' of https://github.com/ghyourme/ProjectG into feature/stage_6
+
+A: 추가 · M: 수정 · D: 삭제 · R: 이름/경로 변경

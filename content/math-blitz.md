@@ -6,7 +6,7 @@
 
 시작 무기 선택 → 이동·회피와 자동 조준 공격 → 적 처치·아이템 수집 → 점수·콤보 유지 및 생존
 
-## 주요 구성
+## 프로젝트 내역
 
 - 무기 4종: 리볼버, 부메랑, 기관단총, 폭탄
 - 적 3종: 추적형 삼각형, 원거리형 원형, 돌진형 직사각형
@@ -16,8 +16,8 @@
 
 ## 산출물
 
-- 게임 PRD
-- 개발 계획 및 변경 부록
+- [게임 PRD](files/math-blitz/math-blitz-prd.md)
+- [개발 계획](files/math-blitz/math-blitz-plan.md) 및 [변경 부록](files/math-blitz/math-blitz-changes.md)
 - Unity 프로젝트
 
 ## 기록 범위

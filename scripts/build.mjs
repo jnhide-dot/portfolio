@@ -5,10 +5,16 @@ const catalog=JSON.parse(fs.readFileSync('content/catalog.json','utf8'));
 const esc=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const idMap=Object.fromEntries(catalog.filter(d=>d.source).map(d=>[d.source,d.id]));
 function inline(s){
- return esc(s).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>').replace(/`([^`]+)`/g,'<code>$1</code>').replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,'<a href="$2" target="_blank" rel="noopener noreferrer">$1 ↗</a>').replace(/&lt;br\s*\/?&gt;/g,'<br>').replace(/\\([~>|])/g,'$1');
+ return esc(s).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>').replace(/`([^`]+)`/g,'<code>$1</code>').replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+|files\/[\w./-]+)\)/g,'<a href="$2" target="_blank" rel="noopener noreferrer">$1 ↗</a>').replace(/&lt;br\s*\/?&gt;/g,'<br>').replace(/\\([~>|])/g,'$1');
 }
 function render(md){
  const saved=[]; const block=html=>`@@BLOCK${saved.push(html)-1}@@`;
+ md=md.replace(/!\[([^\]]*)\]\((files\/[\w./-]+)\)/g,(_,alt,url)=>block(fs.existsSync(path.join('dist',url))?'<img src="'+esc(url)+'" alt="'+esc(alt)+'" loading="lazy" style="max-width:100%;height:auto">':'<p class="empty-assets">원문 이미지 준비 중</p>'));
+ md=md.replace(/```[^\n]*\n([\s\S]*?)```/g,(_,s)=>block('<pre><code>'+esc(s.trimEnd())+'</code></pre>'));
+ md=md.replace(/^\|(.+)\|\r?\n\|[ :|\-]+\|\r?\n((?:\|.*\|(?:\r?\n|$))+)/gm,(_,head,body)=>{
+ const cells=row=>row.trim().replace(/^\||\|$/g,'').split('|').map(c=>c.trim());
+ return block('<div class="table-scroll"><table><thead><tr>'+cells('|'+head+'|').map(c=>'<th>'+inline(c)+'</th>').join('')+'</tr></thead><tbody>'+body.trim().split('\n').map(row=>'<tr>'+cells(row).map(c=>'<td>'+inline(c)+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>')+'\n';
+ });
  md=md.replace(/<callout\b[^>]*>([\s\S]*?)<\/callout>/g,(_,s)=>block('<details class="note"><summary>원문 주석</summary>'+render(s.trim())+'</details>'));
  md=md.replace(/<mention-page url="https:\/\/app.notion.com\/p\/([a-f0-9]+)"\/>/g,(_,id)=>idMap[id]?`[관련 문서](./#/docs/${idMap[id]})`:'');
  md=md.replace(/<table\b[^>]*>[\s\S]*?<\/table>/g,t=>block('<div class="table-scroll"><table>'+[...t.matchAll(/<tr\b[^>]*>([\s\S]*?)<\/tr>/g)].map((r,i)=>'<tr>'+[...r[1].matchAll(/<td\b[^>]*>([\s\S]*?)<\/td>/g)].map(c=>`<${i?'td':'th'}>${inline(c[1].trim())}</${i?'td':'th'}>`).join('')+'</tr>').join('')+'</table></div>'));
@@ -25,7 +31,15 @@ fs.mkdirSync('dist',{recursive:true});
 const docs=catalog.map(d=>({...d,body:render(fs.readFileSync(`content/${d.id}.md`,'utf8'))}));
 const attachments=JSON.parse(fs.readFileSync('content/attachments.json','utf8'));
 for(const a of attachments){if(!catalog.some(d=>d.id===a.document)||!a.title||!['문서','이미지','영상','빌드'].includes(a.type))throw Error('Invalid attachment');if(!/^https:\/\//.test(a.url)&&!/^files\/[\w./-]+$/.test(a.url))throw Error('Invalid URL');if(a.url.startsWith('files/')&&!fs.existsSync(path.join('dist',a.url)))throw Error('Missing attachment: '+a.url);}
+for(const a of attachments.filter(a=>a.url.startsWith('files/')&&a.url.endsWith('.md'))){
+ a.id=path.basename(a.url,'.md');
+ a.body=render(fs.readFileSync(path.join('dist',a.url),'utf8'));
+ for(const d of docs)d.body=d.body.replaceAll('href="'+a.url+'" target="_blank" rel="noopener noreferrer"','href="#/artifacts/'+a.id+'"');
+}
 const playlist=fs.readdirSync('content/playlist').filter(f=>f.endsWith('.json')).map(f=>JSON.parse(fs.readFileSync('content/playlist/'+f,'utf8')));
+for(const a of attachments.filter(a=>a.source&&a.body)){
+ for(const d of [...docs,...attachments.filter(x=>x.body)])d.body=d.body.replaceAll('href="'+a.source+'" target="_blank" rel="noopener noreferrer"','href="#/artifacts/'+a.id+'"');
+}
 const images=fs.existsSync('content/images.json')?JSON.parse(fs.readFileSync('content/images.json','utf8')):[];
 const playlistImages=fs.existsSync('content/playlist-images.json')?JSON.parse(fs.readFileSync('content/playlist-images.json','utf8')):[];
 const gameRank=g=>{const index=images.findIndex(i=>g.title.includes(i.match));return index<0?images.length:index;};
