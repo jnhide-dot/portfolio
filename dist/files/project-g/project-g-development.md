@@ -11,24 +11,24 @@
 ## 커밋·수정 내역
 
 ### 2026-07-09 · [식] 보스 차징(돌진 준비) 시간 1.2초 → 1.8초
-[커밋 257dfd6 확인](https://github.com/ghyourme/ProjectG/commit/257dfd6f6d63b6566aea8ad3460587c44db04e62)
+커밋 257dfd6
 
 - `M` · `Assets/03.Prefabs/boss_grandmaster.prefab`
 
 ### 2026-07-09 · [식] 피격 VFX 몸중앙 이동 + 상인 콜라이더 빌보드 일치
-[커밋 c9938cb 확인](https://github.com/ghyourme/ProjectG/commit/c9938cbf7419e20f397537a2ac4c0fcce2b59a79)
+커밋 c9938cb
 
 - `M` · `Assets/02.Scripts/03.Stage/HitEffect.cs`
 - `M` · `Assets/03.Prefabs/Merchant.prefab`
 
 ### 2026-07-09 · [식] 콜라이더 빌보드 이전 후 루트 콜라이더 참조 깨짐 수정
-[커밋 ff0bab5 확인](https://github.com/ghyourme/ProjectG/commit/ff0bab5db59a031d7df04a9624db1b99af65c07c)
+커밋 ff0bab5
 
 - `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossStateMachine.cs`
 - `M` · `Assets/02.Scripts/03.Stage/Monster/MonsterDeathState.cs`
 
 ### 2026-07-09 · [식] 몬스터/보스 콜라이더가 스프라이트와 함께 눕도록(빌보드 일치) 수정
-[커밋 6e8f1a1 확인](https://github.com/ghyourme/ProjectG/commit/6e8f1a1c35ec4486c8f972e7a15d9387e10d7c06)
+커밋 6e8f1a1
 
 - `M` · `Assets/03.Prefabs/boss_grandmaster.prefab`
 - `M` · `Assets/03.Prefabs/normal_archer.prefab`
@@ -36,39 +36,39 @@
 - `M` · `Assets/03.Prefabs/normal_wizard.prefab`
 
 ### 2026-07-09 · [식] 발밑 그림자가 맵 오브젝트(돌/울타리/상자) 위에 얹히던 문제 수정
-[커밋 a2789b3 확인](https://github.com/ghyourme/ProjectG/commit/a2789b305b380776051010c380f31df206f603cf)
+커밋 a2789b3
 
 - `M` · `Assets/02.Scripts/03.Stage/BlobShadow.cs`
 
 ### 2026-07-08 · [식] 상자방 미믹 퇴출 시 맵 밖 낙하(검은 화면) 수정 (검증 미확정)
-[커밋 0514684 확인](https://github.com/ghyourme/ProjectG/commit/05146846921c4dbe51ce66df2310cfd2bd800f59)
+커밋 0514684
 
 - `M` · `Assets/02.Scripts/03.Stage/ChestRoom.cs`
 
 ### 2026-07-07 · [식] 황금마차 타격음 20초 루프 클립 오배정 수정 + 랜덤 원샷
-[커밋 5d4521d 확인](https://github.com/ghyourme/ProjectG/commit/5d4521d86d7a05c9f00d8a5874f97696660e08a8)
+커밋 5d4521d
 
 - `M` · `Assets/02.Scripts/03.Stage/GoldenWagon.cs`
 - `M` · `Assets/03.Prefabs/GoldenWagon.prefab`
 
 ### 2026-07-07 · [식] 일시정지 중 타격음 등 SFX 계속 나오던 문제 수정
-[커밋 259816a 확인](https://github.com/ghyourme/ProjectG/commit/259816aac0f35a955cca6295a90a225d9112c608)
+커밋 259816a
 
 - `M` · `Assets/02.Scripts/01.UI/PauseManager.cs`
 - `M` · `Assets/02.Scripts/AudioManager.cs`
 
 ### 2026-07-07 · [식] 보스 돌진 경고가 보스방 카펫에 가려지는 문제 수정
-[커밋 43002cd 확인](https://github.com/ghyourme/ProjectG/commit/43002cd5ade5e9fb82ae214614328e8543bf5196)
+커밋 43002cd
 
 - `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossStateMachine.cs`
 
 ### 2026-07-07 · [식] 게임→홈 복귀 시 타이틀 화면 재표시 방지
-[커밋 72657fb 확인](https://github.com/ghyourme/ProjectG/commit/72657fb5a24f14be690e9def151ed6a885b27786)
+커밋 72657fb
 
 - `M` · `Assets/02.Scripts/01.UI/TitleManager.cs`
 
 ### 2026-07-07 · [식] 튜토리얼: 타이틀 닫힌 뒤 시작 + 완료 전 항상 처음부터
-[커밋 152d482 확인](https://github.com/ghyourme/ProjectG/commit/152d482861f51f0e98b9efc74da482c3b3d85ea5)
+커밋 152d482
 
 - `M` · `Assets/02.Scripts/01.UI/ClearUIManager.cs`
 - `M` · `Assets/02.Scripts/01.UI/TitleManager.cs`
@@ -76,12 +76,12 @@
 - `M` · `Assets/02.Scripts/03.Stage/StageTutorialManager.cs`
 
 ### 2026-07-07 · [식] 메인씬 캐릭터 중복 제거 + 스왑 버튼 복구
-[커밋 cf87121 확인](https://github.com/ghyourme/ProjectG/commit/cf87121ad8c449502a90dc12c286dbc349152769)
+커밋 cf87121
 
 - `M` · `Assets/01.Scenes/Main.unity`
 
 ### 2026-07-06 · [식] 몬스터 시체 타겟 버그 수정 + 공격 중 타겟 사망 시 중단
-[커밋 a1d285f 확인](https://github.com/ghyourme/ProjectG/commit/a1d285f37d6dcd1432cb607b824f9561cd84cec3)
+커밋 a1d285f
 
 - `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossBashState.cs`
 - `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossChargingState.cs`
@@ -90,24 +90,24 @@
 - `M` · `Assets/02.Scripts/03.Stage/Monster/MonsterStateMachine.cs`
 
 ### 2026-07-06 · [식] 스테이지 배율 계산부 복구 - 병합 유실로 인한 컴파일 에러 수정
-[커밋 cf4cb67 확인](https://github.com/ghyourme/ProjectG/commit/cf4cb6773b1d3d918158cb85bdb53efdc6063f76)
+커밋 cf4cb67
 
 - `M` · `Assets/02.Scripts/03.Stage/MapGen/StageBuilder.cs`
 
 ### 2026-07-06 · [식] 스테이지 밸런스 재조정 - 몹 즉사/전멸 해소
-[커밋 288f863 확인](https://github.com/ghyourme/ProjectG/commit/288f8637358d1b096abf30208d2775be69400e5f)
+커밋 288f863
 
 - `M` · `Assets/03.Prefabs/StageBuilder.prefab`
 - `M` · `Assets/10.Data/Monsters/Normal_Archer.asset`
 - `M` · `Assets/10.Data/Monsters/Normal_Monster.asset`
 
 ### 2026-07-06 · [식] 스테이지 몹 스폰 마리수 추가 상향
-[커밋 625e6e8 확인](https://github.com/ghyourme/ProjectG/commit/625e6e8a03de94a568b46fcb6ff773a332597aea)
+커밋 625e6e8
 
 - `M` · `Assets/03.Prefabs/StageBuilder.prefab`
 
 ### 2026-07-06 · [식] 스테이지 밸런스 + 영웅 스킬 범위화
-[커밋 39032a4 확인](https://github.com/ghyourme/ProjectG/commit/39032a4cd3430a8129a4c9baf5045f1614d314d5)
+커밋 39032a4
 
 - `M` · `Assets/02.Scripts/03.Stage/MapGen/StageBuilder.cs`
 - `M` · `Assets/02.Scripts/03.Stage/Monster/MonsterAttackState.cs`
@@ -122,17 +122,17 @@
 - `M` · `Assets/10.Data/Monsters/Normal_Monster.asset`
 
 ### 2026-07-03 · [식] 보스 돌진 데미지 상향 1800 → 4000
-[커밋 abaef47 확인](https://github.com/ghyourme/ProjectG/commit/abaef47e4994e20f5f5465064e96e4c547038d3a)
+커밋 abaef47
 
 - `M` · `Assets/03.Prefabs/boss_grandmaster.prefab`
 
 ### 2026-07-03 · [식] 보스 공격 데미지 미적용 버그 수정
-[커밋 4fb578b 확인](https://github.com/ghyourme/ProjectG/commit/4fb578bfdd93ade3826d7abc7ebf60601df9fd63)
+커밋 4fb578b
 
 - `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossStateMachine.cs`
 
 ### 2026-07-03 · [식] 추적 시 NavMesh 경로탐색 도입 (벽·상자 우회)
-[커밋 692c266 확인](https://github.com/ghyourme/ProjectG/commit/692c266079d7ca23cbc3c611cf3c5bffc0959007)
+커밋 692c266
 
 - `M` · `Assets/02.Scripts/03.Stage/MapGen/StageBuilder.cs`
 - `M` · `Assets/02.Scripts/03.Stage/Monster/MonsterChasingState.cs`
@@ -142,14 +142,14 @@
 - `M` · `Assets/03.Prefabs/Chest.prefab`
 
 ### 2026-07-03 · [식] 유실분 복구 — 스프라이트 오프셋 콜라이더 보정 + Warrior moveOffset -2.3 + 힐러 이동 스프라이트 교체
-[커밋 fbaad6b 확인](https://github.com/ghyourme/ProjectG/commit/fbaad6b7b2a1743aba4d00f6f31f89db0cbc1e65)
+커밋 fbaad6b
 
 - `M` · `Assets/02.Scripts/03.Stage/Player/SpriteSheetAnimator.cs`
 - `M` · `Assets/03.Prefabs/Warrior.prefab`
 - `M` · `Assets/04.Images/Healer/Healer_move.png`
 
 ### 2026-07-03 · [식] 보스 밸런스 강화 + 배시 속박→슬로우 + 영웅 콜라이더 원복
-[커밋 891bf79 확인](https://github.com/ghyourme/ProjectG/commit/891bf79e1950af7351dbd232b5c2ffffe69841d2)
+커밋 891bf79
 
 - `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossChargingState.cs`
 - `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossStateMachine.cs`
@@ -162,12 +162,12 @@
 - `M` · `Assets/10.Data/Heroes/Archer.asset`
 
 ### 2026-07-03 · [식] 데미지 숫자 위치 수정 — 화면 기준 위(camera.up)로 머리 위 표시
-[커밋 4ee4d45 확인](https://github.com/ghyourme/ProjectG/commit/4ee4d45b6e63feda713f3e91aaa980070ecf5e72)
+커밋 4ee4d45
 
 - `M` · `Assets/02.Scripts/03.Stage/DamageNumberManager.cs`
 
 ### 2026-07-03 · [식] 피격 데미지 숫자 표시 구현
-[커밋 c6bff22 확인](https://github.com/ghyourme/ProjectG/commit/c6bff22cd8bb546a9b9151a63e93f1161a7f9d8e)
+커밋 c6bff22
 
 - `A` · `Assets/02.Scripts/03.Stage/DamageNumber.cs`
 - `A` · `Assets/02.Scripts/03.Stage/DamageNumber.cs.meta`
@@ -176,24 +176,24 @@
 - `M` · `Assets/02.Scripts/03.Stage/Player/Health.cs`
 
 ### 2026-07-02 · [식] 황금마차 프리팹 복원 (힐러 두 명 버그 수정)
-[커밋 cc92572 확인](https://github.com/ghyourme/ProjectG/commit/cc92572bab3cabc01b2f3841850ba2dd4f8d3301)
+커밋 cc92572
 
 - `M` · `Assets/03.Prefabs/GoldenWagon.prefab`
 
 ### 2026-07-02 · [식] Warrior 이동 스프라이트 높이 미세조정 (moveOffset -2 → -2.2)
-[커밋 0ff6bb8 확인](https://github.com/ghyourme/ProjectG/commit/0ff6bb8def78a3bd93d8d18852dcb20718c127d6)
+커밋 0ff6bb8
 
 - `M` · `Assets/03.Prefabs/Warrior.prefab`
 
 ### 2026-07-02 · [식] 영웅 콜라이더 Sprite→루트 이동 + Warrior 이동 스프라이트 높이 보정
-[커밋 33fe0ff 확인](https://github.com/ghyourme/ProjectG/commit/33fe0ffa3a5e658ca2ccc53e39b69e25795c7bf1)
+커밋 33fe0ff
 
 - `M` · `Assets/03.Prefabs/Archer.prefab`
 - `M` · `Assets/03.Prefabs/Healer.prefab`
 - `M` · `Assets/03.Prefabs/Warrior.prefab`
 
 ### 2026-07-02 · [식] 벽 관통·몬스터 상자 무한추적 수정 + 테스트 잔재 제거
-[커밋 b62c1c9 확인](https://github.com/ghyourme/ProjectG/commit/b62c1c90583862baaa0bcc7e98b64b32c08f0be9)
+커밋 b62c1c9
 
 - `M` · `Assets/01.Scenes/Stage.unity`
 - `M` · `Assets/02.Scripts/03.Stage/Player/PartyManager.cs`
@@ -202,7 +202,7 @@
 - `M` · `Assets/03.Prefabs/Warrior.prefab`
 
 ### 2026-07-01 · [식]종합버그 1차수정
-[커밋 523ddc2 확인](https://github.com/ghyourme/ProjectG/commit/523ddc2e362d170209d1e9fb8da0cd144fd4e07d)
+커밋 523ddc2
 
 - `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossIdleState.cs`
 - `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossStateMachine.cs`
@@ -220,7 +220,7 @@
 - `M` · `Assets/03.Prefabs/Warrior.prefab`
 
 ### 2026-07-01 · [식] 이동 적 포탈 상자생성 로직/ 황금마차 로직 등 수정
-[커밋 224bb60 확인](https://github.com/ghyourme/ProjectG/commit/224bb6089b75ade125b0ee6fa7bc4f605d8c6c2f)
+커밋 224bb60
 
 - `M` · `Assets/01.Scenes/Stage.unity`
 - `M` · `Assets/02.Scripts/03.Stage/ChestObject.cs`
@@ -254,19 +254,19 @@
 - `M` · `ProjectSettings/DynamicsManager.asset`
 
 ### 2026-07-01 · [식] 1차 워리어 공격 버그 수정
-[커밋 f61d064 확인](https://github.com/ghyourme/ProjectG/commit/f61d064287ff9e70e3605851c4013e23c3883072)
+커밋 f61d064
 
 - `M` · `Assets/02.Scripts/03.Stage/Player/PlayerStateMachine.cs`
 - `A` · `Assets/03.Prefabs/PlayerNoFriction.physicsMaterial`
 - `A` · `Assets/03.Prefabs/PlayerNoFriction.physicsMaterial.meta`
 
 ### 2026-07-01 · [식] 상자 콜라이더 수정
-[커밋 cfb21df 확인](https://github.com/ghyourme/ProjectG/commit/cfb21df862243c7ba34a68ea741f6888c6073f8d)
+커밋 cfb21df
 
 - `M` · `Assets/03.Prefabs/Chest.prefab`
 
 ### 2026-07-01 · [식]그림자 툴 수정
-[커밋 30fd182 확인](https://github.com/ghyourme/ProjectG/commit/30fd182bf2ff0fe992c22fe576fe06a44052e79c)
+커밋 30fd182
 
 - `M` · `Assets/02.Scripts/03.Stage/BlobShadow.cs`
 - `M` · `Assets/03.Prefabs/Archer.prefab`
@@ -274,14 +274,14 @@
 - `M` · `Assets/03.Prefabs/Warrior.prefab`
 
 ### 2026-07-01 · [식] 마법사 궁수 경비병 콜라이더 수정
-[커밋 5881009 확인](https://github.com/ghyourme/ProjectG/commit/5881009c55f5d2a4e327e8df4e81b33c4e7e8b9d)
+커밋 5881009
 
 - `M` · `Assets/03.Prefabs/normal_archer.prefab`
 - `M` · `Assets/03.Prefabs/normal_knight.prefab`
 - `M` · `Assets/03.Prefabs/normal_wizard.prefab`
 
 ### 2026-07-01 · [식]그림자 수정 툴 / 파티 맵이동 불가 버그 수정 / 캐릭터 콜라이더 수정
-[커밋 ed6e29e 확인](https://github.com/ghyourme/ProjectG/commit/ed6e29e5da19406497a478fe90f13c5dc434bd5f)
+커밋 ed6e29e
 
 - `M` · `Assets/01.Scenes/Stage.unity`
 - `M` · `Assets/02.Scripts/03.Stage/BlobShadow.cs`
@@ -292,7 +292,7 @@
 - `M` · `Assets/03.Prefabs/Warrior.prefab`
 
 ### 2026-07-01 · [식] 보스 상인 프리팹 콜라이더 수정
-[커밋 3550c87 확인](https://github.com/ghyourme/ProjectG/commit/3550c8786e502f65b8b1ec115068f149cddd607f)
+커밋 3550c87
 
 - `M` · `Assets/01.Scenes/Stage.unity`
 - `M` · `Assets/03.Prefabs/Merchant.prefab`
@@ -300,7 +300,7 @@
 - `M` · `Assets/03.Prefabs/normal_wizard.prefab`
 
 ### 2026-06-30 · [식]캐릭터 콜라이더 수정 및 워리어 idle수정
-[커밋 ab1667c 확인](https://github.com/ghyourme/ProjectG/commit/ab1667c2f722e000f1572421ba817f15b586020e)
+커밋 ab1667c
 
 - `M` · `Assets/01.Scenes/Stage.unity`
 - `M` · `Assets/02.Scripts/03.Stage/Player/PlayerAnimator.cs`
@@ -314,7 +314,7 @@
 - `A` · `"Assets/04.Images/Alice/\354\240\234\353\252\251 \354\227\206\354\235\214 - 2026\353\205\204 6\354\233\224 30\354\235\274 19.50.34.png.meta"`
 
 ### 2026-06-30 · [식]콜라이더 및 리지드 바디 교체
-[커밋 91f4e6b 확인](https://github.com/ghyourme/ProjectG/commit/91f4e6befe4d54cd08d918ee09c87e5e7a05d73c)
+커밋 91f4e6b
 
 - `M` · `Assets/01.Scenes/Stage.unity`
 - `M` · `Assets/02.Scripts/01.UI/ClearUIManager.cs`
@@ -366,7 +366,7 @@
 - `M` · `Assets/TextMesh Pro/Resources/Fonts & Materials/Galmuri9 SDF.asset`
 
 ### 2026-06-29 · [식]스테이지 생성에 따른 몬스터 생성 오류 및 플레이어 타겟팅 오류 수정
-[커밋 85b8d6a 확인](https://github.com/ghyourme/ProjectG/commit/85b8d6aff37e5699c6f0b5f5907d83c8621cb0b2)
+커밋 85b8d6a
 
 - `M` · `Assets/01.Scenes/Stage.unity`
 - `M` · `Assets/02.Scripts/03.Stage/Room.cs`
@@ -381,13 +381,13 @@
 - `M` · `ProjectSettings/TagManager.asset`
 
 ### 2026-06-29 · [식] 상인 애니메이션 테스트 데이터 삭제
-[커밋 ba8d005 확인](https://github.com/ghyourme/ProjectG/commit/ba8d005df4531ed00b9b60a0a1f82f87c2e1cb36)
+커밋 ba8d005
 
 - `D` · `Assets/02.Scripts/03.Stage/MerchantDeathTest.cs`
 - `D` · `Assets/02.Scripts/03.Stage/MerchantDeathTest.cs.meta`
 
 ### 2026-06-29 · [식]상인 사망모션 추가
-[커밋 50023ef 확인](https://github.com/ghyourme/ProjectG/commit/50023ef96bf8fbfa6ca9ad011dc6a96aa3a94e02)
+커밋 50023ef
 
 - `M` · `Assets/02.Scripts/03.Stage/MerchantAI.cs`
 - `A` · `Assets/02.Scripts/03.Stage/MerchantDeathTest.cs`
@@ -399,7 +399,7 @@
 - `M` · `Assets/TextMesh Pro/Resources/Fonts & Materials/Galmuri9 SDF.asset`
 
 ### 2026-06-29 · [식]타겟팅 판정개선
-[커밋 f9c74e9 확인](https://github.com/ghyourme/ProjectG/commit/f9c74e9c4cfb7a034650c01704ad191eb171bec6)
+커밋 f9c74e9
 
 - `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossStateMachine.cs`
 - `M` · `Assets/02.Scripts/03.Stage/Monster/MonsterAttackState.cs`
@@ -418,7 +418,7 @@
 - `M` · `Assets/Vefects/Pixel Craft VFX/VFX/Sword Slash/Materials/M_VFX_Sword_Slash_03_Mask.mat`
 
 ### 2026-06-25 · [식]보스 FSM 수정
-[커밋 6105911 확인](https://github.com/ghyourme/ProjectG/commit/61059116f3638d49b734e66040d4dda0c9d18c81)
+커밋 6105911
 
 - `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossBashState.cs`
 - `M` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossChargeRushingState.cs`
@@ -437,12 +437,12 @@
 - `M` · `Assets/TextMesh Pro/Resources/Fonts & Materials/Galmuri9 SDF.asset`
 
 ### 2026-06-25 · [식] 로비 챕터 스테이지 수정
-[커밋 d3741d9 확인](https://github.com/ghyourme/ProjectG/commit/d3741d9acf795fb57b2948121b62b8c88d9aff79)
+커밋 d3741d9
 
 - `M` · `Assets/01.Scenes/Main.unity`
 
 ### 2026-06-25 · [식]보스 fsm 수정
-[커밋 4f34e76 확인](https://github.com/ghyourme/ProjectG/commit/4f34e76c3f57a994b1b0356e1c43b3fc81ad27b6)
+커밋 4f34e76
 
 - `A` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossAnimator.cs`
 - `A` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossAnimator.cs.meta`
@@ -456,7 +456,7 @@
 - `M` · `Assets/02.Scripts/03.Stage/Player/SpriteSheetAnimator.cs`
 
 ### 2026-06-25 · [식] 로비 -> 챕터 -> 스테이지 -> 전투
-[커밋 7087d43 확인](https://github.com/ghyourme/ProjectG/commit/7087d4331e6bdd56b298159e7f50f8a8b98c846a)
+커밋 7087d43
 
 - `M` · `Assets/01.Scenes/Main.unity`
 - `A` · `Assets/02.Scripts/02.Scene/ChapterSelectController.cs`
@@ -472,7 +472,7 @@
 - `M` · `Assets/TextMesh Pro/Resources/Fonts & Materials/Galmuri9 SDF.asset`
 
 ### 2026-06-24 · [식] 보스fsm 추가
-[커밋 cd4cc84 확인](https://github.com/ghyourme/ProjectG/commit/cd4cc848f88b881dd9d437e9365ad565b33c177f)
+커밋 cd4cc84
 
 - `A` · `Assets/02.Scripts/03.Stage/Monster/Boss.meta`
 - `A` · `Assets/02.Scripts/03.Stage/Monster/Boss/BossBashState.cs`
@@ -494,7 +494,7 @@
 - `M` · `Assets/03.Prefabs/boss_grandmaster.prefab`
 
 ### 2026-06-18 · [식]VFX업데이트
-[커밋 d0ea9ae 확인](https://github.com/ghyourme/ProjectG/commit/d0ea9aea933e9edc3f57dea67e79cd9ec8a397c1)
+커밋 d0ea9ae
 
 - `A` · `Assets/Vefects.meta`
 - `A` · `Assets/Vefects/Combat Flipbook VFX.meta`
@@ -4693,24 +4693,24 @@
 - `A` · `Assets/Vefects/Pixel Craft VFX/VFX/Vapor/Textures/T_VFX_Vapor_01_Mask.tga.meta`
 
 ## 병합 기록
-- 2026-07-09 · [31196eb](https://github.com/ghyourme/ProjectG/commit/31196ebc179dc5773a244cfb7207b5e89315ac80) · Merge branch 'feature/stage_10' of https://github.com/ghyourme/ProjectG into feature/stage_10
-- 2026-07-08 · [0a482fd](https://github.com/ghyourme/ProjectG/commit/0a482fdef342be0c5ee2e5772ea41be48b4fcf5c) · Merge branch 'feature/stage_10' of https://github.com/ghyourme/ProjectG into feature/stage_10
-- 2026-07-07 · [e493d16](https://github.com/ghyourme/ProjectG/commit/e493d16bea719c2ad113633892653fccda50c4fd) · Merge branch 'feature/stage_10' of https://github.com/ghyourme/ProjectG into feature/stage_10
-- 2026-07-06 · [df77e93](https://github.com/ghyourme/ProjectG/commit/df77e939bfe1479c8bfd7be846cb9ac86cc7a234) · Merge branch 'feature/stage_9' of https://github.com/ghyourme/ProjectG into feature/stage_9
-- 2026-07-06 · [f5cca97](https://github.com/ghyourme/ProjectG/commit/f5cca97acce2ee1be48b144d92f09f33f254f83a) · Merge branch 'feature/stage_9' of https://github.com/ghyourme/ProjectG into feature/stage_9
-- 2026-07-06 · [1e9aab8](https://github.com/ghyourme/ProjectG/commit/1e9aab8186ad00c802d8cde4a93f3a0e0bce40a5) · Merge branch 'feature/stage_9' of https://github.com/ghyourme/ProjectG into feature/stage_9
-- 2026-07-03 · [bb02853](https://github.com/ghyourme/ProjectG/commit/bb02853f626e0f0ce864cc10648a2f9219794457) · Merge branch 'feature/stage_9' of https://github.com/ghyourme/ProjectG into feature/stage_9
-- 2026-07-03 · [d7ca6a5](https://github.com/ghyourme/ProjectG/commit/d7ca6a5ffb9287ed888367ea679516b65d540ba1) · Merge branch 'feature/stage_8' of https://github.com/ghyourme/ProjectG into feature/stage_8
-- 2026-07-03 · [e05c893](https://github.com/ghyourme/ProjectG/commit/e05c8935fad57aeedaab26faa733934da895e94f) · Merge branch 'feature/stage_8' of https://github.com/ghyourme/ProjectG into feature/stage_8
-- 2026-07-03 · [5c3a965](https://github.com/ghyourme/ProjectG/commit/5c3a9656bce7cbbed76326d2492b4f9111480543) · Merge branch 'feature/stage_8' of https://github.com/ghyourme/ProjectG into feature/stage_8
-- 2026-07-02 · [48225b1](https://github.com/ghyourme/ProjectG/commit/48225b12802cd81786c3af558c31e589e7374db9) · Merge branch 'feature/stage_8' of https://github.com/ghyourme/ProjectG into feature/stage_8
-- 2026-07-02 · [a531a06](https://github.com/ghyourme/ProjectG/commit/a531a068de74f8c455979c80ffe9dfdd5b633191) · Merge branch 'feature/stage_8' of https://github.com/ghyourme/ProjectG into feature/stage_8
-- 2026-07-02 · [41d7643](https://github.com/ghyourme/ProjectG/commit/41d764352a4bbab939ec27536ec9516f818b36d0) · Merge branch 'feature/stage_8' of https://github.com/ghyourme/ProjectG into feature/stage_8
-- 2026-07-01 · [aa0436b](https://github.com/ghyourme/ProjectG/commit/aa0436b1d08f9f7d7c80a5f84d30b27c12c23b00) · Merge branch 'feature/stage_8' of https://github.com/ghyourme/ProjectG into feature/stage_8
-- 2026-07-01 · [fb36aca](https://github.com/ghyourme/ProjectG/commit/fb36acadd229ba8ef4e3e4eb9ccfa3003551ab36) · Merge branch 'feature/stage_7' of https://github.com/ghyourme/ProjectG into feature/stage_7
-- 2026-07-01 · [6fdadfc](https://github.com/ghyourme/ProjectG/commit/6fdadfc076fdcafd904ca443577f1da090e765e2) · Merge branch 'feature/stage_7' of https://github.com/ghyourme/ProjectG into feature/stage_7
-- 2026-06-30 · [b5bdcfd](https://github.com/ghyourme/ProjectG/commit/b5bdcfde74162081229f6d18c19e05a2009ecbf4) · Merge branch 'feature/stage_7' of https://github.com/ghyourme/ProjectG into feature/stage_7
-- 2026-06-29 · [990bc49](https://github.com/ghyourme/ProjectG/commit/990bc4970a186c4ce4cde8925a7df23361a9fb71) · Merge branch 'feature/stage_6' of https://github.com/ghyourme/ProjectG into feature/stage_6
-- 2026-06-25 · [7117244](https://github.com/ghyourme/ProjectG/commit/7117244d5b27398c2405aff4ffb1776286dae68e) · Merge branch 'feature/stage_6' of https://github.com/ghyourme/ProjectG into feature/stage_6
+- 2026-07-09 · 31196eb · Merge branch 'feature/stage_10' of https://github.com/ghyourme/ProjectG into feature/stage_10
+- 2026-07-08 · 0a482fd · Merge branch 'feature/stage_10' of https://github.com/ghyourme/ProjectG into feature/stage_10
+- 2026-07-07 · e493d16 · Merge branch 'feature/stage_10' of https://github.com/ghyourme/ProjectG into feature/stage_10
+- 2026-07-06 · df77e93 · Merge branch 'feature/stage_9' of https://github.com/ghyourme/ProjectG into feature/stage_9
+- 2026-07-06 · f5cca97 · Merge branch 'feature/stage_9' of https://github.com/ghyourme/ProjectG into feature/stage_9
+- 2026-07-06 · 1e9aab8 · Merge branch 'feature/stage_9' of https://github.com/ghyourme/ProjectG into feature/stage_9
+- 2026-07-03 · bb02853 · Merge branch 'feature/stage_9' of https://github.com/ghyourme/ProjectG into feature/stage_9
+- 2026-07-03 · d7ca6a5 · Merge branch 'feature/stage_8' of https://github.com/ghyourme/ProjectG into feature/stage_8
+- 2026-07-03 · e05c893 · Merge branch 'feature/stage_8' of https://github.com/ghyourme/ProjectG into feature/stage_8
+- 2026-07-03 · 5c3a965 · Merge branch 'feature/stage_8' of https://github.com/ghyourme/ProjectG into feature/stage_8
+- 2026-07-02 · 48225b1 · Merge branch 'feature/stage_8' of https://github.com/ghyourme/ProjectG into feature/stage_8
+- 2026-07-02 · a531a06 · Merge branch 'feature/stage_8' of https://github.com/ghyourme/ProjectG into feature/stage_8
+- 2026-07-02 · 41d7643 · Merge branch 'feature/stage_8' of https://github.com/ghyourme/ProjectG into feature/stage_8
+- 2026-07-01 · aa0436b · Merge branch 'feature/stage_8' of https://github.com/ghyourme/ProjectG into feature/stage_8
+- 2026-07-01 · fb36aca · Merge branch 'feature/stage_7' of https://github.com/ghyourme/ProjectG into feature/stage_7
+- 2026-07-01 · 6fdadfc · Merge branch 'feature/stage_7' of https://github.com/ghyourme/ProjectG into feature/stage_7
+- 2026-06-30 · b5bdcfd · Merge branch 'feature/stage_7' of https://github.com/ghyourme/ProjectG into feature/stage_7
+- 2026-06-29 · 990bc49 · Merge branch 'feature/stage_6' of https://github.com/ghyourme/ProjectG into feature/stage_6
+- 2026-06-25 · 7117244 · Merge branch 'feature/stage_6' of https://github.com/ghyourme/ProjectG into feature/stage_6
 
 A: 추가 · M: 수정 · D: 삭제 · R: 이름/경로 변경

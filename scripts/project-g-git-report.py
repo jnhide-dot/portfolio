@@ -13,14 +13,14 @@ out = ['## 집계 기준', f'- 저장소: [ProjectG](https://github.com/ghyourme
 for record in records:
     sha, date, title = record.split('|', 2)
     files = git('diff-tree', '--no-commit-id', '--name-status', '-r', sha).strip().splitlines()
-    out += ['', f'### {date} · {title}', f'[커밋 {sha[:7]} 확인](https://github.com/ghyourme/ProjectG/commit/{sha})', '']
+    out += ['', f'### {date} · {title}', f'커밋 {sha[:7]}', '']
     for line in files:
         status, path = line.split('\t', 1)
         out.append(f'- `{status}` · `{path}`')
 out += ['', '## 병합 기록']
 for record in merges:
     sha, date, title = record.split('|', 2)
-    out.append(f'- {date} · [{sha[:7]}](https://github.com/ghyourme/ProjectG/commit/{sha}) · {title}')
+    out.append(f'- {date} · {sha[:7]} · {title}')
 out += ['', 'A: 추가 · M: 수정 · D: 삭제 · R: 이름/경로 변경', '']
 target = root / 'dist/files/project-g/project-g-development.md'
 target.write_text('\n'.join(out), encoding='utf-8')
