@@ -76,7 +76,7 @@ footer{padding:35px 6%;align-items:center;gap:28px}footer .wordmark{font-size:17
 .profile-card:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
 .profile-identity{background:#14243b;color:#fff;padding:40px 44px;display:flex;flex-direction:column;justify-content:center}
 .profile-handle{font-size:12px;letter-spacing:3px;color:#9ebeff}
-.profile-identity h3{font-size:38px;letter-spacing:2px;margin:22px 0 10px}
+.profile-identity h3{font-size:32px;letter-spacing:-1px;line-height:1.45;margin:22px 0 10px}
 .profile-identity p{font-size:15px;line-height:1.8;color:#d9e4f7;margin:0;word-break:keep-all}
 .profile-summary{padding:34px 44px;display:flex;flex-direction:column;justify-content:center}
 .profile-summary dl{margin:0}.profile-summary dl>div{display:grid;grid-template-columns:95px minmax(0,1fr);gap:16px;padding:12px 0;font-size:14px;line-height:1.7}
@@ -85,6 +85,9 @@ footer{padding:35px 6%;align-items:center;gap:28px}footer .wordmark{font-size:17
 .home-profile+.home-section{padding-top:0}
 @media(max-width:800px){.profile-card{grid-template-columns:1fr}.profile-identity{padding:30px 26px}.profile-identity h3{font-size:32px;margin-top:18px}.profile-identity p{font-size:13px}.profile-summary{padding:22px 26px}.profile-summary dl>div{grid-template-columns:68px minmax(0,1fr);gap:12px;font-size:13px}.profile-view{font-size:12px}}
 body.popup-open{overflow:hidden}
+.hero-heading{right:6%}
+.hero-heading .hero-subtitle{margin:22px 0 0;font-size:16px;letter-spacing:.3px;line-height:1.8;color:#e3edff}
+@media(max-width:800px){.hero-heading h1{font-size:clamp(30px,8.5vw,48px);letter-spacing:-1.5px}.hero-heading .hero-subtitle{font-size:13px;margin-top:18px}.profile-identity h3{font-size:28px}}
 .content-popup{width:min(1180px,calc(100vw - 64px));max-width:none;height:calc(100dvh - 80px);max-height:none;padding:0;border:1px solid #d9e3f0;border-radius:16px;background:#fff;color:var(--ink);box-shadow:0 24px 90px #06152b55;overflow:hidden}
 .content-popup::backdrop{background:#0b172cb8;backdrop-filter:blur(6px)}
 .content-popup[open]{display:flex;flex-direction:column}
