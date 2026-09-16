@@ -45,10 +45,33 @@ function portfolioPage(detail){
 main.className='collection-main';document.title=(detail?'프로젝트 스피릿':'포트폴리오')+' — Jnhide';
 main.innerHTML=(detail?'<a class="back-link" href="#/portfolio">← 포트폴리오</a>':'')+'<header class="collection-head"><p class="eyebrow">PORTFOLIO</p><h1>'+(detail?'프로젝트 스피릿':'포트폴리오')+'</h1></header>'+(detail?['전투 분석','비교·제안'].map(group=>'<section><div class="section-title"><h2>'+(group==='전투 분석'?'전투 분석':'시스템·캐릭터')+'</h2></div>'+(group==='전투 분석'?combatCards():docs.filter(d=>d.group===group).map(row).join(''))+'</section>').join(''):spiritCard());
 }
+const toolInfo={
+ 'Notion':['notion.svg','https://www.notion.com/'],
+ 'Jira':['jira.svg','https://www.atlassian.com/software/jira'],
+ 'Word':['word.svg','https://www.microsoft.com/microsoft-365/word'],
+ 'Excel':['excel.svg','https://www.microsoft.com/microsoft-365/excel'],
+ 'PowerPoint':['powerpoint.svg','https://www.microsoft.com/microsoft-365/powerpoint'],
+ 'Figma':['figma.svg','https://www.figma.com/'],
+ 'Photoshop':['photoshop.svg','https://www.adobe.com/products/photoshop.html'],
+ 'Premiere':['premiere.svg','https://www.adobe.com/products/premiere.html'],
+ 'Unity':['unity.svg','https://unity.com/'],
+ 'Python':['python.svg','https://www.python.org/'],
+ 'Lua Script':['lua.svg','https://www.lua.org/'],
+ 'GitHub':['github.png','https://github.com/'],
+ 'Fork':['fork.png','https://fork.dev/'],
+ 'Antigravity':['antigravity.png','https://antigravity.google/'],
+ 'Claude':['claude.svg','https://claude.ai/'],
+ 'GPT':['openai.svg','https://chatgpt.com/'],
+ 'Gemini':['googlegemini.svg','https://gemini.google.com/']
+};
+function toolCard(name){
+ const [icon,url]=toolInfo[name];
+ return '<li><a class="tool-link" href="'+E(url)+'" target="_blank" rel="noopener noreferrer" aria-label="'+E(name)+' 공식 사이트 (새 탭)"><span class="tool-icon"><img src="images/tools/'+E(icon)+'" width="32" height="32" alt="" loading="lazy"></span><span class="tool-name">'+E(name)+'</span><span class="tool-external" aria-hidden="true">↗</span></a></li>';
+}
 function aboutSection(id){
 const skills=id==='qualifications-tools';main.className='collection-main';document.title=(skills?'자격증·사용 가능한 툴':'프로필·연혁')+' — Jnhide';
 const groups=[['문서·협업',['Notion','Jira','Word','Excel','PowerPoint']],['디자인·영상',['Figma','Photoshop','Premiere']],['개발',['Unity','Python','Lua Script','GitHub','Fork']],['AI',['Antigravity','Claude','GPT','Gemini']]];
-main.innerHTML='<header class="collection-head"><p class="eyebrow">ABOUT</p><h1>'+(skills?'자격증·사용 가능한 툴':'프로필·연혁')+'</h1><p class="intro">어 식 · 전투 시스템 · 캐릭터 전투 기획</p></header>'+(skills?'<section class="about-section"><h2>자격증</h2><dl class="game-facts"><div><dt>자격</dt><dd>MOS Master</dd></div><div><dt>어학</dt><dd>JLPT N3</dd></div></dl></section><section class="about-section"><h2>사용 가능한 툴</h2><div class="about-tool-grid">'+groups.map(([title,items])=>'<section><h3>'+title+'</h3><ul>'+items.map(t=>'<li>'+t+'</li>').join('')+'</ul></section>').join('')+'</div></section>':'<section class="about-section"><h2>프로필</h2><dl class="game-facts"><div><dt>이름</dt><dd>어 식</dd></div><div><dt>분야</dt><dd>전투 시스템 · 캐릭터 전투 기획</dd></div><div><dt>전공</dt><dd>컴퓨터공학</dd></div></dl></section><section class="about-section"><h2>연혁</h2><dl class="game-facts"><div><dt>전공</dt><dd>컴퓨터공학</dd></div><div><dt>1년</dt><dd>자연어 처리 학부연구생</dd></div><div><dt>약 2개월</dt><dd>캐릭터 전투 시스템 기획 · 기획 연수생 5인 팀</dd></div><div><dt>2026.07.21–09.09</dt><dd>PM·팀장 프로젝트 · 종료·인계 완료</dd></div></dl></section>');
+main.innerHTML='<header class="collection-head"><p class="eyebrow">ABOUT</p><h1>'+(skills?'자격증·사용 가능한 툴':'프로필·연혁')+'</h1><p class="intro">어 식 · 전투 시스템 · 캐릭터 전투 기획</p></header>'+(skills?'<section class="about-section"><h2>자격증</h2><dl class="game-facts"><div><dt>자격</dt><dd>MOS Master</dd></div><div><dt>어학</dt><dd>JLPT N3</dd></div></dl></section><section class="about-section"><h2>사용 가능한 툴</h2><div class="about-tool-grid">'+groups.map(([title,items])=>'<section><h3>'+title+'</h3><ul>'+items.map(toolCard).join('')+'</ul></section>').join('')+'</div></section>':'<section class="about-section"><h2>프로필</h2><dl class="game-facts"><div><dt>이름</dt><dd>어 식</dd></div><div><dt>분야</dt><dd>전투 시스템 · 캐릭터 전투 기획</dd></div><div><dt>전공</dt><dd>컴퓨터공학</dd></div></dl></section><section class="about-section"><h2>연혁</h2><dl class="game-facts"><div><dt>전공</dt><dd>컴퓨터공학</dd></div><div><dt>1년</dt><dd>자연어 처리 학부연구생</dd></div><div><dt>약 2개월</dt><dd>캐릭터 전투 시스템 기획 · 기획 연수생 5인 팀</dd></div><div><dt>2026.07.21–09.09</dt><dd>PM·팀장 프로젝트 · 종료·인계 완료</dd></div></dl></section>');
 }
 function aboutPage(){
 aboutSection('profile-history');const profile=main.innerHTML;
