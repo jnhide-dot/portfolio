@@ -1,5 +1,6 @@
 const {docs,attachments,playlist,images,playlistImages=[],foundationImages=[]}=window.PORTFOLIO;
-const main=document.querySelector('main'),nav=document.querySelector('#nav');
+const pageMain=document.querySelector('main'),nav=document.querySelector('#nav');
+let main=pageMain;
 const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const link=d=>'#/docs/'+d.id;
 const gameImage=g=>playlistImages.find(i=>i.game===g.id)||images.find(i=>g.title.includes(i.match));
@@ -103,8 +104,8 @@ function gamePage(g){
 main.className='game-detail-main';const i=gameImage(g);const related=docs.find(d=>d.id===g.relatedDoc);document.title=g.title+' · 플레이리스트 — Jnhide';
 main.innerHTML='<a class="back-link" href="#/playlist">← 플레이리스트</a><header class="game-detail-head '+(i?'has-art':'')+'">'+imageTag(i)+'<div><p class="eyebrow">PLAYLIST</p><h1>'+E(g.title)+'</h1><p>'+E([...new Set([...g.genres,...(g.tags||[])])].join(' · '))+'</p></div></header><div class="game-content"><section><div class="section-title"><h2>플레이 기록</h2><a class="edit-record" href="https://github.com/jnhide-dot/portfolio/edit/main/content/playlist/'+g.id+'.json" target="_blank" rel="noopener">기록 편집 ↗</a></div><p class="record-caption">노션 기록 기준 · '+E(g.snapshot)+' / 이전 기록은 실제 현재 상태와 다를 수 있습니다.</p><dl class="game-facts">'+[['기록 상태',g.status],['진행도',g.progress],['숙련도',g.proficiency],['플랫폼',g.platforms.join(' · ')],['플레이 시간',g.hours===null?'':g.hours+'시간']].map(([k,v])=>'<div><dt>'+k+'</dt><dd>'+E(v||'미기록')+'</dd></div>').join('')+'</dl><h2>주력 플레이</h2><p>'+E(g.mainPlay||'아직 작성한 기록이 없습니다.')+'</p><h2>주요 콘텐츠</h2><p>'+E(g.mainContent||'아직 작성한 기록이 없습니다.')+'</p><h2>플레이 인사이트</h2><p>'+E(g.insight||'아직 작성한 기록이 없습니다.')+'</p></section><aside class="related-analysis"><p class="eyebrow">RELATED</p><h2>연결된 분석</h2>'+(related?'<a href="'+link(related)+'">'+related.title+' ↗</a>':'<p>아직 연결된 분석이 없습니다.</p>')+'</aside></div>';
 }
-function render(){
-closeMenu();const parts=(location.hash||'#/').slice(2).split('/');const kind=parts[0],id=parts[1];const doc=docs.find(d=>d.id===id),game=playlist.find(g=>g.id===id);const section=kind==='docs'?(doc?.type?'projects':'portfolio'):kind==='games'?'playlist':['analysis','design'].includes(kind)?'portfolio':kind||'about';nav.querySelectorAll('.nav-trigger').forEach(b=>b.classList.toggle('current',b.dataset.section===section));nav.querySelectorAll('a').forEach(a=>{a.hash===(location.hash||'#/')?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current');});
+function render(hash=location.hash){
+closeMenu();const parts=(hash||'#/').slice(2).split('/');const kind=parts[0],id=parts[1];const doc=docs.find(d=>d.id===id),game=playlist.find(g=>g.id===id);const section=kind==='docs'?(doc?.type?'projects':'portfolio'):kind==='games'?'playlist':['analysis','design'].includes(kind)?'portfolio':kind||'about';nav.querySelectorAll('.nav-trigger').forEach(b=>b.classList.toggle('current',b.dataset.section===section));nav.querySelectorAll('a').forEach(a=>{a.hash===(hash||'#/')?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current');});
 if(!kind){document.title='Jnhide — 전투 시스템·캐릭터 기획';home();}
 else if(kind==='about')aboutPage(id);
 else if(kind==='portfolio'&&(!id||id==='spirit'))portfolioPage(id==='spirit');
@@ -116,6 +117,62 @@ else if(kind==='playlist')playlistPage();
 else if(kind==='games'&&game)gamePage(game);
 else if(kind==='credits'){main.className='collection-main';main.innerHTML='<p class="eyebrow">IMAGE CREDITS</p><h1>이미지 출처</h1><p class="intro">게임 이미지는 각 권리자에게 저작권이 있으며, 게임 분석과 플레이 기록을 소개하기 위해 사용했습니다.</p>'+[...images,...playlistImages,...foundationImages].map(i=>'<div class="credit-row"><h2>'+E(i.title)+'</h2><p>'+E(i.copyright)+'</p>'+(i.source?'<a href="'+E(i.source)+'" target="_blank" rel="noopener">공식 이미지 출처 ↗</a>':'<p>'+E(i.sourceNote||'')+'</p>')+'</div>').join('');document.title='이미지 출처 — Jnhide';}
 else{main.className='collection-main';main.innerHTML='<h1>페이지를 찾을 수 없습니다.</h1><a href="#/">메인으로 →</a>';}
-window.scrollTo(0,0);
+if(main===pageMain)window.scrollTo(0,0);else main.scrollTop=0;
 }
-window.addEventListener('hashchange',()=>{if(location.hash==='#main'){main.focus();return;}render();main.focus({preventScroll:true});});render();
+
+// Keep the home DOM and its scroll position while reading in a native dialog.
+const popup=document.createElement('dialog');
+popup.className='content-popup';popup.setAttribute('aria-labelledby','popup-title');
+popup.innerHTML='<div class="popup-toolbar"><strong id="popup-title">포트폴리오</strong><div class="popup-actions"><a class="popup-page" target="_blank" rel="noopener noreferrer">페이지로 열기 ↗</a><button type="button" class="popup-close" aria-label="팝업 닫기">닫기 <span aria-hidden="true">×</span></button></div></div><div class="popup-content" tabindex="-1"></div>';
+document.body.append(popup);
+const popupContent=popup.querySelector('.popup-content');
+let popupTrigger=null,homeTitle='',popupSession=0,closingPopup=false;
+function showPopup(path){
+ if(!popup.open){popupTrigger=document.activeElement;homeTitle=document.title;popup.showModal();document.body.classList.add('popup-open');}
+ main=popupContent;render(path);popupContent.classList.add('popup-content');
+ popup.querySelector('#popup-title').textContent=popupContent.querySelector('h1')?.textContent||'포트폴리오';
+ popup.querySelector('.popup-page').href=path;
+ popupContent.scrollTop=0;popupContent.focus({preventScroll:true});
+}
+function hidePopup(){
+ if(!popup.open)return;
+ popup.close();document.body.classList.remove('popup-open');main=pageMain;document.title=homeTitle;
+ popupContent.replaceChildren();
+ if(popupTrigger?.isConnected)popupTrigger.focus({preventScroll:true});
+}
+function closePopup(){
+ if(closingPopup)return;
+ const depth=history.state?.portfolioPopup?.depth||0;
+ hidePopup();
+ if(depth){closingPopup=true;history.go(-depth);}
+}
+popup.querySelector('.popup-close').onclick=closePopup;
+popup.addEventListener('cancel',e=>{e.preventDefault();closePopup();});
+let backdropPress=false;
+popup.addEventListener('pointerdown',e=>{backdropPress=e.target===popup;});
+popup.addEventListener('click',e=>{if(e.target===popup&&backdropPress)closePopup();backdropPress=false;});
+document.addEventListener('click',e=>{
+ const a=e.target.closest('a[href^="#/"]');
+ if(!a||e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||a.target==='_blank'||a.hasAttribute('download'))return;
+ if(!popup.open&&!pageMain.classList.contains('home-main'))return;
+ const path=a.getAttribute('href');
+ if(path==='#/'){if(popup.open){e.preventDefault();closePopup();}return;}
+ if(closingPopup)return;
+ e.preventDefault();
+ if(!popup.open)popupSession=Date.now();
+ const depth=popup.open?(history.state?.portfolioPopup?.depth||0)+1:1;
+ history.pushState({portfolioPopup:{session:popupSession,depth,path}},'',location.href);
+ showPopup(path);
+});
+window.addEventListener('popstate',()=>{
+ closingPopup=false;
+ const state=history.state?.portfolioPopup;
+ if(state&&pageMain.classList.contains('home-main')){popupSession=state.session;showPopup(state.path);}else hidePopup();
+});
+window.addEventListener('hashchange',()=>{
+ hidePopup();
+ if(location.hash==='#main'){pageMain.focus();return;}
+ render();pageMain.focus({preventScroll:true});
+});
+render();
+if(history.state?.portfolioPopup&&pageMain.classList.contains('home-main'))showPopup(history.state.portfolioPopup.path);
