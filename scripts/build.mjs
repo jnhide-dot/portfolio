@@ -45,7 +45,14 @@ const playlistImages=fs.existsSync('content/playlist-images.json')?JSON.parse(fs
 const gameRank=g=>{const index=images.findIndex(i=>g.title.includes(i.match));return index<0?images.length:index;};
 playlist.sort((a,b)=>gameRank(a)-gameRank(b)||a.title.localeCompare(b.title,'ko'));
 const foundationImages=JSON.parse(fs.readFileSync('content/foundation-images.json','utf8'));
-const dataScript='window.PORTFOLIO='+JSON.stringify({docs,attachments,playlist,images,playlistImages,foundationImages}).replaceAll('<','\\u003c')+';';
+const previews=fs.existsSync('content/project-md-previews.json')?JSON.parse(fs.readFileSync('content/project-md-previews.json','utf8')):[];
+for(const preview of previews){
+ if(!/^md-[a-f0-9]{12}$/.test(preview.id)||!Number.isInteger(preview.pages)||preview.pages<1)throw Error('Invalid preview metadata');
+ for(let page=1;page<=preview.pages;page++)if(!fs.existsSync(`dist/files/project-md/previews/${preview.id}/${String(page).padStart(4,'0')}.webp`))throw Error('Missing preview page');
+ const handover=attachments.find(a=>a.id==='project-md-handover');
+ if(handover)handover.body=handover.body.replaceAll('<li>'+esc(preview.title)+'</li>','<li><a href="#/previews/'+preview.id+'">'+esc(preview.title)+'</a> <small>이미지 '+preview.pages+'쪽</small></li>');
+}
+const dataScript='window.PORTFOLIO='+JSON.stringify({docs,attachments,playlist,images,playlistImages,foundationImages,previews}).replaceAll('<','\\u003c')+';';
 fs.writeFileSync('dist/data.js',dataScript);
 const {createHash}=await import('node:crypto');
 let indexHtml=fs.readFileSync('dist/index.html','utf8');

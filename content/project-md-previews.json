@@ -1,0 +1,506 @@
+[
+  {
+    "id": "md-d295b87220af",
+    "title": "00-시작하기-전체구조.md",
+    "category": "개발가이드",
+    "pages": 6
+  },
+  {
+    "id": "md-f9d4334fb850",
+    "title": "01-전장정의.md",
+    "category": "개발가이드",
+    "pages": 6
+  },
+  {
+    "id": "md-7bf844916e68",
+    "title": "02-게임조작.md",
+    "category": "개발가이드",
+    "pages": 7
+  },
+  {
+    "id": "md-72d613538e5e",
+    "title": "03-머지로직.md",
+    "category": "개발가이드",
+    "pages": 7
+  },
+  {
+    "id": "md-ad0876329a21",
+    "title": "04-인게임-전투-수직절편.md",
+    "category": "개발가이드",
+    "pages": 20
+  },
+  {
+    "id": "md-0dbd8d9c86ca",
+    "title": "05-캐릭터-특수효과와-선택지.md",
+    "category": "개발가이드",
+    "pages": 8
+  },
+  {
+    "id": "md-51c447f3d313",
+    "title": "06-로비-UI-스킨.md",
+    "category": "개발가이드",
+    "pages": 5
+  },
+  {
+    "id": "md-0a08c84476bb",
+    "title": "07-인게임-모루.md",
+    "category": "개발가이드",
+    "pages": 20
+  },
+  {
+    "id": "md-1571af096a27",
+    "title": "08-웨이브-런타임-생성기와-밸런스-재정의.md",
+    "category": "개발가이드",
+    "pages": 9
+  },
+  {
+    "id": "md-3cf87380f682",
+    "title": "09-런-로그와-밸런스-분석.md",
+    "category": "개발가이드",
+    "pages": 6
+  },
+  {
+    "id": "md-0eb96ba5a5ac",
+    "title": "10-몬스터-에셋-병합.md",
+    "category": "개발가이드",
+    "pages": 5
+  },
+  {
+    "id": "md-0ca039fc9b4f",
+    "title": "11-4단계-머지와-전설-슬롯.md",
+    "category": "개발가이드",
+    "pages": 13
+  },
+  {
+    "id": "md-c6d88f0d876f",
+    "title": "12-덱-5인-복귀와-전사-조합-전설.md",
+    "category": "개발가이드",
+    "pages": 6
+  },
+  {
+    "id": "md-2f39cb0bacbd",
+    "title": "13-몬스터-티어-통합과-밸런스-단순화.md",
+    "category": "개발가이드",
+    "pages": 8
+  },
+  {
+    "id": "md-8f8ad6e43fd7",
+    "title": "14-편성-랜덤-축-폐기.md",
+    "category": "개발가이드",
+    "pages": 5
+  },
+  {
+    "id": "md-0497d3b34f43",
+    "title": "15-식량-경제-재조정.md",
+    "category": "개발가이드",
+    "pages": 8
+  },
+  {
+    "id": "md-4c8ae86e297a",
+    "title": "16-웨이브-템포와-동시-등장-상한.md",
+    "category": "개발가이드",
+    "pages": 5
+  },
+  {
+    "id": "md-217a40eb4002",
+    "title": "17-유틸-3종-공격력-곡선과-슬로우-강화.md",
+    "category": "개발가이드",
+    "pages": 8
+  },
+  {
+    "id": "md-b04e1292ff8f",
+    "title": "18-선택지-단위-정규화.md",
+    "category": "개발가이드",
+    "pages": 7
+  },
+  {
+    "id": "md-842c468aa72c",
+    "title": "19-캐릭터-해금-재판정.md",
+    "category": "개발가이드",
+    "pages": 4
+  },
+  {
+    "id": "md-af56a0852949",
+    "title": "20-랜덤상자-상점-병합과-초상화-확대.md",
+    "category": "개발가이드",
+    "pages": 14
+  },
+  {
+    "id": "md-b72cd08ea2d3",
+    "title": "21-몬스터-사망-연출.md",
+    "category": "개발가이드",
+    "pages": 6
+  },
+  {
+    "id": "md-54ebe165d24c",
+    "title": "22-마법사-화력-하향.md",
+    "category": "개발가이드",
+    "pages": 7
+  },
+  {
+    "id": "md-20dbc1724760",
+    "title": "23-슬로우-시각-표시.md",
+    "category": "개발가이드",
+    "pages": 4
+  },
+  {
+    "id": "md-105e30de546f",
+    "title": "24-결과창-영웅별-딜량-그래프.md",
+    "category": "개발가이드",
+    "pages": 5
+  },
+  {
+    "id": "md-27180c667fb5",
+    "title": "25-소환-경고-연출.md",
+    "category": "개발가이드",
+    "pages": 4
+  },
+  {
+    "id": "md-b89f6e81132d",
+    "title": "26-전사-화력-재조정.md",
+    "category": "개발가이드",
+    "pages": 4
+  },
+  {
+    "id": "md-f3d8991aa8d0",
+    "title": "27-조작-버튼-터치-피드백.md",
+    "category": "개발가이드",
+    "pages": 8
+  },
+  {
+    "id": "md-8142c5520698",
+    "title": "28-스테이지별-웨이브-차등.md",
+    "category": "개발가이드",
+    "pages": 5
+  },
+  {
+    "id": "md-5434de1f3c85",
+    "title": "29-가짜-광고.md",
+    "category": "개발가이드",
+    "pages": 3
+  },
+  {
+    "id": "md-33a789651106",
+    "title": "30-AB테스트-계측과-난이도-배선.md",
+    "category": "개발가이드",
+    "pages": 4
+  },
+  {
+    "id": "md-54b55bf12ea7",
+    "title": "31-아웃게임-성장-강화곡선-통일과-별-보상.md",
+    "category": "개발가이드",
+    "pages": 7
+  },
+  {
+    "id": "md-0ca7c55d589c",
+    "title": "32-소규모-AB테스트-원격텔레메트리.md",
+    "category": "개발가이드",
+    "pages": 3
+  },
+  {
+    "id": "md-46be89d0c0bd",
+    "title": "33-초기덱-암살자-교체.md",
+    "category": "개발가이드",
+    "pages": 4
+  },
+  {
+    "id": "md-71f78de91815",
+    "title": "00_사용자_확정사항.md",
+    "category": "코딩 설계도",
+    "pages": 235
+  },
+  {
+    "id": "md-28eb187ebf79",
+    "title": "01_통합_개발_기준_v1.1.md",
+    "category": "코딩 설계도",
+    "pages": 9
+  },
+  {
+    "id": "md-d3391a409843",
+    "title": "02_전투_시스템_v1.1.md",
+    "category": "코딩 설계도",
+    "pages": 52
+  },
+  {
+    "id": "md-4f23beb8fd4c",
+    "title": "03_스테이지_시스템_v1.1.md",
+    "category": "코딩 설계도",
+    "pages": 20
+  },
+  {
+    "id": "md-5dbcad48df89",
+    "title": "04_영웅_선택지_시스템_v1.1.md",
+    "category": "코딩 설계도",
+    "pages": 20
+  },
+  {
+    "id": "md-60ed635f7cce",
+    "title": "05_인게임_모루_시스템_v1.1.md",
+    "category": "코딩 설계도",
+    "pages": 20
+  },
+  {
+    "id": "md-5a0a7675fa62",
+    "title": "06_보물_시스템_v1.1.md",
+    "category": "코딩 설계도",
+    "pages": 22
+  },
+  {
+    "id": "md-646681527545",
+    "title": "07_영웅_강화_시스템_v1.1.md",
+    "category": "코딩 설계도",
+    "pages": 18
+  },
+  {
+    "id": "md-c8ed20923a68",
+    "title": "08_인게임_튜토리얼_시스템_v0.1.md",
+    "category": "코딩 설계도",
+    "pages": 7
+  },
+  {
+    "id": "md-5d7efc9ab862",
+    "title": "11_마스터_데이터_스키마_v0.1.md",
+    "category": "코딩 설계도",
+    "pages": 23
+  },
+  {
+    "id": "md-8f5d168a25d3",
+    "title": "12_캐릭터_데이터_v1.1.md",
+    "category": "코딩 설계도",
+    "pages": 54
+  },
+  {
+    "id": "md-5f46a76e29f2",
+    "title": "13_캐릭터_컨셉_v0.4.md",
+    "category": "코딩 설계도",
+    "pages": 12
+  },
+  {
+    "id": "md-af8d6fa4dcf7",
+    "title": "14_서버_저장_규약_v0.2.md",
+    "category": "코딩 설계도",
+    "pages": 17
+  },
+  {
+    "id": "md-4192711b6857",
+    "title": "15_서버_런타임_API_v0.1.0.md",
+    "category": "코딩 설계도",
+    "pages": 26
+  },
+  {
+    "id": "md-91e36a5ee4cd",
+    "title": "16_Request_DSL_v0.1.0.md",
+    "category": "코딩 설계도",
+    "pages": 19
+  },
+  {
+    "id": "md-9a099bbf5857",
+    "title": "17_몬스터_데이터_v0.12.md",
+    "category": "코딩 설계도",
+    "pages": 8
+  },
+  {
+    "id": "md-edc044795a52",
+    "title": "18_몬스터_컨셉_v0.8.md",
+    "category": "코딩 설계도",
+    "pages": 13
+  },
+  {
+    "id": "md-4b8374375d89",
+    "title": "19_몬스터_밸런스_v0.8.md",
+    "category": "코딩 설계도",
+    "pages": 16
+  },
+  {
+    "id": "md-2e44d9e76030",
+    "title": "20_AB테스트_난이도_설계_v0.1.md",
+    "category": "코딩 설계도",
+    "pages": 8
+  },
+  {
+    "id": "md-979a70fd8041",
+    "title": "21_AB테스트_실행_체크리스트_v0.1.md",
+    "category": "코딩 설계도",
+    "pages": 10
+  },
+  {
+    "id": "md-5fc51ecd618a",
+    "title": "로비UI스킨_매핑_v0.2.md",
+    "category": "코딩 설계도",
+    "pages": 8
+  },
+  {
+    "id": "md-c2e80bf525a0",
+    "title": "_manifest.csv",
+    "category": "CSV",
+    "pages": 1
+  },
+  {
+    "id": "md-3a5fdf1690c3",
+    "title": "_pending.csv",
+    "category": "CSV",
+    "pages": 5
+  },
+  {
+    "id": "md-b43e5f039937",
+    "title": "anvil_result.csv",
+    "category": "CSV",
+    "pages": 7
+  },
+  {
+    "id": "md-6eaf553c06fa",
+    "title": "character.csv",
+    "category": "CSV",
+    "pages": 4
+  },
+  {
+    "id": "md-6160dc325f26",
+    "title": "character_unlock.csv",
+    "category": "CSV",
+    "pages": 4
+  },
+  {
+    "id": "md-7f3c293665c1",
+    "title": "game_constants.csv",
+    "category": "CSV",
+    "pages": 9
+  },
+  {
+    "id": "md-76c51f0785e9",
+    "title": "hero_choice.csv",
+    "category": "CSV",
+    "pages": 14
+  },
+  {
+    "id": "md-dd2932835984",
+    "title": "hero_enhance_cost.csv",
+    "category": "CSV",
+    "pages": 1
+  },
+  {
+    "id": "md-301a683c1912",
+    "title": "hero_grade_stat.csv",
+    "category": "CSV",
+    "pages": 195
+  },
+  {
+    "id": "md-9dbed82bbc17",
+    "title": "hero_growth_param.csv",
+    "category": "CSV",
+    "pages": 11
+  },
+  {
+    "id": "md-6a20b91bcbf4",
+    "title": "legendary_recipe.csv",
+    "category": "CSV",
+    "pages": 4
+  },
+  {
+    "id": "md-82dfff0daaa6",
+    "title": "monster.csv",
+    "category": "CSV",
+    "pages": 10
+  },
+  {
+    "id": "md-9e57271abc56",
+    "title": "Project_MD_보물_런타임_데이터_v1.3.csv",
+    "category": "CSV",
+    "pages": 50
+  },
+  {
+    "id": "md-db559aaed748",
+    "title": "Project_MD_아웃게임_영웅_강화_런타임_데이터_v1.2.csv",
+    "category": "CSV",
+    "pages": 27
+  },
+  {
+    "id": "md-e926db7dc125",
+    "title": "Project_MD_인게임_모루_런타임_데이터_v1.2.csv",
+    "category": "CSV",
+    "pages": 22
+  },
+  {
+    "id": "md-c4025d19e3dd",
+    "title": "stage.csv",
+    "category": "CSV",
+    "pages": 6
+  },
+  {
+    "id": "md-166244d99e61",
+    "title": "stage_background.csv",
+    "category": "CSV",
+    "pages": 2
+  },
+  {
+    "id": "md-af9619c80c82",
+    "title": "stage_wave.csv",
+    "category": "CSV",
+    "pages": 35
+  },
+  {
+    "id": "md-c8d45e332e08",
+    "title": "treasure.csv",
+    "category": "CSV",
+    "pages": 4
+  },
+  {
+    "id": "md-a34b0ac3bcad",
+    "title": "treasure_level.csv",
+    "category": "CSV",
+    "pages": 2
+  },
+  {
+    "id": "md-fed5b41d15a6",
+    "title": "treasure_upgrade_cost.csv",
+    "category": "CSV",
+    "pages": 1
+  },
+  {
+    "id": "md-6ddb75e40559",
+    "title": "tutorial_config.csv",
+    "category": "CSV",
+    "pages": 2
+  },
+  {
+    "id": "md-f358fadcda04",
+    "title": "tutorial_error_message.csv",
+    "category": "CSV",
+    "pages": 1
+  },
+  {
+    "id": "md-28c500fa24d5",
+    "title": "tutorial_initial_slot.csv",
+    "category": "CSV",
+    "pages": 1
+  },
+  {
+    "id": "md-6845f1fd6e69",
+    "title": "tutorial_runtime_v0.1_utf8_bom.csv",
+    "category": "CSV",
+    "pages": 19
+  },
+  {
+    "id": "md-be135c195564",
+    "title": "tutorial_step.csv",
+    "category": "CSV",
+    "pages": 19
+  },
+  {
+    "id": "md-24b1f4e91488",
+    "title": "tutorial_summon_rule.csv",
+    "category": "CSV",
+    "pages": 1
+  },
+  {
+    "id": "md-d27260c37ee4",
+    "title": "Project_MD_개발일지_구조도.md",
+    "category": "인계 안내",
+    "pages": 9
+  },
+  {
+    "id": "md-b33563055168",
+    "title": "README.md",
+    "category": "인계 안내",
+    "pages": 11
+  }
+]

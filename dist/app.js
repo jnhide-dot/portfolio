@@ -1,4 +1,4 @@
-const {docs,attachments,playlist,images,playlistImages=[],foundationImages=[]}=window.PORTFOLIO;
+const {docs,attachments,playlist,images,playlistImages=[],foundationImages=[],previews=[]}=window.PORTFOLIO;
 const pageMain=document.querySelector('main'),nav=document.querySelector('#nav');
 let main=pageMain;
 const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -96,6 +96,19 @@ main.className='reader-main';document.title=a.title+' — Jnhide';
 main.innerHTML='<a class="back-link" href="'+link(parent)+'">← '+E(parent.title)+'</a><header class="document-head"><p class="eyebrow">'+E(parent.title)+'</p><h1>'+E(a.title)+'</h1></header><div class="doc-layout"><article class="article">'+a.body+'</article><aside class="toc" aria-label="이 문서의 목차"><strong>목차</strong></aside></div>';
 main.querySelectorAll('.article h2').forEach((h,i)=>{h.id='section-'+i;const anchor=document.createElement('a');anchor.href='#'+h.id;anchor.textContent=h.textContent;anchor.onclick=e=>{e.preventDefault();h.scrollIntoView({behavior:'smooth'});};main.querySelector('.toc').append(anchor);});
 }
+function previewPage(p, requestedPage){
+const page=Math.max(1,Math.min(p.pages,Number.parseInt(requestedPage,10)||1));
+main.className='reader-main preview-main';document.title=p.title+' — Jnhide';
+main.innerHTML='<a class="back-link" href="#/artifacts/project-md-handover">← 개발·인계 자료 목록</a><header class="document-head"><p class="eyebrow">PROJECT MD · '+E(p.category)+'</p><h1>'+E(p.title)+'</h1><p class="intro">워터마크 이미지 미리보기 · 무단 복제·재배포 금지</p></header><section class="image-preview" aria-label="문서 이미지 미리보기"><div class="preview-toolbar"><button type="button" data-step="-1" '+(page===1?'disabled':'')+'>← 이전</button><form class="preview-page-form"><label>페이지 <input type="number" min="1" max="'+p.pages+'" value="'+page+'" aria-label="이동할 페이지"></label><span> / '+p.pages+'</span><button type="submit">이동</button></form><button type="button" data-step="1" '+(page===p.pages?'disabled':'')+'>다음 →</button><button type="button" class="preview-zoom" aria-pressed="false">확대</button></div><p class="preview-status" role="status">이미지를 불러오는 중…</p><div class="preview-viewport" tabindex="0" aria-label="확대 시 좌우로 스크롤할 수 있는 문서 이미지"><img class="preview-image" src="files/project-md/previews/'+p.id+'/'+String(page).padStart(4,'0')+'.webp" alt="'+E(p.title)+' · '+page+' / '+p.pages+'쪽" draggable="false"></div></section>';
+const panel=main.querySelector('.image-preview'),viewport=panel.querySelector('.preview-viewport'),status=panel.querySelector('.preview-status'),img=panel.querySelector('img');
+const go=n=>{const path='#/previews/'+p.id+'/'+Math.max(1,Math.min(p.pages,n));if(popup.open){history.pushState({portfolioPopup:{session:popupSession,depth:(history.state?.portfolioPopup?.depth||0)+1,path}},'',location.href);showPopup(path);}else location.hash=path;};
+panel.querySelectorAll('[data-step]').forEach(button=>button.onclick=()=>go(page+Number(button.dataset.step)));
+panel.querySelector('form').onsubmit=e=>{e.preventDefault();const input=panel.querySelector('input');if(input.checkValidity())go(Number(input.value));};
+panel.querySelector('.preview-zoom').onclick=e=>{const zoomed=viewport.classList.toggle('zoomed');e.currentTarget.setAttribute('aria-pressed',String(zoomed));e.currentTarget.textContent=zoomed?'화면에 맞춤':'확대';};
+img.onload=()=>{status.textContent=page+' / '+p.pages+'쪽';};img.onerror=()=>{status.textContent='이미지를 불러오지 못했습니다. 페이지를 새로고침해 주세요.';};
+if(img.complete&&img.naturalWidth)img.onload();
+viewport.oncontextmenu=e=>e.preventDefault();viewport.ondragstart=e=>e.preventDefault();
+}
 function playlistPage(){
 main.className='collection-main playlist-main';document.title='플레이리스트 — Jnhide';
 main.innerHTML='<header class="collection-head"><p class="eyebrow">PLAYLIST</p><h1>플레이리스트</h1><p class="intro">플레이한 게임과 진행도, 주력 콘텐츠를 기록합니다.</p></header><div class="playlist-toolbar"><div class="filter-buttons" role="group" aria-label="플레이 기록 필터"><button class="selected" aria-pressed="true" data-filter="all">전체 <span>'+playlist.length+'</span></button><button aria-pressed="false" data-filter="subculture">서브컬처</button><button aria-pressed="false" data-filter="playing">플레이 중</button><button aria-pressed="false" data-filter="analysis">분석 연결</button></div><label class="game-search"><span>게임 검색</span><input id="game-search" type="search" placeholder="게임명 검색" autocomplete="off"></label></div><p class="record-caption">노션에 기록된 상태 기준 · 2026.09.14</p><div class="games-grid" id="games"></div>';
@@ -114,6 +127,7 @@ else if(['analysis','design'].includes(kind))portfolioPage(true);
 else if(kind==='projects')collection(kind);
 else if(kind==='docs'&&doc)documentPage(doc);
 else if(kind==='artifacts'&&attachments.some(a=>a.id===id&&a.body))artifactPage(attachments.find(a=>a.id===id));
+else if(kind==='previews'&&previews.some(p=>p.id===id))previewPage(previews.find(p=>p.id===id),parts[2]);
 else if(kind==='playlist')playlistPage();
 else if(kind==='games'&&game)gamePage(game);
 else if(kind==='credits'){main.className='collection-main';main.innerHTML='<p class="eyebrow">IMAGE CREDITS</p><h1>이미지 출처</h1><p class="intro">게임 이미지는 각 권리자에게 저작권이 있으며, 게임 분석과 플레이 기록을 소개하기 위해 사용했습니다.</p>'+[...images,...playlistImages,...foundationImages].map(i=>'<div class="credit-row"><h2>'+E(i.title)+'</h2><p>'+E(i.copyright)+'</p>'+(i.source?'<a href="'+E(i.source)+'" target="_blank" rel="noopener">공식 이미지 출처 ↗</a>':'<p>'+E(i.sourceNote||'')+'</p>')+'</div>').join('');document.title='이미지 출처 — Jnhide';}
