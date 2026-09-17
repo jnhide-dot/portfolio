@@ -128,5 +128,17 @@
     "type": "문서",
     "url": "files/project-g/project-g-development.md",
     "source": "https://app.notion.com/p/3dcec130625581189921e0cb40f350a9"
+  },
+  {
+    "document": "project-md",
+    "title": "팀장 보고·관리 산출물 목록",
+    "type": "문서",
+    "url": "files/project-md/project-md-management.md"
+  },
+  {
+    "document": "project-md",
+    "title": "개발·인계 자료 목록",
+    "type": "문서",
+    "url": "files/project-md/project-md-handover.md"
   }
 ]
