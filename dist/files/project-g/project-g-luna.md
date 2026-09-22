@@ -1,5 +1,5 @@
 <empty-block/>
-![](files/project-g/project-g-luna-1.png)
+![루나 캐릭터 콘셉트](files/project-g/project-g-luna-concept.webp)
 <empty-block/>
 - 캐릭터 컨셉
 <table>

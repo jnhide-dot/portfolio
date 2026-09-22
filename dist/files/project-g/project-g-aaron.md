@@ -1,4 +1,4 @@
-![](files/project-g/project-g-aaron-1.png)
+![애런 캐릭터 콘셉트](files/project-g/project-g-aaron-concept.webp)
 - 캐릭터 컨셉
 <table>
 <colgroup>
