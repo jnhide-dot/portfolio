@@ -54,7 +54,7 @@
     "number": "06",
     "title": "프로젝트 스피릿 전투 시스템 제안",
     "group": "제안",
-    "description": "오행·3인 파티·조건부 QTE·연계 스킬 쿨타임",
+    "description": "속성·3인 파티·조건부 QTE·연계 스킬 쿨타임",
     "status": "규칙 반영",
     "source": "3b9ec13062558167a50cf4ed5d13066c",
     "syncedAt": "2026-09-22"

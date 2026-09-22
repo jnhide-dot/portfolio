@@ -1,9 +1,9 @@
 [기준 발표 문서 · 21–25장](https://docs.google.com/presentation/d/1KDUF4b1M35gLShzGhIFIdubVlz812v7sj_QoXb9jr6c/edit) · 2026-09-22 대조
 
 ## 전투 컨셉
-**오행의 확장성 · 연계 타이밍의 자유 · 무협적 개연성**
+**속성의 확장성 · 연계 타이밍의 자유 · 무협적 개연성**
 
-### 오행 — 장르 결합과 확장
+### 속성 — 장르 결합과 확장
 무협의 무공 속성과 서브컬쳐 게임의 속성 시스템을 결합한다.
 <table fit-page-width="true" header-row="true">
 <tr><td>기본 속성</td><td>확장 방향</td></tr>
