@@ -45,8 +45,11 @@ function spiritCard(){return '<div class="project-grid"><a class="project-card" 
 function combatCards(){const d=docs.find(d=>d.id==='action-foundations');return '<div class="feature-grid combat-grid"><a class="feature-card" href="'+link(d)+'"><div class="feature-image foundation-triptych">'+foundationImages.map(i=>'<div>'+imageTag(i)+'<span>'+E(i.title)+'</span></div>').join('')+'</div><div class="feature-meta"><span>'+d.number+' / 전투 분석</span><span>↗</span></div><h3>'+E(d.title)+'</h3><p>'+E(d.description)+'</p></a>'+images.map(i=>{const d=docs.find(d=>d.id===i.doc);return '<a class="feature-card" href="'+link(d)+'"><div class="feature-image">'+imageTag(i)+'</div><div class="feature-meta"><span>'+d.number+' / 전투 분석</span><span>↗</span></div><h3>'+E(i.title)+'</h3><p>'+d.description+'</p></a>';}).join('')+'</div>';}
 function portfolioPage(detail){
 main.className='collection-main';document.title=(detail?'프로젝트 스피릿':'문서')+' — Jnhide';
-main.innerHTML=(detail?'<a class="back-link" href="#/portfolio">← 문서</a>':'')+'<header class="collection-head"><p class="eyebrow">DOCUMENTS</p><h1>'+(detail?'프로젝트 스피릿':'문서')+'</h1></header>'+(detail?['전투 분석','비교·제안'].map(group=>'<section><div class="section-title"><h2>'+(group==='전투 분석'?'전투 분석':'시스템·캐릭터')+'</h2></div>'+(group==='전투 분석'?combatCards():docs.filter(d=>d.group===group).map(row).join(''))+'</section>').join(''):spiritCard());
+const chapters=[['분석','01 · 분석','액션 레퍼런스에서 모바일 공통 조작 구조로'],['도출','02 · 도출','세 게임의 보상·조건·제약에서 설계 기준으로'],['제안','03 · 제안','오행·교체 연계에서 초기 캐릭터로']];
+const overview='<p class="intro">분석 → 도출 → 제안</p><p><a href="https://docs.google.com/presentation/d/1KDUF4b1M35gLShzGhIFIdubVlz812v7sj_QoXb9jr6c/edit" target="_blank" rel="noopener noreferrer">기준 발표 문서 ↗</a> · 2026-09-22 반영</p>';
+main.innerHTML=(detail?'<a class="back-link" href="#/portfolio">← 문서</a>':'')+'<header class="collection-head"><p class="eyebrow">DOCUMENTS</p><h1>'+(detail?'프로젝트 스피릿':'문서')+'</h1></header>'+(detail?overview+chapters.map(([group,title,desc])=>'<section><div class="section-title"><div><h2>'+title+'</h2><p>'+desc+'</p></div></div>'+docs.filter(d=>d.group===group).map(row).join('')+'</section>').join(''):spiritCard());
 }
+
 const toolInfo={
  'Notion':['notion.svg','https://www.notion.com/'],
  'Jira':['jira.svg','https://www.atlassian.com/software/jira'],
@@ -81,7 +84,7 @@ aboutSection('qualifications-tools');const skills=main.innerHTML.replace(/<heade
 main.innerHTML=profile.replace('<h1>프로필·연혁</h1>','<h1>About Me</h1>')+skills;document.title='About Me — Jnhide';
 }
 function collection(kind){
-const types={analysis:['COMBAT ANALYSIS','전투 분석','공통 전투 구조와 게임별 고유 시스템.',docs.filter(d=>d.group==='전투 분석')],design:['SYSTEM & CHARACTER','시스템·캐릭터','비교 분석에서 전투 시스템과 초기 캐릭터 제안으로.',docs.filter(d=>d.group==='비교·제안')],projects:['PROJECTS','프로젝트','개인 프로젝트, 첫 팀 프로젝트, 기업 협약 프로젝트.',[]]};
+const types={analysis:['COMBAT ANALYSIS','전투 분석','공통 전투 구조와 게임별 고유 시스템.',docs.filter(d=>['분석','도출'].includes(d.group))],design:['SYSTEM & CHARACTER','시스템·캐릭터','비교 분석에서 전투 시스템과 초기 캐릭터 제안으로.',docs.filter(d=>d.group==='제안')],projects:['PROJECTS','프로젝트','개인 프로젝트, 첫 팀 프로젝트, 기업 협약 프로젝트.',[]]};
 const [eyebrow,title,desc,items]=types[kind];main.className='collection-main';main.innerHTML='<header class="collection-head"><p class="eyebrow">'+eyebrow+'</p><h1>'+title+'</h1><p class="intro">'+desc+'</p></header>'+(kind==='projects'?projects():items.map(row).join(''));document.title=title+' — Jnhide';
 }
 function documentPage(d){
