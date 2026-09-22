@@ -120,6 +120,7 @@ MD·CSV 파일명을 누르면 워터마크 이미지로 내용을 볼 수 있�
 ## 확인 기준
 
 - 자료 확인일: 2026년 9월 17일
-- 근거: Project_MD(킹갓 머지 디펜스) 인계 폴더
+- 공개 근거: [GitHub 이미지 보관본](https://github.com/jnhide-dot/portfolio/tree/4881b1f60e601e0b7652f5fa63367c74ac7e863d/dist/files/project-md/previews) · [문서별 이미지 목록](https://github.com/jnhide-dot/portfolio/blob/4881b1f60e601e0b7652f5fa63367c74ac7e863d/content/project-md-previews.json). 2026년 9월 22일 84개 자료·1,335쪽의 파일 존재와 이미지 내용 일치 확인.
+- 위 이미지는 9월 17일 전달받은 인계 자료를 변환한 열람본이며, 편집 가능한 원본 백업과 구분한다.
 - 기획서와 에셋 폴더는 본인 작성 산출물 집계에서 제외했다.
 - MD·CSV는 공개가 허용된 자료를 이미지로 변환했다. 기획서·에셋 및 XLSX 원본은 포함하지 않는다.

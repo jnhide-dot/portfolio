@@ -25,6 +25,7 @@ ProjectMD 기업 협약 프로젝트에서 팀장 업무로 작성한 보고 자
 ## 확인 기준
 
 - 자료 확인일: 2026년 9월 17일
-- 근거: 주간보고서 1~7주차, 1차 보고 ZIP, 2차 보고 PPTX·PDF, 별도 전달 ZIP, Project_MD 인계 폴더
+- 온라인 보관: [GitHub 관리 산출물 목록](https://github.com/jnhide-dot/portfolio/blob/4881b1f60e601e0b7652f5fa63367c74ac7e863d/dist/files/project-md/project-md-management.md). 2026년 9월 22일 목록 파일 존재 확인.
+- 목록 작성 근거는 9월 17일 전달된 주간보고서·보고 자료·관리 문서다. 해당 원본과 WBS 등의 이미지 전문은 공개 portfolio 저장소에 포함되어 있지 않다.
 - 팀장 보고 자료의 본인 작성 여부는 본인 설명을 기준으로 구분했다.
 - 기획서 원문과 제3자 에셋은 본인 작성 산출물 목록에서 제외했다.
