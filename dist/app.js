@@ -46,7 +46,7 @@ function combatCards(){const d=docs.find(d=>d.id==='action-foundations');return 
 function portfolioPage(detail){
 main.className='collection-main';document.title='전투 분석·캐릭터 제안 — Jnhide';
 const primary=docs.filter(d=>d.primary);
-main.innerHTML='<header class="collection-head"><p class="eyebrow">DOCUMENTS</p><h1>전투 분석·캐릭터 제안</h1></header>'+primary.map(d=>'<section><div class="section-title"><div><h2>'+E(d.title)+'</h2><p>'+E(d.description)+'</p></div><a href="'+E(d.slidesUrl)+'" target="_blank" rel="noopener noreferrer">발표 자료 ↗</a></div>'+row(d)+'<div class="document-sections"><h3>세부 문서</h3>'+docs.filter(x=>x.deck===d.deck&&!x.primary).map(row).join('')+'</div></section>').join('');
+main.innerHTML='<header class="collection-head"><p class="eyebrow">DOCUMENTS</p><h1>전투 분석·캐릭터 제안</h1></header>'+primary.map(d=>'<section><div class="section-title"><div><h2>'+E(d.title)+'</h2><p>'+E(d.description)+'</p></div><a href="'+E(d.slidesUrl)+'" target="_blank" rel="noopener noreferrer">발표 자료 ↗</a></div>'+row(d)+'<div class="document-sections">'+docs.filter(x=>x.deck===d.deck&&!x.primary).map(row).join('')+'</div></section>').join('');
 }
 
 const toolInfo={
