@@ -1,5 +1,3 @@
-[서브컬처 액션 전투 분석 · 15–16장](https://docs.google.com/presentation/d/19z0h2JXWODy3rUtdju9hJ9IhgrZj5BMthFIUrj6f8dY/edit) · 2026-09-28 대조
-
 ## 원신 — 원소 반응과 피해 증폭
 
 ![원신 - 원소 반응과 피해 증폭 · 원본 15장](images/slides-20260928/analysis-15.webp)

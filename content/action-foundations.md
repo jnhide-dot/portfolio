@@ -1,5 +1,3 @@
-[서브컬처 액션 전투 분석 · 20장](https://docs.google.com/presentation/d/19z0h2JXWODy3rUtdju9hJ9IhgrZj5BMthFIUrj6f8dY/edit) · 2026-09-28 대조
-
 공통 조작 구조와 게임별 전투 경험 · 설계 시사점
 
 ## 목차

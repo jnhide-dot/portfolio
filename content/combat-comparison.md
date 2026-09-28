@@ -1,5 +1,3 @@
-[서브컬처 액션 전투 분석 · 19–20장](https://docs.google.com/presentation/d/19z0h2JXWODy3rUtdju9hJ9IhgrZj5BMthFIUrj6f8dY/edit#slide=id.p19) · 2026-09-28 대조
-
 ## 세 게임의 고유 전투 구조 비교
 
 ![세 게임의 고유 전투 구조 비교 · 원본 19장](images/slides-20260928/analysis-19.webp)

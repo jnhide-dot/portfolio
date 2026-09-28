@@ -1,5 +1,3 @@
-[서브컬처 액션 전투 분석 · 17–18장](https://docs.google.com/presentation/d/19z0h2JXWODy3rUtdju9hJ9IhgrZj5BMthFIUrj6f8dY/edit) · 2026-09-28 대조
-
 ## 젠레스 존 제로 — 그로기와 딜 타이밍
 
 ![젠레스 존 제로 - 그로기와 딜 타이밍 · 원본 17장](images/slides-20260928/analysis-17.webp)

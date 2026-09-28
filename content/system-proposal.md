@@ -1,5 +1,3 @@
-[프로젝트 스피릿 — 캐릭터 전투·스킬 제안서 · 12–17장](https://docs.google.com/presentation/d/16ZjA0ej_IvljuncLc4lCdY7Z6yJjbxXH7aXnWxo-vM8/edit) · 2026-09-28 대조
-
 캐릭터 설계에 사용하는 공통 규칙 · 공식 확정 시스템이 아닌 제안
 
 ## 차용한 전투 구조

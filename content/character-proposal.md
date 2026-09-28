@@ -1,5 +1,3 @@
-[프로젝트 스피릿 — 캐릭터 전투·스킬 제안서 · 본문 32장](https://docs.google.com/presentation/d/16ZjA0ej_IvljuncLc4lCdY7Z6yJjbxXH7aXnWxo-vM8/edit) · 2026-09-28 대조
-
 초기 캐릭터 분석 · 전투 전제 · 캐릭터와 스킬 제안
 
 ## 제안 목적 및 범위

@@ -1,5 +1,3 @@
-[서브컬처 액션 전투 분석 · 13–14장](https://docs.google.com/presentation/d/19z0h2JXWODy3rUtdju9hJ9IhgrZj5BMthFIUrj6f8dY/edit#slide=id.p10) · 2026-09-28 대조
-
 ## 명조 — 협주를 통한 교체 순환
 
 ![명조 - 협주를 통한 교체 순환 · 원본 13장](images/slides-20260928/analysis-13.webp)
