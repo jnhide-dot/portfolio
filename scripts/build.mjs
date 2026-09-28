@@ -9,6 +9,7 @@ function inline(s){
 }
 function render(md){
  const saved=[]; const block=html=>`@@BLOCK${saved.push(html)-1}@@`;
+ md=md.replace(/!\[([^\]]*)\]\((images\/slides-20260928\/[\w.-]+)\)/g,(_,alt,url)=>{if(!fs.existsSync(path.join('dist',url)))throw Error('Missing slide: '+url);return block('<figure class="source-slide"><a href="'+esc(url)+'" target="_blank" rel="noopener" aria-label="'+esc(alt)+' 크게 보기"><img src="'+esc(url)+'" alt="'+esc(alt)+'" loading="lazy" width="1600" height="900"></a><figcaption>'+esc(alt)+' · 눌러서 크게 보기</figcaption></figure>');});
  md=md.replace(/!\[([^\]]*)\]\((files\/[\w./-]+)\)/g,(_,alt,url)=>block(fs.existsSync(path.join('dist',url))?'<img src="'+esc(url)+'" alt="'+esc(alt)+'" loading="lazy" style="max-width:100%;height:auto">':'<p class="empty-assets">원문 이미지 준비 중</p>'));
  md=md.replace(/```[^\n]*\n([\s\S]*?)```/g,(_,s)=>block('<pre><code>'+esc(s.trimEnd())+'</code></pre>'));
  md=md.replace(/^\|(.+)\|\r?\n\|[ :|\-]+\|\r?\n((?:\|.*\|(?:\r?\n|$))+)/gm,(_,head,body)=>{
