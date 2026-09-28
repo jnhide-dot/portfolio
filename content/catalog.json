@@ -13,58 +13,6 @@
     "slidesUrl": "https://docs.google.com/presentation/d/19z0h2JXWODy3rUtdju9hJ9IhgrZj5BMthFIUrj6f8dY/edit"
   },
   {
-    "id": "wuthering-waves",
-    "number": "01.1",
-    "title": "명조 — 협주 교체와 대응 제약",
-    "group": "분석",
-    "description": "협주를 통한 교체 순환 · 대응 선택을 제한하는 기믹",
-    "status": "분석 문서",
-    "source": "3c6ec1306255811e84c8d068e47b28fd",
-    "syncedAt": "2026-09-28",
-    "deck": "analysis",
-    "primary": false,
-    "slidesUrl": "https://docs.google.com/presentation/d/19z0h2JXWODy3rUtdju9hJ9IhgrZj5BMthFIUrj6f8dY/edit"
-  },
-  {
-    "id": "genshin-impact",
-    "number": "01.2",
-    "title": "원신 — 원소 반응과 편성 의존",
-    "group": "분석",
-    "description": "원소 반응과 피해 증폭 · 특수 반응과 캐릭터 편성 의존",
-    "status": "분석 문서",
-    "source": "3c1ec130625581f5a52ff2b8550a96c0",
-    "syncedAt": "2026-09-28",
-    "deck": "analysis",
-    "primary": false,
-    "slidesUrl": "https://docs.google.com/presentation/d/19z0h2JXWODy3rUtdju9hJ9IhgrZj5BMthFIUrj6f8dY/edit"
-  },
-  {
-    "id": "zenless-zone-zero",
-    "number": "01.3",
-    "title": "젠레스 존 제로 — 그로기와 전투 흐름",
-    "group": "분석",
-    "description": "그로기와 딜 타이밍 · 미아즈마 실드와 전투 흐름",
-    "status": "분석 문서",
-    "source": "3c1ec13062558144a20edfc7d68385aa",
-    "syncedAt": "2026-09-28",
-    "deck": "analysis",
-    "primary": false,
-    "slidesUrl": "https://docs.google.com/presentation/d/19z0h2JXWODy3rUtdju9hJ9IhgrZj5BMthFIUrj6f8dY/edit"
-  },
-  {
-    "id": "combat-comparison",
-    "number": "01.4",
-    "title": "세 게임 비교와 전투 설계 시사점",
-    "group": "분석",
-    "description": "보상·성립 조건·제약을 함께 비교",
-    "status": "분석 문서",
-    "source": "3b9ec130625581ff8ce6e1dce60f461c",
-    "syncedAt": "2026-09-28",
-    "deck": "analysis",
-    "primary": false,
-    "slidesUrl": "https://docs.google.com/presentation/d/19z0h2JXWODy3rUtdju9hJ9IhgrZj5BMthFIUrj6f8dY/edit"
-  },
-  {
     "id": "character-proposal",
     "number": "02",
     "title": "프로젝트 스피릿 — 캐릭터 전투·스킬 제안서",
@@ -75,19 +23,6 @@
     "syncedAt": "2026-09-28",
     "deck": "character",
     "primary": true,
-    "slidesUrl": "https://docs.google.com/presentation/d/16ZjA0ej_IvljuncLc4lCdY7Z6yJjbxXH7aXnWxo-vM8/edit"
-  },
-  {
-    "id": "system-proposal",
-    "number": "02.1",
-    "title": "캐릭터 설계를 위한 전투 규칙",
-    "group": "제안",
-    "description": "차용 근거·변형 방향 · 기본 전투·연계 흐름 · 교대·입력·속성 규칙",
-    "status": "작업본",
-    "source": "3b9ec13062558167a50cf4ed5d13066c",
-    "syncedAt": "2026-09-28",
-    "deck": "character",
-    "primary": false,
     "slidesUrl": "https://docs.google.com/presentation/d/16ZjA0ej_IvljuncLc4lCdY7Z6yJjbxXH7aXnWxo-vM8/edit"
   },
   {

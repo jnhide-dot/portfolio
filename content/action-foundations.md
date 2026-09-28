@@ -44,17 +44,76 @@
 
 ## 비교 — 세 게임의 고유 전투 구조
 
+## 명조 — 협주를 통한 교체 순환
+
 ![명조 - 협주를 통한 교체 순환](images/slides-20260928/analysis-13.webp)
+
+협주 교체로 파티 행동 연결
+<table fit-page-width="true" header-row="true">
+<tr><td>협주 충전</td><td>변주·반주</td><td>다음 캐릭터 운용</td></tr>
+<tr><td>공격과 스킬로 협주 게이지 충전</td><td>등장과 퇴장으로 파티 행동 연결</td><td>역할에 맞는 버프와 피해 기회 전달</td></tr>
+</table>
+- 효과: 등장·퇴장 효과로 파티 행동 연결
+- 교체 조건: 버프 유지 여부에 따라 선택 제한
+
+## 명조 — 대응 선택을 제한하는 기믹
 
 ![명조 - 대응 선택을 제한하는 기믹](images/slides-20260928/analysis-14.webp)
 
+패링과 회피를 번갈아 강요
+### 하이와티아 · 미래의 눈
+첫 공격에서 사용한 회피·패링을 기록하고, 다음 공격에서 같은 대응을 차단
+- 미래의 눈: 플레이어 대응 방식 기록
+- 후속 돌진: 다른 대응 요구
+
+## 원신 — 원소 반응과 피해 증폭
+
 ![원신 - 원소 반응과 피해 증폭](images/slides-20260928/analysis-15.webp)
+
+원소 반응·지원 효과로 피해 증폭
+<table fit-page-width="true" header-row="true">
+<tr><td>준비</td><td>결과</td></tr>
+<tr><td>얼음 원소 부착 · 지원 캐릭터가 반응을 준비</td><td>불 원소 공격으로 융해 발생 · 반응명과 피해 수치로 결과 확인</td></tr>
+</table>
+성립 조건: 부착 순서와 반응 조건 충족 · 지원 효과를 딜링 구간에 집중
+
+## 원신 — 특수 반응과 캐릭터 편성 의존
 
 ![원신 - 특수 반응과 캐릭터 편성 의존](images/slides-20260928/analysis-16.webp)
 
+특수 반응 사용 조건 · 전환 특성 보유 캐릭터 편성
+### 콜롬비나 편성 → 반응 전환
+<table fit-page-width="true" header-row="true">
+<tr><td>반응</td><td>전환</td></tr>
+<tr><td>감전</td><td>달 감전</td></tr>
+<tr><td>개화</td><td>달 개화</td></tr>
+<tr><td>물 원소 결정</td><td>달 결정</td></tr>
+</table>
+전환 특성 → 특수 반응 사용
+
+## 젠레스 존 제로 — 그로기와 딜 타이밍
+
 ![젠레스 존 제로 - 그로기와 딜 타이밍](images/slides-20260928/analysis-17.webp)
 
+그로기 시간에 주력 공격 집중
+<table fit-page-width="true" header-row="true">
+<tr><td>그로기 게이지 축적</td><td>그로기 진입 후 콤보 선택</td></tr>
+<tr><td>공격·패링 지원으로 그로기를 준비</td><td>콤보 이후 주력 딜링으로 연결</td></tr>
+</table>
+그로기 약체화 배율 활용 · 캐릭터별 주력 공격을 그로기 시간에 맞춤
+
+## 젠레스 존 제로 — 미아즈마 실드와 전투 흐름
+
 ![젠레스 존 제로 - 미아즈마 실드와 전투 흐름](images/slides-20260928/analysis-18.webp)
+
+실드로 그로기·극딜 지연
+<table fit-page-width="true" header-row="true">
+<tr><td>흐름</td><td>효과</td></tr>
+<tr><td>그로기 흐름 차단 · 실드 파괴 요구</td><td>실드 파괴 후 보상</td></tr>
+</table>
+흐름 변화: 준비한 그로기·극딜 시점 지연
+
+## 세 게임의 고유 전투 구조 비교
 
 ![세 게임의 고유 전투 구조 비교](images/slides-20260928/analysis-19.webp)
 
@@ -65,10 +124,6 @@
 <tr><td>원신</td><td>원소 부착·반응 조건</td><td>원소 반응·피해 증폭</td><td>특수 반응 전환 캐릭터 의존</td></tr>
 <tr><td>젠레스 존 제로</td><td>그로기·지원 포인트</td><td>약체화 구간·콤보</td><td>준비 흐름 지연 기믹</td></tr>
 </table>
-<mention-page url="https://app.notion.com/p/3c6ec1306255811e84c8d068e47b28fd"/>
-<mention-page url="https://app.notion.com/p/3c1ec130625581f5a52ff2b8550a96c0"/>
-<mention-page url="https://app.notion.com/p/3c1ec13062558144a20edfc7d68385aa"/>
-<mention-page url="https://app.notion.com/p/3b9ec130625581ff8ce6e1dce60f461c"/>
 
 ## 도출 — 전투 설계 시사점
 

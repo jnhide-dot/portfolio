@@ -46,7 +46,7 @@ function combatCards(){const d=docs.find(d=>d.id==='action-foundations');return 
 function portfolioPage(detail){
 main.className='collection-main';document.title='전투 분석·캐릭터 제안 — Jnhide';
 const primary=docs.filter(d=>d.primary);
-main.innerHTML='<header class="collection-head"><p class="eyebrow">DOCUMENTS</p><h1>전투 분석·캐릭터 제안</h1></header>'+primary.map(d=>'<section><div class="section-title"><div><h2>'+E(d.title)+'</h2><p>'+E(d.description)+'</p></div></div>'+row(d)+'<div class="document-sections">'+docs.filter(x=>x.deck===d.deck&&!x.primary).map(row).join('')+'</div></section>').join('');
+main.innerHTML='<header class="collection-head"><p class="eyebrow">DOCUMENTS</p><h1>전투 분석·캐릭터 제안</h1></header>'+primary.map(d=>'<section><div class="section-title"><div><h2>'+E(d.title)+'</h2><p>'+E(d.description)+'</p></div></div>'+row(d)+'</section>').join('');
 }
 
 const toolInfo={
@@ -121,6 +121,7 @@ main.className='game-detail-main';const i=gameImage(g);const related=docs.find(d
 main.innerHTML='<a class="back-link" href="#/playlist">← 플레이리스트</a><header class="game-detail-head '+(i?'has-art':'')+'">'+imageTag(i)+'<div><p class="eyebrow">PLAYLIST</p><h1>'+E(g.title)+'</h1><p>'+E([...new Set([...g.genres,...(g.tags||[])])].join(' · '))+'</p></div></header><div class="game-content"><section><div class="section-title"><h2>플레이 기록</h2><a class="edit-record" href="https://github.com/jnhide-dot/portfolio/edit/main/content/playlist/'+g.id+'.json" target="_blank" rel="noopener">기록 편집 ↗</a></div><p class="record-caption">노션 기록 기준 · '+E(g.snapshot)+' / 이전 기록은 실제 현재 상태와 다를 수 있습니다.</p><dl class="game-facts">'+[['기록 상태',g.status],['진행도',g.progress],['숙련도',g.proficiency],['플랫폼',g.platforms.join(' · ')],['플레이 시간',g.hours===null?'':g.hours+'시간']].map(([k,v])=>'<div><dt>'+k+'</dt><dd>'+E(v||'미기록')+'</dd></div>').join('')+'</dl><h2>주력 플레이</h2><p>'+E(g.mainPlay||'아직 작성한 기록이 없습니다.')+'</p><h2>주요 콘텐츠</h2><p>'+E(g.mainContent||'아직 작성한 기록이 없습니다.')+'</p><h2>플레이 인사이트</h2><p>'+E(g.insight||'아직 작성한 기록이 없습니다.')+'</p></section><aside class="related-analysis"><p class="eyebrow">RELATED</p><h2>연결된 분석</h2>'+(related?'<a href="'+link(related)+'">'+related.title+' ↗</a>':'<p>아직 연결된 분석이 없습니다.</p>')+'</aside></div>';
 }
 function render(hash=location.hash){
+const mergedRoutes={"wuthering-waves": "action-foundations", "genshin-impact": "action-foundations", "zenless-zone-zero": "action-foundations", "combat-comparison": "action-foundations", "system-proposal": "character-proposal"};const oldId=(hash||'').split('/')[2];if((hash||'').startsWith('#/docs/')&&mergedRoutes[oldId]){location.replace('#/docs/'+mergedRoutes[oldId]);return;}
 closeMenu();const parts=(hash||'#/').slice(2).split('/');const kind=parts[0],id=parts[1];const doc=docs.find(d=>d.id===id),game=playlist.find(g=>g.id===id);const section=kind==='docs'?(doc?.type?'projects':'portfolio'):kind==='games'?'playlist':['analysis','design'].includes(kind)?'portfolio':kind||'about';nav.querySelectorAll('.nav-trigger').forEach(b=>b.classList.toggle('current',b.dataset.section===section));nav.querySelectorAll('a').forEach(a=>{a.hash===(hash||'#/')?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current');});
 if(!kind){document.title='Jnhide — 전투 시스템·캐릭터 기획';home();}
 else if(kind==='about')aboutPage(id);
