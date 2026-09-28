@@ -127,7 +127,7 @@
 
 ## 도출 — 전투 설계 시사점
 
-![도출 — 전투 설계 시사점](images/slides-20260928/analysis-20.webp)
+![도출 — 전투 설계 시사점](images/slides-20260928/analysis-20-v2.webp)
 
 <table fit-page-width="true" header-row="true">
 <tr><td>활용할 경험</td><td>검토할 제약</td></tr>
@@ -135,6 +135,8 @@
 <tr><td>스킬 연계</td><td>편성 의존</td></tr>
 <tr><td>순간 화력</td><td>전투 흐름 단절</td></tr>
 </table>
+**선택의 재미와 조건·제약을 함께 설계한다**
+
 ### 전투를 설계할 때 확인할 질문
 - 행동과 교체는 어떻게 다음 공격 기회를 만드는가?
 - 준비 조건과 보상은 어떤 선택을 만들고 제한하는가?
