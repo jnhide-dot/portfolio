@@ -46,7 +46,7 @@ function combatCards(){const d=docs.find(d=>d.id==='action-foundations');return 
 function portfolioPage(detail){
 main.className='collection-main';document.title='전투 분석·캐릭터 제안 — Jnhide';
 const primary=docs.filter(d=>d.primary);
-main.innerHTML='<header class="collection-head"><p class="eyebrow">DOCUMENTS</p><h1>전투 분석·캐릭터 제안</h1></header>'+primary.map(d=>'<section><div class="section-title"><div><h2>'+E(d.title)+'</h2><p>'+E(d.description)+'</p></div></div>'+row(d)+'</section>').join('');
+main.innerHTML='<header class="collection-head"><p class="eyebrow">DOCUMENTS</p><h1>전투 분석·캐릭터 제안</h1></header>'+primary.map(row).join('');
 }
 
 const toolInfo={
