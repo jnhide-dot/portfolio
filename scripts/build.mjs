@@ -17,7 +17,7 @@ function render(md){
  return block('<div class="table-scroll"><table><thead><tr>'+cells('|'+head+'|').map(c=>'<th>'+inline(c)+'</th>').join('')+'</tr></thead><tbody>'+body.trim().split('\n').map(row=>'<tr>'+cells(row).map(c=>'<td>'+inline(c)+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>')+'\n';
  });
  md=md.replace(/<callout\b[^>]*>([\s\S]*?)<\/callout>/g,(_,s)=>block('<details class="note"><summary>원문 주석</summary>'+render(s.trim())+'</details>'));
- md=md.replace(/<mention-page url="https:\/\/app.notion.com\/p\/([a-f0-9]+)"\/>/g,(_,id)=>idMap[id]?`[관련 문서](./#/docs/${idMap[id]})`:'');
+ md=md.replace(/<mention-page url="https:\/\/app.notion.com\/p\/([a-f0-9]+)"\/>/g,(_,id)=>{const doc=catalog.find(d=>d.id===idMap[id]);return doc?block('<a class="related-document" href="#/docs/'+esc(doc.id)+'"><strong>'+esc(doc.title)+' →</strong><span>'+esc(doc.description||'')+'</span></a>'):'';});
  md=md.replace(/<table\b[^>]*>[\s\S]*?<\/table>/g,t=>block('<div class="table-scroll"><table>'+[...t.matchAll(/<tr\b[^>]*>([\s\S]*?)<\/tr>/g)].map((r,i)=>'<tr>'+[...r[1].matchAll(/<td\b[^>]*>([\s\S]*?)<\/td>/g)].map(c=>`<${i?'td':'th'}>${inline(c[1].trim())}</${i?'td':'th'}>`).join('')+'</tr>').join('')+'</table></div>'));
  md=md.replace(/<[^>]+>/g,'').replace(/!\[[^\]]*\]\([^)]*\)/g,'');
  let result='',inList=false;const end=()=>{if(inList){result+='</ul>';inList=false;}};
@@ -26,7 +26,7 @@ function render(md){
  if(/^---+$/.test(line)){end();result+='<hr>';continue;}
  if(/^[-*]\s|^\d+\.\s/.test(line)){if(!inList){result+='<ul>';inList=true;}result+='<li>'+inline(line.replace(/^([-*]|\d+\.)\s+/,'').replace(/^\[[ x]\]\s*/,''))+'</li>';continue;}
  end();result+=line.startsWith('>')?'<blockquote>'+inline(line.slice(1).trim())+'</blockquote>':'<p>'+inline(line)+'</p>';
- }end();return result.replace(/\[관련 문서\]\(\.\/#\/docs\/([a-z-]+)\)/g,'<a href="#/docs/$1">관련 문서 →</a>');
+ }end();return result;
 }
 fs.mkdirSync('dist',{recursive:true});
 const docs=catalog.map(d=>({...d,body:render(fs.readFileSync(`content/${d.id}.md`,'utf8'))}));
