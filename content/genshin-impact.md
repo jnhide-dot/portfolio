@@ -1,6 +1,6 @@
 ## 원신 — 원소 반응과 피해 증폭
 
-![원신 - 원소 반응과 피해 증폭 · 원본 15장](images/slides-20260928/analysis-15.webp)
+![원신 - 원소 반응과 피해 증폭](images/slides-20260928/analysis-15.webp)
 
 원소 반응·지원 효과로 피해 증폭
 <table fit-page-width="true" header-row="true">
@@ -11,7 +11,7 @@
 
 ## 원신 — 특수 반응과 캐릭터 편성 의존
 
-![원신 - 특수 반응과 캐릭터 편성 의존 · 원본 16장](images/slides-20260928/analysis-16.webp)
+![원신 - 특수 반응과 캐릭터 편성 의존](images/slides-20260928/analysis-16.webp)
 
 특수 반응 사용 조건 · 전환 특성 보유 캐릭터 편성
 ### 콜롬비나 편성 → 반응 전환

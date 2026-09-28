@@ -1,24 +1,21 @@
 공통 조작 구조와 게임별 전투 경험 · 설계 시사점
 
 ## 목차
-<table fit-page-width="true" header-row="true">
-<tr><td>구성</td><td>발표 자료</td></tr>
-<tr><td>분석 — 액션 전투의 공통 구조</td><td>3–10장</td></tr>
-<tr><td>비교 — 세 게임의 고유 전투 구조</td><td>11–19장</td></tr>
-<tr><td>도출 — 전투 설계 시사점</td><td>20장</td></tr>
-</table>
+- 분석 — 액션 전투의 공통 구조
+- 비교 — 세 게임의 고유 전투 구조
+- 도출 — 전투 설계 시사점
 
 ## 분석 — 액션 전투의 공통 구조
 
-![액션 전투 시스템 · 원본 4장](images/slides-20260928/analysis-04.webp)
+![액션 전투 시스템](images/slides-20260928/analysis-04.webp)
 
-![액션 레퍼런스로 선정한 이유 · 원본 5장](images/slides-20260928/analysis-05.webp)
+![액션 레퍼런스로 선정한 이유](images/slides-20260928/analysis-05.webp)
 
-![데빌 메이 크라이 — 화려한 액션 · 원본 6장](images/slides-20260928/analysis-06.webp)
+![데빌 메이 크라이 — 화려한 액션](images/slides-20260928/analysis-06.webp)
 
-![회피를 공격의 흐름으로 연결하는 전투 · 원본 7장](images/slides-20260928/analysis-07.webp)
+![회피를 공격의 흐름으로 연결하는 전투](images/slides-20260928/analysis-07.webp)
 
-![붕괴3rd의 모바일 전투 재구성 · 원본 8장](images/slides-20260928/analysis-08.webp)
+![붕괴3rd의 모바일 전투 재구성](images/slides-20260928/analysis-08.webp)
 
 액션 레퍼런스 분석 → 모바일 전투 재구성 → 공통 조작 구조
 <table fit-page-width="true" header-row="true">
@@ -30,7 +27,7 @@
 
 ### 모바일 전투 화면의 입력 배치
 
-![모바일 전투 화면의 입력 배치 · 원본 9장](images/slides-20260928/analysis-09.webp)
+![모바일 전투 화면의 입력 배치](images/slides-20260928/analysis-09.webp)
 
 이동·전투·교체를 나눈 조작 배치
 - 좌측 이동 · 우측 전투 버튼
@@ -38,7 +35,7 @@
 
 ### 세 게임의 공통 조작 구조
 
-![세 게임의 공통 조작 구조 · 원본 10장](images/slides-20260928/analysis-10.webp)
+![세 게임의 공통 조작 구조](images/slides-20260928/analysis-10.webp)
 
 이동 · 공격 · 회피 · 스킬 · 필살기 · 교체
 - 조작을 간소화
@@ -47,19 +44,19 @@
 
 ## 비교 — 세 게임의 고유 전투 구조
 
-![명조 - 협주를 통한 교체 순환 · 원본 13장](images/slides-20260928/analysis-13.webp)
+![명조 - 협주를 통한 교체 순환](images/slides-20260928/analysis-13.webp)
 
-![명조 - 대응 선택을 제한하는 기믹 · 원본 14장](images/slides-20260928/analysis-14.webp)
+![명조 - 대응 선택을 제한하는 기믹](images/slides-20260928/analysis-14.webp)
 
-![원신 - 원소 반응과 피해 증폭 · 원본 15장](images/slides-20260928/analysis-15.webp)
+![원신 - 원소 반응과 피해 증폭](images/slides-20260928/analysis-15.webp)
 
-![원신 - 특수 반응과 캐릭터 편성 의존 · 원본 16장](images/slides-20260928/analysis-16.webp)
+![원신 - 특수 반응과 캐릭터 편성 의존](images/slides-20260928/analysis-16.webp)
 
-![젠레스 존 제로 - 그로기와 딜 타이밍 · 원본 17장](images/slides-20260928/analysis-17.webp)
+![젠레스 존 제로 - 그로기와 딜 타이밍](images/slides-20260928/analysis-17.webp)
 
-![젠레스 존 제로 - 미아즈마 실드와 전투 흐름 · 원본 18장](images/slides-20260928/analysis-18.webp)
+![젠레스 존 제로 - 미아즈마 실드와 전투 흐름](images/slides-20260928/analysis-18.webp)
 
-![세 게임의 고유 전투 구조 비교 · 원본 19장](images/slides-20260928/analysis-19.webp)
+![세 게임의 고유 전투 구조 비교](images/slides-20260928/analysis-19.webp)
 
 보상·성립 조건·제약을 함께 비교
 <table fit-page-width="true" header-row="true">
@@ -75,7 +72,7 @@
 
 ## 도출 — 전투 설계 시사점
 
-![도출 — 전투 설계 시사점 · 원본 20장](images/slides-20260928/analysis-20.webp)
+![도출 — 전투 설계 시사점](images/slides-20260928/analysis-20.webp)
 
 <table fit-page-width="true" header-row="true">
 <tr><td>활용할 경험</td><td>검토할 제약</td></tr>
@@ -90,4 +87,3 @@
 
 ## 관련 제안서
 <mention-page url="https://app.notion.com/p/3c6ec130625581ba934dfbbc7465ee04"/>
-[프로젝트 스피릿 — 캐릭터 전투·스킬 제안서](https://docs.google.com/presentation/d/16ZjA0ej_IvljuncLc4lCdY7Z6yJjbxXH7aXnWxo-vM8/edit)

@@ -1,6 +1,6 @@
 ## 명조 — 협주를 통한 교체 순환
 
-![명조 - 협주를 통한 교체 순환 · 원본 13장](images/slides-20260928/analysis-13.webp)
+![명조 - 협주를 통한 교체 순환](images/slides-20260928/analysis-13.webp)
 
 협주 교체로 파티 행동 연결
 <table fit-page-width="true" header-row="true">
@@ -12,7 +12,7 @@
 
 ## 명조 — 대응 선택을 제한하는 기믹
 
-![명조 - 대응 선택을 제한하는 기믹 · 원본 14장](images/slides-20260928/analysis-14.webp)
+![명조 - 대응 선택을 제한하는 기믹](images/slides-20260928/analysis-14.webp)
 
 패링과 회피를 번갈아 강요
 ### 하이와티아 · 미래의 눈

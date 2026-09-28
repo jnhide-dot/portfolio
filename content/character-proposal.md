@@ -12,13 +12,13 @@
 
 ## 분석 — 기본 지급 캐릭터의 초반 역할
 
-![양양 | 전투의 기초와 협주 시스템 · 원본 7장](images/slides-20260928/character-07.webp)
+![양양 | 전투의 기초와 협주 시스템](images/slides-20260928/character-07.webp)
 
-![엠버 - 기본 조작과 원소 시스템 학습 · 원본 8장](images/slides-20260928/character-08.webp)
+![엠버 - 기본 조작과 원소 시스템 학습](images/slides-20260928/character-08.webp)
 
-![엔비 - 기본 조작과 격파 시스템 학습 · 원본 9장](images/slides-20260928/character-09.webp)
+![엔비 - 기본 조작과 격파 시스템 학습](images/slides-20260928/character-09.webp)
 
-![사례 비교 - 한 캐릭터로 여러 시스템을 학습 · 원본 10장](images/slides-20260928/character-10.webp)
+![사례 비교 - 한 캐릭터로 여러 시스템을 학습](images/slides-20260928/character-10.webp)
 
 출시 초기의 신규 유저에게 진행과 학습의 기반을 제공
 <table fit-page-width="true" header-row="true">
@@ -31,7 +31,7 @@
 
 ## 전제 — 캐릭터 설계를 위한 전투 규칙
 
-![전투 전제 - 기본 조작과 연계 흐름 · 원본 17장](images/slides-20260928/character-17.webp)
+![전투 전제 - 기본 조작과 연계 흐름](images/slides-20260928/character-17.webp)
 
 교대 공격과 조건부 연계의 결합
 - 3인 · 온필드 1인 · 자유 교대
@@ -43,7 +43,7 @@
 
 ## 설계 의도 — 초반 전투를 학습하는 캐릭터
 
-![설계 의도 - 초반 전투를 학습하는 캐릭터 · 원본 20장](images/slides-20260928/character-20.webp)
+![설계 의도 - 초반 전투를 학습하는 캐릭터](images/slides-20260928/character-20.webp)
 
 초반에는 직접 싸우며 배우고, 성장 후에는 짧게 활약하며 파티를 돕는 도 캐릭터
 <table fit-page-width="true" header-row="true">
@@ -55,7 +55,7 @@
 
 ## 캐릭터 소개 — 간결한 검술과 전투 편의성
 
-![캐릭터 소개 - 간결한 검술과 전투 편의성 · 원본 21장](images/slides-20260928/character-21.webp)
+![캐릭터 소개 - 간결한 검술과 전투 편의성](images/slides-20260928/character-21.webp)
 
 <table fit-page-width="true" header-row="true">
 <tr><td>항목</td><td>내용</td></tr>
@@ -69,7 +69,7 @@
 
 ## 스킬 구성 — 전체 스킬 한눈에 보기
 
-![스킬 구성 - 전체 스킬 한눈에 보기 · 원본 22장](images/slides-20260928/character-22.webp)
+![스킬 구성 - 전체 스킬 한눈에 보기](images/slides-20260928/character-22.webp)
 
 <table fit-page-width="true" header-row="true">
 <tr><td>스킬</td><td>구성</td></tr>
@@ -83,9 +83,8 @@
 
 ## 일반공격 — 4타 모션과 타격 구간
 
-![일반 공격 — 4타 모션과 타격 구간 · 원본 23장](images/slides-20260928/character-23.webp)
+![일반 공격 — 4타 모션과 타격 구간](images/slides-20260928/character-23.webp)
 
-[발표 자료 23장](https://docs.google.com/presentation/d/16ZjA0ej_IvljuncLc4lCdY7Z6yJjbxXH7aXnWxo-vM8/edit#slide=id.p30)
 - 1~4타 모두 전방 횡베기
 - 각 타격에 유사한 부채꼴 범위
 - 추격: 각 타격 시작 시 대상 방향으로 보정하며 짧게 전진
@@ -94,9 +93,8 @@
 
 ## 강공격 — 홀드 전환과 전방 2회 타격
 
-![강공격 — 홀드 전환과 전방 2회 타격 · 원본 24장](images/slides-20260928/character-24.webp)
+![강공격 — 홀드 전환과 전방 2회 타격](images/slides-20260928/character-24.webp)
 
-[발표 자료 24장](https://docs.google.com/presentation/d/16ZjA0ej_IvljuncLc4lCdY7Z6yJjbxXH7aXnWxo-vM8/edit#slide=id.heavy_plunge_detail)
 일반공격 1타 후 홀드 전환 · 강공격 1회에 2회 타격
 - 홀드 유지 → 전환 시 스태미나 소모
 - 2회 모두 일반공격 대비 넓어진 전방 부채꼴 범위 적용
@@ -106,9 +104,8 @@
 
 ## 낙하공격 — 공중·접촉·착지 판정
 
-![낙하공격 — 공중·접촉·착지 판정 · 원본 25장](images/slides-20260928/character-25.webp)
+![낙하공격 — 공중·접촉·착지 판정](images/slides-20260928/character-25.webp)
 
-[발표 자료 25장](https://docs.google.com/presentation/d/16ZjA0ej_IvljuncLc4lCdY7Z6yJjbxXH7aXnWxo-vM8/edit#slide=id.plunge_attack_detail)
 공중 공격 1회 → 낙하 중 접촉 재타격 → 착지 범위 공격
 <table fit-page-width="true" header-row="true">
 <tr><td>구간</td><td>판정</td></tr>
@@ -127,9 +124,8 @@
 
 ## 전투 스킬 — 돌진하며 경로에 피해
 
-![전투 스킬 — 돌진하며 경로에 피해 · 원본 26장](images/slides-20260928/character-26.webp)
+![전투 스킬 — 돌진하며 경로에 피해](images/slides-20260928/character-26.webp)
 
-[발표 자료 26장](https://docs.google.com/presentation/d/16ZjA0ej_IvljuncLc4lCdY7Z6yJjbxXH7aXnWxo-vM8/edit#slide=id.skill_dash_detail)
 피해 범위: 시전 위치에서 돌진 끝까지의 이동 경로
 시전 준비 → 돌진·경로 타격 → 동작 종료
 <table fit-page-width="true" header-row="true">
@@ -145,9 +141,8 @@
 
 ## 필살기 — 준비 자세와 종료 연출
 
-![필살기 — 준비 자세와 종료 연출 · 원본 27장](images/slides-20260928/character-27.webp)
+![필살기 — 준비 자세와 종료 연출](images/slides-20260928/character-27.webp)
 
-[발표 자료 27장](https://docs.google.com/presentation/d/16ZjA0ej_IvljuncLc4lCdY7Z6yJjbxXH7aXnWxo-vM8/edit#slide=id.skill_ult_detail)
 발도 준비 → 제자리 베기 → 0.3~0.5초 후 피해 → 컷씬 마무리
 <table fit-page-width="true" header-row="true">
 <tr><td>구간</td><td>참고 요소</td></tr>
@@ -157,9 +152,8 @@
 
 ## 필살기 — 공격 범위와 판정 시점
 
-![필살기 — 공격 범위와 판정 시점 · 원본 28장](images/slides-20260928/character-28.webp)
+![필살기 — 공격 범위와 판정 시점](images/slides-20260928/character-28.webp)
 
-[발표 자료 28장](https://docs.google.com/presentation/d/16ZjA0ej_IvljuncLc4lCdY7Z6yJjbxXH7aXnWxo-vM8/edit#slide=id.ultimate_hit_detail)
 시전 시작 시 대상 확정 → 베기 후 0.3~0.5초 뒤 피해 적용
 - 전방 넓은 부채꼴
 - 시작 시 대상 방향으로 보정 · 제자리에서 발도
@@ -169,9 +163,8 @@
 
 ## 패시브 2개로 연결하는 스킬과 필살기
 
-![패시브 2개로 연결하는 스킬과 필살기 · 원본 29장](images/slides-20260928/character-29.webp)
+![패시브 2개로 연결하는 스킬과 필살기](images/slides-20260928/character-29.webp)
 
-[발표 자료 29장](https://docs.google.com/presentation/d/16ZjA0ej_IvljuncLc4lCdY7Z6yJjbxXH7aXnWxo-vM8/edit#slide=id.p29)
 2회 충전을 모아 연속 적중 → 표식이 남아 있을 때 필살기 시전
 <table fit-page-width="true" header-row="true">
 <tr><td>패시브</td><td>규칙</td></tr>
@@ -183,9 +176,8 @@
 
 ## 연계 스킬 — 교대와 순간 집결
 
-![연계 스킬 - 교대와 순간 집결 · 원본 30장](images/slides-20260928/character-30.webp)
+![연계 스킬 - 교대와 순간 집결](images/slides-20260928/character-30.webp)
 
-[발표 자료 30장](https://docs.google.com/presentation/d/16ZjA0ej_IvljuncLc4lCdY7Z6yJjbxXH7aXnWxo-vM8/edit#slide=id.p30_response)
 한 번의 집결로 적의 위치를 정리하고, 후속 공격의 기회를 제공
 동료 필살기 적중 + 연계 스킬 사용 가능 → QTE 4초 → 초상화 입력
 - 교대 위치에서 발동 · 적을 추격하지 않음
@@ -196,9 +188,8 @@
 
 ## 예상 운용 — 기본 조작 학습에서 교대 연계로
 
-![예상 운용 — 기본 조작 학습에서 교대 연계로 · 원본 31장](images/slides-20260928/character-31.webp)
+![예상 운용 — 기본 조작 학습에서 교대 연계로](images/slides-20260928/character-31.webp)
 
-[발표 자료 31장](https://docs.google.com/presentation/d/16ZjA0ej_IvljuncLc4lCdY7Z6yJjbxXH7aXnWxo-vM8/edit#slide=id.p31)
 ### 초반 — 직접 전투로 기본 조작 학습
 적에게 접근 · 공격 거리 익히기 → 일반·강공격으로 기본 공격 익히기 → 돌진 스킬로 거리 좁혀 공격 → 상황에 맞춰 공격·스킬 활용
 학습 목표: 직접 조작하며 접근과 공격을 익히고, 기본 전투에 익숙해짐
@@ -208,9 +199,8 @@
 
 ## 검토 계획 — 전투 시스템 학습으로 이어지는가
 
-![검토 계획 — 전투 시스템 학습으로 이어지는가 · 원본 32장](images/slides-20260928/character-32.webp)
+![검토 계획 — 전투 시스템 학습으로 이어지는가](images/slides-20260928/character-32.webp)
 
-[발표 자료 32장](https://docs.google.com/presentation/d/16ZjA0ej_IvljuncLc4lCdY7Z6yJjbxXH7aXnWxo-vM8/edit#slide=id.p32)
 <table fit-page-width="true" header-row="true">
 <tr><td>구분</td><td>검토 상황</td><td>관찰할 행동</td><td>조정 항목</td></tr>
 <tr><td>기본 조작 학습</td><td>일반 적과의 근접 전투</td><td>공격 거리를 익히고 일반·강공격과 스킬을 활용하는가</td><td>접근 거리·입력 반응·공격 연결</td></tr>
@@ -219,11 +209,10 @@
 </table>
 기본 조작을 익히고, 조건부 연계와 파티 교대로 전투를 확장하는 초기 캐릭터
 
-## 원문 확인 사항
-- 표식 유지 시간: 29장 본문은 4초, 발표자 노트는 8초로 서로 다름. 확인 전 확정하지 않음.
-- 에너지 설계 목표(발표자 노트): 기본 전투 스킬 4회 적중분을 필살기 요구량으로 두고, 성장 후 에너지 수급 효율 또는 추가 수급 효과를 확보하면 2회로 충족. 실제 수급량·장비 수치는 검증 전.
+## 확인 사항
+- 표식 유지 시간: 4초·8초가 혼재함. 확인 전 확정하지 않음.
+- 에너지 설계 목표: 기본 전투 스킬 4회 적중분을 필살기 요구량으로 두고, 성장 후 에너지 수급 효율 또는 추가 수급 효과를 확보하면 2회로 충족. 실제 수급량·장비 수치는 검증 전.
 - 상세 피해 계수와 장비 요구치는 미정이며, 예상 운용을 실제 검증 결과로 취급하지 않음.
 
 ## 관련 분석
 <mention-page url="https://app.notion.com/p/3c6ec13062558195be0dc066639a1ec8"/>
-[서브컬처 액션 전투 분석](https://docs.google.com/presentation/d/19z0h2JXWODy3rUtdju9hJ9IhgrZj5BMthFIUrj6f8dY/edit)

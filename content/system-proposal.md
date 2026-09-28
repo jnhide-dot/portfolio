@@ -2,7 +2,7 @@
 
 ## 차용한 전투 구조
 
-![전투 전제 - 차용한 전투 구조 · 원본 14장](images/slides-20260928/character-14.webp)
+![전투 전제 - 차용한 전투 구조](images/slides-20260928/character-14.webp)
 
 교대 공격과 조건부 연계의 결합
 <table fit-page-width="true" header-row="true">
@@ -14,7 +14,7 @@
 
 ## 조건부 QTE의 설계 의도
 
-![전투 전제 - 조건부 QTE의 설계 의도 · 원본 15장](images/slides-20260928/character-15.webp)
+![전투 전제 - 조건부 QTE의 설계 의도](images/slides-20260928/character-15.webp)
 
 교대 공격은 유지, 기회 생성 방식은 변경
 <table fit-page-width="true" header-row="true">
@@ -28,7 +28,7 @@
 
 ## QTE 입력 시간
 
-![전투 전제 - QTE 입력 시간 · 원본 16장](images/slides-20260928/character-16.webp)
+![전투 전제 - QTE 입력 시간](images/slides-20260928/character-16.webp)
 
 제한시간 내 연계 사례를 참고해 입력 시간을 4초로 설정
 <table fit-page-width="true" header-row="true">
@@ -39,7 +39,7 @@
 
 ## 기본 조작과 연계 흐름
 
-![전투 전제 - 기본 조작과 연계 흐름 · 원본 17장](images/slides-20260928/character-17.webp)
+![전투 전제 - 기본 조작과 연계 흐름](images/slides-20260928/character-17.webp)
 
 <table fit-page-width="true" header-row="true">
 <tr><td>항목</td><td>규칙</td></tr>

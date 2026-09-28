@@ -1,6 +1,6 @@
 ## 세 게임의 고유 전투 구조 비교
 
-![세 게임의 고유 전투 구조 비교 · 원본 19장](images/slides-20260928/analysis-19.webp)
+![세 게임의 고유 전투 구조 비교](images/slides-20260928/analysis-19.webp)
 
 보상·성립 조건·제약을 함께 비교
 <table fit-page-width="true" header-row="true">
@@ -12,7 +12,7 @@
 
 ## 도출 — 전투 설계 시사점
 
-![도출 — 전투 설계 시사점 · 원본 20장](images/slides-20260928/analysis-20.webp)
+![도출 — 전투 설계 시사점](images/slides-20260928/analysis-20.webp)
 
 <table fit-page-width="true" header-row="true">
 <tr><td>활용할 경험</td><td>검토할 제약</td></tr>

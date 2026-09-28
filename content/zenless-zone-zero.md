@@ -1,6 +1,6 @@
 ## 젠레스 존 제로 — 그로기와 딜 타이밍
 
-![젠레스 존 제로 - 그로기와 딜 타이밍 · 원본 17장](images/slides-20260928/analysis-17.webp)
+![젠레스 존 제로 - 그로기와 딜 타이밍](images/slides-20260928/analysis-17.webp)
 
 그로기 시간에 주력 공격 집중
 <table fit-page-width="true" header-row="true">
@@ -11,7 +11,7 @@
 
 ## 젠레스 존 제로 — 미아즈마 실드와 전투 흐름
 
-![젠레스 존 제로 - 미아즈마 실드와 전투 흐름 · 원본 18장](images/slides-20260928/analysis-18.webp)
+![젠레스 존 제로 - 미아즈마 실드와 전투 흐름](images/slides-20260928/analysis-18.webp)
 
 실드로 그로기·극딜 지연
 <table fit-page-width="true" header-row="true">
