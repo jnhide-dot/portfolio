@@ -7,15 +7,15 @@
 
 ## 분석 — 액션 전투의 공통 구조
 
-![액션 전투 시스템](images/slides-20260928/analysis-04.webp)
+![액션 레퍼런스와 모바일 전투의 공통 조작 구조](images/content-20260929/analysis-04.webp)
 
-![액션 레퍼런스로 선정한 이유](images/slides-20260928/analysis-05.webp)
+![데빌 메이 크라이와 베요네타를 선정한 이유](images/content-20260929/analysis-05.webp)
 
-![데빌 메이 크라이 — 화려한 액션](images/slides-20260928/analysis-06.webp)
+![데빌 메이 크라이의 공격 연계와 스타일리시 랭크](images/content-20260929/analysis-06.webp)
 
-![회피를 공격의 흐름으로 연결하는 전투](images/slides-20260928/analysis-07.webp)
+![베요네타의 회피와 공격 연결](images/content-20260929/analysis-07.webp)
 
-![붕괴3rd의 모바일 전투 재구성](images/slides-20260928/analysis-08.webp)
+![붕괴3rd의 모바일 액션과 애니메이션풍 캐릭터](images/content-20260929/analysis-08.webp)
 
 액션 레퍼런스 분석 → 모바일 전투 재구성 → 공통 조작 구조
 <table fit-page-width="true" header-row="true">
@@ -27,7 +27,7 @@
 
 ### 모바일 전투 화면의 입력 배치
 
-![모바일 전투 화면의 입력 배치](images/slides-20260928/analysis-09.webp)
+![모바일 전투 화면의 입력 배치](images/content-20260929/analysis-09.webp)
 
 이동·전투·교체를 나눈 조작 배치
 - 좌측 이동 · 우측 전투 버튼
@@ -35,7 +35,7 @@
 
 ### 세 게임의 공통 조작 구조
 
-![세 게임의 공통 조작 구조](images/slides-20260928/analysis-10.webp)
+![세 게임의 캐릭터와 공통 조작 구조](images/content-20260929/analysis-10.webp)
 
 이동 · 공격 · 회피 · 스킬 · 필살기 · 교체
 - 조작을 간소화
@@ -46,7 +46,7 @@
 
 ## 명조 — 협주를 통한 교체 순환
 
-![명조 - 협주를 통한 교체 순환](images/slides-20260928/analysis-13.webp)
+![명조의 협주 충전과 교체 흐름](images/content-20260929/analysis-13.webp)
 
 협주 교체로 파티 행동 연결
 <table fit-page-width="true" header-row="true">
@@ -58,7 +58,7 @@
 
 ## 명조 — 대응 선택을 제한하는 기믹
 
-![명조 - 대응 선택을 제한하는 기믹](images/slides-20260928/analysis-14.webp)
+![명조의 패링·회피 대응 기믹](images/content-20260929/analysis-14.webp)
 
 패링과 회피를 번갈아 강요
 ### 하이와티아 · 미래의 눈
@@ -68,7 +68,7 @@
 
 ## 원신 — 원소 반응과 피해 증폭
 
-![원신 - 원소 반응과 피해 증폭](images/slides-20260928/analysis-15.webp)
+![원신의 원소 부착과 융해 반응](images/content-20260929/analysis-15.webp)
 
 원소 반응·지원 효과로 피해 증폭
 <table fit-page-width="true" header-row="true">
@@ -79,7 +79,7 @@
 
 ## 원신 — 특수 반응과 캐릭터 편성 의존
 
-![원신 - 특수 반응과 캐릭터 편성 의존](images/slides-20260928/analysis-16.webp)
+![원신의 특수 반응 전환 구조](images/content-20260929/analysis-16.webp)
 
 특수 반응 사용 조건 · 전환 특성 보유 캐릭터 편성
 ### 콜롬비나 편성 → 반응 전환
@@ -93,7 +93,7 @@
 
 ## 젠레스 존 제로 — 그로기와 딜 타이밍
 
-![젠레스 존 제로 - 그로기와 딜 타이밍](images/slides-20260928/analysis-17.webp)
+![젠레스 존 제로의 그로기와 딜 타이밍](images/content-20260929/analysis-17.webp)
 
 그로기 시간에 주력 공격 집중
 <table fit-page-width="true" header-row="true">
@@ -104,7 +104,7 @@
 
 ## 젠레스 존 제로 — 미아즈마 실드와 전투 흐름
 
-![젠레스 존 제로 - 미아즈마 실드와 전투 흐름](images/slides-20260928/analysis-18.webp)
+![젠레스 존 제로의 미아즈마 실드와 전투 흐름](images/content-20260929/analysis-18.webp)
 
 실드로 그로기·극딜 지연
 <table fit-page-width="true" header-row="true">
@@ -115,8 +115,6 @@
 
 ## 세 게임의 고유 전투 구조 비교
 
-![세 게임의 고유 전투 구조 비교](images/slides-20260928/analysis-19.webp)
-
 보상·성립 조건·제약을 함께 비교
 <table fit-page-width="true" header-row="true">
 <tr><td>게임</td><td>준비 조건</td><td>피해 기회</td><td>제약</td></tr>
@@ -126,8 +124,6 @@
 </table>
 
 ## 도출 — 전투 설계 시사점
-
-![도출 — 전투 설계 시사점](images/slides-20260928/analysis-20-v2.webp)
 
 <table fit-page-width="true" header-row="true">
 <tr><td>활용할 경험</td><td>검토할 제약</td></tr>

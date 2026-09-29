@@ -120,5 +120,6 @@ body.popup-open{overflow:hidden}
 /* Two source decks and their retained detail routes */
 .document-sections{margin:16px 0 40px}.document-sections>h3{font-size:1rem;font-weight:600;padding:12px 0;margin:0}.collection-main>.section-title,.collection-main>section{margin-bottom:36px}.project-card h3{overflow-wrap:anywhere}
 .source-slide{margin:24px 0 32px}.source-slide img{display:block;width:100%;height:auto;border:1px solid #dce2e8}.source-slide a{display:block;cursor:zoom-in}.source-slide figcaption{font-size:12px;color:#637084;margin-top:8px}.project-card .deck-preview{width:100%;height:auto;display:block;margin:0 0 24px;border:1px solid #dce2e8}
+.content-visual{margin:20px 0 28px}.content-visual a{display:block;cursor:zoom-in}.content-visual img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}.content-visual figcaption{font-size:12px;color:#637084;margin-top:8px}
 
 .related-document{display:block;margin:12px 0;padding:16px 18px;border:1px solid #dce2e8;text-decoration:none}.related-document strong{display:block;font-size:1rem}.related-document span{display:block;margin-top:6px;color:#637084;font-size:.875rem;line-height:1.6}.related-document:hover{border-color:#345cff;background:#f8faff}
