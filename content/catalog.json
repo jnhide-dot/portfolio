@@ -4,26 +4,28 @@
     "number": "01",
     "title": "서브컬처 액션 전투 분석",
     "group": "분석",
-    "description": "공통 조작 구조와 게임별 전투 경험 · 설계 시사점",
-    "status": "분석 문서",
+    "description": "공통 조작 구조 · 게임별 전투 경험 · 조건과 제약에서 도출한 설계 기준",
+    "status": "완성본",
     "source": "3c6ec13062558195be0dc066639a1ec8",
-    "syncedAt": "2026-09-28",
+    "syncedAt": "2026-10-02",
     "deck": "analysis",
     "primary": true,
-    "slidesUrl": "https://docs.google.com/presentation/d/19z0h2JXWODy3rUtdju9hJ9IhgrZj5BMthFIUrj6f8dY/edit"
+    "slidesUrl": "https://docs.google.com/presentation/d/19z0h2JXWODy3rUtdju9hJ9IhgrZj5BMthFIUrj6f8dY/edit",
+    "cover": "images/portfolio-20261002/analysis-cover.png"
   },
   {
     "id": "character-proposal",
     "number": "02",
     "title": "프로젝트 스피릿 — 캐릭터 전투·스킬 제안서",
     "group": "제안",
-    "description": "초기 캐릭터 분석 · 전투 전제 · 캐릭터와 스킬 제안",
-    "status": "작업본",
+    "description": "초반 진행 지원 · 기본 전투와 조건부 연계 학습 · 캐릭터 전투·스킬 설계",
+    "status": "완성본",
     "source": "3c6ec130625581ba934dfbbc7465ee04",
-    "syncedAt": "2026-09-28",
+    "syncedAt": "2026-10-02",
     "deck": "character",
     "primary": true,
-    "slidesUrl": "https://docs.google.com/presentation/d/16ZjA0ej_IvljuncLc4lCdY7Z6yJjbxXH7aXnWxo-vM8/edit"
+    "slidesUrl": "https://docs.google.com/presentation/d/16ZjA0ej_IvljuncLc4lCdY7Z6yJjbxXH7aXnWxo-vM8/edit",
+    "cover": "images/portfolio-20261002/character-cover.png"
   },
   {
     "id": "nikke-meta",

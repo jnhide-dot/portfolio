@@ -9,7 +9,7 @@ function inline(s){
 }
 function render(md,keepHeadings=false){
  const saved=[]; const block=html=>`@@BLOCK${saved.push(html)-1}@@`;
- md=md.replace(/!\[([^\]]*)\]\((images\/(?:slides-20260928|content-20260929|nikke-assets)\/[\w.-]+)\)/g,(_,alt,url)=>{if(!fs.existsSync(path.join('dist',url)))throw Error('Missing document image: '+url);const contentOnly=url.includes('/content-20260929/')||url.includes('/nikke-assets/');return block('<figure class="'+(contentOnly?'content-visual':'source-slide')+'"><a href="'+esc(url)+'" target="_blank" rel="noopener" aria-label="'+esc(alt)+' 크게 보기"><img src="'+esc(url)+'" alt="'+esc(alt)+'" loading="lazy"'+(contentOnly?'':' width="1600" height="900"')+'></a><figcaption>'+esc(alt)+' · 눌러서 크게 보기</figcaption></figure>');});
+ md=md.replace(/!\[([^\]]*)\]\((images\/(?:slides-20260928|content-20260929|nikke-assets|portfolio-20261002)\/[\w.-]+)\)/g,(_,alt,url)=>{if(!fs.existsSync(path.join('dist',url)))throw Error('Missing document image: '+url);const contentOnly=url.includes('/content-20260929/')||url.includes('/nikke-assets/');return block('<figure class="'+(contentOnly?'content-visual':'source-slide')+'"><a href="'+esc(url)+'" target="_blank" rel="noopener" aria-label="'+esc(alt)+' 크게 보기"><img src="'+esc(url)+'" alt="'+esc(alt)+'" loading="lazy"'+(contentOnly?'':' width="1600" height="900"')+'></a><figcaption>'+esc(alt)+' · 눌러서 크게 보기</figcaption></figure>');});
  md=md.replace(/!\[([^\]]*)\]\((files\/[\w./-]+)\)/g,(_,alt,url)=>block(fs.existsSync(path.join('dist',url))?'<img src="'+esc(url)+'" alt="'+esc(alt)+'" loading="lazy" style="max-width:100%;height:auto">':'<p class="empty-assets">원문 이미지 준비 중</p>'));
  md=md.replace(/```[^\n]*\n([\s\S]*?)```/g,(_,s)=>block('<pre><code>'+esc(s.trimEnd())+'</code></pre>'));
  md=md.replace(/^\|(.+)\|\r?\n\|[ :|\-]+\|\r?\n((?:\|.*\|(?:\r?\n|$))+)/gm,(_,head,body)=>{
@@ -29,7 +29,7 @@ function render(md,keepHeadings=false){
  }end();return result;
 }
 fs.mkdirSync('dist',{recursive:true});
-const docs=catalog.map(d=>({...d,body:render(fs.readFileSync(`content/${d.id}.md`,'utf8'),d.id==='nikke-meta')}));
+const docs=catalog.map(d=>({...d,body:render(fs.readFileSync(`content/${d.id}.md`,'utf8'),d.primary===true)}));
 const attachments=JSON.parse(fs.readFileSync('content/attachments.json','utf8'));
 for(const a of attachments){if(!catalog.some(d=>d.id===a.document)||!a.title||!['문서','이미지','영상','빌드'].includes(a.type))throw Error('Invalid attachment');if(!/^https:\/\//.test(a.url)&&!/^files\/[\w./-]+$/.test(a.url))throw Error('Invalid URL');if(a.url.startsWith('files/')&&!fs.existsSync(path.join('dist',a.url)))throw Error('Missing attachment: '+a.url);}
 for(const a of attachments.filter(a=>a.url.startsWith('files/')&&a.url.endsWith('.md'))){
@@ -57,7 +57,7 @@ const dataScript='window.PORTFOLIO='+JSON.stringify({docs,attachments,playlist,i
 fs.writeFileSync('dist/data.js',dataScript);
 const {createHash}=await import('node:crypto');
 let indexHtml=fs.readFileSync('dist/index.html','utf8');
-for(const asset of ['data.js','app.js','style.css','showcase.css']){
+for(const asset of ['data.js','app.js','style.css','showcase.css','document-covers.css']){
  const version=createHash('sha256').update(fs.readFileSync('dist/'+asset)).digest('hex').slice(0,12);
  indexHtml=indexHtml.replaceAll(new RegExp(asset.replaceAll('.', '\\.')+'(?:\\?v=[^"\\s]*)?(?=")','g'),asset+'?v='+version);
 }
