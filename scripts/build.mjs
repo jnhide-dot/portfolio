@@ -7,9 +7,9 @@ const idMap=Object.fromEntries(catalog.filter(d=>d.source).map(d=>[d.source,d.id
 function inline(s){
  return esc(s).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>').replace(/`([^`]+)`/g,'<code>$1</code>').replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+|files\/[\w./-]+)\)/g,'<a href="$2" target="_blank" rel="noopener noreferrer">$1 ↗</a>').replace(/&lt;br\s*\/?&gt;/g,'<br>').replace(/\\([~>|])/g,'$1');
 }
-function render(md){
+function render(md,keepHeadings=false){
  const saved=[]; const block=html=>`@@BLOCK${saved.push(html)-1}@@`;
- md=md.replace(/!\[([^\]]*)\]\((images\/(?:slides-20260928|content-20260929|nikke-20261002)\/[\w.-]+)\)/g,(_,alt,url)=>{if(!fs.existsSync(path.join('dist',url)))throw Error('Missing document image: '+url);const contentOnly=url.includes('/content-20260929/');return block('<figure class="'+(contentOnly?'content-visual':'source-slide')+'"><a href="'+esc(url)+'" target="_blank" rel="noopener" aria-label="'+esc(alt)+' 크게 보기"><img src="'+esc(url)+'" alt="'+esc(alt)+'" loading="lazy"'+(contentOnly?'':' width="1600" height="900"')+'></a><figcaption>'+esc(alt)+' · 눌러서 크게 보기</figcaption></figure>');});
+ md=md.replace(/!\[([^\]]*)\]\((images\/(?:slides-20260928|content-20260929|nikke-assets)\/[\w.-]+)\)/g,(_,alt,url)=>{if(!fs.existsSync(path.join('dist',url)))throw Error('Missing document image: '+url);const contentOnly=url.includes('/content-20260929/')||url.includes('/nikke-assets/');return block('<figure class="'+(contentOnly?'content-visual':'source-slide')+'"><a href="'+esc(url)+'" target="_blank" rel="noopener" aria-label="'+esc(alt)+' 크게 보기"><img src="'+esc(url)+'" alt="'+esc(alt)+'" loading="lazy"'+(contentOnly?'':' width="1600" height="900"')+'></a><figcaption>'+esc(alt)+' · 눌러서 크게 보기</figcaption></figure>');});
  md=md.replace(/!\[([^\]]*)\]\((files\/[\w./-]+)\)/g,(_,alt,url)=>block(fs.existsSync(path.join('dist',url))?'<img src="'+esc(url)+'" alt="'+esc(alt)+'" loading="lazy" style="max-width:100%;height:auto">':'<p class="empty-assets">원문 이미지 준비 중</p>'));
  md=md.replace(/```[^\n]*\n([\s\S]*?)```/g,(_,s)=>block('<pre><code>'+esc(s.trimEnd())+'</code></pre>'));
  md=md.replace(/^\|(.+)\|\r?\n\|[ :|\-]+\|\r?\n((?:\|.*\|(?:\r?\n|$))+)/gm,(_,head,body)=>{
@@ -22,14 +22,14 @@ function render(md){
  md=md.replace(/<[^>]+>/g,'').replace(/!\[[^\]]*\]\([^)]*\)/g,'');
  let result='',inList=false;const end=()=>{if(inList){result+='</ul>';inList=false;}};
  for(let line of md.split('\n')){line=line.trim();if(!line){end();continue;}const b=line.match(/^@@BLOCK(\d+)@@$/);if(b){end();result+=saved[+b[1]];continue;}
- const h=line.match(/^#{1,6}\s+(.+)$/);if(h){end();result+=`<h2>${inline(h[1])}</h2>`;continue;}
+ const h=line.match(/^(#{1,6})\s+(.+)$/);if(h){end();const level=keepHeadings?Math.max(2,h[1].length):2;result+=`<h${level}>${inline(h[2])}</h${level}>`;continue;}
  if(/^---+$/.test(line)){end();result+='<hr>';continue;}
  if(/^[-*]\s|^\d+\.\s/.test(line)){if(!inList){result+='<ul>';inList=true;}result+='<li>'+inline(line.replace(/^([-*]|\d+\.)\s+/,'').replace(/^\[[ x]\]\s*/,''))+'</li>';continue;}
  end();result+=line.startsWith('>')?'<blockquote>'+inline(line.slice(1).trim())+'</blockquote>':'<p>'+inline(line)+'</p>';
  }end();return result;
 }
 fs.mkdirSync('dist',{recursive:true});
-const docs=catalog.map(d=>({...d,body:render(fs.readFileSync(`content/${d.id}.md`,'utf8'))}));
+const docs=catalog.map(d=>({...d,body:render(fs.readFileSync(`content/${d.id}.md`,'utf8'),d.id==='nikke-meta')}));
 const attachments=JSON.parse(fs.readFileSync('content/attachments.json','utf8'));
 for(const a of attachments){if(!catalog.some(d=>d.id===a.document)||!a.title||!['문서','이미지','영상','빌드'].includes(a.type))throw Error('Invalid attachment');if(!/^https:\/\//.test(a.url)&&!/^files\/[\w./-]+$/.test(a.url))throw Error('Invalid URL');if(a.url.startsWith('files/')&&!fs.existsSync(path.join('dist',a.url)))throw Error('Missing attachment: '+a.url);}
 for(const a of attachments.filter(a=>a.url.startsWith('files/')&&a.url.endsWith('.md'))){
