@@ -140,5 +140,11 @@
     "title": "개발·인계 자료 목록",
     "type": "문서",
     "url": "files/project-md/project-md-handover.md"
+  },
+  {
+    "document": "nikke-meta",
+    "title": "노션 프로젝트 정리",
+    "type": "문서",
+    "url": "https://www.notion.so/3e3ec130625581efa33bc59b27b4196c"
   }
 ]

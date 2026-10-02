@@ -26,6 +26,19 @@
     "slidesUrl": "https://docs.google.com/presentation/d/16ZjA0ej_IvljuncLc4lCdY7Z6yJjbxXH7aXnWxo-vM8/edit"
   },
   {
+    "id": "nikke-meta",
+    "number": "03",
+    "title": "니케 메타 캐릭터 분석 — 신규 캐릭터 출시 방향 제안",
+    "group": "분석·제안",
+    "description": "전투 시스템 이해 · 메타 캐릭터 분석 · 조합 확장을 통한 구매 수요 확대",
+    "status": "완성본",
+    "source": "3e3ec130625581efa33bc59b27b4196c",
+    "syncedAt": "2026-10-02",
+    "deck": "nikke",
+    "primary": true,
+    "preview": "images/nikke-20261002/slide-01.webp"
+  },
+  {
     "id": "math-blitz",
     "number": "P1",
     "title": "매스 블리츠",
