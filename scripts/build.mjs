@@ -29,7 +29,7 @@ function render(md,keepHeadings=false){
  }end();return result;
 }
 fs.mkdirSync('dist',{recursive:true});
-const docs=catalog.map(d=>({...d,body:render(fs.readFileSync(`content/${d.id}.md`,'utf8'),d.primary===true)}));
+const docs=catalog.map(d=>({...d,body:d.contentFormat==='html'?fs.readFileSync(`content/${d.id}.html`,'utf8'):render(fs.readFileSync(`content/${d.id}.md`,'utf8'),d.primary===true)}));
 const attachments=JSON.parse(fs.readFileSync('content/attachments.json','utf8'));
 for(const a of attachments){if(!catalog.some(d=>d.id===a.document)||!a.title||!['문서','이미지','영상','빌드'].includes(a.type))throw Error('Invalid attachment');if(!/^https:\/\//.test(a.url)&&!/^files\/[\w./-]+$/.test(a.url))throw Error('Invalid URL');if(a.url.startsWith('files/')&&!fs.existsSync(path.join('dist',a.url)))throw Error('Missing attachment: '+a.url);}
 for(const a of attachments.filter(a=>a.url.startsWith('files/')&&a.url.endsWith('.md'))){
@@ -57,7 +57,7 @@ const dataScript='window.PORTFOLIO='+JSON.stringify({docs,attachments,playlist,i
 fs.writeFileSync('dist/data.js',dataScript);
 const {createHash}=await import('node:crypto');
 let indexHtml=fs.readFileSync('dist/index.html','utf8');
-for(const asset of ['data.js','app.js','style.css','showcase.css','document-covers.css']){
+for(const asset of ['data.js','app.js','style.css','showcase.css','document-covers.css','nikke-document.css']){
  const version=createHash('sha256').update(fs.readFileSync('dist/'+asset)).digest('hex').slice(0,12);
  indexHtml=indexHtml.replaceAll(new RegExp(asset.replaceAll('.', '\\.')+'(?:\\?v=[^"\\s]*)?(?=")','g'),asset+'?v='+version);
 }

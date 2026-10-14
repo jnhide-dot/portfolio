@@ -2,7 +2,7 @@
 
 ‘포트폴리오 키우기’의 전투 분석·비교·제안 문서와 매스 블리츠, ProjectG, ProjectMD 기록을 읽는 문서형 홈페이지입니다.
 
-- 문서 원본: `content/*.md`
+- 문서 원본: `content/*.md` · 니케 웹 전용 본문: `content/nikke-meta.html`
 - 제목·상태·목차: `content/catalog.json`
 - 첨부 자료 목록: `content/attachments.json`
 - 파일 추가·문서 편집: [관리 안내](EDITING.md)
