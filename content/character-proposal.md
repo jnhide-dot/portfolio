@@ -101,7 +101,7 @@
 
 ### 캐릭터 소개
 
-![캐릭터의 역할과 전투 구성](images/portfolio-20261002/spirit-visual-21.png)
+![캐릭터의 역할과 전투 구성](images/portfolio-20261002/spirit-visual-21-oct14.png)
 
 | 항목 | 내용 |
 |---|---|
@@ -114,7 +114,7 @@
 
 ### 전체 스킬
 
-![기본 공격·전투 스킬·필살기·연계·패시브](images/portfolio-20261002/spirit-visual-22.png)
+![기본 공격·전투 스킬·필살기·연계·패시브](images/portfolio-20261002/spirit-visual-22-oct14.png)
 
 | 스킬 | 기능 |
 |---|---|
