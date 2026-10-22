@@ -103,5 +103,8 @@
     "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ed/52/04/ed5204bb-2222-6209-564a-5e2aa15dce24/Placeholder.mill/1200x630wa.jpg",
     "source": "https://apps.apple.com/us/app/honkai-impact-3rd/id1336342304",
     "copyright": "COGNOSPHERE"
-  }
+  },
+  {"game":"warframe","title":"워프레임","url":"images/playlist/warframe.jpg","sourceNote":"기존 플레이 이력 이미지","copyright":"Digital Extremes"},
+  {"game":"rainbow-six-siege","title":"레인보우 식스 시즈","url":"images/playlist/rainbow-six-siege.jpg","sourceNote":"기존 플레이 이력 이미지","copyright":"Ubisoft"},
+  {"game":"monster-hunter-world-iceborne","title":"몬스터 헌터 월드: 아이스본","url":"images/playlist/monster-hunter-world-iceborne.jpg","sourceNote":"기존 플레이 이력 이미지","copyright":"CAPCOM"}
 ]

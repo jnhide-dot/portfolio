@@ -13,8 +13,11 @@
   "proficiency": "고숙련",
   "mainPlay": "파티 교체 오픈월드 액션",
   "mainContent": "전투",
-  "insight": "",
+  "insight": "새로운 원소 반응이나 파티의 편의성을 기대하며 캐릭터를 구매했습니다. 실제로 유용하게 쓴 캐릭터도 있지만, 기존 조합에서 쓸 자리를 찾지 못해 구매를 후회한 경험도 있습니다.",
   "progress": "Lv.60",
   "relatedDoc": "action-foundations",
-  "snapshot": "2026-09-14"
+  "snapshot": "2026-10-23",
+  "purchase": "약 1,398만 원",
+  "playRecord": "Lv.60",
+  "recordSource": "본인 작성"
 }
