@@ -1,4 +1,12 @@
-.document-card-art{position:relative;isolation:isolate;aspect-ratio:16/9;overflow:hidden;border-radius:6px;container-type:inline-size;margin-bottom:24px}
+.document-card-art{position:relative;isolation:isolate;aspect-ratio:16/9;overflow:hidden;border-radius:6px;container-type:inline-size;margin-bottom:24px;flex-shrink:0}
+.consumption-card-art{background:#142c4b;color:#fff;border-top:4px solid #7da9e7}
+.consumption-cover-panels{position:absolute;inset:0 -3% 0 43%;display:flex;transform:skewX(-9deg);overflow:hidden}
+.consumption-cover-panels>div{position:relative;width:33.333%;height:100%;overflow:hidden;background:#6e79a3;border-left:2px solid #b8d6f833}
+.consumption-cover-panels>div:nth-child(2){background:#90b1c8}.consumption-cover-panels>div:nth-child(3){background:#5a7d9b}
+.consumption-cover-panels img{position:absolute;width:210%;max-width:none;height:112%;left:-55%;top:-1%;object-fit:cover;object-position:50% 22%;transform:skewX(9deg);filter:saturate(.7)}
+.consumption-cover-panels>div:first-child img{width:150%;left:-25%;object-position:50% 14%}.consumption-cover-panels>div:nth-child(2) img{object-position:48% 18%}
+.consumption-card-art:after{content:'';position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,#142c4b 0%,#142c4bfa 33%,#142c4bb5 49%,#142c4b20 78%)}
+.consumption-card-art .cover-kicker{color:#bed8fa}.consumption-card-art .cover-caption{color:#d8e7fa;font-size:2.85cqi}.consumption-card-art .cover-index{color:#fff}
 .cover-copy{position:absolute;inset:0;z-index:3;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:7cqi;pointer-events:none}
 .cover-kicker{font-size:2.45cqi;font-weight:750;letter-spacing:.18em;margin-bottom:4cqi}
 .cover-copy strong{font-size:8.1cqi;font-weight:850;line-height:1.08;letter-spacing:-.035em}
