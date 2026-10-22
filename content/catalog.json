@@ -42,6 +42,19 @@
     "slidesUrl": "https://docs.google.com/presentation/d/1I_NpKtV6qQi9hcnyqCije1oypyNEp3_o2TDOJ7CPfXA/edit"
   },
   {
+    "id": "consumption-report",
+    "number": "04",
+    "title": "수집형 RPG 소비 분석 리포트",
+    "group": "분석",
+    "description": "실제 구매·포기·활용 경험을 비교하고 캐릭터 설계의 다섯 가지 질문으로 정리",
+    "status": "완성본",
+    "syncedAt": "2026-10-23",
+    "deck": "consumption",
+    "primary": true,
+    "contentFormat": "html",
+    "slidesUrl": "https://docs.google.com/presentation/d/19gX4JtKwmoZvzBRASvOpaJod5_PrDitFzr12RvyyGz0/edit"
+  },
+  {
     "id": "math-blitz",
     "number": "P1",
     "title": "매스 블리츠",

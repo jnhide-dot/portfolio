@@ -58,7 +58,7 @@ const dataScript='window.PORTFOLIO='+JSON.stringify({docs,attachments,playlist,i
 fs.writeFileSync('dist/data.js',dataScript);
 const {createHash}=await import('node:crypto');
 let indexHtml=fs.readFileSync('dist/index.html','utf8');
-for(const asset of ['data.js','app.js','style.css','showcase.css','document-covers.css','nikke-document.css']){
+for(const asset of ['data.js','app.js','style.css','showcase.css','document-covers.css','nikke-document.css','consumption-document.css']){
  const version=createHash('sha256').update(fs.readFileSync('dist/'+asset)).digest('hex').slice(0,12);
  indexHtml=indexHtml.replaceAll(new RegExp(asset.replaceAll('.', '\\.')+'(?:\\?v=[^"\\s]*)?(?=")','g'),asset+'?v='+version);
 }
