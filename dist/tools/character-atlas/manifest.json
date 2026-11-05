@@ -1,0 +1,2542 @@
+{
+  "schemaVersion": 1,
+  "version": "5d1c2a48ee5ffa6a",
+  "sourceHash": "d4e4b2a7f1007ab91b824cd5455652e9377c4daf755fe3bb4bef2a5a17b4b797",
+  "generatedAt": "2026-11-05T07:32:52.583Z",
+  "title": "캐릭터 아틀라스",
+  "asOf": "2026-10-25",
+  "updatedAt": "2026-11-04",
+  "counts": {
+    "characters": 95059,
+    "anime": 78034,
+    "games": 17025,
+    "koreanNames": 21383,
+    "embeddedImages": 151
+  },
+  "reader": {
+    "shared": {
+      "path": "data/reader-meta.1443bae4e23ae0fb.json.gz",
+      "bytes": 19177,
+      "decodedBytes": 62086,
+      "sha256": "1443bae4e23ae0fb6e0a97017f53a98166af670b3dac65e81d7b4bb589223481"
+    },
+    "parts": [
+      {
+        "path": "data/reader-000.630740592f70109d.json.gz",
+        "bytes": 791158,
+        "decodedBytes": 4164698,
+        "sha256": "630740592f70109d26bd27f8c8ab30896e58cd7462b6254600fd7d93e1f0f73f",
+        "records": 5000
+      },
+      {
+        "path": "data/reader-001.0b84ca2ce6e2dfd4.json.gz",
+        "bytes": 591139,
+        "decodedBytes": 3187058,
+        "sha256": "0b84ca2ce6e2dfd4868d825af073d344c0ea706f03309ffa475d2fee2a725583",
+        "records": 5000
+      },
+      {
+        "path": "data/reader-002.277d2bc051ad3025.json.gz",
+        "bytes": 522880,
+        "decodedBytes": 2914207,
+        "sha256": "277d2bc051ad3025b16aa0daa8d8d93f7280bdbd60573fb5e4b340440f59aff0",
+        "records": 5000
+      },
+      {
+        "path": "data/reader-003.7f07db73a92e4084.json.gz",
+        "bytes": 473621,
+        "decodedBytes": 2761092,
+        "sha256": "7f07db73a92e408472aa3de50fba01329ead4665f3623b0bd61373048a4049bb",
+        "records": 5000
+      },
+      {
+        "path": "data/reader-004.806fb2f9cdcd47c1.json.gz",
+        "bytes": 434706,
+        "decodedBytes": 2651879,
+        "sha256": "806fb2f9cdcd47c1b6f4941b23b52991518ea9e20bc9c9951925b0a6814c8028",
+        "records": 5000
+      },
+      {
+        "path": "data/reader-005.83c5f4a70de0bd33.json.gz",
+        "bytes": 402426,
+        "decodedBytes": 2552040,
+        "sha256": "83c5f4a70de0bd339dd83b3fdb080176fef82429e0e3ef968ff471266dca8aca",
+        "records": 5000
+      },
+      {
+        "path": "data/reader-006.0f72e29be3f05602.json.gz",
+        "bytes": 377831,
+        "decodedBytes": 2504870,
+        "sha256": "0f72e29be3f056024e9ba8a339016e6dcbdb7cd4243d4455851880163bf29012",
+        "records": 5000
+      },
+      {
+        "path": "data/reader-007.601fe566f5a4a35c.json.gz",
+        "bytes": 352162,
+        "decodedBytes": 2451682,
+        "sha256": "601fe566f5a4a35c130833f45a320756a74d37da7544dbf8ac0ea7f2e7daebec",
+        "records": 5000
+      },
+      {
+        "path": "data/reader-008.0f098296e2f70e20.json.gz",
+        "bytes": 310742,
+        "decodedBytes": 2387485,
+        "sha256": "0f098296e2f70e208ef831846c2db21ab4e4f1db9b628e305bdccaae531fa611",
+        "records": 5000
+      },
+      {
+        "path": "data/reader-009.b334d63ea60a908c.json.gz",
+        "bytes": 308129,
+        "decodedBytes": 2359504,
+        "sha256": "b334d63ea60a908c14da26697bcc4443cce0e6f95d92f628060ff3cb27ca3909",
+        "records": 5000
+      },
+      {
+        "path": "data/reader-010.df10d86026536d8b.json.gz",
+        "bytes": 240807,
+        "decodedBytes": 2301753,
+        "sha256": "df10d86026536d8b3783fc10ae41a8e70918bea6e7a9ea4583935b2f7f1bc583",
+        "records": 5000
+      },
+      {
+        "path": "data/reader-011.f3e1db4c41165dce.json.gz",
+        "bytes": 249179,
+        "decodedBytes": 2235256,
+        "sha256": "f3e1db4c41165dce8527aefc9130e3d9dcd2d34ad18322e8e019a4896367725b",
+        "records": 5000
+      },
+      {
+        "path": "data/reader-012.958d3aadb23d7ac4.json.gz",
+        "bytes": 247176,
+        "decodedBytes": 2251909,
+        "sha256": "958d3aadb23d7ac4ff390599e9c459cfbf4c6fb915950cf5b3690256b3bed675",
+        "records": 5000
+      },
+      {
+        "path": "data/reader-013.10302697100718e3.json.gz",
+        "bytes": 247971,
+        "decodedBytes": 2319217,
+        "sha256": "10302697100718e362e4b463c535d58a748616b2a51225166a53ce8fc7d8c83b",
+        "records": 5000
+      },
+      {
+        "path": "data/reader-014.f56e338dfa83b314.json.gz",
+        "bytes": 242464,
+        "decodedBytes": 2254706,
+        "sha256": "f56e338dfa83b31471a8c4f835dabfe888f6b597147edf9e649deb8451561155",
+        "records": 5000
+      },
+      {
+        "path": "data/reader-015.778c671d3792bae2.json.gz",
+        "bytes": 277903,
+        "decodedBytes": 3053166,
+        "sha256": "778c671d3792bae281eb984fa67654fd3e132e49b52fa3a3bc3df59513e8332b",
+        "records": 5000
+      },
+      {
+        "path": "data/reader-016.f730cd54c8ac3fc1.json.gz",
+        "bytes": 291762,
+        "decodedBytes": 3171680,
+        "sha256": "f730cd54c8ac3fc1f2a5428a46a9573a53581c0e7dcd0a92dea54eacb26fdd5f",
+        "records": 5000
+      },
+      {
+        "path": "data/reader-017.139a4b698e2a7d61.json.gz",
+        "bytes": 238588,
+        "decodedBytes": 2861140,
+        "sha256": "139a4b698e2a7d61d21b53a27b095541abcb696d0bef56419c1710f7eb236d19",
+        "records": 5000
+      },
+      {
+        "path": "data/reader-018.a031f3ee23088492.json.gz",
+        "bytes": 275745,
+        "decodedBytes": 2889872,
+        "sha256": "a031f3ee23088492dacbb38de6aeb37c2ab8f05ce40feca0d8148784d2ec145c",
+        "records": 5000
+      },
+      {
+        "path": "data/reader-019.d58633d456271964.json.gz",
+        "bytes": 3705,
+        "decodedBytes": 27440,
+        "sha256": "d58633d45627196426528bb7166c807847c8d95f98293ae2749f4a990a6b39c4",
+        "records": 59
+      }
+    ],
+    "transferBytes": 6899271
+  },
+  "research": {
+    "fields": {
+      "meta": {
+        "type": "value",
+        "parts": [
+          {
+            "path": "data/research-meta.3bcdb85878e39b37.json.gz",
+            "bytes": 274,
+            "decodedBytes": 297,
+            "sha256": "3bcdb85878e39b37b97fab72617c0cef32b4a7ea42be34cc77c140fd0156b3a1"
+          }
+        ]
+      },
+      "labels": {
+        "type": "value",
+        "parts": [
+          {
+            "path": "data/research-labels.928ace6a8dbdd1b9.json.gz",
+            "bytes": 12579,
+            "decodedBytes": 25953,
+            "sha256": "928ace6a8dbdd1b9b4b0f2e1181cc1abaceb406f9ad71d19aefaac7243fee3ff"
+          }
+        ]
+      },
+      "characters": {
+        "type": "array",
+        "parts": [
+          {
+            "path": "data/research-characters-000.9f9b00f44397d75b.json.gz",
+            "bytes": 1091596,
+            "decodedBytes": 8388167,
+            "sha256": "9f9b00f44397d75be090e65086ab642f9ad33beeef157308ab5371b0f059ee94",
+            "records": 1237
+          },
+          {
+            "path": "data/research-characters-001.7b55440d97f2eec6.json.gz",
+            "bytes": 990416,
+            "decodedBytes": 8387136,
+            "sha256": "7b55440d97f2eec6ea9b79110a64a5829d4ce43992f751d318b730e3877a968b",
+            "records": 1652
+          },
+          {
+            "path": "data/research-characters-002.c4bc408f55ab0757.json.gz",
+            "bytes": 947970,
+            "decodedBytes": 8386256,
+            "sha256": "c4bc408f55ab075713be487ad2ce76fe5e96f89801e99c9a5fe9719c2ca5c260",
+            "records": 1898
+          },
+          {
+            "path": "data/research-characters-003.23f0ef18e897c030.json.gz",
+            "bytes": 923172,
+            "decodedBytes": 8387996,
+            "sha256": "23f0ef18e897c03008bb0d745d2b4267f38324ff9434d0b473cbf25d54ddff94",
+            "records": 2082
+          },
+          {
+            "path": "data/research-characters-004.90d81647b366ceb1.json.gz",
+            "bytes": 919017,
+            "decodedBytes": 8384845,
+            "sha256": "90d81647b366ceb168db8a8bb5d8ef1a123622e6d14f9f587ea0281cc837620f",
+            "records": 2259
+          },
+          {
+            "path": "data/research-characters-005.9adf9aadf147c1bc.json.gz",
+            "bytes": 891534,
+            "decodedBytes": 8388122,
+            "sha256": "9adf9aadf147c1bc52d7f61037ac014df4e6f200d6dd316ee5ca40d1b74e84f8",
+            "records": 2409
+          },
+          {
+            "path": "data/research-characters-006.ab253ab8a9a72331.json.gz",
+            "bytes": 874777,
+            "decodedBytes": 8387167,
+            "sha256": "ab253ab8a9a723314489f7fde007ce80a7fd82699c269467c001db94ff67dccf",
+            "records": 2516
+          },
+          {
+            "path": "data/research-characters-007.ba0a46ecfe0c7744.json.gz",
+            "bytes": 841423,
+            "decodedBytes": 8388248,
+            "sha256": "ba0a46ecfe0c77444ad593810b46c6ec96e4a16a20ad4b4483696196a3dc78b4",
+            "records": 2638
+          },
+          {
+            "path": "data/research-characters-008.6e1221d22497aaeb.json.gz",
+            "bytes": 815533,
+            "decodedBytes": 8387459,
+            "sha256": "6e1221d22497aaeb3090c232a3a441163f7782292a8678e245a9fcd35024bbd8",
+            "records": 2669
+          },
+          {
+            "path": "data/research-characters-009.7962bcc31b0d1601.json.gz",
+            "bytes": 781280,
+            "decodedBytes": 8387474,
+            "sha256": "7962bcc31b0d1601b779b706bde95e432a9efa7a18f01bc83b712cded63799ca",
+            "records": 2758
+          },
+          {
+            "path": "data/research-characters-010.4a783d2d89b5293f.json.gz",
+            "bytes": 755587,
+            "decodedBytes": 8387553,
+            "sha256": "4a783d2d89b5293f940703b29ed62f27ad1d49e161959d1ab6508660b14eb629",
+            "records": 2822
+          },
+          {
+            "path": "data/research-characters-011.404342401f668a95.json.gz",
+            "bytes": 727388,
+            "decodedBytes": 8386995,
+            "sha256": "404342401f668a953b94dd32ef154bfb403c2d35df2420271f6bd53861a531ae",
+            "records": 2885
+          },
+          {
+            "path": "data/research-characters-012.b2230257a0aef26a.json.gz",
+            "bytes": 701842,
+            "decodedBytes": 8386379,
+            "sha256": "b2230257a0aef26a416bfc4eb1805aaf70d80827cf44a8bfeeeac36b4219a1af",
+            "records": 2920
+          },
+          {
+            "path": "data/research-characters-013.a574568cfe9d562f.json.gz",
+            "bytes": 671570,
+            "decodedBytes": 8388219,
+            "sha256": "a574568cfe9d562fd07057cc863223e4064d251ff24bcac19f647626b2f0a324",
+            "records": 2970
+          },
+          {
+            "path": "data/research-characters-014.0f99e7089048b9c4.json.gz",
+            "bytes": 659245,
+            "decodedBytes": 8388291,
+            "sha256": "0f99e7089048b9c48f2a021c2231814c587be002d822bce3da80190d02232787",
+            "records": 2975
+          },
+          {
+            "path": "data/research-characters-015.00ea1deea20ab74c.json.gz",
+            "bytes": 604012,
+            "decodedBytes": 8388012,
+            "sha256": "00ea1deea20ab74c6223e9e873afbdd4c016e7fc8fef860d0f8be55dc7b5c62e",
+            "records": 3066
+          },
+          {
+            "path": "data/research-characters-016.1580a8b13dae6c88.json.gz",
+            "bytes": 579581,
+            "decodedBytes": 8387211,
+            "sha256": "1580a8b13dae6c88ae357ec1bb87185ac5bb3010c398b580a0f721990b6941bd",
+            "records": 3054
+          },
+          {
+            "path": "data/research-characters-017.45513d8a71807c33.json.gz",
+            "bytes": 505929,
+            "decodedBytes": 8387784,
+            "sha256": "45513d8a71807c33c4e31d484fe451c082baf2b518df3d4afd58c46fc935e0b8",
+            "records": 3153
+          },
+          {
+            "path": "data/research-characters-018.8c4e9e60ec9d34bb.json.gz",
+            "bytes": 548698,
+            "decodedBytes": 8386719,
+            "sha256": "8c4e9e60ec9d34bbe2a5ce72529fade4c0d957b741356b060c762aa8713d474e",
+            "records": 3138
+          },
+          {
+            "path": "data/research-characters-019.c5efd16474134c6c.json.gz",
+            "bytes": 451647,
+            "decodedBytes": 8384993,
+            "sha256": "c5efd16474134c6c07d190c94ac9ead2d5d2246cc119a3366314ecb7c4124976",
+            "records": 3136
+          },
+          {
+            "path": "data/research-characters-020.4e6953e25b442a87.json.gz",
+            "bytes": 332650,
+            "decodedBytes": 8386290,
+            "sha256": "4e6953e25b442a878354713deb1f8a8c2f4b0b6bff4e9bb2afbc0a23fd398a6d",
+            "records": 3241
+          },
+          {
+            "path": "data/research-characters-021.3605da7d3afade46.json.gz",
+            "bytes": 384240,
+            "decodedBytes": 8388605,
+            "sha256": "3605da7d3afade4617953f9458bb7fc2a11d4f61ccb71ba2ff8c557880810851",
+            "records": 3224
+          },
+          {
+            "path": "data/research-characters-022.cc4cfbf218a10698.json.gz",
+            "bytes": 376780,
+            "decodedBytes": 8387551,
+            "sha256": "cc4cfbf218a10698d44c739f60c05706a04176d20c5eaaa8e5223986f382b471",
+            "records": 3271
+          },
+          {
+            "path": "data/research-characters-023.1ca279457a5eb6af.json.gz",
+            "bytes": 395892,
+            "decodedBytes": 8388336,
+            "sha256": "1ca279457a5eb6afcecc6974fb3b458fd27c03d55ac6f296a7265ea00a3b4f7c",
+            "records": 3201
+          },
+          {
+            "path": "data/research-characters-024.ea4e84153c7fe906.json.gz",
+            "bytes": 364976,
+            "decodedBytes": 8387522,
+            "sha256": "ea4e84153c7fe9063ec5a66020a5b1de283a13ca8fc1cb03b515170b875389b1",
+            "records": 3171
+          },
+          {
+            "path": "data/research-characters-025.bdf160825369a784.json.gz",
+            "bytes": 372849,
+            "decodedBytes": 8388032,
+            "sha256": "bdf160825369a7841c757523da81dda7571b3d2c3633ca9ee6468b9db432853f",
+            "records": 3240
+          },
+          {
+            "path": "data/research-characters-026.6d9396f80466f06c.json.gz",
+            "bytes": 408526,
+            "decodedBytes": 8386866,
+            "sha256": "6d9396f80466f06ce3a6f96070d333aab6ccb4d31478d79b1aac0e302f2c4427",
+            "records": 3204
+          },
+          {
+            "path": "data/research-characters-027.b1c475f7312a8f52.json.gz",
+            "bytes": 439413,
+            "decodedBytes": 8386597,
+            "sha256": "b1c475f7312a8f526c6f45d279225f24dc5c26d8e79a0d71c5b2ed50513e5453",
+            "records": 2252
+          },
+          {
+            "path": "data/research-characters-028.6a00989bd0352ca2.json.gz",
+            "bytes": 400856,
+            "decodedBytes": 8388513,
+            "sha256": "6a00989bd0352ca2b2f549b78b17e4a3790a32fbeebb52188c2c481433cec023",
+            "records": 2718
+          },
+          {
+            "path": "data/research-characters-029.e9f17bbbb7586df4.json.gz",
+            "bytes": 311684,
+            "decodedBytes": 8386947,
+            "sha256": "e9f17bbbb7586df46a2e56b3d07e5ae2b1b8d3c62dc97357c2b43ebbec15a24f",
+            "records": 2880
+          },
+          {
+            "path": "data/research-characters-030.9f7552ad83c3807a.json.gz",
+            "bytes": 339043,
+            "decodedBytes": 8386830,
+            "sha256": "9f7552ad83c3807aaff0809eb5532cf952753f9bc84633cc382d59a634a39935",
+            "records": 2942
+          },
+          {
+            "path": "data/research-characters-031.4eff038d8053dfd7.json.gz",
+            "bytes": 350787,
+            "decodedBytes": 8386371,
+            "sha256": "4eff038d8053dfd726e63ed2bbf42b69eb174ab14ea93cee76311a024bb7781c",
+            "records": 3473
+          },
+          {
+            "path": "data/research-characters-032.7a8a7699beab5917.json.gz",
+            "bytes": 300166,
+            "decodedBytes": 8387902,
+            "sha256": "7a8a7699beab5917426d519cb800b5d0405dd90dcd9ef362fa1378385e799710",
+            "records": 2878
+          },
+          {
+            "path": "data/research-characters-033.a9429bcaac206aa1.json.gz",
+            "bytes": 274193,
+            "decodedBytes": 7424862,
+            "sha256": "a9429bcaac206aa1791429e6ebdfc210f59ba142cd0f887874d304bc4936cfc1",
+            "records": 3127
+          }
+        ]
+      },
+      "taxonomy": {
+        "type": "array",
+        "parts": [
+          {
+            "path": "data/research-taxonomy-000.72579dd7607e8463.json.gz",
+            "bytes": 6512,
+            "decodedBytes": 35805,
+            "sha256": "72579dd7607e846343a9ae8d8c73989a593f295e10c94c70e2dccd71bf555542",
+            "records": 87
+          }
+        ]
+      },
+      "coverage": {
+        "type": "value",
+        "parts": [
+          {
+            "path": "data/research-coverage.b9a8d55863f72d06.json.gz",
+            "bytes": 531988,
+            "decodedBytes": 5681044,
+            "sha256": "b9a8d55863f72d061dcd0ff4dc0926092c0cfab9ecad903a09517f8e3907bf9c"
+          }
+        ]
+      },
+      "reviews": {
+        "type": "array",
+        "parts": [
+          {
+            "path": "data/research-reviews-000.06897b75bc47c29c.json.gz",
+            "bytes": 10586,
+            "decodedBytes": 210706,
+            "sha256": "06897b75bc47c29c92cece9c7ef286dfb65442dd0f3d08ebd9fa2c623f697170",
+            "records": 3
+          },
+          {
+            "path": "data/research-reviews-001.d60bd4c13253101c.json.gz",
+            "bytes": 1320238,
+            "decodedBytes": 17844173,
+            "sha256": "d60bd4c13253101cc99c606eac76063dc50b39b8b95be6f669b7fd7c1955c41c",
+            "records": 1
+          },
+          {
+            "path": "data/research-reviews-002.afac08c1ec843bbc.json.gz",
+            "bytes": 87563,
+            "decodedBytes": 508031,
+            "sha256": "afac08c1ec843bbc2100032f545e0341036158bfd3b76dd309331139d88f6da2",
+            "records": 14
+          }
+        ]
+      },
+      "animeWorks": {
+        "type": "array",
+        "parts": [
+          {
+            "path": "data/research-animeWorks-000.ff5a83a972a37879.json.gz",
+            "bytes": 1394838,
+            "decodedBytes": 8385515,
+            "sha256": "ff5a83a972a378796d6048ba69f97d2050354bb149163cbadce15747fbb51d8b",
+            "records": 12563
+          },
+          {
+            "path": "data/research-animeWorks-001.2c703f51cf8c01b4.json.gz",
+            "bytes": 44714,
+            "decodedBytes": 334414,
+            "sha256": "2c703f51cf8c01b413269074e487115d0f738b34e2ff8f30bfe221906fab1fd9",
+            "records": 193
+          }
+        ]
+      },
+      "excludedAnimeCharacters": {
+        "type": "array",
+        "parts": [
+          {
+            "path": "data/research-excludedAnimeCharacters-000.5de3332ef19a7303.json.gz",
+            "bytes": 147787,
+            "decodedBytes": 3273158,
+            "sha256": "5de3332ef19a7303e745e906b4bfd1e7bc5374031d724cdc13401c8f858bab76",
+            "records": 8124
+          }
+        ]
+      },
+      "gameWorks": {
+        "type": "array",
+        "parts": [
+          {
+            "path": "data/research-gameWorks-000.b127c53c8f39a51d.json.gz",
+            "bytes": 13958,
+            "decodedBytes": 91213,
+            "sha256": "b127c53c8f39a51d955799407d9f8191422dccc36051ac3c5d1db423a329cc3a",
+            "records": 78
+          }
+        ]
+      },
+      "excludedGames": {
+        "type": "array",
+        "parts": [
+          {
+            "path": "data/research-excludedGames-000.de2a40048501e3b6.json.gz",
+            "bytes": 231839,
+            "decodedBytes": 8388313,
+            "sha256": "de2a40048501e3b674f2ba1f2d51810ca78628bb5021f501dcb05af47ac31666",
+            "records": 3239
+          },
+          {
+            "path": "data/research-excludedGames-001.0101cc9ab454789c.json.gz",
+            "bytes": 181592,
+            "decodedBytes": 8387724,
+            "sha256": "0101cc9ab454789c80c17943a7faf340c5534ee62ba10e9da11c27c9e489fe35",
+            "records": 3029
+          },
+          {
+            "path": "data/research-excludedGames-002.61c88fb0f7fe94c7.json.gz",
+            "bytes": 127909,
+            "decodedBytes": 5070481,
+            "sha256": "61c88fb0f7fe94c70a5da7819e9c9e4f1c2514f109c1032c0464515769eeb76a",
+            "records": 1820
+          }
+        ]
+      }
+    },
+    "transferBytes": 24446649
+  },
+  "images": {
+    "entries": [
+      {
+        "id": "game-mobile-b-guardian-1st-corps-commander-5b3d806",
+        "path": "images/cfd5d2e23c67d0396b742df3.webp",
+        "mime": "image/webp",
+        "bytes": 49738,
+        "sha256": "cfd5d2e23c67d0396b742df3932150be9c858a674d059518fb82b7246e25112c"
+      },
+      {
+        "id": "game-mobile-b-guardian-android-mk-99-22cd03d",
+        "path": "images/eca4b7535d993d2038cdbbdd.webp",
+        "mime": "image/webp",
+        "bytes": 58982,
+        "sha256": "eca4b7535d993d2038cdbbdd7334fe5ebb835c00a42a053f4d3f27c583a592e5"
+      },
+      {
+        "id": "game-mobile-b-guardian-android-twin-nifty-24041e2",
+        "path": "images/0a6a6c95ee0c0bcbef68bc8a.webp",
+        "mime": "image/webp",
+        "bytes": 59182,
+        "sha256": "0a6a6c95ee0c0bcbef68bc8a9df610ddc384d87dbdc1e8742865e012786272d5"
+      },
+      {
+        "id": "game-mobile-b-guardian-archangel-gabriel-4a62839",
+        "path": "images/9392b4b95c0737d80b2d6a2d.webp",
+        "mime": "image/webp",
+        "bytes": 64910,
+        "sha256": "9392b4b95c0737d80b2d6a2d105343e60fee72026135779450f7e9b8101e56dd"
+      },
+      {
+        "id": "game-mobile-b-guardian-autonomous-android-mk-2-1a68212",
+        "path": "images/e31ef29e44cd18498653a1c8.webp",
+        "mime": "image/webp",
+        "bytes": 108580,
+        "sha256": "e31ef29e44cd18498653a1c8a40ed2dda68ba99c01d54d1c8d763d77a7944197"
+      },
+      {
+        "id": "game-mobile-b-guardian-avatar-of-balance-lacrima-104b35a",
+        "path": "images/3a520433c608e610d1e12ed4.webp",
+        "mime": "image/webp",
+        "bytes": 62562,
+        "sha256": "3a520433c608e610d1e12ed41016def5dbf7753b7db46382890444666d91d8dc"
+      },
+      {
+        "id": "game-mobile-b-guardian-baby-dokkaebi-eunha-257a1de",
+        "path": "images/0ca21598f5ce0c56ce5fb44e.webp",
+        "mime": "image/webp",
+        "bytes": 59816,
+        "sha256": "0ca21598f5ce0c56ce5fb44efffad7fa0f071b5cb38fe9def26b3281c9917b11"
+      },
+      {
+        "id": "game-mobile-b-guardian-beach-cleanup-hitter-rie-c15974b",
+        "path": "images/cedd6adc84a8a43dd2ddb142.webp",
+        "mime": "image/webp",
+        "bytes": 57556,
+        "sha256": "cedd6adc84a8a43dd2ddb142520e981eb9a757ab8f4f6193852f56b547fbef47"
+      },
+      {
+        "id": "game-mobile-b-guardian-beach-dragon-knight-shapira-74beea2",
+        "path": "images/9dcbc68cb847ad49f1751154.webp",
+        "mime": "image/webp",
+        "bytes": 69680,
+        "sha256": "9dcbc68cb847ad49f175115495eb7b6cc1804200a2a0e9347caf3e44577bf1ab"
+      },
+      {
+        "id": "game-mobile-b-guardian-beach-maid-amy-f2ad279",
+        "path": "images/36ebdfd0219d09b994819d06.webp",
+        "mime": "image/webp",
+        "bytes": 81760,
+        "sha256": "36ebdfd0219d09b994819d06f5f3ee39977153cc6e051d8ce32ac89b35c94cc8"
+      },
+      {
+        "id": "game-mobile-b-guardian-beach-racer-rachel-4beae74",
+        "path": "images/a4f7553531cc8d2dd4d3cc00.webp",
+        "mime": "image/webp",
+        "bytes": 85294,
+        "sha256": "a4f7553531cc8d2dd4d3cc001422d9918c55cb5a125ae1fba00b4a1b9b41862b"
+      },
+      {
+        "id": "game-mobile-b-guardian-chocolate-collector-ameris-5a225d1",
+        "path": "images/8ecfa012d8219628a20c4770.webp",
+        "mime": "image/webp",
+        "bytes": 87542,
+        "sha256": "8ecfa012d8219628a20c477087d846a7b97e4e2b8783812f278e875136335530"
+      },
+      {
+        "id": "game-mobile-b-guardian-chosen-one-s-archpriestess-veronica-81d8087",
+        "path": "images/7927f69066314deecbd4b305.webp",
+        "mime": "image/webp",
+        "bytes": 91870,
+        "sha256": "7927f69066314deecbd4b305b2b0ed68ff024af1160b4ebc09ac17045f2c8edd"
+      },
+      {
+        "id": "game-mobile-b-guardian-codename-j-2cbf48a",
+        "path": "images/8a8922f2d68c7cdb654bc711.webp",
+        "mime": "image/webp",
+        "bytes": 50684,
+        "sha256": "8a8922f2d68c7cdb654bc71142882c7f29fdeb17ae4bbb5ac5a3cfd135d1af1b"
+      },
+      {
+        "id": "game-mobile-b-guardian-contractee-crosselle-0feb0e1",
+        "path": "images/a883651e6fe559d9be3304a0.webp",
+        "mime": "image/webp",
+        "bytes": 61224,
+        "sha256": "a883651e6fe559d9be3304a08b2929b475f780c9cce1461eb12e5f44112b2b7a"
+      },
+      {
+        "id": "game-mobile-b-guardian-cyborg-monk-chun-ryeo-c9b8ffe",
+        "path": "images/0d24a1bd1fb5169df1fa32ed.webp",
+        "mime": "image/webp",
+        "bytes": 44858,
+        "sha256": "0d24a1bd1fb5169df1fa32edcbfd4bba127083905ecbbeaa81f62e7805f2b33e"
+      },
+      {
+        "id": "game-mobile-b-guardian-dancing-archer-tinia-164f14d",
+        "path": "images/60358857e5b4e90122faa450.webp",
+        "mime": "image/webp",
+        "bytes": 114602,
+        "sha256": "60358857e5b4e90122faa450bef500506c2d4377ab06acf1f7da4b79a2ee258b"
+      },
+      {
+        "id": "game-mobile-b-guardian-dark-magician-beth-0fe1517",
+        "path": "images/0cb3e38d0bda8cfd0bc05cd3.webp",
+        "mime": "image/webp",
+        "bytes": 56258,
+        "sha256": "0cb3e38d0bda8cfd0bc05cd3990bb2d44bf101aad544107be3ed582a7460c76f"
+      },
+      {
+        "id": "game-mobile-b-guardian-defender-of-the-forest-estel-9d14f02",
+        "path": "images/2dcfa6a461c3090f590ca2a8.webp",
+        "mime": "image/webp",
+        "bytes": 85030,
+        "sha256": "2dcfa6a461c3090f590ca2a8653aede9bb4675ca525aba2534e55d87d3111016"
+      },
+      {
+        "id": "game-mobile-b-guardian-demon-queen-lilith-7ee41a1",
+        "path": "images/926b160f00523826952b0308.webp",
+        "mime": "image/webp",
+        "bytes": 44152,
+        "sha256": "926b160f00523826952b0308c6d6b15e9c9898704e8fff5786ca27134743d235"
+      },
+      {
+        "id": "game-mobile-b-guardian-demonshire-s-count-claude-b3f1aee",
+        "path": "images/58b38fb5ce5a69e1c3c43ad7.webp",
+        "mime": "image/webp",
+        "bytes": 55394,
+        "sha256": "58b38fb5ce5a69e1c3c43ad7046d4bed52ed3f9b1f713bce372e0792982d2090"
+      },
+      {
+        "id": "game-mobile-b-guardian-destroyer-pymon-31213b0",
+        "path": "images/c61a30a2ef26368d6396b816.webp",
+        "mime": "image/webp",
+        "bytes": 63558,
+        "sha256": "c61a30a2ef26368d6396b81645fe341c0d0468ed92ad21ff8ffcda72c235f5d5"
+      },
+      {
+        "id": "game-mobile-b-guardian-divine-beast-of-harvest-mayreel-b81c2f3",
+        "path": "images/6b4be41dc6b34daa30cde4ea.webp",
+        "mime": "image/webp",
+        "bytes": 75620,
+        "sha256": "6b4be41dc6b34daa30cde4ea3500b1f5b2b856acab2dfa709faf64586a11dc2d"
+      },
+      {
+        "id": "game-mobile-b-guardian-dragon-avatar-vishuvac-700cbab",
+        "path": "images/d6f29300f520922a57e44242.webp",
+        "mime": "image/webp",
+        "bytes": 62662,
+        "sha256": "d6f29300f520922a57e44242dbd69f1e0d51538cae10bb02ee9f91cdb0fc90b4"
+      },
+      {
+        "id": "game-mobile-b-guardian-dragon-of-the-vast-sea-yun-dd8fc97",
+        "path": "images/dd56de00cf32b6e3ed7f35c7.webp",
+        "mime": "image/webp",
+        "bytes": 72152,
+        "sha256": "dd56de00cf32b6e3ed7f35c7f176fea4fa1414bc3558f29eecae93854f8a7c07"
+      },
+      {
+        "id": "game-mobile-b-guardian-druid-kanna-a967374",
+        "path": "images/8795ed032ecaad48a013a21e.webp",
+        "mime": "image/webp",
+        "bytes": 84470,
+        "sha256": "8795ed032ecaad48a013a21e174987ce46250b5829c11c0f16c823cb1219028f"
+      },
+      {
+        "id": "game-mobile-b-guardian-drunken-swordmaster-lynn-943ce28",
+        "path": "images/523d49d7e1f85c6b3ca8c368.webp",
+        "mime": "image/webp",
+        "bytes": 65896,
+        "sha256": "523d49d7e1f85c6b3ca8c3683b7995dc682ca7f8394cf8868b327e9afaeff6a5"
+      },
+      {
+        "id": "game-mobile-b-guardian-eight-star-demon-lord-rimuru-tempest-fbcbf64",
+        "path": "images/9708e4271ebbcce647d8b0e4.webp",
+        "mime": "image/webp",
+        "bytes": 45850,
+        "sha256": "9708e4271ebbcce647d8b0e40a08474f86a8c474e61d31f8511bf253accd3966"
+      },
+      {
+        "id": "game-mobile-b-guardian-eight-tailed-fox-nari-450194f",
+        "path": "images/b54f8db71b3fd5dbffe2e1b1.webp",
+        "mime": "image/webp",
+        "bytes": 61886,
+        "sha256": "b54f8db71b3fd5dbffe2e1b1542563bdeaae24dfa25183ac147588be2469fb37"
+      },
+      {
+        "id": "game-mobile-b-guardian-elder-dragon-s-daughter-ameris-cafdb3d",
+        "path": "images/c2d00bb1cab1bf7081bf2c16.webp",
+        "mime": "image/webp",
+        "bytes": 59336,
+        "sha256": "c2d00bb1cab1bf7081bf2c162898e69e9d4bffb61f1c47cd8c8aa541fbbe96e0"
+      },
+      {
+        "id": "game-mobile-b-guardian-elemental-of-christmas-carol-b5e62a1",
+        "path": "images/3c3db823ca00178c39b3f178.webp",
+        "mime": "image/webp",
+        "bytes": 76392,
+        "sha256": "3c3db823ca00178c39b3f178a894c584a0e27eea57416d97e87f95c1000cd5ea"
+      },
+      {
+        "id": "game-mobile-b-guardian-elite-ninja-natsume-f02ff46",
+        "path": "images/4c2338e59525c82e55b84b5d.webp",
+        "mime": "image/webp",
+        "bytes": 73606,
+        "sha256": "4c2338e59525c82e55b84b5ded04d09050ca2fdf87b62a8dcf707e5c40ca36ed"
+      },
+      {
+        "id": "game-mobile-b-guardian-elite-royal-guard-captain-valencia-634590d",
+        "path": "images/51cb25e94553759244f0e5f2.webp",
+        "mime": "image/webp",
+        "bytes": 58676,
+        "sha256": "51cb25e94553759244f0e5f2882a5fd3c75ad27061d66b2a16afdd79de1f5c8d"
+      },
+      {
+        "id": "game-mobile-b-guardian-executive-red-hood-arabelle-adee5f4",
+        "path": "images/67b9a05389da2059aab1c1c5.webp",
+        "mime": "image/webp",
+        "bytes": 59368,
+        "sha256": "67b9a05389da2059aab1c1c5de96e3e8ed2109d154e63745e642560c268c16bd"
+      },
+      {
+        "id": "game-mobile-b-guardian-exorcist-miya-e407ff8",
+        "path": "images/c069326e86f270e54244ceed.webp",
+        "mime": "image/webp",
+        "bytes": 148292,
+        "sha256": "c069326e86f270e54244ceed76335b3422fc2a3c45166d56b8b500a56f339ca6"
+      },
+      {
+        "id": "game-mobile-b-guardian-exorcist-swordswoman-saya-8293b4e",
+        "path": "images/5936bd752ec6b57eb932044e.webp",
+        "mime": "image/webp",
+        "bytes": 75410,
+        "sha256": "5936bd752ec6b57eb932044ef377d31c41297dcfe021ec1ae26f49e985058771"
+      },
+      {
+        "id": "game-mobile-b-guardian-first-class-mage-fern-7c2cb81",
+        "path": "images/2e3056519458d46bbcd82b1a.webp",
+        "mime": "image/webp",
+        "bytes": 88244,
+        "sha256": "2e3056519458d46bbcd82b1a4c0027b272b710f1865268c1481fef868b0f2bae"
+      },
+      {
+        "id": "game-mobile-b-guardian-flame-harpy-scintilla-18d141e",
+        "path": "images/056c849f260be7298ceb4ed4.webp",
+        "mime": "image/webp",
+        "bytes": 95460,
+        "sha256": "056c849f260be7298ceb4ed42fcadd1a428c882c4e091d600e5b84fe7c0ae109"
+      },
+      {
+        "id": "game-mobile-b-guardian-flower-girl-bari-67d24d5",
+        "path": "images/e796400e4e6ccac591a184b6.webp",
+        "mime": "image/webp",
+        "bytes": 82732,
+        "sha256": "e796400e4e6ccac591a184b6a8c78400ace03362f706735e5609ba915fe51965"
+      },
+      {
+        "id": "game-mobile-b-guardian-free-spirited-squirrel-chriselle-51bf822",
+        "path": "images/a64102ec0c24b907bdc9bff7.webp",
+        "mime": "image/webp",
+        "bytes": 66390,
+        "sha256": "a64102ec0c24b907bdc9bff7ef4ad54f4f142d600cdc09be8dcb8c4d3bedf295"
+      },
+      {
+        "id": "game-mobile-b-guardian-future-knight-b8d575f",
+        "path": "images/7ba28cca908862e3dafaa894.webp",
+        "mime": "image/webp",
+        "bytes": 107066,
+        "sha256": "7ba28cca908862e3dafaa894c464e1f67d56d05cd7935d09c9261b43b48e8163"
+      },
+      {
+        "id": "game-mobile-b-guardian-future-princess-f97bed8",
+        "path": "images/bb84243e6a62dfab4121d524.webp",
+        "mime": "image/webp",
+        "bytes": 119668,
+        "sha256": "bb84243e6a62dfab4121d524868e2e13cd9dd5f037f8c03dbc81378d2429d7cc"
+      },
+      {
+        "id": "game-mobile-b-guardian-gluttonous-wyvern-astoria-ef3c3a6",
+        "path": "images/36609b2b007c4340c99c7965.webp",
+        "mime": "image/webp",
+        "bytes": 26728,
+        "sha256": "36609b2b007c4340c99c796592183f1ed3699f7d3ddbcf2e3ae7374a3d79a247"
+      },
+      {
+        "id": "game-mobile-b-guardian-gnome-doctor-noel-58cacdf",
+        "path": "images/1ce0f75577d0faad684a4001.webp",
+        "mime": "image/webp",
+        "bytes": 68372,
+        "sha256": "1ce0f75577d0faad684a4001f01f8f9cffebdda414eadab16005197aa8e25f96"
+      },
+      {
+        "id": "game-mobile-b-guardian-god-of-harvest-kamael-deec35f",
+        "path": "images/f0cecbd39eda4e3a34e0f96c.webp",
+        "mime": "image/webp",
+        "bytes": 59822,
+        "sha256": "f0cecbd39eda4e3a34e0f96ce95868cc5d4d5fab2542931383e29afe7ce27870"
+      },
+      {
+        "id": "game-mobile-b-guardian-goddess-of-war-plitvice-dfba871",
+        "path": "images/bfc7283d22b455440c6de7f4.webp",
+        "mime": "image/webp",
+        "bytes": 79188,
+        "sha256": "bfc7283d22b455440c6de7f487a37783656d057e2c594f25906ec959dc3f9361"
+      },
+      {
+        "id": "game-mobile-b-guardian-goddess-of-wealth-eleanor-3067329",
+        "path": "images/e6dfe4fc9eba8db28b7d739b.webp",
+        "mime": "image/webp",
+        "bytes": 50828,
+        "sha256": "e6dfe4fc9eba8db28b7d739bd015aba2c0359b509a9657aedc3c16b33b5c60f9"
+      },
+      {
+        "id": "game-mobile-b-guardian-golden-carp-geumrin-ac01d0d",
+        "path": "images/ff2ee4cb541252b08b801091.webp",
+        "mime": "image/webp",
+        "bytes": 42424,
+        "sha256": "ff2ee4cb541252b08b801091d33302a003c5cca4b1c2c1867076e3314047fa2b"
+      },
+      {
+        "id": "game-mobile-b-guardian-golem-rider-alef-56fcbbf",
+        "path": "images/5dccc970b6de5fb7a95f28ce.webp",
+        "mime": "image/webp",
+        "bytes": 56722,
+        "sha256": "5dccc970b6de5fb7a95f28ce6ae5e896f3c8350cb8aaa1b69368cc28b0957776"
+      },
+      {
+        "id": "game-mobile-b-guardian-grand-admiral-marina-f815a95",
+        "path": "images/3b2187f00520773a29f05528.webp",
+        "mime": "image/webp",
+        "bytes": 70208,
+        "sha256": "3b2187f00520773a29f055283673fe812c1feaa60fdaae7919d3ba2a03211374"
+      },
+      {
+        "id": "game-mobile-b-guardian-grim-reaper-hana-2ed71e1",
+        "path": "images/ab18f88f81510996c1d45e9e.webp",
+        "mime": "image/webp",
+        "bytes": 65834,
+        "sha256": "ab18f88f81510996c1d45e9e669d92758daf901af129a1a5f1be5535ac330bfc"
+      },
+      {
+        "id": "game-mobile-b-guardian-h-e-r-o-s-kai-4d03f47",
+        "path": "images/689ca10d073b3cbaf83483ff.webp",
+        "mime": "image/webp",
+        "bytes": 62132,
+        "sha256": "689ca10d073b3cbaf83483ffe217b37f7661fbf84550de129a4ac759213c25a3"
+      },
+      {
+        "id": "game-mobile-b-guardian-half-vampire-priscilla-1ed8964",
+        "path": "images/d396d5a95637cb792bc07cb9.webp",
+        "mime": "image/webp",
+        "bytes": 64528,
+        "sha256": "d396d5a95637cb792bc07cb914e80daa3e521854795e1a16ff50e32b6ee769bf"
+      },
+      {
+        "id": "game-mobile-b-guardian-herald-of-counterattack-seira-debb38a",
+        "path": "images/a1594d01ba622934635769a2.webp",
+        "mime": "image/webp",
+        "bytes": 30714,
+        "sha256": "a1594d01ba622934635769a2e2e462ff375c51a271623c31d74b1bdb7c9243e4"
+      },
+      {
+        "id": "game-mobile-b-guardian-hero-dai-b40cae5",
+        "path": "images/b1aaae7776ba2843e0c380f9.webp",
+        "mime": "image/webp",
+        "bytes": 56408,
+        "sha256": "b1aaae7776ba2843e0c380f91d25b65d597febabb6a4e6777d6917ac955329bc"
+      },
+      {
+        "id": "game-mobile-b-guardian-horn-huntress-toga-c0d867e",
+        "path": "images/45d14789a897cbda7e5fa0c4.webp",
+        "mime": "image/webp",
+        "bytes": 57520,
+        "sha256": "45d14789a897cbda7e5fa0c419738826b86c01b45b5d4a49e1c9f12493bdaffa"
+      },
+      {
+        "id": "game-mobile-b-guardian-huntress-rosetta-0c145b6",
+        "path": "images/201eb60ac2cb6c603dc2539a.webp",
+        "mime": "image/webp",
+        "bytes": 70528,
+        "sha256": "201eb60ac2cb6c603dc2539a636768e5f27bb034d8a88f31c397e4e6879b6a74"
+      },
+      {
+        "id": "game-mobile-b-guardian-ice-witch-lupina-cb7bcbb",
+        "path": "images/14219edf99476676bb724eda.webp",
+        "mime": "image/webp",
+        "bytes": 70536,
+        "sha256": "14219edf99476676bb724eda6c479c0f6a75c08acfd6bcc689d5d72a4ebed7c4"
+      },
+      {
+        "id": "game-mobile-b-guardian-idol-captain-eva-c7bbacd",
+        "path": "images/c13b468561e9a98188fd065f.webp",
+        "mime": "image/webp",
+        "bytes": 147514,
+        "sha256": "c13b468561e9a98188fd065f409d437577b62b8b8ae78f74eff7493563bc9b6a"
+      },
+      {
+        "id": "game-mobile-b-guardian-incarcerated-scholar-vinette-b99fb79",
+        "path": "images/e9f8ba40dd93701f1854dc57.webp",
+        "mime": "image/webp",
+        "bytes": 62072,
+        "sha256": "e9f8ba40dd93701f1854dc57bc31a09faa738ea1b5c86b23a9fd942435a3afa1"
+      },
+      {
+        "id": "game-mobile-b-guardian-inspector-yuna-e2f34a4",
+        "path": "images/173c2c324834e4e5941fcecc.webp",
+        "mime": "image/webp",
+        "bytes": 56270,
+        "sha256": "173c2c324834e4e5941fceccbe9142c6bf6edf311e74da4b56f5ef44ec99b047"
+      },
+      {
+        "id": "game-mobile-b-guardian-jade-exorcist-tasha-242b390",
+        "path": "images/d8dcd70e1f68682dcb399ee6.webp",
+        "mime": "image/webp",
+        "bytes": 64892,
+        "sha256": "d8dcd70e1f68682dcb399ee63d6d2755085a914216193fbc18610c51d9fbf5f6"
+      },
+      {
+        "id": "game-mobile-b-guardian-kind-wet-nurse-nelluru-523df2e",
+        "path": "images/e56293811aab5204a52d3f4b.webp",
+        "mime": "image/webp",
+        "bytes": 58032,
+        "sha256": "e56293811aab5204a52d3f4b1151f57904222dc9f16c0d6ea7e6e890dcdc0d0f"
+      },
+      {
+        "id": "game-mobile-b-guardian-king-of-the-hill-cornet-5469cc9",
+        "path": "images/aed60af4e8ebbf3657e7a6d4.webp",
+        "mime": "image/webp",
+        "bytes": 76094,
+        "sha256": "aed60af4e8ebbf3657e7a6d4278cff706bd12731f56e7ecdafaace23e2a476c5"
+      },
+      {
+        "id": "game-mobile-b-guardian-knight-lady-lapice-3a6d6ec",
+        "path": "images/ef17c2f2284dd64c90a13bd4.webp",
+        "mime": "image/webp",
+        "bytes": 89326,
+        "sha256": "ef17c2f2284dd64c90a13bd477444a20e478f71b353da3dff84dc0ef70ded5cc"
+      },
+      {
+        "id": "game-mobile-b-guardian-kunoichi-sumire-411f972",
+        "path": "images/40288a8d7fd319f28407bac0.webp",
+        "mime": "image/webp",
+        "bytes": 46138,
+        "sha256": "40288a8d7fd319f28407bac0c84dbaebe40c280724ad39994e3011bf811232f5"
+      },
+      {
+        "id": "game-mobile-b-guardian-laid-back-muncher-xiaoman-ebeeb16",
+        "path": "images/392a67ed2180850c63575c6d.webp",
+        "mime": "image/webp",
+        "bytes": 71568,
+        "sha256": "392a67ed2180850c63575c6d70cc91045182d509c7ee426cb74012082143198a"
+      },
+      {
+        "id": "game-mobile-b-guardian-legendary-hero-erina-c7facbf",
+        "path": "images/b3692243b2ab3bc19e3b5da0.webp",
+        "mime": "image/webp",
+        "bytes": 64920,
+        "sha256": "b3692243b2ab3bc19e3b5da0f800e7e1975509a49ca9fd104f55ef23098f71a3"
+      },
+      {
+        "id": "game-mobile-b-guardian-lifeguard-yuze-8509a1a",
+        "path": "images/2fb218cb9373228bf8deddba.webp",
+        "mime": "image/webp",
+        "bytes": 57482,
+        "sha256": "2fb218cb9373228bf8deddba3022d80b9a72b87b0dc327f36679c5cede22aee2"
+      },
+      {
+        "id": "game-mobile-b-guardian-little-android-aa72-9496aba",
+        "path": "images/f231b4edc88f3af21479d834.webp",
+        "mime": "image/webp",
+        "bytes": 61886,
+        "sha256": "f231b4edc88f3af21479d8349a9c6d1803aa597c46eaa6fe480414deda95575c"
+      },
+      {
+        "id": "game-mobile-b-guardian-little-baroness-daisy-3807504",
+        "path": "images/a647d86e8959ad4bddba62e5.webp",
+        "mime": "image/webp",
+        "bytes": 58874,
+        "sha256": "a647d86e8959ad4bddba62e51c226c2710be9302984d801e85ced249d77b7443"
+      },
+      {
+        "id": "game-mobile-b-guardian-lord-of-dark-beasts-klen-9e422a5",
+        "path": "images/dce45182b7407d34d3da03c6.webp",
+        "mime": "image/webp",
+        "bytes": 34370,
+        "sha256": "dce45182b7407d34d3da03c6338cc111e97f7a58b6882aac02d54fc6fdbf9e6e"
+      },
+      {
+        "id": "game-mobile-b-guardian-mad-engineer-v-ef078cc",
+        "path": "images/fcb97b44dd69edb7b994ac3c.webp",
+        "mime": "image/webp",
+        "bytes": 39670,
+        "sha256": "fcb97b44dd69edb7b994ac3cd2479fc1b11a71e620637c5b38ae243cfa917e1d"
+      },
+      {
+        "id": "game-mobile-b-guardian-mage-popp-2106a8f",
+        "path": "images/98c78f23f6717c57ab01db31.webp",
+        "mime": "image/webp",
+        "bytes": 58360,
+        "sha256": "98c78f23f6717c57ab01db31499a0731c55501ca3f3c85092a68ccd73f49e60d"
+      },
+      {
+        "id": "game-mobile-b-guardian-mage-of-over-1000-years-frieren-a5b24a3",
+        "path": "images/881fbf9f45e6703e787d03e1.webp",
+        "mime": "image/webp",
+        "bytes": 82732,
+        "sha256": "881fbf9f45e6703e787d03e17e062991d0c7669472232b4db3b4688a203ad685"
+      },
+      {
+        "id": "game-mobile-b-guardian-main-eventer-callie-3f4dc4c",
+        "path": "images/06e2b7858f5c6489c539c31b.webp",
+        "mime": "image/webp",
+        "bytes": 72754,
+        "sha256": "06e2b7858f5c6489c539c31bb785a36bea0438dba2241378c24a87a68a789f15"
+      },
+      {
+        "id": "game-mobile-b-guardian-martial-artist-maam-0013f31",
+        "path": "images/231a79627342a416af947f59.webp",
+        "mime": "image/webp",
+        "bytes": 65470,
+        "sha256": "231a79627342a416af947f59a770fe41500a7b9803359f11808494fcb608a12a"
+      },
+      {
+        "id": "game-mobile-b-guardian-master-swordsman-gourry-d2ae2cd",
+        "path": "images/be786ed7c2a3c8b7f95736f7.webp",
+        "mime": "image/webp",
+        "bytes": 54846,
+        "sha256": "be786ed7c2a3c8b7f95736f70853d061c19e81beb2304fca00cf33b5fefb3ba0"
+      },
+      {
+        "id": "game-mobile-b-guardian-mecha-warrior-oghma-40dfdb4",
+        "path": "images/6685c55a4bfee2c1be53ae42.webp",
+        "mime": "image/webp",
+        "bytes": 35360,
+        "sha256": "6685c55a4bfee2c1be53ae42995da4f0867ea55de1085ad75663a70ecffdee75"
+      },
+      {
+        "id": "game-mobile-b-guardian-model-employee-parvati-f44f168",
+        "path": "images/76e81220535abc743c6c4061.webp",
+        "mime": "image/webp",
+        "bytes": 57478,
+        "sha256": "76e81220535abc743c6c40613a3f7714d5cc3bbf756fdf25d003d36d0d0f7aa1"
+      },
+      {
+        "id": "game-mobile-b-guardian-movie-star-eugene-ea3db7f",
+        "path": "images/a8a477396320a56d52100442.webp",
+        "mime": "image/webp",
+        "bytes": 56952,
+        "sha256": "a8a477396320a56d52100442b0d73ef4dcac954774a4b13c55a70b3537b6d641"
+      },
+      {
+        "id": "game-mobile-b-guardian-mystic-violet-haruka-9791a20",
+        "path": "images/3a4fff5851dccb17ac725cd3.webp",
+        "mime": "image/webp",
+        "bytes": 61966,
+        "sha256": "3a4fff5851dccb17ac725cd37f44bbdd2fba1919d7f3483f90c053cf906bb1ed"
+      },
+      {
+        "id": "game-mobile-b-guardian-necromancer-noxia-d98ca3b",
+        "path": "images/30134bfd7ac2f6b69f82140f.webp",
+        "mime": "image/webp",
+        "bytes": 60516,
+        "sha256": "30134bfd7ac2f6b69f82140f01eeeaf15cbf40f20a766260202989d5f34fb5a5"
+      },
+      {
+        "id": "game-mobile-b-guardian-nine-tailed-fox-garam-998e206",
+        "path": "images/7742cae18fa6a57442d9f9d7.webp",
+        "mime": "image/webp",
+        "bytes": 74400,
+        "sha256": "7742cae18fa6a57442d9f9d7924cb38bed34bf3a9652213fe85fd592ad26d342"
+      },
+      {
+        "id": "game-mobile-b-guardian-no-9-miss-chrom-67856cd",
+        "path": "images/4f75b242836fabb21c66c0ee.webp",
+        "mime": "image/webp",
+        "bytes": 37154,
+        "sha256": "4f75b242836fabb21c66c0ee70bd4ce6349842381143c6ca99c6f0f6c9524552"
+      },
+      {
+        "id": "game-mobile-b-guardian-noble-succubus-bianca-780c372",
+        "path": "images/ae4a3b3e8178d893a01accca.webp",
+        "mime": "image/webp",
+        "bytes": 64516,
+        "sha256": "ae4a3b3e8178d893a01accca215d63104c7b6acf85d9db15de8a23ca34efdd31"
+      },
+      {
+        "id": "game-mobile-b-guardian-novice-heavenly-maiden-dabin-ac95cba",
+        "path": "images/a27a3f3d854922c84fa09639.webp",
+        "mime": "image/webp",
+        "bytes": 82444,
+        "sha256": "a27a3f3d854922c84fa09639411585b14ee2ba2d6e066e78dfa3b835c3844299"
+      },
+      {
+        "id": "game-mobile-b-guardian-onmyoji-wakamo-5a56807",
+        "path": "images/8a800a7fe76e94540bf90e09.webp",
+        "mime": "image/webp",
+        "bytes": 67688,
+        "sha256": "8a800a7fe76e94540bf90e0992adadd9ca45a13cb63c72a26ec467e53e896f4c"
+      },
+      {
+        "id": "game-mobile-b-guardian-osprey-anna-5a47098",
+        "path": "images/6bf0f1ae4f0b07ef6ff46808.webp",
+        "mime": "image/webp",
+        "bytes": 65094,
+        "sha256": "6bf0f1ae4f0b07ef6ff4680827c114ae6c95af7c8b5ce8a725c65d0893a34144"
+      },
+      {
+        "id": "game-mobile-b-guardian-overlord-of-the-east-morrian-f6e71d7",
+        "path": "images/9481cb39b24cea6e3084d2f7.webp",
+        "mime": "image/webp",
+        "bytes": 51554,
+        "sha256": "9481cb39b24cea6e3084d2f7a17015750c9a35b1f1bcfadfeecd42d606d2c029"
+      },
+      {
+        "id": "game-mobile-b-guardian-party-crasher-mad-panda-trio-5e4ae90",
+        "path": "images/8e54dccd05563a634c964307.webp",
+        "mime": "image/webp",
+        "bytes": 62628,
+        "sha256": "8e54dccd05563a634c964307460d328972545902c47c83848e49cc38c8552f84"
+      },
+      {
+        "id": "game-mobile-b-guardian-pill-refiner-win-ling-f468f94",
+        "path": "images/18ec7a377681c2f44dc1bec1.webp",
+        "mime": "image/webp",
+        "bytes": 81096,
+        "sha256": "18ec7a377681c2f44dc1bec1e40a097e9a23ea5f71e12d686f91efa25aa55b8c"
+      },
+      {
+        "id": "game-mobile-b-guardian-plague-doctor-dd620f0",
+        "path": "images/00c475bbbd76a0a52de80ed7.webp",
+        "mime": "image/webp",
+        "bytes": 52460,
+        "sha256": "00c475bbbd76a0a52de80ed7557833bc738b4447dc602f73ee88541b93878b8d"
+      },
+      {
+        "id": "game-mobile-b-guardian-priest-xellos-a3a2d61",
+        "path": "images/2089f2946c6ed3afe89db5aa.webp",
+        "mime": "image/webp",
+        "bytes": 43838,
+        "sha256": "2089f2946c6ed3afe89db5aa5836b9c9c5dfb47ce5b2325c8409928125513c12"
+      },
+      {
+        "id": "game-mobile-b-guardian-private-investigator-odile-a8ab15d",
+        "path": "images/fb11def3a172a2ecb8c0fdaf.webp",
+        "mime": "image/webp",
+        "bytes": 59978,
+        "sha256": "fb11def3a172a2ecb8c0fdaf6725be54e1b0117c54531cc7f6a403238f0089ff"
+      },
+      {
+        "id": "game-mobile-b-guardian-pure-flame-illuni-6c8a646",
+        "path": "images/31f5ffd32cfeae22a3bc5b8f.webp",
+        "mime": "image/webp",
+        "bytes": 41482,
+        "sha256": "31f5ffd32cfeae22a3bc5b8f5985bb10e783144dfb5b718ec938be0afd866b6e"
+      },
+      {
+        "id": "game-mobile-b-guardian-risen-hero-alicia-632d816",
+        "path": "images/57caa8261326d35ad5f8eb4f.webp",
+        "mime": "image/webp",
+        "bytes": 50262,
+        "sha256": "57caa8261326d35ad5f8eb4ff5bcd93d4cbd22e67a9b39f9148a63449d9ad65c"
+      },
+      {
+        "id": "game-mobile-b-guardian-robbers-killer-lina-1608fa8",
+        "path": "images/2566a18a6272d6f24cb3198a.webp",
+        "mime": "image/webp",
+        "bytes": 63448,
+        "sha256": "2566a18a6272d6f24cb3198ae46f3058b51aa1d469b8decd133cfa3edfaca39c"
+      },
+      {
+        "id": "game-mobile-b-guardian-ronin-cat-mikke-95efae9",
+        "path": "images/daa2378671bb98e9f3309c13.webp",
+        "mime": "image/webp",
+        "bytes": 395478,
+        "sha256": "daa2378671bb98e9f3309c13ecabccffbc084c32a75688dfb78949bfb3f10449"
+      },
+      {
+        "id": "game-mobile-b-guardian-santa-s-little-helper-rue-62dd374",
+        "path": "images/14063e949fe4c45e888e31d0.webp",
+        "mime": "image/webp",
+        "bytes": 218828,
+        "sha256": "14063e949fe4c45e888e31d05ee2efb7e6877c05aa9cfaab9e03bc8cf46fe6a4"
+      },
+      {
+        "id": "game-mobile-b-guardian-scientist-on-the-beach-sohee-9d17b8d",
+        "path": "images/9579787bf446b9638385f76b.webp",
+        "mime": "image/webp",
+        "bytes": 260442,
+        "sha256": "9579787bf446b9638385f76b107efc2d9826060c706ab4c98e3ec664f1066f0c"
+      },
+      {
+        "id": "game-mobile-b-guardian-scrivener-lahn-326584d",
+        "path": "images/65046d737e6c8b8558c6b8cb.webp",
+        "mime": "image/webp",
+        "bytes": 408268,
+        "sha256": "65046d737e6c8b8558c6b8cbc471705ac20edb96b178a97aabeda3233db80291"
+      },
+      {
+        "id": "game-mobile-b-guardian-sea-vendor-sia-1b5fef4",
+        "path": "images/d1a28d23c77a4e602319f7e9.webp",
+        "mime": "image/webp",
+        "bytes": 416722,
+        "sha256": "d1a28d23c77a4e602319f7e987ef095baa477dfa2d246bd36ec80f3bdd064bdb"
+      },
+      {
+        "id": "game-mobile-b-guardian-sea-witch-ara-5220f5b",
+        "path": "images/57359130f5ddce6b66640936.webp",
+        "mime": "image/webp",
+        "bytes": 462028,
+        "sha256": "57359130f5ddce6b6664093677a6b71062ffc6d65aafcf1d05c764adb4b8fbf6"
+      },
+      {
+        "id": "game-mobile-b-guardian-shrine-maiden-kannagi-shuna-c6bc803",
+        "path": "images/87c71372eed7eb62bd661a60.webp",
+        "mime": "image/webp",
+        "bytes": 87222,
+        "sha256": "87c71372eed7eb62bd661a6019ac7ad36cd3b857fd75adcbcbd60eec28763baf"
+      },
+      {
+        "id": "game-mobile-b-guardian-slayer-andras-b92400f",
+        "path": "images/8988b330404bf7f1fd1c65c1.webp",
+        "mime": "image/webp",
+        "bytes": 618960,
+        "sha256": "8988b330404bf7f1fd1c65c16e4082af4508e38b230c26795130d0c226ad7d8f"
+      },
+      {
+        "id": "game-mobile-b-guardian-soul-mage-dohwa-4528e81",
+        "path": "images/f9b8ce2933ec0b4b06e02d83.webp",
+        "mime": "image/webp",
+        "bytes": 443150,
+        "sha256": "f9b8ce2933ec0b4b06e02d8362452ac165233579419fbb1b87fef6a7c533fa79"
+      },
+      {
+        "id": "game-mobile-b-guardian-southpaw-fireballer-randi-713a4ad",
+        "path": "images/19a029d8cc3ef7d66e9e699e.webp",
+        "mime": "image/webp",
+        "bytes": 193864,
+        "sha256": "19a029d8cc3ef7d66e9e699ee7b3c3a547bfbe10920931f2436512a056dd7655"
+      },
+      {
+        "id": "game-mobile-b-guardian-star-cluster-chief-scrivener-lena-d85f06c",
+        "path": "images/8ce6da51d8a84e99e813a5f7.webp",
+        "mime": "image/webp",
+        "bytes": 373972,
+        "sha256": "8ce6da51d8a84e99e813a5f7fce3011bdb8fab0e9e3bdfbe9cb7f56fa7902974"
+      },
+      {
+        "id": "game-mobile-b-guardian-streamer-ruri-f3feafe",
+        "path": "images/678d7e05f8b9caab463d2077.webp",
+        "mime": "image/webp",
+        "bytes": 316212,
+        "sha256": "678d7e05f8b9caab463d2077296b80111ee1099a978b7f0553a72c7b798614e2"
+      },
+      {
+        "id": "game-mobile-b-guardian-summer-innkeeper-loraine-2e18acf",
+        "path": "images/7decffbd7b89894bab9d8c92.webp",
+        "mime": "image/webp",
+        "bytes": 311892,
+        "sha256": "7decffbd7b89894bab9d8c923242ff17092eab3d79e62ada162407706eba8af1"
+      },
+      {
+        "id": "game-mobile-b-guardian-sweet-troublemaker-girgas-c93cba3",
+        "path": "images/0f5584c5289db202c9ac8f79.webp",
+        "mime": "image/webp",
+        "bytes": 277784,
+        "sha256": "0f5584c5289db202c9ac8f795d416c674a677054d258a2c28bd0c13a4a54ca65"
+      },
+      {
+        "id": "game-mobile-b-guardian-sword-of-heaven-angie-82b1576",
+        "path": "images/32338f31df79ed0973b99f9e.webp",
+        "mime": "image/webp",
+        "bytes": 313354,
+        "sha256": "32338f31df79ed0973b99f9ee091126819c5cdc3f21c76b013b96f9ff99097ad"
+      },
+      {
+        "id": "game-mobile-b-guardian-sword-of-werebeasts-rey-7a88e8b",
+        "path": "images/19eaa8492462380959dc6b1a.webp",
+        "mime": "image/webp",
+        "bytes": 208926,
+        "sha256": "19eaa8492462380959dc6b1acbfdc74b048cdb1092701812a37a1dcf9843b65e"
+      },
+      {
+        "id": "game-mobile-b-guardian-the-bound-child-clara-e8a05eb",
+        "path": "images/9f05daef25a03d31b733c8cb.webp",
+        "mime": "image/webp",
+        "bytes": 616942,
+        "sha256": "9f05daef25a03d31b733c8cb09824beb86508715fe1b7b53c387444199948c58"
+      },
+      {
+        "id": "game-mobile-b-guardian-the-first-avatar-kahlor-ca22dc1",
+        "path": "images/08c9be25295b529b4a11ad44.webp",
+        "mime": "image/webp",
+        "bytes": 382566,
+        "sha256": "08c9be25295b529b4a11ad4445fa5c9278fd396f2dfa8aa31ad9120890d1b619"
+      },
+      {
+        "id": "game-mobile-b-guardian-trickster-lucy-5161fa9",
+        "path": "images/cb3d1db9d78d5ab6951609df.webp",
+        "mime": "image/webp",
+        "bytes": 369792,
+        "sha256": "cb3d1db9d78d5ab6951609df9acd0b54f98e11cd6d3573b2b5f3d6dc4bf08dff"
+      },
+      {
+        "id": "game-mobile-b-guardian-tyrant-of-destruction-milim-nava-afadfa8",
+        "path": "images/d2e6a799c100ee447d7f301d.webp",
+        "mime": "image/webp",
+        "bytes": 63788,
+        "sha256": "d2e6a799c100ee447d7f301dd842dab42742bf4926257f32861aec3279a619b4"
+      },
+      {
+        "id": "game-mobile-b-guardian-warlord-mercenary-orca-9932a9a",
+        "path": "images/a7c8e4d4de1cb80ad8b50c42.webp",
+        "mime": "image/webp",
+        "bytes": 345406,
+        "sha256": "a7c8e4d4de1cb80ad8b50c42a5433cf15292f9c5335a4231303928ccdfb481b2"
+      },
+      {
+        "id": "game-mobile-b-guardian-warrior-stark-755fe2f",
+        "path": "images/add1d12c880a08d0cd7c0dd2.webp",
+        "mime": "image/webp",
+        "bytes": 144490,
+        "sha256": "add1d12c880a08d0cd7c0dd211bedb2567bcb5aa6a11698a34bca5df0111ec4c"
+      },
+      {
+        "id": "game-mobile-b-guardian-white-snow-48706ae",
+        "path": "images/033094d0a205234ac03ace43.webp",
+        "mime": "image/webp",
+        "bytes": 277210,
+        "sha256": "033094d0a205234ac03ace434437459a040a5dc34e42b5e2072e055b1cbecb99"
+      },
+      {
+        "id": "game-mobile-b-guardian-aspiring-warrior-craig-486c75c",
+        "path": "images/3275f9c5735e00247aaa7ba7.webp",
+        "mime": "image/webp",
+        "bytes": 360436,
+        "sha256": "3275f9c5735e00247aaa7ba7b8be08453fbe42562b148178b60d498d5b8704ec"
+      },
+      {
+        "id": "game-mobile-b-guardian-battleball-girl-rie-61af764",
+        "path": "images/a6e7f0e9b9b7cc36fb3f961f.webp",
+        "mime": "image/webp",
+        "bytes": 216630,
+        "sha256": "a6e7f0e9b9b7cc36fb3f961f6f7e3ce51ec85e81e587a887f9884d1b8e2868d5"
+      },
+      {
+        "id": "game-mobile-b-guardian-desert-mercenary-marvin-5c2fdff",
+        "path": "images/ed620988c54e9c6c427bf83f.webp",
+        "mime": "image/webp",
+        "bytes": 273390,
+        "sha256": "ed620988c54e9c6c427bf83fbf9bd6e1c823131b0a14a48d8390d74daf0c168b"
+      },
+      {
+        "id": "game-mobile-b-guardian-dimension-traveler-catherine-d07bab9",
+        "path": "images/5bd3eca9b1fa1c5445add645.webp",
+        "mime": "image/webp",
+        "bytes": 157010,
+        "sha256": "5bd3eca9b1fa1c5445add6459f55e7adb6ef14ca047544f9e98de40a6457ac5b"
+      },
+      {
+        "id": "game-mobile-b-guardian-dragon-knight-shapira-ad1445c",
+        "path": "images/7771de5b6dd6f1b9004525ab.webp",
+        "mime": "image/webp",
+        "bytes": 255162,
+        "sha256": "7771de5b6dd6f1b9004525ab55b972e6892207a2d11a8966ff44aa6c62898912"
+      },
+      {
+        "id": "game-mobile-b-guardian-dragon-seeking-girl-neva-cad3b8e",
+        "path": "images/73b2ad24c257f323409d18dd.webp",
+        "mime": "image/webp",
+        "bytes": 245056,
+        "sha256": "73b2ad24c257f323409d18ddcbc8cca88ab146dc08233f14c1f869cb4f3e20e4"
+      },
+      {
+        "id": "game-mobile-b-guardian-dragon-talon-clan-ranpang-97f503d",
+        "path": "images/ebbd37b50baa2b1e1f0ac795.webp",
+        "mime": "image/webp",
+        "bytes": 244204,
+        "sha256": "ebbd37b50baa2b1e1f0ac79596279f6cb7e294b4056771433629429cb51b8f9d"
+      },
+      {
+        "id": "game-mobile-b-guardian-dual-personality-maid-amy-5c39642",
+        "path": "images/f33452d689964478659c92ed.webp",
+        "mime": "image/webp",
+        "bytes": 259418,
+        "sha256": "f33452d689964478659c92ed116efc9ee7ccaf0ed1cedb3eac6a226c0332dd18"
+      },
+      {
+        "id": "game-mobile-b-guardian-engineer-marianne-089e964",
+        "path": "images/2c9fb9d0abbafdcc36890884.webp",
+        "mime": "image/webp",
+        "bytes": 211938,
+        "sha256": "2c9fb9d0abbafdcc36890884a7dab1a001e50ee714ba2a991f330ece5d408a5c"
+      },
+      {
+        "id": "game-mobile-b-guardian-fire-dragon-girgas-e232114",
+        "path": "images/97b1204662100d892cdecc62.webp",
+        "mime": "image/webp",
+        "bytes": 229876,
+        "sha256": "97b1204662100d892cdecc62e8ed61b6b472d7f30be487c4f046e7b8da18d227"
+      },
+      {
+        "id": "game-mobile-b-guardian-innkeeper-loraine-e842015",
+        "path": "images/ca09ddcb674c7301c9523a32.webp",
+        "mime": "image/webp",
+        "bytes": 36590,
+        "sha256": "ca09ddcb674c7301c9523a324c0289f0498200d7e8114eaf5972dccb2b317fe1"
+      },
+      {
+        "id": "game-mobile-b-guardian-innuit-girl-coco-26d7efd",
+        "path": "images/335a5b9325e3edc819b24620.webp",
+        "mime": "image/webp",
+        "bytes": 232930,
+        "sha256": "335a5b9325e3edc819b24620451fe2febeb192389067150829e93698c8136825"
+      },
+      {
+        "id": "game-mobile-b-guardian-knight-captain-eva-7e0aea2",
+        "path": "images/d4af02125222a4d3420548f0.webp",
+        "mime": "image/webp",
+        "bytes": 197616,
+        "sha256": "d4af02125222a4d3420548f004349588415d699b047d18072bc4ac3af372cc60"
+      },
+      {
+        "id": "game-mobile-b-guardian-kung-fu-master-fei-b36eea7",
+        "path": "images/f960acaf9a1a4201e3de668f.webp",
+        "mime": "image/webp",
+        "bytes": 65428,
+        "sha256": "f960acaf9a1a4201e3de668fd25a30e755e559945ad9a36e89127834ec60f860"
+      },
+      {
+        "id": "game-mobile-b-guardian-kung-fu-master-mei-31d9e9d",
+        "path": "images/3b4654b125607c0c761a457f.webp",
+        "mime": "image/webp",
+        "bytes": 60752,
+        "sha256": "3b4654b125607c0c761a457fea77e75f311bcf308cba0fc9acd62e287d01bdfa"
+      },
+      {
+        "id": "game-mobile-b-guardian-leaf-fairy-aoba-3910d11",
+        "path": "images/f1e3ce5c7c5b6a1e353764d7.webp",
+        "mime": "image/webp",
+        "bytes": 338536,
+        "sha256": "f1e3ce5c7c5b6a1e353764d7fe8694c1037c1ca879e852f0d58ca6e0120ebb00"
+      },
+      {
+        "id": "game-mobile-b-guardian-mad-scientist-gremory-2d98fcc",
+        "path": "images/49870233b39cc92139b0e2cf.webp",
+        "mime": "image/webp",
+        "bytes": 250112,
+        "sha256": "49870233b39cc92139b0e2cfedfb63ffd6f45fb62d35e636f4edcd2e592d7ae5"
+      },
+      {
+        "id": "game-mobile-b-guardian-pirate-rachel-a32c34e",
+        "path": "images/d3244ed27eedae3bc2dca693.webp",
+        "mime": "image/webp",
+        "bytes": 240578,
+        "sha256": "d3244ed27eedae3bc2dca693c21a1a221cf0cb566b5d3e26e3e610ae65a22a75"
+      },
+      {
+        "id": "game-mobile-b-guardian-princess-aisha-07f4af6",
+        "path": "images/91acd6323e55628d14ff0f44.webp",
+        "mime": "image/webp",
+        "bytes": 133870,
+        "sha256": "91acd6323e55628d14ff0f4472a215b0a8cc9bcf3874742a6d809e627877db6e"
+      },
+      {
+        "id": "game-mobile-b-guardian-red-hood-elvira-9090e38",
+        "path": "images/67d354d5a576a65328191436.webp",
+        "mime": "image/webp",
+        "bytes": 205232,
+        "sha256": "67d354d5a576a653281914367bb295513a821cd6f1691ccc81486e907c104516"
+      },
+      {
+        "id": "game-mobile-b-guardian-scientist-sohee-9561800",
+        "path": "images/e0c881487a4932d1ca3906c1.webp",
+        "mime": "image/webp",
+        "bytes": 167428,
+        "sha256": "e0c881487a4932d1ca3906c114a7ef0be1e8e3de5117ce4e6fc4b4c69705787c"
+      },
+      {
+        "id": "game-mobile-b-guardian-sniper-hekate-2137bde",
+        "path": "images/01764ad942a1e84e75821aae.webp",
+        "mime": "image/webp",
+        "bytes": 163630,
+        "sha256": "01764ad942a1e84e75821aae05c5108b59ad8b09931b2497ee37ab3ca12e3571"
+      },
+      {
+        "id": "game-mobile-b-guardian-succubus-adventurer-yuze-cfdc766",
+        "path": "images/dd6fa996945eac44e32e0c76.webp",
+        "mime": "image/webp",
+        "bytes": 179556,
+        "sha256": "dd6fa996945eac44e32e0c767fb2f09ebeacf52505ef07f334b7397aff245886"
+      },
+      {
+        "id": "game-mobile-b-guardian-swindler-magician-dolf-4c6e0c6",
+        "path": "images/ed15626f0ba980163718dc6d.webp",
+        "mime": "image/webp",
+        "bytes": 246892,
+        "sha256": "ed15626f0ba980163718dc6d75448dd3cf5b71ca97711cfb87a3fa15bd718a08"
+      },
+      {
+        "id": "game-mobile-b-guardian-swordsman-akayuki-a2d440d",
+        "path": "images/18f3dd3ab5c4bd403cac7bef.webp",
+        "mime": "image/webp",
+        "bytes": 301604,
+        "sha256": "18f3dd3ab5c4bd403cac7befd7bb97718d7e7d20fc173230b24c18d75631bdea"
+      },
+      {
+        "id": "game-mobile-b-guardian-the-knight-07484d1",
+        "path": "images/4b979d67324de38d03036b95.webp",
+        "mime": "image/webp",
+        "bytes": 198200,
+        "sha256": "4b979d67324de38d03036b9552fd29f168176cb63ccd1b07fd1043591cacf680"
+      },
+      {
+        "id": "game-mobile-b-guardian-twin-fighter-lavi-82eeaa5",
+        "path": "images/0669b5c3b207a46642ef6af0.webp",
+        "mime": "image/webp",
+        "bytes": 152174,
+        "sha256": "0669b5c3b207a46642ef6af00c421f51a808ca937bd7a38d07caed694e01b706"
+      },
+      {
+        "id": "game-mobile-b-guardian-twin-healer-favi-91d7bf3",
+        "path": "images/1e83cdc104d23dc2b3c0b62f.webp",
+        "mime": "image/webp",
+        "bytes": 150864,
+        "sha256": "1e83cdc104d23dc2b3c0b62f480e5cc496ab86f63d49a71d7c6bac2d7b260824"
+      },
+      {
+        "id": "game-mobile-b-guardian-vampire-girl-karina-d105e59",
+        "path": "images/e01d56f7fd3c7fa2b5ca1229.webp",
+        "mime": "image/webp",
+        "bytes": 183926,
+        "sha256": "e01d56f7fd3c7fa2b5ca1229083b7d97e13c7ad3cde83a5f86d8f331eb7a3073"
+      },
+      {
+        "id": "game-mobile-b-guardian-white-beast-6cf600b",
+        "path": "images/b6680520ed219b2caac6d24b.webp",
+        "mime": "image/webp",
+        "bytes": 221476,
+        "sha256": "b6680520ed219b2caac6d24bad95de870b3de51c160845d42483bb2d9293d036"
+      }
+    ],
+    "totalBytes": 20206294
+  },
+  "privacy": {
+    "internalFileReferences": 860,
+    "privateFields": 0,
+    "privateStrings": 0,
+    "policy": "공개 출처와 캐릭터 기록을 보존하며 작업 파일 경로·인증정보·전송 진단은 제외합니다."
+  },
+  "exports": {
+    "format": "public-original-records",
+    "images": "JSON 내보내기 시 별도 보관한 원래 이미지 바이트를 imageDataUrl로 복원합니다.",
+    "omitted": "비공개 작업 경로·전송 진단만 공개본에서 제외합니다."
+  },
+  "validation": {
+    "recordIdsAndOrder": "PASS",
+    "koreanNames": "PASS",
+    "fullCharacterReassembly": "PASS",
+    "embeddedImageBytes": "PASS",
+    "perAssetBelow25MiB": true,
+    "originalSourceUnmodified": true
+  },
+  "files": [
+    {
+      "path": "images/cfd5d2e23c67d0396b742df3.webp",
+      "bytes": 49738
+    },
+    {
+      "path": "images/eca4b7535d993d2038cdbbdd.webp",
+      "bytes": 58982
+    },
+    {
+      "path": "images/0a6a6c95ee0c0bcbef68bc8a.webp",
+      "bytes": 59182
+    },
+    {
+      "path": "images/9392b4b95c0737d80b2d6a2d.webp",
+      "bytes": 64910
+    },
+    {
+      "path": "images/e31ef29e44cd18498653a1c8.webp",
+      "bytes": 108580
+    },
+    {
+      "path": "images/3a520433c608e610d1e12ed4.webp",
+      "bytes": 62562
+    },
+    {
+      "path": "images/0ca21598f5ce0c56ce5fb44e.webp",
+      "bytes": 59816
+    },
+    {
+      "path": "images/cedd6adc84a8a43dd2ddb142.webp",
+      "bytes": 57556
+    },
+    {
+      "path": "images/9dcbc68cb847ad49f1751154.webp",
+      "bytes": 69680
+    },
+    {
+      "path": "images/36ebdfd0219d09b994819d06.webp",
+      "bytes": 81760
+    },
+    {
+      "path": "images/a4f7553531cc8d2dd4d3cc00.webp",
+      "bytes": 85294
+    },
+    {
+      "path": "images/8ecfa012d8219628a20c4770.webp",
+      "bytes": 87542
+    },
+    {
+      "path": "images/7927f69066314deecbd4b305.webp",
+      "bytes": 91870
+    },
+    {
+      "path": "images/8a8922f2d68c7cdb654bc711.webp",
+      "bytes": 50684
+    },
+    {
+      "path": "images/a883651e6fe559d9be3304a0.webp",
+      "bytes": 61224
+    },
+    {
+      "path": "images/0d24a1bd1fb5169df1fa32ed.webp",
+      "bytes": 44858
+    },
+    {
+      "path": "images/60358857e5b4e90122faa450.webp",
+      "bytes": 114602
+    },
+    {
+      "path": "images/0cb3e38d0bda8cfd0bc05cd3.webp",
+      "bytes": 56258
+    },
+    {
+      "path": "images/2dcfa6a461c3090f590ca2a8.webp",
+      "bytes": 85030
+    },
+    {
+      "path": "images/926b160f00523826952b0308.webp",
+      "bytes": 44152
+    },
+    {
+      "path": "images/58b38fb5ce5a69e1c3c43ad7.webp",
+      "bytes": 55394
+    },
+    {
+      "path": "images/c61a30a2ef26368d6396b816.webp",
+      "bytes": 63558
+    },
+    {
+      "path": "images/6b4be41dc6b34daa30cde4ea.webp",
+      "bytes": 75620
+    },
+    {
+      "path": "images/d6f29300f520922a57e44242.webp",
+      "bytes": 62662
+    },
+    {
+      "path": "images/dd56de00cf32b6e3ed7f35c7.webp",
+      "bytes": 72152
+    },
+    {
+      "path": "images/8795ed032ecaad48a013a21e.webp",
+      "bytes": 84470
+    },
+    {
+      "path": "images/523d49d7e1f85c6b3ca8c368.webp",
+      "bytes": 65896
+    },
+    {
+      "path": "images/9708e4271ebbcce647d8b0e4.webp",
+      "bytes": 45850
+    },
+    {
+      "path": "images/b54f8db71b3fd5dbffe2e1b1.webp",
+      "bytes": 61886
+    },
+    {
+      "path": "images/c2d00bb1cab1bf7081bf2c16.webp",
+      "bytes": 59336
+    },
+    {
+      "path": "images/3c3db823ca00178c39b3f178.webp",
+      "bytes": 76392
+    },
+    {
+      "path": "images/4c2338e59525c82e55b84b5d.webp",
+      "bytes": 73606
+    },
+    {
+      "path": "images/51cb25e94553759244f0e5f2.webp",
+      "bytes": 58676
+    },
+    {
+      "path": "images/67b9a05389da2059aab1c1c5.webp",
+      "bytes": 59368
+    },
+    {
+      "path": "images/c069326e86f270e54244ceed.webp",
+      "bytes": 148292
+    },
+    {
+      "path": "images/5936bd752ec6b57eb932044e.webp",
+      "bytes": 75410
+    },
+    {
+      "path": "images/2e3056519458d46bbcd82b1a.webp",
+      "bytes": 88244
+    },
+    {
+      "path": "images/056c849f260be7298ceb4ed4.webp",
+      "bytes": 95460
+    },
+    {
+      "path": "images/e796400e4e6ccac591a184b6.webp",
+      "bytes": 82732
+    },
+    {
+      "path": "images/a64102ec0c24b907bdc9bff7.webp",
+      "bytes": 66390
+    },
+    {
+      "path": "images/7ba28cca908862e3dafaa894.webp",
+      "bytes": 107066
+    },
+    {
+      "path": "images/bb84243e6a62dfab4121d524.webp",
+      "bytes": 119668
+    },
+    {
+      "path": "images/36609b2b007c4340c99c7965.webp",
+      "bytes": 26728
+    },
+    {
+      "path": "images/1ce0f75577d0faad684a4001.webp",
+      "bytes": 68372
+    },
+    {
+      "path": "images/f0cecbd39eda4e3a34e0f96c.webp",
+      "bytes": 59822
+    },
+    {
+      "path": "images/bfc7283d22b455440c6de7f4.webp",
+      "bytes": 79188
+    },
+    {
+      "path": "images/e6dfe4fc9eba8db28b7d739b.webp",
+      "bytes": 50828
+    },
+    {
+      "path": "images/ff2ee4cb541252b08b801091.webp",
+      "bytes": 42424
+    },
+    {
+      "path": "images/5dccc970b6de5fb7a95f28ce.webp",
+      "bytes": 56722
+    },
+    {
+      "path": "images/3b2187f00520773a29f05528.webp",
+      "bytes": 70208
+    },
+    {
+      "path": "images/ab18f88f81510996c1d45e9e.webp",
+      "bytes": 65834
+    },
+    {
+      "path": "images/689ca10d073b3cbaf83483ff.webp",
+      "bytes": 62132
+    },
+    {
+      "path": "images/d396d5a95637cb792bc07cb9.webp",
+      "bytes": 64528
+    },
+    {
+      "path": "images/a1594d01ba622934635769a2.webp",
+      "bytes": 30714
+    },
+    {
+      "path": "images/b1aaae7776ba2843e0c380f9.webp",
+      "bytes": 56408
+    },
+    {
+      "path": "images/45d14789a897cbda7e5fa0c4.webp",
+      "bytes": 57520
+    },
+    {
+      "path": "images/201eb60ac2cb6c603dc2539a.webp",
+      "bytes": 70528
+    },
+    {
+      "path": "images/14219edf99476676bb724eda.webp",
+      "bytes": 70536
+    },
+    {
+      "path": "images/c13b468561e9a98188fd065f.webp",
+      "bytes": 147514
+    },
+    {
+      "path": "images/e9f8ba40dd93701f1854dc57.webp",
+      "bytes": 62072
+    },
+    {
+      "path": "images/173c2c324834e4e5941fcecc.webp",
+      "bytes": 56270
+    },
+    {
+      "path": "images/d8dcd70e1f68682dcb399ee6.webp",
+      "bytes": 64892
+    },
+    {
+      "path": "images/e56293811aab5204a52d3f4b.webp",
+      "bytes": 58032
+    },
+    {
+      "path": "images/aed60af4e8ebbf3657e7a6d4.webp",
+      "bytes": 76094
+    },
+    {
+      "path": "images/ef17c2f2284dd64c90a13bd4.webp",
+      "bytes": 89326
+    },
+    {
+      "path": "images/40288a8d7fd319f28407bac0.webp",
+      "bytes": 46138
+    },
+    {
+      "path": "images/392a67ed2180850c63575c6d.webp",
+      "bytes": 71568
+    },
+    {
+      "path": "images/b3692243b2ab3bc19e3b5da0.webp",
+      "bytes": 64920
+    },
+    {
+      "path": "images/2fb218cb9373228bf8deddba.webp",
+      "bytes": 57482
+    },
+    {
+      "path": "images/f231b4edc88f3af21479d834.webp",
+      "bytes": 61886
+    },
+    {
+      "path": "images/a647d86e8959ad4bddba62e5.webp",
+      "bytes": 58874
+    },
+    {
+      "path": "images/dce45182b7407d34d3da03c6.webp",
+      "bytes": 34370
+    },
+    {
+      "path": "images/fcb97b44dd69edb7b994ac3c.webp",
+      "bytes": 39670
+    },
+    {
+      "path": "images/98c78f23f6717c57ab01db31.webp",
+      "bytes": 58360
+    },
+    {
+      "path": "images/881fbf9f45e6703e787d03e1.webp",
+      "bytes": 82732
+    },
+    {
+      "path": "images/06e2b7858f5c6489c539c31b.webp",
+      "bytes": 72754
+    },
+    {
+      "path": "images/231a79627342a416af947f59.webp",
+      "bytes": 65470
+    },
+    {
+      "path": "images/be786ed7c2a3c8b7f95736f7.webp",
+      "bytes": 54846
+    },
+    {
+      "path": "images/6685c55a4bfee2c1be53ae42.webp",
+      "bytes": 35360
+    },
+    {
+      "path": "images/76e81220535abc743c6c4061.webp",
+      "bytes": 57478
+    },
+    {
+      "path": "images/a8a477396320a56d52100442.webp",
+      "bytes": 56952
+    },
+    {
+      "path": "images/3a4fff5851dccb17ac725cd3.webp",
+      "bytes": 61966
+    },
+    {
+      "path": "images/30134bfd7ac2f6b69f82140f.webp",
+      "bytes": 60516
+    },
+    {
+      "path": "images/7742cae18fa6a57442d9f9d7.webp",
+      "bytes": 74400
+    },
+    {
+      "path": "images/4f75b242836fabb21c66c0ee.webp",
+      "bytes": 37154
+    },
+    {
+      "path": "images/ae4a3b3e8178d893a01accca.webp",
+      "bytes": 64516
+    },
+    {
+      "path": "images/a27a3f3d854922c84fa09639.webp",
+      "bytes": 82444
+    },
+    {
+      "path": "images/8a800a7fe76e94540bf90e09.webp",
+      "bytes": 67688
+    },
+    {
+      "path": "images/6bf0f1ae4f0b07ef6ff46808.webp",
+      "bytes": 65094
+    },
+    {
+      "path": "images/9481cb39b24cea6e3084d2f7.webp",
+      "bytes": 51554
+    },
+    {
+      "path": "images/8e54dccd05563a634c964307.webp",
+      "bytes": 62628
+    },
+    {
+      "path": "images/18ec7a377681c2f44dc1bec1.webp",
+      "bytes": 81096
+    },
+    {
+      "path": "images/00c475bbbd76a0a52de80ed7.webp",
+      "bytes": 52460
+    },
+    {
+      "path": "images/2089f2946c6ed3afe89db5aa.webp",
+      "bytes": 43838
+    },
+    {
+      "path": "images/fb11def3a172a2ecb8c0fdaf.webp",
+      "bytes": 59978
+    },
+    {
+      "path": "images/31f5ffd32cfeae22a3bc5b8f.webp",
+      "bytes": 41482
+    },
+    {
+      "path": "images/57caa8261326d35ad5f8eb4f.webp",
+      "bytes": 50262
+    },
+    {
+      "path": "images/2566a18a6272d6f24cb3198a.webp",
+      "bytes": 63448
+    },
+    {
+      "path": "images/daa2378671bb98e9f3309c13.webp",
+      "bytes": 395478
+    },
+    {
+      "path": "images/14063e949fe4c45e888e31d0.webp",
+      "bytes": 218828
+    },
+    {
+      "path": "images/9579787bf446b9638385f76b.webp",
+      "bytes": 260442
+    },
+    {
+      "path": "images/65046d737e6c8b8558c6b8cb.webp",
+      "bytes": 408268
+    },
+    {
+      "path": "images/d1a28d23c77a4e602319f7e9.webp",
+      "bytes": 416722
+    },
+    {
+      "path": "images/57359130f5ddce6b66640936.webp",
+      "bytes": 462028
+    },
+    {
+      "path": "images/87c71372eed7eb62bd661a60.webp",
+      "bytes": 87222
+    },
+    {
+      "path": "images/8988b330404bf7f1fd1c65c1.webp",
+      "bytes": 618960
+    },
+    {
+      "path": "images/f9b8ce2933ec0b4b06e02d83.webp",
+      "bytes": 443150
+    },
+    {
+      "path": "images/19a029d8cc3ef7d66e9e699e.webp",
+      "bytes": 193864
+    },
+    {
+      "path": "images/8ce6da51d8a84e99e813a5f7.webp",
+      "bytes": 373972
+    },
+    {
+      "path": "images/678d7e05f8b9caab463d2077.webp",
+      "bytes": 316212
+    },
+    {
+      "path": "images/7decffbd7b89894bab9d8c92.webp",
+      "bytes": 311892
+    },
+    {
+      "path": "images/0f5584c5289db202c9ac8f79.webp",
+      "bytes": 277784
+    },
+    {
+      "path": "images/32338f31df79ed0973b99f9e.webp",
+      "bytes": 313354
+    },
+    {
+      "path": "images/19eaa8492462380959dc6b1a.webp",
+      "bytes": 208926
+    },
+    {
+      "path": "images/9f05daef25a03d31b733c8cb.webp",
+      "bytes": 616942
+    },
+    {
+      "path": "images/08c9be25295b529b4a11ad44.webp",
+      "bytes": 382566
+    },
+    {
+      "path": "images/cb3d1db9d78d5ab6951609df.webp",
+      "bytes": 369792
+    },
+    {
+      "path": "images/d2e6a799c100ee447d7f301d.webp",
+      "bytes": 63788
+    },
+    {
+      "path": "images/a7c8e4d4de1cb80ad8b50c42.webp",
+      "bytes": 345406
+    },
+    {
+      "path": "images/add1d12c880a08d0cd7c0dd2.webp",
+      "bytes": 144490
+    },
+    {
+      "path": "images/033094d0a205234ac03ace43.webp",
+      "bytes": 277210
+    },
+    {
+      "path": "images/3275f9c5735e00247aaa7ba7.webp",
+      "bytes": 360436
+    },
+    {
+      "path": "images/a6e7f0e9b9b7cc36fb3f961f.webp",
+      "bytes": 216630
+    },
+    {
+      "path": "images/ed620988c54e9c6c427bf83f.webp",
+      "bytes": 273390
+    },
+    {
+      "path": "images/5bd3eca9b1fa1c5445add645.webp",
+      "bytes": 157010
+    },
+    {
+      "path": "images/7771de5b6dd6f1b9004525ab.webp",
+      "bytes": 255162
+    },
+    {
+      "path": "images/73b2ad24c257f323409d18dd.webp",
+      "bytes": 245056
+    },
+    {
+      "path": "images/ebbd37b50baa2b1e1f0ac795.webp",
+      "bytes": 244204
+    },
+    {
+      "path": "images/f33452d689964478659c92ed.webp",
+      "bytes": 259418
+    },
+    {
+      "path": "images/2c9fb9d0abbafdcc36890884.webp",
+      "bytes": 211938
+    },
+    {
+      "path": "images/97b1204662100d892cdecc62.webp",
+      "bytes": 229876
+    },
+    {
+      "path": "images/ca09ddcb674c7301c9523a32.webp",
+      "bytes": 36590
+    },
+    {
+      "path": "images/335a5b9325e3edc819b24620.webp",
+      "bytes": 232930
+    },
+    {
+      "path": "images/d4af02125222a4d3420548f0.webp",
+      "bytes": 197616
+    },
+    {
+      "path": "images/f960acaf9a1a4201e3de668f.webp",
+      "bytes": 65428
+    },
+    {
+      "path": "images/3b4654b125607c0c761a457f.webp",
+      "bytes": 60752
+    },
+    {
+      "path": "images/f1e3ce5c7c5b6a1e353764d7.webp",
+      "bytes": 338536
+    },
+    {
+      "path": "images/49870233b39cc92139b0e2cf.webp",
+      "bytes": 250112
+    },
+    {
+      "path": "images/d3244ed27eedae3bc2dca693.webp",
+      "bytes": 240578
+    },
+    {
+      "path": "images/91acd6323e55628d14ff0f44.webp",
+      "bytes": 133870
+    },
+    {
+      "path": "images/67d354d5a576a65328191436.webp",
+      "bytes": 205232
+    },
+    {
+      "path": "images/e0c881487a4932d1ca3906c1.webp",
+      "bytes": 167428
+    },
+    {
+      "path": "images/01764ad942a1e84e75821aae.webp",
+      "bytes": 163630
+    },
+    {
+      "path": "images/dd6fa996945eac44e32e0c76.webp",
+      "bytes": 179556
+    },
+    {
+      "path": "images/ed15626f0ba980163718dc6d.webp",
+      "bytes": 246892
+    },
+    {
+      "path": "images/18f3dd3ab5c4bd403cac7bef.webp",
+      "bytes": 301604
+    },
+    {
+      "path": "images/4b979d67324de38d03036b95.webp",
+      "bytes": 198200
+    },
+    {
+      "path": "images/0669b5c3b207a46642ef6af0.webp",
+      "bytes": 152174
+    },
+    {
+      "path": "images/1e83cdc104d23dc2b3c0b62f.webp",
+      "bytes": 150864
+    },
+    {
+      "path": "images/e01d56f7fd3c7fa2b5ca1229.webp",
+      "bytes": 183926
+    },
+    {
+      "path": "images/b6680520ed219b2caac6d24b.webp",
+      "bytes": 221476
+    },
+    {
+      "path": "data/reader-meta.1443bae4e23ae0fb.json.gz",
+      "bytes": 19177
+    },
+    {
+      "path": "data/reader-000.630740592f70109d.json.gz",
+      "bytes": 791158
+    },
+    {
+      "path": "data/reader-001.0b84ca2ce6e2dfd4.json.gz",
+      "bytes": 591139
+    },
+    {
+      "path": "data/reader-002.277d2bc051ad3025.json.gz",
+      "bytes": 522880
+    },
+    {
+      "path": "data/reader-003.7f07db73a92e4084.json.gz",
+      "bytes": 473621
+    },
+    {
+      "path": "data/reader-004.806fb2f9cdcd47c1.json.gz",
+      "bytes": 434706
+    },
+    {
+      "path": "data/reader-005.83c5f4a70de0bd33.json.gz",
+      "bytes": 402426
+    },
+    {
+      "path": "data/reader-006.0f72e29be3f05602.json.gz",
+      "bytes": 377831
+    },
+    {
+      "path": "data/reader-007.601fe566f5a4a35c.json.gz",
+      "bytes": 352162
+    },
+    {
+      "path": "data/reader-008.0f098296e2f70e20.json.gz",
+      "bytes": 310742
+    },
+    {
+      "path": "data/reader-009.b334d63ea60a908c.json.gz",
+      "bytes": 308129
+    },
+    {
+      "path": "data/reader-010.df10d86026536d8b.json.gz",
+      "bytes": 240807
+    },
+    {
+      "path": "data/reader-011.f3e1db4c41165dce.json.gz",
+      "bytes": 249179
+    },
+    {
+      "path": "data/reader-012.958d3aadb23d7ac4.json.gz",
+      "bytes": 247176
+    },
+    {
+      "path": "data/reader-013.10302697100718e3.json.gz",
+      "bytes": 247971
+    },
+    {
+      "path": "data/reader-014.f56e338dfa83b314.json.gz",
+      "bytes": 242464
+    },
+    {
+      "path": "data/reader-015.778c671d3792bae2.json.gz",
+      "bytes": 277903
+    },
+    {
+      "path": "data/reader-016.f730cd54c8ac3fc1.json.gz",
+      "bytes": 291762
+    },
+    {
+      "path": "data/reader-017.139a4b698e2a7d61.json.gz",
+      "bytes": 238588
+    },
+    {
+      "path": "data/reader-018.a031f3ee23088492.json.gz",
+      "bytes": 275745
+    },
+    {
+      "path": "data/reader-019.d58633d456271964.json.gz",
+      "bytes": 3705
+    },
+    {
+      "path": "data/research-meta.3bcdb85878e39b37.json.gz",
+      "bytes": 274
+    },
+    {
+      "path": "data/research-labels.928ace6a8dbdd1b9.json.gz",
+      "bytes": 12579
+    },
+    {
+      "path": "data/research-characters-000.9f9b00f44397d75b.json.gz",
+      "bytes": 1091596
+    },
+    {
+      "path": "data/research-characters-001.7b55440d97f2eec6.json.gz",
+      "bytes": 990416
+    },
+    {
+      "path": "data/research-characters-002.c4bc408f55ab0757.json.gz",
+      "bytes": 947970
+    },
+    {
+      "path": "data/research-characters-003.23f0ef18e897c030.json.gz",
+      "bytes": 923172
+    },
+    {
+      "path": "data/research-characters-004.90d81647b366ceb1.json.gz",
+      "bytes": 919017
+    },
+    {
+      "path": "data/research-characters-005.9adf9aadf147c1bc.json.gz",
+      "bytes": 891534
+    },
+    {
+      "path": "data/research-characters-006.ab253ab8a9a72331.json.gz",
+      "bytes": 874777
+    },
+    {
+      "path": "data/research-characters-007.ba0a46ecfe0c7744.json.gz",
+      "bytes": 841423
+    },
+    {
+      "path": "data/research-characters-008.6e1221d22497aaeb.json.gz",
+      "bytes": 815533
+    },
+    {
+      "path": "data/research-characters-009.7962bcc31b0d1601.json.gz",
+      "bytes": 781280
+    },
+    {
+      "path": "data/research-characters-010.4a783d2d89b5293f.json.gz",
+      "bytes": 755587
+    },
+    {
+      "path": "data/research-characters-011.404342401f668a95.json.gz",
+      "bytes": 727388
+    },
+    {
+      "path": "data/research-characters-012.b2230257a0aef26a.json.gz",
+      "bytes": 701842
+    },
+    {
+      "path": "data/research-characters-013.a574568cfe9d562f.json.gz",
+      "bytes": 671570
+    },
+    {
+      "path": "data/research-characters-014.0f99e7089048b9c4.json.gz",
+      "bytes": 659245
+    },
+    {
+      "path": "data/research-characters-015.00ea1deea20ab74c.json.gz",
+      "bytes": 604012
+    },
+    {
+      "path": "data/research-characters-016.1580a8b13dae6c88.json.gz",
+      "bytes": 579581
+    },
+    {
+      "path": "data/research-characters-017.45513d8a71807c33.json.gz",
+      "bytes": 505929
+    },
+    {
+      "path": "data/research-characters-018.8c4e9e60ec9d34bb.json.gz",
+      "bytes": 548698
+    },
+    {
+      "path": "data/research-characters-019.c5efd16474134c6c.json.gz",
+      "bytes": 451647
+    },
+    {
+      "path": "data/research-characters-020.4e6953e25b442a87.json.gz",
+      "bytes": 332650
+    },
+    {
+      "path": "data/research-characters-021.3605da7d3afade46.json.gz",
+      "bytes": 384240
+    },
+    {
+      "path": "data/research-characters-022.cc4cfbf218a10698.json.gz",
+      "bytes": 376780
+    },
+    {
+      "path": "data/research-characters-023.1ca279457a5eb6af.json.gz",
+      "bytes": 395892
+    },
+    {
+      "path": "data/research-characters-024.ea4e84153c7fe906.json.gz",
+      "bytes": 364976
+    },
+    {
+      "path": "data/research-characters-025.bdf160825369a784.json.gz",
+      "bytes": 372849
+    },
+    {
+      "path": "data/research-characters-026.6d9396f80466f06c.json.gz",
+      "bytes": 408526
+    },
+    {
+      "path": "data/research-characters-027.b1c475f7312a8f52.json.gz",
+      "bytes": 439413
+    },
+    {
+      "path": "data/research-characters-028.6a00989bd0352ca2.json.gz",
+      "bytes": 400856
+    },
+    {
+      "path": "data/research-characters-029.e9f17bbbb7586df4.json.gz",
+      "bytes": 311684
+    },
+    {
+      "path": "data/research-characters-030.9f7552ad83c3807a.json.gz",
+      "bytes": 339043
+    },
+    {
+      "path": "data/research-characters-031.4eff038d8053dfd7.json.gz",
+      "bytes": 350787
+    },
+    {
+      "path": "data/research-characters-032.7a8a7699beab5917.json.gz",
+      "bytes": 300166
+    },
+    {
+      "path": "data/research-characters-033.a9429bcaac206aa1.json.gz",
+      "bytes": 274193
+    },
+    {
+      "path": "data/research-taxonomy-000.72579dd7607e8463.json.gz",
+      "bytes": 6512
+    },
+    {
+      "path": "data/research-coverage.b9a8d55863f72d06.json.gz",
+      "bytes": 531988
+    },
+    {
+      "path": "data/research-reviews-000.06897b75bc47c29c.json.gz",
+      "bytes": 10586
+    },
+    {
+      "path": "data/research-reviews-001.d60bd4c13253101c.json.gz",
+      "bytes": 1320238
+    },
+    {
+      "path": "data/research-reviews-002.afac08c1ec843bbc.json.gz",
+      "bytes": 87563
+    },
+    {
+      "path": "data/research-animeWorks-000.ff5a83a972a37879.json.gz",
+      "bytes": 1394838
+    },
+    {
+      "path": "data/research-animeWorks-001.2c703f51cf8c01b4.json.gz",
+      "bytes": 44714
+    },
+    {
+      "path": "data/research-excludedAnimeCharacters-000.5de3332ef19a7303.json.gz",
+      "bytes": 147787
+    },
+    {
+      "path": "data/research-gameWorks-000.b127c53c8f39a51d.json.gz",
+      "bytes": 13958
+    },
+    {
+      "path": "data/research-excludedGames-000.de2a40048501e3b6.json.gz",
+      "bytes": 231839
+    },
+    {
+      "path": "data/research-excludedGames-001.0101cc9ab454789c.json.gz",
+      "bytes": 181592
+    },
+    {
+      "path": "data/research-excludedGames-002.61c88fb0f7fe94c7.json.gz",
+      "bytes": 127909
+    },
+    {
+      "path": "data.js",
+      "bytes": 7015
+    },
+    {
+      "path": "app.js",
+      "bytes": 19858
+    },
+    {
+      "path": "research.js",
+      "bytes": 21434
+    },
+    {
+      "path": "style.css",
+      "bytes": 21219
+    },
+    {
+      "path": "index.html",
+      "bytes": 5014
+    },
+    {
+      "path": "research.html",
+      "bytes": 2137
+    }
+  ]
+}
