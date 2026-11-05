@@ -80,5 +80,15 @@
     "description": "세로형 머지 디펜스의 개발·관리 및 인수인계",
     "status": "기업 협약",
     "type": "기업 협약 프로젝트"
+  },
+  {
+    "id": "nlp-research",
+    "number": "R1",
+    "title": "한국어 혐오 표현 분류 연구",
+    "group": "연구 경험",
+    "description": "두 데이터셋과 세 언어 모델의 학습·성능 비교 · 자연어 처리 학부연구",
+    "status": "연구 경험",
+    "deck": "research",
+    "primary": false
   }
 ]
