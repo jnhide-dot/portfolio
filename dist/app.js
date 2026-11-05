@@ -13,9 +13,10 @@ const menuGroups=[
   {id:'about',title:'About Me',items:[]},
   {id:'portfolio',title:'문서',items:docs.filter(d=>d.primary||d.deck==='research')},
   {id:'projects',title:'프로젝트',items:docs.filter(d=>d.type)},
-  {id:'playlist',title:'플레이리스트',items:playlist}
+  {id:'playlist',title:'플레이리스트',items:playlist},
+  {id:'tools',title:'도구',items:[{id:'nikke',title:'니케 편성 실험실'}]}
 ];
-nav.innerHTML=menuGroups.map(g=>g.id==='about'?'<div class="nav-group"><a class="nav-trigger" data-section="about" href="#/about">About Me</a></div>':'<div class="nav-group"><button class="nav-trigger" data-section="'+g.id+'" aria-expanded="false" aria-controls="submenu-'+g.id+'">'+g.title+'<svg class="nav-chevron" viewBox="0 0 20 20" width="16" height="16" fill="none" aria-hidden="true"><path d="m5 7.5 5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="nav-dropdown" id="submenu-'+g.id+'" hidden><div class="dropdown-heading"><strong>'+g.title+'</strong><a href="#/'+g.id+'">전체 보기 →</a></div><div class="dropdown-links">'+g.items.map(d=>'<a href="'+(g.id==='about'?'#/about/'+d.id:g.id==='playlist'?'#/games/'+d.id:link(d))+'">'+E(d.title)+(g.id==='projects'?'<small>'+E(d.type)+'</small>':'')+'</a>').join('')+'</div></div></div>').join('');
+nav.innerHTML=menuGroups.map(g=>g.id==='about'?'<div class="nav-group"><a class="nav-trigger" data-section="about" href="#/about">About Me</a></div>':'<div class="nav-group"><button class="nav-trigger" data-section="'+g.id+'" aria-expanded="false" aria-controls="submenu-'+g.id+'">'+g.title+'<svg class="nav-chevron" viewBox="0 0 20 20" width="16" height="16" fill="none" aria-hidden="true"><path d="m5 7.5 5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="nav-dropdown" id="submenu-'+g.id+'" hidden><div class="dropdown-heading"><strong>'+g.title+'</strong><a href="#/'+g.id+'">전체 보기 →</a></div><div class="dropdown-links">'+g.items.map(d=>'<a href="'+(g.id==='about'?'#/about/'+d.id:g.id==='playlist'?'#/games/'+d.id:g.id==='tools'?'tools/nikke/':link(d))+'">'+E(d.title)+(g.id==='projects'?'<small>'+E(d.type)+'</small>':'')+'</a>').join('')+'</div></div></div>').join('');
 let hoverOpened=false;
 function closeSubmenus(){nav.querySelectorAll('button.nav-trigger').forEach(b=>b.setAttribute('aria-expanded','false'));nav.querySelectorAll('.nav-dropdown').forEach(p=>p.hidden=true);hoverOpened=false;}
 function openSubmenu(button){closeSubmenus();button.setAttribute('aria-expanded','true');document.getElementById(button.getAttribute('aria-controls')).hidden=false;}
@@ -136,6 +137,7 @@ else if(kind==='about')aboutPage(id);
 else if(kind==='portfolio'&&(!id||id==='spirit'))portfolioPage(id==='spirit');
 else if(['analysis','design'].includes(kind))portfolioPage(true);
 else if(kind==='projects')collection(kind);
+else if(kind==='tools')toolsPage();
 else if(kind==='docs'&&doc)documentPage(doc);
 else if(kind==='artifacts'&&attachments.some(a=>a.id===id&&a.body))artifactPage(attachments.find(a=>a.id===id));
 else if(kind==='previews'&&previews.some(p=>p.id===id))previewPage(previews.find(p=>p.id===id),parts[2]);
@@ -203,3 +205,11 @@ window.addEventListener('hashchange',()=>{
 });
 render();
 if(history.state?.portfolioPopup&&pageMain.classList.contains('home-main'))showPopup(history.state.portfolioPopup.path);
+
+function toolsPage(){
+ main.className='collection-main tools-main';
+ document.title='도구 — Jnhide';
+ main.innerHTML=`<p class="eyebrow">TOOLS</p><h1>도구</h1><p class="intro">편성을 바꾸고, 같은 조건에서 결과를 비교합니다.</p>
+ <article class="lab-card"><div class="lab-card-visual"><span class="lab-kicker">NIKKE / COMBAT LAB</span><div class="lab-squads" aria-hidden="true"><span>A</span><b>↔</b><span>B</span></div><p>편성 · 스킬 · 보스</p></div>
+ <div class="lab-card-body"><span class="badge">브라우저에서 실행</span><h2>니케 편성 실험실</h2><p>기존 캐릭터와 직접 설계한 캐릭터를 편성하고, 보스·코어 조건에 따른 대미지와 버스트 회전을 비교합니다.</p><ul><li>두 편성의 대미지·회복 기여도 비교</li><li>애장품·버스트 순서·사용자 정의 스킬 설정</li><li>보스 패턴·코어·난수 조건 설정</li></ul><a class="solid-link" href="tools/nikke/">편성 실험실 열기 →</a><p class="lab-note">설치 없이 실행 · 첫 실행 시 계산 자료를 불러옵니다.<br>보스 피격·생존 결과는 실전 검증 전인 시험 모델입니다.</p></div></article>`;
+}

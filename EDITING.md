@@ -43,3 +43,13 @@
 ## 로컬 미리보기
 
 `npm run build` 후 `npm run dev`로 http://127.0.0.1:4173 을 엽니다. 추가 패키지 설치 없이 Node.js로 실행됩니다.
+# 니케 편성 실험실
+
+- 홈페이지의 **도구** 메뉴에서 `tools/nikke/`를 엽니다.
+- Python 서버 없이 Pyodide 0.28.3으로 방문자의 브라우저에서 계산합니다. 첫 실행 시 jsDelivr에서 실행 환경을 내려받습니다.
+- 계산마다 독립 작업 공간을 사용합니다. 취소하거나 5분을 초과하면 계산을 종료하며, 페이지의 편성 설정은 유지됩니다.
+- 결과는 서버에 저장하지 않습니다. **결과 내보내기**로 JSON을 저장합니다. 편성 설정·시험 캐릭터 보관은 기존 브라우저 저장 방식을 사용합니다.
+- 엔진은 Jgaram/nikke-calc (MIT)이며 `dist/tools/nikke/LICENSE.txt`에 라이선스를 포함합니다. 보스 피격·생존 모델은 실전 미검증입니다.
+- 로컬 원본은 `../research/leona-simulator/`입니다. 새 계산 데이터 반영 시 `python scripts/package-nikke.py` 후 `npm run build`를 실행합니다. 일반 홈페이지 빌드는 이미 포장된 도구를 그대로 사용합니다.
+- 포장 목록은 명시적인 허용 목록입니다. 계정 프로필, 쿠키, 실행 이력, 비공개 설정은 넣지 않습니다. `engine-manifest.json`으로 포장 파일과 해시를 확인할 수 있습니다.
+- `browser-api.js`, `calculation-worker.js`, `web.css`는 웹 실행용 파일입니다. 로컬 서버의 계산식·스킬 설계 자체는 바꾸지 않습니다.
