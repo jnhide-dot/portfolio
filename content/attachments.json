@@ -152,5 +152,17 @@
     "title": "노션에서 읽기",
     "type": "문서",
     "url": "https://www.notion.so/3c6ec130625581ba934dfbbc7465ee04"
+  },
+  {
+    "document": "nlp-research",
+    "title": "연구 발표 자료 원본 (PPTX)",
+    "type": "문서",
+    "url": "files/nlp-research/hate-speech-model-comparison.pptx"
+  },
+  {
+    "document": "nlp-research",
+    "title": "학술대회 논문 정보 · DBpia",
+    "type": "문서",
+    "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11705511"
   }
 ]
