@@ -31,4 +31,5 @@
 
 .research-section{margin-top:56px;padding-top:30px;border-top:1px solid #dce3eb}.research-section .section-title{margin-bottom:18px}.research-section .section-title h2{font-size:23px}.research-section .doc-row{border-bottom:1px solid #dce3eb}
 
-.article .research-poster{margin:24px 0 42px}.research-poster>a{display:block;cursor:zoom-in}.research-poster img{display:block;width:100%;height:auto;border:1px solid #dce3eb;border-radius:6px}.research-poster figcaption{margin-top:12px;font-size:13px;color:#637084;line-height:1.7}
+
+.research-chart-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:24px 0 42px}.article .research-chart{min-width:0;margin:0}.research-chart figcaption{font-weight:700;color:#243f50;margin-bottom:12px;font-size:16px}.research-chart a{display:block;cursor:zoom-in;border:1px solid #dce3eb;border-radius:6px;background:white;padding:10px}.research-chart img{display:block;width:100%;height:auto}.article .research-figure-note{font-size:13px;color:#637084}@media(max-width:700px){.research-chart-pair{grid-template-columns:1fr;gap:28px}}
