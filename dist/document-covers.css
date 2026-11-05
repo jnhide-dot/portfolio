@@ -30,3 +30,5 @@
 @media(max-width:800px){.document-hero-cover .document-card-art{aspect-ratio:16/9}.document-hero-cover .cover-copy strong{font-size:8.1cqi}.document-hero-cover .cover-kicker{font-size:2.45cqi;margin-bottom:4cqi}.document-hero-cover .cover-caption{font-size:3cqi;margin-top:5cqi}.synced-document .article h2{font-size:21px;margin-top:44px}.synced-document .article h3{font-size:18px}.synced-document .table-scroll table{min-width:490px}.synced-document .article blockquote{padding:16px;font-size:15px}}
 
 .research-section{margin-top:56px;padding-top:30px;border-top:1px solid #dce3eb}.research-section .section-title{margin-bottom:18px}.research-section .section-title h2{font-size:23px}.research-section .doc-row{border-bottom:1px solid #dce3eb}
+
+.article .research-poster{margin:24px 0 42px}.research-poster>a{display:block;cursor:zoom-in}.research-poster img{display:block;width:100%;height:auto;border:1px solid #dce3eb;border-radius:6px}.research-poster figcaption{margin-top:12px;font-size:13px;color:#637084;line-height:1.7}

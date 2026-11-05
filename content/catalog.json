@@ -89,6 +89,7 @@
     "description": "두 데이터셋과 세 언어 모델의 학습·성능 비교 · 자연어 처리 학부연구",
     "status": "연구 경험",
     "deck": "research",
-    "primary": false
+    "primary": false,
+    "contentFormat": "html"
   }
 ]
