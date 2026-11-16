@@ -12,6 +12,8 @@
   function homeGame(g){const art=localGames[g.id]?{url:'images/portfolio-20261002/'+localGames[g.id]+'.jpg'}:playlistImages.find(i=>i.game===g.id)||images.find(i=>g.title.includes(i.match));return '<a class="pv-game-card" href="#/games/'+escape(g.id)+'">'+(art?'<div class="pv-game-art pv-has-art"><img src="'+escape(art.url)+'" alt="" loading="lazy"></div>':'')+'<div class="pv-game-copy"><h3>'+escape(g.title)+'</h3></div></a>';}
   function home(){return templates.home.replace('{{documents}}',documentCards()).replace('{{projects}}',projectCards()).replace('{{games}}',playlist.slice(0,12).map(homeGame).join('')).replace('{{gameCount}}',playlist.length);}
   function decorate(main,kind,id){
+    const documentId=kind==='docs'?id:kind==='artifacts'?window.PORTFOLIO.attachments.find(a=>a.id===id)?.document:kind==='previews'?'project-md':null;
+    if(documentId)main.dataset.document=documentId;else delete main.dataset.document;
     if(kind==='about'){
       const section=main.querySelector('.about-section');
       if(section&&!section.querySelector('.pv-about-art')){section.classList.add('about-profile-art');section.insertAdjacentHTML('beforeend',templates['about-art']);}
