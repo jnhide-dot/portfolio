@@ -346,6 +346,13 @@ html:has(main.reader-main){background:#e9ecf1;color-scheme:light}
 #portfolio-theme .reader-main .document-head{border-color:var(--line)}
 #portfolio-theme .reader-main .document-head h1{color:var(--reader-accent)}
 #portfolio-theme .reader-main :is(.eyebrow,.back-link,.article a,.doc-pager a,.toc strong){color:var(--blue)}
+/* Text links stay recognizable without relying on hue or hover alone. */
+#portfolio-theme .reader-main :is(.article a:not(:has(img)):not(.related-document),.back-link,.doc-pager a,.attachment){color:var(--blue);font-weight:600;text-decoration-line:underline;text-decoration-thickness:1.5px;text-underline-offset:.24em;text-decoration-skip-ink:auto}
+#portfolio-theme .reader-main .article :is(h2,h3,h4) a{font-weight:inherit}
+#portfolio-theme .reader-main .related-document strong{color:var(--blue);text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.24em}
+#portfolio-theme .reader-main :is(.article a:not(:has(img)):not(.related-document),.back-link,.doc-pager a):is(:hover,:focus-visible){color:var(--reader-accent);background:var(--reader-tint);text-decoration-thickness:2px}
+#portfolio-theme .reader-main a:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
+#portfolio-theme .reader-main .toc a:is(:hover,:focus-visible){text-decoration:underline;text-underline-offset:.2em}
 #portfolio-theme .reader-main :is(.intro,.doc-info,.toc a){color:var(--muted)}
 #portfolio-theme .reader-main .badge{background:var(--reader-tint);color:var(--blue)}
 #portfolio-theme .reader-main .article :is(h2,h3,h4){color:var(--reader-accent)}
