@@ -26,9 +26,9 @@
     }
     if(kind==='tools'){
       const lab=main.querySelector('.lab-card-visual');
-      if(lab)lab.insertAdjacentHTML('afterbegin','<img class="theme-tool-art" src="images/nikke-proposal/leona.webp" alt="니케 레오나" loading="lazy">');
+      if(lab)lab.insertAdjacentHTML('afterbegin','<img class="theme-tool-preview" src="images/tool-previews/nikke-lineup.jpg" alt="니케 편성 실험실의 A 기준 편성과 B 비교 편성 화면" loading="lazy">');
       const atlas=main.querySelector('.atlas-card .lab-card-visual');
-      if(atlas)atlas.insertAdjacentHTML('afterbegin','<div class="theme-atlas-art"><img src="images/portfolio-20261002/wuwa.jpg" alt="명조" loading="lazy"><img src="images/portfolio-20261002/zzz.jpg" alt="젠레스 존 제로" loading="lazy"></div>');
+      if(atlas)atlas.insertAdjacentHTML('afterbegin','<img class="theme-tool-preview" src="images/tool-previews/character-atlas.jpg" alt="캐릭터 아틀라스의 인물 이미지와 작품·모에속성 카드 목록" loading="lazy">');
     }
     if(kind==='credits')main.insertAdjacentHTML('beforeend','<div class="credit-row"><h2>캐릭터 SD 스티커</h2><p>© Kuro Games · © HoYoverse. 팬덤 장식에 사용한 캐릭터 이미지는 각 권리자에게 저작권이 있습니다.</p><a href="https://github.com/nikunj3011/Wuthering-Waves-Stickers" target="_blank" rel="noopener">명조 이미지 보관 출처 ↗</a> · <a href="https://github.com/nikunj3011/ZZZ-stickers" target="_blank" rel="noopener">젠레스 존 제로 이미지 보관 출처 ↗</a> · <a href="https://github.com/Ace4896/hsr-stickers-whatsapp" target="_blank" rel="noopener">붕괴: 스타레일 이미지 보관 출처 ↗</a></div>');
   }

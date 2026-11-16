@@ -99,11 +99,13 @@ html{background:#0d1627;color-scheme:dark}
 #portfolio-theme .lab-card-visual{position:relative;overflow:hidden;background:linear-gradient(135deg,#32304f,#14243e);color:var(--ink)}
 #portfolio-theme .lab-card-body{background:#142137;color:var(--ink)}
 #portfolio-theme .lab-card-body :is(p,li){color:var(--muted)}
-#portfolio-theme .lab-card-visual .lab-squads,#portfolio-theme .lab-card-visual .atlas-index{visibility:hidden}
-#portfolio-theme .theme-tool-art{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:.85}
-#portfolio-theme .theme-atlas-art{position:absolute;inset:0;display:flex;opacity:.75}
-#portfolio-theme .theme-atlas-art>img{width:50%;height:100%;object-fit:cover;object-position:60%}
-#portfolio-theme .lab-card-visual .lab-kicker,#portfolio-theme .lab-card-visual>p{position:relative;z-index:1;background:#0d1627a8;color:#ece6ff;padding:7px 9px;border-radius:5px}
+#portfolio-theme .lab-card-visual .lab-squads,#portfolio-theme .lab-card-visual .atlas-index{display:none}
+#portfolio-theme .tools-main .lab-card-visual{min-height:360px;background:linear-gradient(145deg,#30334f,#17273f)}
+#portfolio-theme .tools-main .atlas-card .lab-card-visual{background:linear-gradient(145deg,#294947,#172b36)}
+#portfolio-theme .theme-tool-preview{position:absolute;left:20px;top:58px;width:calc(100% - 40px);height:calc(100% - 112px);object-fit:contain;background:#f8f9fb;border:1px solid #d6dce6;border-radius:7px;box-shadow:0 12px 28px #07101c40}
+#portfolio-theme .lab-card-visual .lab-kicker{position:absolute;top:22px;left:22px;z-index:1;color:#d4c9f3}
+#portfolio-theme .lab-card-visual>p{position:absolute;bottom:18px;left:22px;z-index:1;margin:0;color:#dbe3f2;font-size:13px}
+#portfolio-theme .atlas-card .lab-card-visual .lab-kicker{color:#b6dcd1}
 #portfolio-theme .solid-link{color:var(--blue);border-color:#8674b7}
 #portfolio-theme footer{max-width:1320px;margin:auto;padding:28px 40px;color:var(--muted);border-color:var(--line);background:#0b1423}
 #portfolio-theme footer .wordmark{color:var(--ink);font-size:17px}
