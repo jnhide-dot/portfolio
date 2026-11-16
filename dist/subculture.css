@@ -235,10 +235,6 @@
 #portfolio-theme .nikke-document .toc a.sub{border-left:2px solid #35445e}
 #portfolio-theme .nk-cycle-result .nk-card{background:#17263c}
 #portfolio-theme .nk-sheet{background:#242123}
-#portfolio-theme .nk-skill{background:#17263c}
-#portfolio-theme .nk-skill summary{color:#c4b7ff}
-#portfolio-theme .nk-skill strong{color:#c4b7ff}
-#portfolio-theme .nk-reset{color:#acb8cf!important}
 #portfolio-theme .nk-design-main{background:linear-gradient(145deg,#17263c,#17263c)}
 #portfolio-theme .nk-reference-pair img{background:#17263c;border:1px solid #35445e}
 #portfolio-theme .nk-impact-field{background:#30383f}
@@ -372,3 +368,29 @@ html{background:#0d1627;color-scheme:dark}
 @media(max-width:560px){#portfolio-theme .eh-profile-name{min-height:0}#portfolio-theme .games-grid{gap:12px}#portfolio-theme .game-cover{height:155px}#portfolio-theme .game-search input{font-size:16px}#portfolio-theme .game-card-info{font-size:11px;padding:10px}#portfolio-theme .about-tool-grid{gap:10px}#portfolio-theme .about-tool-grid section{padding:13px}#portfolio-theme .pv-about-art>small{font-size:10px}#portfolio-theme .eh-document-grid,#portfolio-theme .eh-project-grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){#portfolio-theme *,#portfolio-theme *:before,#portfolio-theme *:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 @media print{html,#portfolio-theme{background:white;color:#182234;color-scheme:light}#portfolio-theme .article{color:#182234}#portfolio-theme .article a{color:#315ed7}}
+
+/* Reader contrast: color-only corrections; retain document content and layout. */
+#portfolio-theme .reader-main:not(.consumption-document){--reader-accent:#d5c8ff;--reader-banner:#242b46}
+#portfolio-theme .reader-main:not(.consumption-document) .article{color:#e2e8f5}
+#portfolio-theme .reader-main:not(.consumption-document) .article :is(h2,h3,h4){color:var(--reader-accent)}
+#portfolio-theme .reader-main:not(.consumption-document) .article :is(th){background:#24314c;color:#e7dfff}
+#portfolio-theme .reader-main:not(.consumption-document) :is(.table-scroll,.research-chart a){border-color:#40516c}
+#portfolio-theme .reader-main:not(.consumption-document) :is(.research-chart figcaption,.research-figure-note,.related-document span){color:#bbc8df}
+#portfolio-theme .reader-main.synced-document{--doc-accent:#a4d6b2;--doc-tint:#1b302e;--doc-ink:#c1e6cb;--reader-accent:#c1e6cb;--reader-banner:#1b302e}
+#portfolio-theme .reader-main.analysis-document{--doc-accent:#91d3d9;--doc-tint:#182e3c;--doc-ink:#b7e6e9;--reader-accent:#b7e6e9;--reader-banner:#182e3c}
+#portfolio-theme .synced-document .article h2{color:var(--reader-accent);background:linear-gradient(90deg,var(--reader-banner),transparent)}
+#portfolio-theme .synced-document .article h3{color:var(--doc-ink)}
+#portfolio-theme .reader-main.synced-document .article th{background:var(--doc-tint);color:var(--doc-ink)}
+#portfolio-theme .reader-main.nikke-document{--nk-dark:#303e57;--nk-muted:#bbc8df;--reader-accent:#bce3ff;--reader-banner:#1b2e46}
+#portfolio-theme .nikke-document .article h2{background:linear-gradient(90deg,var(--reader-banner),transparent);border-left-color:#a4d9fa}
+#portfolio-theme .nikke-document .article :is(.nk-stage,.nk-boss,.nk-team span){background:#303e57;color:#f3f6ff}
+#portfolio-theme .nikke-document :is(.nk-stage.full,.nk-team .focus span,.nk-proposal .nk-stage){background:#a4d9fa;color:#162238}
+#portfolio-theme .nikke-document .chosen .nk-label{background:#f9b37e;color:#633d20}
+#portfolio-theme .nikke-document .article td strong{color:#bce3ff}
+#portfolio-theme .nikke-document .nk-jump button{background:#1b2e46;color:#bce3ff;border-color:#40516c}
+/* Preserve the original NIKKE skill-card format and its semantic effect colors. */
+#portfolio-theme .nikke-document .nk-skill{--nk-line:#dce5eb;--nk-muted:#66727c;background:#fff;color:#182234;border-color:var(--nk-line);color-scheme:light}
+#portfolio-theme .nikke-document .nk-skill summary{color:#243f50}
+#portfolio-theme .nikke-document .nk-skill summary span{color:#66727c}
+#portfolio-theme .nikke-document .nk-skill strong{color:#128fc0}
+#portfolio-theme .nikke-document .nk-reset{color:#d8741e!important}

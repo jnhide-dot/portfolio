@@ -18,7 +18,7 @@ function darkArticle(css){
  let result='';
  for(const match of css.matchAll(/([^{}]+)\{([^{}]*)\}/g)){
    const selector=match[1].replace(/\/\*[\s\S]*?\*\//g,'').trim();
-   if(!selector||selector.startsWith('@'))continue;
+   if(!selector||selector.startsWith('@')||selector.includes('.nk-skill')||selector.includes('.nk-reset'))continue;
    const declarations=match[2].split(';').map(s=>s.trim()).filter(Boolean).map(s=>{const colon=s.indexOf(':');return[s.slice(0,colon),s.slice(colon+1)];}).filter(([property,value])=>/^(color|background(?:-color|-image)?|border(?:-color|-top|-bottom|-left|-right)?|box-shadow)$/.test(property)&&/#[\da-f]/i.test(value)).map(([property,value])=>property+':'+colors(value,property));
    if(declarations.length)result+=selector.split(',').map(s=>'#portfolio-theme '+s.trim()).join(',')+'{'+declarations.join(';')+'}\n';
  }
