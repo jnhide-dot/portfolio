@@ -24,11 +24,12 @@
     if(kind==='playlist'){
       main.querySelector('.collection-head')?.insertAdjacentHTML('beforeend','<div class="theme-play-charm"><img src="images/fandom/aria.webp" width="116" height="116" alt="젠레스 존 제로 아리아"><span>사랑에 열반해♪</span></div>');
     }
+    if(kind==='credits')main.insertAdjacentHTML('beforeend','<div class="credit-row"><h2>도구 대표 캐릭터 이미지</h2><p>크라운·아니스 © SHIFT UP · 아케론·호시미 미야비 © HoYoverse · 젠니 © Kuro Games. 니케 이미지는 기존 문서의 캐릭터 원화를, 아틀라스 이미지는 도구에 등록된 캐릭터 자료를 사용했습니다.</p><a href="https://cdn.prydwen.gg/images/honkai-star-rail/characters/acheron_card.webp" target="_blank" rel="noopener">아케론 이미지 출처 ↗</a> · <a href="https://cdn.prydwen.gg/images/ww/characters/card_zani.webp" target="_blank" rel="noopener">젠니 이미지 출처 ↗</a> · <a href="https://cdn.prydwen.gg/images/zenless-zone-zero/characters/miyabi_card.webp" target="_blank" rel="noopener">미야비 이미지 출처 ↗</a></div>');
     if(kind==='tools'){
       const lab=main.querySelector('.lab-card-visual');
-      if(lab)lab.insertAdjacentHTML('afterbegin','<img class="theme-tool-preview" src="images/tool-previews/nikke-squad-art.png" alt="홀로그램 전술판 위 캐릭터와 편성 교체를 표현한 일러스트" loading="lazy">');
+      if(lab)lab.insertAdjacentHTML('afterbegin','<div class="theme-tool-portraits theme-nikke-portraits"><div><img src="images/nikke-assets/crown.webp" alt="승리의 여신: 니케 크라운" loading="lazy"></div><div><img src="images/nikke-assets/anis.webp" alt="승리의 여신: 니케 아니스" loading="lazy"></div></div>');
       const atlas=main.querySelector('.atlas-card .lab-card-visual');
-      if(atlas)atlas.insertAdjacentHTML('afterbegin','<img class="theme-tool-preview" src="images/tool-previews/character-atlas-art.png" alt="도감에서 펼쳐지는 캐릭터 카드와 탐색을 상징하는 돋보기 일러스트" loading="lazy">');
+      if(atlas)atlas.insertAdjacentHTML('afterbegin','<div class="theme-tool-portraits theme-atlas-portraits"><div><img src="images/tool-previews/acheron.webp" alt="붕괴: 스타레일 아케론" loading="lazy"></div><div><img src="images/tool-previews/zani.webp" alt="명조 젠니" loading="lazy"></div><div><img src="images/tool-previews/miyabi.webp" alt="젠레스 존 제로 호시미 미야비" loading="lazy"></div></div>');
     }
     if(kind==='credits')main.insertAdjacentHTML('beforeend','<div class="credit-row"><h2>캐릭터 SD 스티커</h2><p>© Kuro Games · © HoYoverse. 팬덤 장식에 사용한 캐릭터 이미지는 각 권리자에게 저작권이 있습니다.</p><a href="https://github.com/nikunj3011/Wuthering-Waves-Stickers" target="_blank" rel="noopener">명조 이미지 보관 출처 ↗</a> · <a href="https://github.com/nikunj3011/ZZZ-stickers" target="_blank" rel="noopener">젠레스 존 제로 이미지 보관 출처 ↗</a> · <a href="https://github.com/Ace4896/hsr-stickers-whatsapp" target="_blank" rel="noopener">붕괴: 스타레일 이미지 보관 출처 ↗</a></div>');
   }
