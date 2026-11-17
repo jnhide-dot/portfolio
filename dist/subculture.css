@@ -211,6 +211,8 @@
 /* Shared dark lavender theme for existing navigation, readers and dialogs. */
 #portfolio-theme .eh-hero-copy{max-width:72%}
 #portfolio-theme .eh-hero-copy h1{word-break:keep-all}
+#portfolio-theme .eh-hook-summary{margin:15px 0 0;font-size:15px;line-height:1.8;color:#d5dcec;letter-spacing:-.25px}
+@media(max-width:850px){#portfolio-theme .eh-hook-summary{font-size:12px}}
 @media(max-width:850px) and (min-width:561px){#portfolio-theme .eh-hero-copy{max-width:66%}#portfolio-theme .eh-hero-copy h1{font-size:clamp(32px,5vw,43px);letter-spacing:-1.8px}}
 @media(max-width:560px){#portfolio-theme .eh-hero-copy{max-width:100%}#portfolio-theme .eh-hero-copy h1{font-size:clamp(30px,8.8vw,40px);letter-spacing:-1.6px}#portfolio-theme .eh-hero-copy .eh-star{font-size:14px;margin-left:4px}}
 html{background:#0d1627;color-scheme:dark}
