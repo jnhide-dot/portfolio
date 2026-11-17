@@ -107,6 +107,7 @@ const parent=docs.find(d=>d.id===a.document);
 main.className='reader-main';document.title=a.title+' — Jnhide';
 main.innerHTML='<a class="back-link" href="'+link(parent)+'">← '+E(parent.title)+'</a><header class="document-head"><p class="eyebrow">'+E(parent.title)+'</p><h1>'+E(a.title)+'</h1></header><div class="doc-layout"><article class="article">'+a.body+'</article><aside class="toc" aria-label="이 문서의 목차"><strong>목차</strong></aside></div>';
 main.querySelectorAll('.article h2').forEach((h,i)=>{h.id='section-'+i;const anchor=document.createElement('a');anchor.href='#'+h.id;anchor.textContent=h.textContent;anchor.onclick=e=>{e.preventDefault();h.scrollIntoView({behavior:'smooth'});};main.querySelector('.toc').append(anchor);});
+const toc=main.querySelector('.toc');if(!toc.querySelector('a'))toc.hidden=true;
 }
 function previewPage(p, requestedPage){
 const page=Math.max(1,Math.min(p.pages,Number.parseInt(requestedPage,10)||1));
